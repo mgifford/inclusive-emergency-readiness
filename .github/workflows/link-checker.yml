@@ -1,9 +1,26 @@
 name: Link Rot Guard
 
-# Purpose: Weekly check of all external URLs in markdown files AND deployed website
-# If a link fails, automatically append or replace with Wayback Machine snapshot
+# Purpose: Check for broken links (external, internal, and on deployed website)
+# - External URLs in markdown files
+# - Internal links between pages (validates paths exist)
+# - All links on the deployed GitHub Pages site
+# If external links fail, suggests Wayback Machine snapshots
+# Runs on PRs, pushes to main, weekly schedule, and manual triggers
 
 on:
+  pull_request:
+    paths:
+      - '**.md'
+      - '**.html'
+      - '_config.yml'
+      - '.github/workflows/link-checker.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+      - '**.html'
+      - '_config.yml'
   schedule:
     # Run every Sunday at 2 AM UTC
     - cron: '0 2 * * 0'
@@ -98,6 +115,125 @@ jobs:
           path: .link-check-results/
           retention-days: 30
   
+  check-internal-links:
+    name: Check Internal Links in Markdown
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Ruby and Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      - name: Build Jekyll site
+        run: |
+          bundle install
+          bundle exec jekyll build --baseurl=/inclusive-emergency-readiness
+        continue-on-error: false
+      
+      - name: Check internal links in markdown
+        id: internal-link-check
+        run: |
+          mkdir -p .internal-link-results
+          
+          echo "Checking for internal links in markdown files..."
+          
+          # Find all markdown links that look like internal paths
+          # Pattern: [text](/path) or [text](/path.html) but NOT http:// or https://
+          find . -name "*.md" -type f -not -path "./_site/*" -not -path "./vendor/*" > md_files.txt
+          
+          broken_links_found=false
+          
+          while IFS= read -r file; do
+            # Extract internal links from markdown: [text](/path) format
+            # This regex finds markdown links that start with / but are NOT http/https
+            grep -oP '\[([^\]]+)\]\((/[^)]+)\)' "$file" 2>/dev/null | while IFS= read -r match; do
+              # Extract just the path part
+              path=$(echo "$match" | sed -E 's/.*\(([^)]+)\).*/\1/')
+              
+              # Skip if it's a liquid template variable or contains {{
+              if echo "$path" | grep -q "{{"; then
+                continue
+              fi
+              
+              # Convert the path to what it should be in _site
+              # Remove leading slash and check if file exists in _site
+              check_path="_site${path}"
+              
+              # Also check with index.html appended if path ends with /
+              if [[ "$path" == *"/" ]]; then
+                check_path_index="${check_path}index.html"
+              else
+                check_path_index="${check_path}.html"
+              fi
+              
+              # Check if either path exists
+              if [ ! -f "$check_path" ] && [ ! -f "$check_path_index" ] && [ ! -d "$check_path" ]; then
+                echo "BROKEN: $file -> $path" >> .internal-link-results/broken-internal-links.txt
+                echo "  Checked: $check_path (not found)" >> .internal-link-results/broken-internal-links.txt
+                echo "  Also checked: $check_path_index (not found)" >> .internal-link-results/broken-internal-links.txt
+                broken_links_found=true
+              fi
+            done
+          done < md_files.txt
+          
+          if [ "$broken_links_found" = true ] && [ -f .internal-link-results/broken-internal-links.txt ]; then
+            echo "has_broken_links=true" >> $GITHUB_OUTPUT
+            echo "❌ Found broken internal links!"
+            cat .internal-link-results/broken-internal-links.txt
+          else
+            echo "has_broken_links=false" >> $GITHUB_OUTPUT
+            echo "✅ All internal links are valid!"
+            echo "All internal markdown links are valid." > .internal-link-results/internal-links-ok.txt
+          fi
+        continue-on-error: true
+      
+      - name: Create internal link report
+        if: always()
+        run: |
+          mkdir -p .internal-link-results
+          
+          cat > .internal-link-results/internal-report.md << 'EOF'
+          ## Internal Links Check
+          
+          This check validates that all internal links in markdown files point to existing pages.
+          
+          EOF
+          
+          if [ -f .internal-link-results/broken-internal-links.txt ]; then
+            echo "### ❌ Broken Internal Links Found" >> .internal-link-results/internal-report.md
+            echo "" >> .internal-link-results/internal-report.md
+            echo '```' >> .internal-link-results/internal-report.md
+            cat .internal-link-results/broken-internal-links.txt >> .internal-link-results/internal-report.md
+            echo '```' >> .internal-link-results/internal-report.md
+            echo "" >> .internal-link-results/internal-report.md
+            echo "### 🔧 How to Fix" >> .internal-link-results/internal-report.md
+            echo "" >> .internal-link-results/internal-report.md
+            echo "Internal links in markdown should use the \`relative_url\` filter:" >> .internal-link-results/internal-report.md
+            echo '```markdown' >> .internal-link-results/internal-report.md
+            echo "Wrong:  [Link Text](/disabilities/hearing/)" >> .internal-link-results/internal-report.md
+            echo "Right:  [Link Text]({{ '/disabilities/hearing/' | relative_url }})" >> .internal-link-results/internal-report.md
+            echo '```' >> .internal-link-results/internal-report.md
+          else
+            echo "### ✅ All Internal Links Valid" >> .internal-link-results/internal-report.md
+            echo "" >> .internal-link-results/internal-report.md
+            echo "All internal links in markdown files are working correctly." >> .internal-link-results/internal-report.md
+          fi
+      
+      - name: Upload internal link check results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-link-check-results
+          path: .internal-link-results/
+          retention-days: 30
+  
   check-website-links:
     name: Check Deployed Website Links
     runs-on: ubuntu-latest
@@ -185,7 +321,7 @@ jobs:
   
   create-issue:
     name: Create or Update Issue
-    needs: [check-markdown-links, check-website-links]
+    needs: [check-markdown-links, check-internal-links, check-website-links]
     if: always()
     runs-on: ubuntu-latest
     permissions:
@@ -199,6 +335,13 @@ jobs:
         with:
           name: markdown-link-check-results
           path: .link-check-results/
+        continue-on-error: true
+      
+      - name: Download internal link results
+        uses: actions/download-artifact@v4
+        with:
+          name: internal-link-check-results
+          path: .internal-link-results/
         continue-on-error: true
       
       - name: Download website results
@@ -216,9 +359,10 @@ jobs:
           
           ## Overview
           
-          This report checks for broken links in two places:
-          1. **Markdown source files** - Links in the repository
-          2. **Deployed website** - All links on https://mgifford.github.io/inclusive-emergency-readiness/
+          This report checks for broken links in three places:
+          1. **External links in markdown source files** - HTTP/HTTPS URLs in the repository
+          2. **Internal links in markdown source files** - Links between pages
+          3. **Deployed website** - All links on https://mgifford.github.io/inclusive-emergency-readiness/
           
           ---
           
@@ -226,14 +370,32 @@ jobs:
           
           has_issues=false
           
-          # Add markdown results
+          # Add markdown external link results
           if [ -f .link-check-results/markdown-report.md ]; then
             cat .link-check-results/markdown-report.md >> combined-report.md
             has_issues=true
           else
-            echo "## ✅ Markdown Source Files" >> combined-report.md
+            echo "## ✅ External Links in Markdown Source Files" >> combined-report.md
             echo "" >> combined-report.md
-            echo "All links in markdown source files are working correctly." >> combined-report.md
+            echo "All external links in markdown source files are working correctly." >> combined-report.md
+            echo "" >> combined-report.md
+          fi
+          
+          echo "---" >> combined-report.md
+          echo "" >> combined-report.md
+          
+          # Add internal link results
+          if [ -f .internal-link-results/internal-report.md ]; then
+            cat .internal-link-results/internal-report.md >> combined-report.md
+            
+            # Check if there were broken internal links
+            if [ -f .internal-link-results/broken-internal-links.txt ]; then
+              has_issues=true
+            fi
+          else
+            echo "## ✅ Internal Links in Markdown Source Files" >> combined-report.md
+            echo "" >> combined-report.md
+            echo "All internal links in markdown source files are working correctly." >> combined-report.md
             echo "" >> combined-report.md
           fi
           

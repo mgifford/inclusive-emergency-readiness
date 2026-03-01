@@ -19,7 +19,8 @@ This section shows you how—and what to do about it.
 
 ### Vision Disabilities
 
-[Read Full Guide →](/disabilities/vision/)
+{% assign vision_disability = site.disabilities | where: "disability_type", "vision" | first %}
+[Read Full Guide →]({{ vision_disability.url | relative_url }})
 
 **Impact:** Cannot see visual-only alerts, maps, signs, or low-contrast text.
 
@@ -29,7 +30,8 @@ This section shows you how—and what to do about it.
 
 ### Hearing Disabilities
 
-[Read Full Guide →](/disabilities/hearing/)
+{% assign hearing_disability = site.disabilities | where: "disability_type", "hearing" | first %}
+[Read Full Guide →]({{ hearing_disability.url | relative_url }})
 
 **Impact:** Cannot hear audio sirens, loudspeaker announcements, or phone calls.
 
@@ -39,7 +41,8 @@ This section shows you how—and what to do about it.
 
 ### Cognitive Disabilities
 
-[Read Full Guide →](/disabilities/cognitive/)
+{% assign cognitive_disability = site.disabilities | where: "disability_type", "cognitive" | first %}
+[Read Full Guide →]({{ cognitive_disability.url | relative_url }})
 
 **Impact:** Cannot process complex language, long instructions, or information overload.
 
@@ -49,7 +52,8 @@ This section shows you how—and what to do about it.
 
 ### Situational Disabilities
 
-[Read Full Guide →](/disabilities/situational/)
+{% assign situational_disability = site.disabilities | where: "disability_type", "situational" | first %}
+[Read Full Guide →]({{ situational_disability.url | relative_url }})
 
 **Impact:** Anyone can experience temporary disabilities during emergencies (stress, lost devices, language barriers).
 
@@ -87,10 +91,10 @@ In every emergency, you are communicating with:
 
 If you're new to accessibility in emergencies:
 
-1. **Read:** [Cognitive Disabilities](/disabilities/cognitive/) - Learn the "One Idea Per Line" principle
-2. **Apply:** [Plain Language Toolkit](/toolkits/plain-language/) - Write clear instructions
-3. **Check:** [Digital Egress Checklist](/toolkits/digital-egress/) - Test your website
-4. **Implement:** [Emergency Templates](/templates/alert-template/) - Use proven templates
+1. **Read:** [Cognitive Disabilities]({{ '/disabilities/cognitive/' | relative_url }}) - Learn the "One Idea Per Line" principle
+2. **Apply:** [Plain Language Toolkit]({{ '/toolkits/plain-language/' | relative_url }}) - Write clear instructions
+3. **Check:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }}) - Test your website
+4. **Implement:** [Emergency Templates]({{ '/templates/alert-template/' | relative_url }}) - Use proven templates
 
 ## The Bottom Line
 
