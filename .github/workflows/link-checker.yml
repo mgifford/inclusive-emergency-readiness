@@ -129,10 +129,15 @@ jobs:
         run: |
           mkdir -p .lychee-results
           
+          # Create a marker file for easier downstream checking
+          echo "false" > .lychee-results/has_errors.txt
+          
           # Check if there were any errors
+          # Note: This checks Lychee's markdown output format which uses ✗ for errors
+          # If Lychee changes format, update this detection logic
           if [ -f .lychee-results/website-report.md ]; then
-            if grep -q "Total\s*|\s*[1-9][0-9]*\s*errors" .lychee-results/website-report.md 2>/dev/null || \
-               grep -q "✗" .lychee-results/website-report.md 2>/dev/null; then
+            if grep -q "✗" .lychee-results/website-report.md 2>/dev/null; then
+              echo "true" > .lychee-results/has_errors.txt
               echo "has_errors=true" >> $GITHUB_OUTPUT
               
               # Add Wayback Machine suggestions
@@ -230,8 +235,8 @@ jobs:
             echo "" >> combined-report.md
             cat .lychee-results/website-report.md >> combined-report.md
             
-            # Check if there were actual errors
-            if grep -q "✗" .lychee-results/website-report.md 2>/dev/null; then
+            # Check the error marker file created by process-website-results step
+            if [ -f .lychee-results/has_errors.txt ] && grep -q "true" .lychee-results/has_errors.txt; then
               has_issues=true
             fi
           else
@@ -300,7 +305,9 @@ jobs:
         if: always()
         run: |
           if [ -f combined-report.md ]; then
-            if grep -q "FAILED:" combined-report.md 2>/dev/null || grep -q "✗" combined-report.md 2>/dev/null; then
+            # Check for errors using the same markers as earlier steps
+            if grep -q "FAILED:" combined-report.md 2>/dev/null || \
+               ([ -f .lychee-results/has_errors.txt ] && grep -q "true" .lychee-results/has_errors.txt 2>/dev/null); then
               echo "❌ Broken links detected!"
               echo "📋 Issue created/updated with details"
               echo ""
