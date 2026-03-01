@@ -123,6 +123,9 @@ jobs:
           output: .lychee-results/website-report.md
           jobSummary: true
           fail: false
+        # Note: 429 (Too Many Requests) is accepted to avoid false positives when
+        # external emergency services are under heavy load. Rate-limiting is common
+        # during disasters and shouldn't mark links as broken.
       
       - name: Process website check results
         id: process-website-results
@@ -269,7 +272,7 @@ jobs:
             });
             
             const title = '🔗 Link Rot Detected';
-            const body = `${report}\n\n---\n*Automated check performed on ${new Date().toISOString()}*\n*This issue was automatically created by the Link Rot Guard workflow.*`;
+            const body = `${report}\n\n---\n*Automated check performed on ${new Date().toUTCString()}*\n*This issue was automatically created by the Link Rot Guard workflow.*`;
             
             if (issues.data.length > 0) {
               // Update existing issue
@@ -284,7 +287,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issues.data[0].number,
-                body: `## 🔄 Link Check Update - ${new Date().toISOString()}\n\nThe link checker has run again. The issue description has been updated with the latest results.`
+                body: `## 🔄 Link Check Update\n\n**Date:** ${new Date().toUTCString()}\n\nThe link checker has run again. The issue description has been updated with the latest results.`
               });
               
               console.log(`Updated existing issue #${issues.data[0].number}`);
