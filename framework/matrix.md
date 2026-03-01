@@ -319,7 +319,7 @@ None are optional.
 
 ## Additional Resources
 
-For a comprehensive directory of global standards, academic research, and practical toolkits, see our [Global Standards & Cognitive Accessibility Resources](/framework/resources.html) page.
+For a comprehensive directory of global standards, academic research, and practical toolkits, see our [Global Standards & Cognitive Accessibility Resources]({{ '/framework/resources.html' | relative_url }}) page.
 
 **WCAG 2.2:**
 - [Official Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/)

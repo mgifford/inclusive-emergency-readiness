@@ -19,8 +19,7 @@ This section shows you how—and what to do about it.
 
 ### Vision Disabilities
 
-{% assign vision_disability = site.disabilities | where: "disability_type", "vision" | first %}
-[Read Full Guide →]({{ vision_disability.url | relative_url }})
+[Read Full Guide →]({{ '/disabilities/vision/' | relative_url }})
 
 **Impact:** Cannot see visual-only alerts, maps, signs, or low-contrast text.
 
@@ -30,8 +29,7 @@ This section shows you how—and what to do about it.
 
 ### Hearing Disabilities
 
-{% assign hearing_disability = site.disabilities | where: "disability_type", "hearing" | first %}
-[Read Full Guide →]({{ hearing_disability.url | relative_url }})
+[Read Full Guide →]({{ '/disabilities/hearing/' | relative_url }})
 
 **Impact:** Cannot hear audio sirens, loudspeaker announcements, or phone calls.
 
@@ -41,8 +39,7 @@ This section shows you how—and what to do about it.
 
 ### Cognitive Disabilities
 
-{% assign cognitive_disability = site.disabilities | where: "disability_type", "cognitive" | first %}
-[Read Full Guide →]({{ cognitive_disability.url | relative_url }})
+[Read Full Guide →]({{ '/disabilities/cognitive/' | relative_url }})
 
 **Impact:** Cannot process complex language, long instructions, or information overload.
 
@@ -52,8 +49,7 @@ This section shows you how—and what to do about it.
 
 ### Situational Disabilities
 
-{% assign situational_disability = site.disabilities | where: "disability_type", "situational" | first %}
-[Read Full Guide →]({{ situational_disability.url | relative_url }})
+[Read Full Guide →]({{ '/disabilities/situational/' | relative_url }})
 
 **Impact:** Anyone can experience temporary disabilities during emergencies (stress, lost devices, language barriers).
 

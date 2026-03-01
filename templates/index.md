@@ -17,7 +17,7 @@ These templates follow:
 
 ### Evacuation Order Template
 
-[Read Full Template →](/templates/alert-template/)
+[Read Full Template →]({{ '/templates/alert-template/' | relative_url }})
 
 **Use it for:** Mandatory evacuation orders when residents must leave immediately.
 

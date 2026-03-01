@@ -134,7 +134,9 @@ jobs:
       - name: Build Jekyll site
         run: |
           bundle install
-          bundle exec jekyll build --baseurl=/inclusive-emergency-readiness
+          # Read baseurl from config, handling both quoted and unquoted values
+          BASEURL=$(grep "^baseurl:" _config.yml | sed -E 's/^baseurl:\s*"?([^"]*)"?.*/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          bundle exec jekyll build --baseurl="$BASEURL"
         continue-on-error: false
       
       - name: Check internal links in markdown
@@ -176,6 +178,31 @@ jobs:
               # Check if either path exists
               if [ ! -f "$check_path" ] && [ ! -f "$check_path_index" ] && [ ! -d "$check_path" ]; then
                 echo "BROKEN: $file -> $path" >> .internal-link-results/broken-internal-links.txt
+                echo "  Checked: $check_path (not found)" >> .internal-link-results/broken-internal-links.txt
+                echo "  Also checked: $check_path_index (not found)" >> .internal-link-results/broken-internal-links.txt
+                broken_links_found=true
+              fi
+            done
+            
+            # Also check for Liquid relative_url filter syntax: {{ '/path/' | relative_url }}
+            # Extract paths from relative_url filter calls
+            grep -oP "\{\{\s*'[^']+'\s*\|\s*relative_url\s*\}\}" "$file" 2>/dev/null | while IFS= read -r match; do
+              # Extract the path from {{ '/path/' | relative_url }} syntax
+              path=$(echo "$match" | sed -E "s/.*'([^']+)'.*/\1/")
+              
+              # Convert the path to what it should be in _site
+              check_path="_site${path}"
+              
+              # Also check with index.html appended if path ends with /
+              if [[ "$path" == *"/" ]]; then
+                check_path_index="${check_path}index.html"
+              else
+                check_path_index="${check_path}.html"
+              fi
+              
+              # Check if either path exists
+              if [ ! -f "$check_path" ] && [ ! -f "$check_path_index" ] && [ ! -d "$check_path" ]; then
+                echo "BROKEN: $file -> $path (via relative_url)" >> .internal-link-results/broken-internal-links.txt
                 echo "  Checked: $check_path (not found)" >> .internal-link-results/broken-internal-links.txt
                 echo "  Also checked: $check_path_index (not found)" >> .internal-link-results/broken-internal-links.txt
                 broken_links_found=true

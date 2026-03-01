@@ -17,7 +17,7 @@ Use them to build accessible emergency communication.
 
 ### Digital Egress Checklist
 
-[Read Full Guide →](/toolkits/digital-egress/)
+[Read Full Guide →]({{ '/toolkits/digital-egress/' | relative_url }})
 
 **What it is:** A comprehensive checklist to ensure your emergency website is "survival-ready."
 
@@ -35,7 +35,7 @@ Use them to build accessible emergency communication.
 
 ### Plain Language Guide
 
-[Read Full Guide →](/toolkits/plain-language/)
+[Read Full Guide →]({{ '/toolkits/plain-language/' | relative_url }})
 
 **What it is:** How to write emergency content that everyone can understand, even under stress.
 
@@ -53,7 +53,7 @@ Use them to build accessible emergency communication.
 
 ### Multi-Platform Communication
 
-[Read Full Guide →](/toolkits/multi-platform/)
+[Read Full Guide →]({{ '/toolkits/multi-platform/' | relative_url }})
 
 **What it is:** Strategies for distributing emergency alerts beyond traditional platforms.
 
