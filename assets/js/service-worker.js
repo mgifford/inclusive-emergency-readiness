@@ -8,8 +8,8 @@ const OFFLINE_PAGE = '/offline.html';
 const PRECACHE_URLS = [
   '/',
   '/offline.html',
-  '/assets/css/emergency.scss',
-  '/assets/css/print.scss',
+  '/assets/css/emergency.css',
+  '/assets/css/print.css',
   '/manifest.json'
 ];
 
