@@ -22,7 +22,7 @@ The logo features:
 
 ### Logo
 - **File:** `assets/images/logo.svg`
-- **Dimensions:** 380×100 viewBox
+- **Dimensions:** 100×100 viewBox
 - **Size:** 2.2KB
 - **Usage:** Website header, print materials
 
