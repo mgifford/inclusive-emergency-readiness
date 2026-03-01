@@ -149,6 +149,9 @@ Use them to build emergency systems that work when everything else fails.
 ## Related Framework Resources
 
 - [Framework Matrix: WCAG, WSG & Plain Language](/framework/matrix.html) - See how these standards work together
+- [CAN-ASC-6.4 Case Study](/framework/can-asc-case-study.html) - How this repository supports Emergency Measures standards
+- [Fork Guide for Municipalities](/framework/fork-guide.html) - Adapt this project for your area
+- [Understanding Workflows](/framework/workflows-guide.html) - Guide to automated checks
 - [Plain Language Toolkit](/toolkits/plain-language.html) - Step-by-step guide
 - [Cognitive Disabilities in Emergencies](/disabilities/cognitive.html) - Understand the impact
 

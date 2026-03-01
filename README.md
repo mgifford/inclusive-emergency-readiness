@@ -66,7 +66,14 @@ We are building this to be forked and adapted by municipalities worldwide.
 * [**DEPLOYMENT.md**](./DEPLOYMENT.md) - Deployment and testing guide.
 
 ### Contributing to Standards
-We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. If you are a member of the standards committee, please open an Issue to discuss technical implementations.
+We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. 
+
+**New Resources:**
+* [**CAN-ASC-6.4 Case Study**](./framework/can-asc-case-study.html) - How this repository serves as a functional prototype for Emergency Measures standards
+* [**Fork Guide for Municipalities**](./framework/fork-guide.html) - Step-by-step guide to adapt this for your local area
+* [**Understanding Workflows**](./framework/workflows-guide.html) - Guide to automated checks and CI workflows
+
+If you are a member of the standards committee, please open an Issue to discuss technical implementations.
 
 ---
 
