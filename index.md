@@ -54,6 +54,9 @@ Check out [Tactical Toolkits](/toolkits/) for step-by-step implementation guides
 ### 📊 Meeting Standards
 Review the [Framework Matrix](/framework/matrix.html) for WCAG/WSG/Plain Language crosswalks.
 
+### 📖 Global Standards & Resources
+Access the [Resource Directory](/framework/resources.html) for global academic research and practical toolkits.
+
 </div>
 
 ## Why Accessibility Matters in Emergencies
