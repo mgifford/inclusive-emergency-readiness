@@ -1,12 +1,12 @@
 <header class="site-header" role="banner">
   <div class="container">
     <div class="site-branding">
-      <a href="/" rel="home" aria-label="Home">
-        <img src="/assets/images/logo.svg" alt="" class="site-logo" role="img" aria-label="Emergency exit with wheelchair accessibility symbol">
+      <a href="{{ '/' | relative_url }}" rel="home" aria-label="Home">
+        <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="" class="site-logo" role="img" aria-label="Emergency exit with wheelchair accessibility symbol">
       </a>
       <div>
         <h1 class="site-title">
-          <a href="/" rel="home">{{ site.title }}</a>
+          <a href="{{ '/' | relative_url }}" rel="home">{{ site.title }}</a>
         </h1>
         <p class="site-description">{{ site.description }}</p>
       </div>
