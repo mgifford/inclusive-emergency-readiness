@@ -12,8 +12,35 @@
  * 5. Print-ready: Optimized for emergency binders
  */
 
+// Import Inter font for modern typography
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
 // ============================================================================
-// Variables
+// CSS Variables (for theme support)
+// ============================================================================
+
+:root {
+  --brand-color: #0066cc;
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --header-bg: rgba(255, 255, 255, 0.98);
+  --header-blur: 15px;
+  --header-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --nav-link-color: #333;
+  --nav-link-hover: #0066cc;
+  --nav-link-bg-hover: rgba(0, 102, 204, 0.05);
+  --footer-bg: #f9f9f9;
+  --footer-text: #454545;
+  --footer-link: #0066cc;
+  --border-color: rgba(0, 0, 0, 0.06);
+  --accent-color: #cc0000;
+  --success-color: #006600;
+  --warning-color: #cc6600;
+}
+
+// ============================================================================
+// Variables (Backward compatibility)
 // ============================================================================
 
 // Colors - WCAG AA compliant contrast ratios
@@ -33,7 +60,7 @@ $color-hc-primary: #0000ff;
 $color-hc-accent: #ff0000;
 
 // Typography
-$font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-mono: "Courier New", Courier, monospace;
 $font-size-base: 18px; // Larger base for accessibility
 $font-size-small: 16px;
@@ -74,11 +101,11 @@ html {
 }
 
 body {
-  font-family: $font-family-primary;
+  font-family: var(--font-family);
   font-size: 1rem;
   line-height: $line-height-base;
-  color: $color-text;
-  background-color: $color-background;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -189,58 +216,181 @@ a {
 }
 
 // ============================================================================
-// Header & Navigation
+// Header & Navigation (Modern Sticky Header)
 // ============================================================================
 
 .site-header {
-  background-color: $color-primary;
-  color: $color-background;
-  padding: $spacing-md 0;
-  border-bottom: 5px solid $color-secondary;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--brand-color);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 80px;
+    padding: 1rem;
+
+    @media screen and (max-width: 820px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 0 1 auto;
+
+  @media screen and (max-width: 820px) {
+    flex: 1 1 auto;
+  }
+}
+
+.site-logo {
+  height: 48px;
+  max-height: 48px;
+  width: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 .site-title {
-  font-size: $font-size-large;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   color: $color-background;
   text-decoration: none;
   margin: 0;
+  line-height: 1.2;
   
   a {
     color: $color-background;
     text-decoration: none;
     
+    &:hover {
+      opacity: 0.9;
+    }
+    
     &:focus {
       outline: 3px solid $color-background;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  }
+}
+
+.site-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0.25rem 0 0 0;
+  line-height: 1.4;
+}
+
+.site-nav {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  
+  @media screen and (max-width: 820px) {
+    flex: 1 1 100%;
+    order: 3;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    
+    @media screen and (max-width: 820px) {
+      gap: 1rem;
+      width: 100%;
+    }
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: $color-background;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    display: block;
+    
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    
+    &:focus {
+      outline: 2px solid $color-background;
       outline-offset: 2px;
     }
   }
 }
 
-.site-nav {
-  margin-top: $spacing-md;
+// Accessibility Controls
+.accessibility-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
   
-  ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: $spacing-md;
+  @media screen and (max-width: 820px) {
+    flex: 1 1 100%;
+    order: 4;
+    margin-top: 0.5rem;
   }
   
-  a {
-    color: $color-background;
-    text-decoration: none;
-    padding: $spacing-xs $spacing-sm;
-    border-bottom: 3px solid transparent;
+  button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    font-family: var(--font-family);
+    transition: all 0.2s ease;
+    min-height: 36px;
     
-    &:hover,
-    &:focus {
-      border-bottom-color: $color-background;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.6);
     }
     
     &:focus {
-      outline: 3px solid $color-background;
+      outline: 3px solid white;
       outline-offset: 2px;
+    }
+    
+    &.active,
+    &[aria-pressed="true"] {
+      background-color: white;
+      color: var(--brand-color);
+      border-color: white;
+    }
+    
+    @media screen and (max-width: 375px) {
+      padding: 0.4rem 0.75rem;
+      font-size: 0.8rem;
     }
   }
 }
