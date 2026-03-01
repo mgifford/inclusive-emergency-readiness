@@ -427,11 +427,10 @@ table {
   padding: $spacing-md;
   margin-bottom: $spacing-md;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.2s ease;
   
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
   }
   
   h3 {
@@ -441,7 +440,7 @@ table {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: $spacing-md;
   margin: $spacing-lg 0;
 }
@@ -449,7 +448,7 @@ table {
 // Quick start grid styling (from index.md)
 .quick-start-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   gap: $spacing-md;
   margin: $spacing-lg 0;
   
@@ -459,11 +458,10 @@ table {
     border-left: 5px solid $color-primary;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    transition: all 0.2s ease;
+    transition: box-shadow 0.2s ease;
     
     &:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-      transform: translateY(-2px);
     }
   }
   
@@ -480,10 +478,10 @@ table {
   gap: $spacing-md;
   margin: $spacing-lg 0;
   flex-wrap: wrap;
+  flex-direction: column;
   
   .btn {
-    flex: 1 1 auto;
-    min-width: 200px;
+    width: 100%;
   }
 }
 
@@ -600,20 +598,6 @@ body.low-data {
 // Base styles are mobile-first (above)
 // Progressive enhancement for larger screens
 
-// Mobile-specific overrides
-.quick-start-grid,
-.card-grid {
-  grid-template-columns: 1fr;
-}
-
-.cta-buttons {
-  flex-direction: column;
-  
-  .btn {
-    width: 100%;
-  }
-}
-
 // Small tablets and large phones (portrait)
 @media (min-width: 576px) {
   .container,
@@ -658,6 +642,8 @@ body.low-data {
     
     .btn {
       width: auto;
+      flex: 1 1 auto;
+      min-width: 200px;
     }
   }
 }
