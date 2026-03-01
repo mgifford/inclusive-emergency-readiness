@@ -1,20 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Emergency Sign Background - Red/Orange for emergency -->
-  <rect width="100" height="100" rx="15" fill="#cc0000"/>
-  
-  <!-- Emergency Exit Sign (White Border) -->
-  <rect x="12" y="25" width="76" height="50" rx="3" fill="#cc0000" stroke="#fff" stroke-width="3"/>
-  
-  <!-- Exit Arrow (simplified) -->
-  <path d="M20 45 L35 50 L35 55 L50 55 L50 60 L60 50 L50 40 L50 45 L35 45 L35 50 Z" fill="#fff"/>
-  
-  <!-- International Symbol of Access (Wheelchair) -->
-  <g fill="#fff" transform="translate(68, 50) scale(0.30)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 100" role="img" aria-label="Inclusive Emergency Readiness logo: Person with mobility aid and emergency exit door">
+  <!-- Person with cane (accessibility symbol) -->
+  <g fill="#FF6600">
     <!-- Head -->
-    <circle cx="0" cy="-55" r="12" />
-    <!-- Body/Wheelchair -->
-    <path d="M15-30h-35c-8 0-15 7-15 15v5c0 8 7 15 15 15h5v18c0 10 8 18 18 18h15c2 0 4-2 4-4s-2-4-4-4h-15c-6 0-10-4-10-10v-18h35c8 0 15-7 15-15v-5c0-8-7-15-15-15z" />
-    <!-- Wheel -->
-    <circle cx="-10" cy="15" r="30" fill="none" stroke="#fff" stroke-width="8"/>
+    <circle cx="35" cy="22" r="10"/>
+    
+    <!-- Body torso -->
+    <line x1="35" y1="32" x2="35" y2="52" stroke="#FF6600" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Arms -->
+    <line x1="35" y1="40" x2="48" y2="46" stroke="#FF6600" stroke-width="5" stroke-linecap="round"/>
+    <line x1="35" y1="40" x2="22" y2="46" stroke="#FF6600" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Legs -->
+    <line x1="35" y1="52" x2="42" y2="72" stroke="#FF6600" stroke-width="5" stroke-linecap="round"/>
+    <line x1="35" y1="52" x2="28" y2="72" stroke="#FF6600" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Cane/walking stick -->
+    <line x1="42" y1="72" x2="42" y2="85" stroke="#FF6600" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Shadow under person -->
+    <ellipse cx="35" cy="88" rx="18" ry="3" fill="#FF6600" opacity="0.3"/>
   </g>
+  
+  <!-- Emergency exit door with arrow -->
+  <g>
+    <!-- Circular door frame - orange -->
+    <circle cx="115" cy="50" r="32" fill="none" stroke="#FF6600" stroke-width="10"/>
+    
+    <!-- Door interior rectangle - white -->
+    <rect x="98" y="35" width="24" height="30" rx="2" fill="white"/>
+    
+    <!-- Exit arrow pointing right -->
+    <g fill="#FF6600">
+      <path d="M108 50 L130 50 M125 44 L133 50 L125 56" stroke="#FF6600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Arrow shadow/base -->
+      <ellipse cx="120" cy="72" rx="20" ry="3" fill="#FF6600" opacity="0.2"/>
+    </g>
+  </g>
+  
+  <!-- Text: INCLUSIVE EMERGENCY READINESS -->
+  <text x="170" y="35" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50" letter-spacing="0.5">INCLUSIVE</text>
+  <text x="170" y="58" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50" letter-spacing="0.5">EMERGENCY</text>
+  <text x="170" y="81" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50" letter-spacing="0.5">READINESS</text>
 </svg>
