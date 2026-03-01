@@ -74,8 +74,9 @@ This repository serves as a **living implementation** of what emergency systems 
 **For Municipalities:**
 - Fork this repository
 - Update with local information
-- Deploy a compliant emergency site in hours
+- Deploy better emergency communications
 - No need to start from scratch
+- Contribute to this resource
 
 **For Researchers:**
 - Real-world data on accessibility metrics
