@@ -19,6 +19,20 @@ Emergency communication must be:
 
 This matrix shows how they work together.
 
+---
+
+## Translation Layer: Standards to Practice
+
+This table shows how technical standards translate to practical emergency needs:
+
+| **Pillar** | **WCAG 2.2 Role** | **WSG 1.0 Role** | **Plain Language Role** |
+|-----------|------------------|-----------------|------------------------|
+| **Alerts** | Ensures screen readers can announce "Flash Alerts" immediately. | Minimizes payload so alerts don't fail on congested networks. | Replaces "Evacuate the vicinity" with "Leave the area now." |
+| **Maps** | Requires text-alternatives for GIS data and high-contrast color. | Uses SVG instead of heavy JPGs to save battery and data. | Focuses on clear landmarks rather than complex coordinates. |
+| **Manuals** | Mandates tagged PDFs or (better) accessible HTML. | Encourages "Offline-First" via PWAs (Progressive Web Apps). | Uses "How-To" active voice for medical/prep instructions. |
+
+---
+
 ## The Emergency Alert Matrix
 
 | **Emergency Need** | **WCAG 2.2** | **WSG 1.0** | **Plain Language** |

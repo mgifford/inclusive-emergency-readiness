@@ -14,15 +14,15 @@
   <meta name="color-scheme" content="light dark">
   
   <!-- PWA -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
   <meta name="theme-color" content="#0066cc">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Resilience Comms">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/assets/css/emergency.scss">
-  <link rel="stylesheet" href="/assets/css/print.scss" media="print">
+  <link rel="stylesheet" href="{{ '/assets/css/emergency.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,13 +52,13 @@
   {% include footer.html %}
   
   <!-- Accessibility Features Toggle -->
-  <script src="/assets/js/mode-toggle.js" defer></script>
+  <script src="{{ '/assets/js/mode-toggle.js' | relative_url }}" defer></script>
   
   <!-- Service Worker Registration -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/assets/js/service-worker.js')
+        navigator.serviceWorker.register('{{ '/assets/js/service-worker.js' | relative_url }}')
           .then(registration => {
             console.log('Service Worker registered:', registration);
           })
