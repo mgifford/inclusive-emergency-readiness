@@ -1,132 +1,32 @@
 <header class="site-header" role="banner">
   <div class="container">
-    <div class="header-wrapper">
-      <div class="site-branding">
+    <div class="site-branding">
+      <a href="/" rel="home" aria-label="Home">
+        <img src="/assets/images/logo.svg" alt="" class="site-logo" role="img" aria-label="Emergency exit with wheelchair accessibility symbol">
+      </a>
+      <div>
         <h1 class="site-title">
           <a href="/" rel="home">{{ site.title }}</a>
         </h1>
         <p class="site-description">{{ site.description }}</p>
       </div>
-      
-      {% include navigation.html %}
-      
-      <div class="accessibility-controls no-print">
-        <button id="high-contrast-toggle" aria-label="Toggle high contrast mode" aria-pressed="false" title="High Contrast Mode">
-          🎨 Contrast
-        </button>
-        <button id="low-data-toggle" aria-label="Toggle low data mode" aria-pressed="false" title="Low Data Mode">
-          📊 Low Data
-        </button>
-        <button id="text-size-increase" aria-label="Increase text size" title="Increase Text Size">
-          A+
-        </button>
-        <button id="text-size-decrease" aria-label="Decrease text size" title="Decrease Text Size">
-          A-
-        </button>
-      </div>
+    </div>
+    
+    {% include navigation.html %}
+    
+    <div class="accessibility-controls no-print">
+      <button id="high-contrast-toggle" aria-label="Toggle high contrast mode" aria-pressed="false" title="High Contrast Mode">
+        🎨 Contrast
+      </button>
+      <button id="low-data-toggle" aria-label="Toggle low data mode" aria-pressed="false" title="Low Data Mode">
+        📊 Low Data
+      </button>
+      <button id="text-size-increase" aria-label="Increase text size" title="Increase Text Size">
+        A+
+      </button>
+      <button id="text-size-decrease" aria-label="Decrease text size" title="Decrease Text Size">
+        A-
+      </button>
     </div>
   </div>
 </header>
-
-<style>
-  .header-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .site-branding {
-    margin-bottom: 0.5rem;
-  }
-  
-  .site-description {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-top: 0.5rem;
-    line-height: 1.5;
-  }
-  
-  .accessibility-controls {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-  }
-  
-  .accessibility-controls button {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-  
-  .accessibility-controls button:hover,
-  .accessibility-controls button:focus {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .accessibility-controls button:focus {
-    outline: 3px solid white;
-    outline-offset: 2px;
-  }
-  
-  .accessibility-controls button.active,
-  .accessibility-controls button[aria-pressed="true"] {
-    background-color: white;
-    color: #0066cc;
-    border-color: white;
-  }
-  
-  /* Tablet and up */
-  @media (min-width: 768px) {
-    .header-wrapper {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    
-    .site-branding {
-      flex: 1 1 auto;
-      margin-bottom: 0;
-    }
-    
-    .site-nav {
-      order: 3;
-      flex: 1 1 100%;
-      margin-top: 1rem;
-    }
-    
-    .accessibility-controls {
-      order: 2;
-      margin-top: 0;
-      flex: 0 0 auto;
-    }
-  }
-  
-  /* Large screens */
-  @media (min-width: 992px) {
-    .site-nav {
-      order: 2;
-      flex: 0 1 auto;
-      margin-top: 0;
-    }
-    
-    .accessibility-controls {
-      order: 3;
-    }
-  }
-  
-  /* Small mobile */
-  @media (max-width: 375px) {
-    .accessibility-controls button {
-      padding: 0.4rem 0.75rem;
-      font-size: 0.85rem;
-    }
-  }
-</style>
