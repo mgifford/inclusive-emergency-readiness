@@ -71,21 +71,71 @@ This reduces mental load.
 
 **Why it matters:** Direct, clear instructions save time and lives during disasters.
 
+### Plain Language and Easy Read Guide
+
+**Link:** [Plain Language and Easy Read Guide (Center on Disability)](https://centerondisability.org/plain-language-and-easy-read/){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Knowing the difference between Plain Language and Easy Read.
+
+**Who it's for:** Public information officers and content designers.
+
+**Why it matters:** Easy Read formats give life-saving instructions with simple text and pictures.
+
+People with intellectual disabilities need this format during disasters.
+
+### CalHR Plain Language Guide
+
+**Link:** [CalHR Plain Language Guide](https://www.calhr.ca.gov/about-calhr/divisions-programs/deia-toolkit/templates-guides/plain-language-guide/){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** A step-by-step toolkit to turn jargon into clear instructions.
+
+**Who it's for:** Government employees and communications teams.
+
+**Why it matters:** It teaches "Action-Oriented" writing for evacuation orders and safety checklists.
+
+### Face-to-Face Communications During Emergencies
+
+**Link:** [Face-to-Face Communications During Emergencies (ASC)](https://publications.gc.ca/collections/collection_2022/nac-asc/AS4-24-2021-eng.pdf){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Practical steps for first responders who work with people with disabilities.
+
+**Who it's for:** First responders, emergency managers, and volunteer leaders.
+
+**Why it matters:** It shows the "human-to-human" bridge when digital tools fail.
+
 ---
 
-## 3. Digital Resilience & Sustainable Design
+## 3. Translation Layer: Standards to Practice
 
-*Build for "Digital Famine."*
+*This table shows how WCAG 2.2, WSG 1.0, and Plain Language work together in emergency communications.*
 
-*This means your site must work on weak devices and bad internet.*
+Your site acts as a **Translation Layer** between technical standards and practical emergency needs:
 
-### W3C Web Sustainability Guidelines (WSG) 1.0
+| **Pillar** | **WCAG 2.2 Role** | **WSG 1.0 Role** | **Plain Language Role** |
+| :--- | :--- | :--- | :--- |
+| **Alerts** | Ensures screen readers can announce "Flash Alerts" immediately. | Minimizes payload so alerts don't fail on congested networks. | Replaces "Evacuate the vicinity" with "Leave the area now." |
+| **Maps** | Requires text-alternatives for GIS data and high-contrast color. | Uses SVG instead of heavy JPGs to save battery and data. | Focuses on clear landmarks rather than complex coordinates. |
+| **Manuals** | Mandates tagged PDFs or (better) accessible HTML. | Encourages "Offline-First" via PWAs (Progressive Web Apps). | Uses "How-To" active voice for medical/prep instructions. |
 
-**Link:** [WSG 1.0](https://www.w3.org/TR/web-sustainability-guidelines/){:target="_blank" rel="noopener noreferrer"}
+### Why This Matters
 
-**Useful For:** Making sites that load on low battery and slow internet.
+**WCAG 2.2** ensures technology can access information.
 
-**Why it matters:** Your site must load during a flood when cell towers are stressed.
+**WSG 1.0** ensures information reaches users on failing infrastructure.
+
+**Plain Language** ensures users can understand and act on information under stress.
+
+All three must work together for effective emergency communication.
+
+---
+
+## 4. Digital-to-Physical Resilience & Distributed Manufacturing
+
+*Digital assets must be designed with their physical "afterlife" in mind.*
+
+### The Strategy: Digital-to-Physical Resilience
+
+The goal is to ensure that digital assets are designed with their physical "afterlife" in mind:
 
 ### The Green Web Foundation
 

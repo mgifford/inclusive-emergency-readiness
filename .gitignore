@@ -50,3 +50,6 @@ Thumbs.db
 # Build artifacts
 dist/
 build/
+
+# Downloaded tools
+actionlint
