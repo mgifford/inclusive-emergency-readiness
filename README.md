@@ -19,6 +19,15 @@ This project serves as a living implementation of four critical pillars:
 3.  **Plain Language & Easy Read:** Cognitive accessibility to counter the "situational disability" of high-stress trauma.
 4.  **National Standards:** Direct alignment with **[CAN-ASC-6.4 (Emergency Measures)](https://accessible.canada.ca/creating-accessibility-standards/can-asc-64-emergency-measures)**.
 
+### 🏗️ Survival Web Design
+This site is built using **[Survival Web Design](./SURVIVAL_WEB_DESIGN.md)** principles:
+* **Static-First:** No heavy JavaScript or databases
+* **High-Contrast/Low-Data Mode:** Battery and bandwidth preservation
+* **Offline-First:** Progressive Web App (PWA) for offline access
+* **Print-Ready:** Emergency binder optimization
+
+👉 **[Read the full technical documentation](./SURVIVAL_WEB_DESIGN.md)** to understand how this site is architected for maximum resilience.
+
 ---
 
 ## 📂 Resource Highlights
@@ -50,7 +59,9 @@ This repository uses **GitHub Actions** to maintain the "Golden Record":
 We are building this to be forked and adapted by municipalities worldwide.
 * [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our technical commitment.
 * [**SUSTAINABILITY.md**](./SUSTAINABILITY.md) - Our performance manifesto.
+* [**SURVIVAL_WEB_DESIGN.md**](./SURVIVAL_WEB_DESIGN.md) - How this site is built for resilience.
 * [**AGENTS.md**](./AGENTS.md) - Instructions for AI and human contributors.
+* [**DEPLOYMENT.md**](./DEPLOYMENT.md) - Deployment and testing guide.
 
 ### Contributing to Standards
 We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. If you are a member of the standards committee, please open an Issue to discuss technical implementations.
