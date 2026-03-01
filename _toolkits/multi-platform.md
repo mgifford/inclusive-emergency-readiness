@@ -924,11 +924,12 @@ Update your platforms.
 ---
 
 <div class="alert alert-success">
-  <strong>Action Items:</strong>
-  <ul>
-    <li>Create accounts on Mastodon and Bluesky this week</li>
-    <li>Test your next post with a screen reader</li>
-    <li>Add alt text to all images in your media library</li>
-    <li>Train your team on accessibility basics</li>
-  </ul>
+  
+**Action Items:**
+
+- Create accounts on Mastodon and Bluesky this week
+- Test your next post with a screen reader
+- Add alt text to all images in your media library
+- Train your team on accessibility basics
+
 </div>

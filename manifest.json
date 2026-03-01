@@ -33,17 +33,17 @@
   "shortcuts": [
     {
       "name": "Disability Impacts",
-      "url": "/_disabilities/",
+      "url": "/disabilities/",
       "description": "How emergencies affect different disabilities"
     },
     {
       "name": "Emergency Templates",
-      "url": "/_templates/",
+      "url": "/templates/",
       "description": "Ready-to-use emergency alert templates"
     },
     {
       "name": "Toolkits",
-      "url": "/_toolkits/",
+      "url": "/toolkits/",
       "description": "Tactical guides for accessible communication"
     }
   ],

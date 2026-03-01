@@ -12,7 +12,7 @@ Emergency communication is not a feature—**it's infrastructure**.
 When disaster strikes, the digital divide becomes deadly.
 
 <div class="alert alert-danger">
-  <strong>Critical Reality:</strong> Every year, emergency alerts fail to reach people with disabilities. This guide exists to change that.
+  **Critical Reality:** Every year, emergency alerts fail to reach people with disabilities. This guide exists to change that.
 </div>
 
 ## What This Guide Offers

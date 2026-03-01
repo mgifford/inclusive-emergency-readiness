@@ -359,5 +359,5 @@ It's ensuring understanding.
 ---
 
 <div class="alert alert-success">
-  <strong>Quick Start:</strong> Take your next emergency alert. Apply the checklist. Cut it by 50%. Test it with someone. Repeat.
+  **Quick Start:** Take your next emergency alert. Apply the checklist. Cut it by 50%. Test it with someone. Repeat.
 </div>

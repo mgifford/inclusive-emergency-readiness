@@ -17,7 +17,7 @@ These templates follow:
 
 ### Evacuation Order Template
 
-[Read Full Template →](/_templates/alert-template.html)
+[Read Full Template →](/templates/alert-template/)
 
 **Use it for:** Mandatory evacuation orders when residents must leave immediately.
 
@@ -70,7 +70,7 @@ They incorporate best practices.
 ---
 
 <div class="alert alert-danger">
-  <strong>Critical:</strong> Print these templates now. Put them in your emergency operations binder. You won't have time to search during a crisis.
+  **Critical:** Print these templates now. Put them in your emergency operations binder. You won't have time to search during a crisis.
 </div>
 
 ## All Templates

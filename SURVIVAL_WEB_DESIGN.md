@@ -171,12 +171,12 @@ Located at `/manifest.json`:
   "shortcuts": [
     {
       "name": "Disability Impacts",
-      "url": "/_disabilities/",
+      "url": "/disabilities/",
       "description": "How emergencies affect different disabilities"
     },
     {
       "name": "Emergency Templates",
-      "url": "/_templates/",
+      "url": "/templates/",
       "description": "Ready-to-use emergency alert templates"
     }
   ]

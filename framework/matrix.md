@@ -314,7 +314,7 @@ None are optional.
 ---
 
 <div class="alert alert-success">
-  <strong>Pro Tip:</strong> Print this matrix. Reference it during emergency alert creation. Check all three columns for every alert.
+  **Pro Tip:** Print this matrix. Reference it during emergency alert creation. Check all three columns for every alert.
 </div>
 
 ## Additional Resources
