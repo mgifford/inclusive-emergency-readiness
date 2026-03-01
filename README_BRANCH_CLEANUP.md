@@ -20,6 +20,7 @@ This method is safest and provides an audit trail.
 Run the automated cleanup script locally:
 
 ```bash
+chmod +x cleanup-branches.sh  # Make executable (first time only)
 ./cleanup-branches.sh
 ```
 
@@ -47,7 +48,7 @@ gh api repos/mgifford/inclusive-emergency-readiness/git/refs/heads/BRANCH_NAME -
 
 Replace `BRANCH_NAME` with each branch from the list in `BRANCH_CLEANUP.md`.
 
-## After PR #16 Merges
+## After This PR Merges
 
 Once this PR is merged to `main`, remember to delete this PR's branch too:
 

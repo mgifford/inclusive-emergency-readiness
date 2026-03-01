@@ -2,6 +2,10 @@
 
 # Branch Cleanup Script for inclusive-emergency-readiness
 # This script deletes all non-main branches from the repository
+#
+# Usage: 
+#   chmod +x cleanup-branches.sh  # Make executable (first time only)
+#   ./cleanup-branches.sh          # Run the script
 
 set -e
 
