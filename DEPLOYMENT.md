@@ -4,6 +4,11 @@
 
 This guide explains how to deploy and maintain this Jekyll-based emergency communication resource.
 
+> **Important**: Before contributing, review our governance documents:
+> - [AGENTS.md](AGENTS.md) - Protocols for AI and human contributors
+> - [ACCESSIBILITY.md](ACCESSIBILITY.md) - Our accessibility commitment
+> - [SUSTAINABILITY.md](SUSTAINABILITY.md) - Performance and resilience standards
+
 ## Prerequisites
 
 - Ruby 2.7 or higher
@@ -304,13 +309,29 @@ Workflows run automatically:
 
 ### Contributing
 
-See [README.md](README.md) for contribution guidelines.
+Before contributing, please review our governance documents:
+- **[AGENTS.md](AGENTS.md)** - Protocols and constraints for contributors
+  - Technical mandates (500KB page limit, Grade 6 reading level)
+  - Automated workflows and quality checks
+  - Disability-specific design requirements
+- **[ACCESSIBILITY.md](ACCESSIBILITY.md)** - Accessibility standards and commitment
+  - WCAG 2.2 Level AA minimum requirement
+  - Emergency-specific features (One Idea Per Line)
+  - Feedback process for accessibility barriers
+- **[SUSTAINABILITY.md](SUSTAINABILITY.md)** - Performance and resilience standards
+  - Low-bandwidth mandate
+  - Energy preservation guidelines
+  - Asset optimization requirements
+
+See [README.md](README.md) for general contribution information.
 
 All contributions must:
-- Follow accessibility guidelines
-- Use plain language
+- Follow accessibility guidelines (WCAG 2.2 Level AA)
+- Use plain language (Grade 6 reading level target)
+- Stay under 500KB page weight
 - Include tests when applicable
 - Be documented
+- Pass automated Link-Rot and Readability checks
 
 ## Security
 
@@ -335,7 +356,9 @@ bundle update jekyll
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) file.
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). See [LICENSE](LICENSE) file for details.
+
+This license maximizes sharing and adaptation of emergency preparedness information worldwide.
 
 ## Credits
 

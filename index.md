@@ -33,6 +33,11 @@ This guide shows you how.
 
 Plus: **Plain Language** and **Easy Read** for cognitive accessibility.
 
+> **📋 Project Governance**: Review our operational standards:
+> - [ACCESSIBILITY.md](ACCESSIBILITY.md) - Our accessibility commitment and standards
+> - [SUSTAINABILITY.md](SUSTAINABILITY.md) - Performance and resilience requirements
+> - [AGENTS.md](AGENTS.md) - Protocols for contributors (AI and human)
+
 ## Quick Start Guides
 
 <div class="quick-start-grid">

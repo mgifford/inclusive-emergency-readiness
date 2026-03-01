@@ -48,10 +48,14 @@ inclusive-emergency-readiness/
 ├── toolkits/                  # Section: Toolkits
 │   └── index.md              # Toolkits overview page
 ├── .gitignore                 # Git ignore rules
+├── ACCESSIBILITY.md           # Accessibility statement and commitment
+├── AGENTS.md                  # Governance protocols for contributors
 ├── DEPLOYMENT.md              # Deployment guide
 ├── Gemfile                    # Ruby dependencies
-├── LICENSE                    # MIT License
-├── README.md                  # Project manifesto and guide
+├── LICENSE                    # CC-BY-4.0 License
+├── README.md                  # Project hub with links to guidance
+├── STRUCTURE.md               # Project structure documentation
+├── SUSTAINABILITY.md          # Sustainability and resilience statement
 ├── index.md                   # Home page
 ├── manifest.json              # PWA manifest
 └── offline.html               # Offline fallback page
@@ -65,6 +69,26 @@ inclusive-emergency-readiness/
 - **Gemfile**: Ruby gem dependencies
 - **manifest.json**: Progressive Web App configuration
 - **.gitignore**: Files to exclude from version control
+
+### Guidance Documents
+
+- **README.md**: Project hub with badges and links to detailed guidance
+- **AGENTS.md**: Operational protocols for AI agents and human contributors
+  - Technical mandates (WSG 1.0, WCAG 2.2, Plain Language)
+  - Autonomous workflows (Link-Rot Guard, Emergency Mode Linter)
+  - Disability-specific alignment matrix
+  - Regulatory alignment (CAN-ASC-6.4, EN 301 549)
+- **ACCESSIBILITY.md**: Formal accessibility statement
+  - Commitment to WCAG 2.2 Level AA/AAA
+  - Key features for emergencies (One Idea Per Line, Digital-to-Physical)
+  - Feedback and remediation process
+- **SUSTAINABILITY.md**: Sustainability and resilience statement
+  - Low-bandwidth mandate (<500KB pages)
+  - Energy preservation strategies
+  - Link rot prevention and Archive.org integration
+- **DEPLOYMENT.md**: Deployment and maintenance guide
+- **STRUCTURE.md**: This file - project structure documentation
+- **LICENSE**: Creative Commons Attribution 4.0 International (CC-BY-4.0)
 
 ### Content Files
 
@@ -325,7 +349,7 @@ Target performance:
 
 ## License
 
-MIT License - See LICENSE file for details.
+Creative Commons Attribution 4.0 International (CC-BY-4.0) - See LICENSE file for details.
 
 ## Contributing
 
