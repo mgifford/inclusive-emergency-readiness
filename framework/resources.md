@@ -287,7 +287,7 @@ This reduces mental load.
 
 #### ScienceDirect: Advances in Inclusive Disaster Technology (2025)
 
-**Link:** [ScienceDirect Research](https://www.sciencedirect.com/science/article/abs/pii/S2212420925004054){:target="_blank" rel="noopener noreferrer"}
+**Link:** [ScienceDirect Research (2025)](https://www.sciencedirect.com/science/article/abs/pii/S2212420925004054){:target="_blank" rel="noopener noreferrer"}
 
 **Useful For:** Peer-reviewed data on emerging technologies (AI and IoT) for disaster resilience.
 
@@ -297,7 +297,7 @@ This reduces mental load.
 
 #### Springer: Universal Access in Emergency Digital Interfaces (2025)
 
-**Link:** [Springer Research](https://link.springer.com/article/10.1007/s10209-025-01242-2){:target="_blank" rel="noopener noreferrer"}
+**Link:** [Springer Research (2025)](https://link.springer.com/article/10.1007/s10209-025-01242-2){:target="_blank" rel="noopener noreferrer"}
 
 **Useful For:** Analyzing usability of digital emergency interfaces under stress.
 
