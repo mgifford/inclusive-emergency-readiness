@@ -723,21 +723,21 @@ Before posting any emergency alert:
 
 #### Accessibility Guidelines
 
-- **Section 508** - Federal social media accessibility standards
-- **WCAG 2.2** - Web Content Accessibility Guidelines
-- **Accessible Social** - Social media accessibility best practices
+- **[Section 508](https://www.section508.gov/)** - Federal social media accessibility standards
+- **[WCAG 2.2](https://www.w3.org/WAI/WCAG22/quickref/)** - Web Content Accessibility Guidelines
+- **[Accessible Social](https://www.accessible-social.com/)** - Social media accessibility best practices
 
 #### Testing Tools
 
-- **WebAIM Contrast Checker** - Test color contrast ratios
-- **WAVE** - Web accessibility evaluation
-- **axe DevTools** - Browser accessibility testing
-- **Color Oracle** - Color blindness simulator
+- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)** - Test color contrast ratios
+- **[WAVE](https://wave.webaim.org/)** - Web accessibility evaluation
+- **[axe DevTools](https://www.deque.com/axe/devtools/)** - Browser accessibility testing
+- **[Color Oracle](https://colororacle.org/)** - Color blindness simulator
 
 #### Alt Text Guides
 
-- **X/Twitter Accessibility** - Platform-specific guidance
-- **Microsoft Accessibility** - Alt text best practices
+- **[X/Twitter Accessibility](https://help.twitter.com/en/using-twitter/accessibility-features)** - Platform-specific guidance
+- **[Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)** - Alt text best practices
 
 ## Content Adaptation
 
@@ -915,10 +915,10 @@ Update your platforms.
 
 ### Testing and Validation
 
-- **WAVE Browser Extension** - Free accessibility testing
-- **WebAIM Contrast Checker** - Color contrast validation
-- **Hemingway Editor** - Plain language checking
-- **NVDA Screen Reader** - Free Windows screen reader
+- **[WAVE Browser Extension](https://wave.webaim.org/extension/)** - Free accessibility testing
+- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)** - Color contrast validation
+- **[Hemingway Editor](https://hemingwayapp.com/)** - Plain language checking
+- **[NVDA Screen Reader](https://www.nvaccess.org/)** - Free Windows screen reader
 
 ---
 
