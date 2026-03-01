@@ -31,8 +31,6 @@ The script will:
 
 **Requires:** GitHub CLI (`gh`) installed and authenticated
 
-**Requires:** GitHub CLI (`gh`) installed and authenticated
-
 ## Method 3: Manual Deletion via GitHub Web UI
 
 1. Go to https://github.com/mgifford/inclusive-emergency-readiness/branches
@@ -82,7 +80,7 @@ main
 The Copilot agent operates with limited GitHub permissions for security. While it can create and modify files, it cannot delete remote branches directly. This requires either:
 - Repository admin running the script with authenticated `gh` CLI
 - Manual deletion via GitHub web interface
-- GitHub Actions workflow (not implemented to avoid accidental deletion)
+- GitHub Actions workflow (provided in this PR for safe, auditable deletion)
 
 ## Safety Notes
 
