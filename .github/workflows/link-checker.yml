@@ -1,6 +1,6 @@
 name: Link Rot Guard
 
-# Purpose: Weekly check of all external URLs
+# Purpose: Weekly check of all external URLs in markdown files AND deployed website
 # If a link fails, automatically append or replace with Wayback Machine snapshot
 
 on:
@@ -10,8 +10,11 @@ on:
   workflow_dispatch: # Allow manual triggers
 
 jobs:
-  check-links:
+  check-markdown-links:
+    name: Check Markdown Source Links
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
       - name: Checkout repository
@@ -30,7 +33,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y curl jq
       
-      - name: Check all links
+      - name: Check all links in markdown
         id: link-check
         run: |
           # Find all markdown files
@@ -60,42 +63,213 @@ jobs:
           done < urls.txt
         continue-on-error: true
       
-      - name: Create report
-        id: create-report
+      - name: Create markdown source report
+        id: create-markdown-report
         run: |
           if [ -f .link-check-results/failed-links.txt ]; then
             echo "failed=true" >> $GITHUB_OUTPUT
             
             # Create detailed report
-            cat > .link-check-results/report.md << 'EOF'
-          # Link Rot Guard Report
+            cat > .link-check-results/markdown-report.md << 'EOF'
+          ## Failed Links in Markdown Source Files
           
-          ## Failed Links
-          
-          The following links are no longer accessible:
+          The following links in markdown files are no longer accessible:
           
           EOF
             
-            cat .link-check-results/failed-links.txt >> .link-check-results/report.md
+            cat .link-check-results/failed-links.txt >> .link-check-results/markdown-report.md
             
-            echo "" >> .link-check-results/report.md
-            echo "## Recommended Actions" >> .link-check-results/report.md
-            echo "" >> .link-check-results/report.md
-            echo "1. Review each failed link" >> .link-check-results/report.md
-            echo "2. Replace with Wayback Machine archive URL if appropriate" >> .link-check-results/report.md
-            echo "3. Find alternative current sources" >> .link-check-results/report.md
-            echo "4. Remove links that are no longer relevant" >> .link-check-results/report.md
+            echo "" >> .link-check-results/markdown-report.md
+            echo "### Recommended Actions" >> .link-check-results/markdown-report.md
+            echo "" >> .link-check-results/markdown-report.md
+            echo "1. Review each failed link" >> .link-check-results/markdown-report.md
+            echo "2. Replace with Wayback Machine archive URL if appropriate" >> .link-check-results/markdown-report.md
+            echo "3. Find alternative current sources" >> .link-check-results/markdown-report.md
+            echo "4. Remove links that are no longer relevant" >> .link-check-results/markdown-report.md
           else
             echo "failed=false" >> $GITHUB_OUTPUT
           fi
       
-      - name: Create issue for failed links
-        if: steps.create-report.outputs.failed == 'true'
+      - name: Upload markdown check artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: markdown-link-check-results
+          path: .link-check-results/
+          retention-days: 30
+  
+  check-website-links:
+    name: Check Deployed Website Links
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Check website links with Lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          # Check the deployed GitHub Pages site
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,204,301,302,307,308,429
+            --timeout 30
+            --max-redirects 10
+            --exclude-mail
+            --exclude 'linkedin.com'
+            --exclude 'twitter.com'
+            --exclude 'facebook.com'
+            https://mgifford.github.io/inclusive-emergency-readiness/
+          format: markdown
+          output: .lychee-results/website-report.md
+          jobSummary: true
+          fail: false
+        # Note: 429 (Too Many Requests) is accepted to avoid false positives when
+        # external emergency services are under heavy load. Rate-limiting is common
+        # during disasters and shouldn't mark links as broken.
+      
+      - name: Process website check results
+        id: process-website-results
+        run: |
+          mkdir -p .lychee-results
+          
+          # Create a marker file for easier downstream checking
+          echo "false" > .lychee-results/has_errors.txt
+          
+          # Check if there were any errors
+          # Note: This checks Lychee's markdown output format which uses ✗ for errors
+          # If Lychee changes format, update this detection logic
+          if [ -f .lychee-results/website-report.md ]; then
+            if grep -q "✗" .lychee-results/website-report.md 2>/dev/null; then
+              echo "true" > .lychee-results/has_errors.txt
+              echo "has_errors=true" >> $GITHUB_OUTPUT
+              
+              # Add Wayback Machine suggestions
+              cat >> .lychee-results/website-report.md << 'EOF'
+          
+          ---
+          
+          ## 📦 Wayback Machine Archive
+          
+          For any broken external links, consider using the Internet Archive's Wayback Machine:
+          
+          **Steps:**
+          1. Take the broken URL
+          2. Visit: `https://web.archive.org/web/BROKEN_URL_HERE`
+          3. Find the most recent snapshot
+          4. Replace the original link with the archived version
+          
+          **Example:**
+          - Original: `https://example.com/page`
+          - Archived: `https://web.archive.org/web/20231201000000/https://example.com/page`
+          
+          EOF
+            else
+              echo "has_errors=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "has_errors=false" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
+      
+      - name: Upload website check artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-link-check-results
+          path: .lychee-results/
+          retention-days: 30
+  
+  create-issue:
+    name: Create or Update Issue
+    needs: [check-markdown-links, check-website-links]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+    
+    steps:
+      - name: Download markdown results
+        uses: actions/download-artifact@v4
+        with:
+          name: markdown-link-check-results
+          path: .link-check-results/
+        continue-on-error: true
+      
+      - name: Download website results
+        uses: actions/download-artifact@v4
+        with:
+          name: website-link-check-results
+          path: .lychee-results/
+        continue-on-error: true
+      
+      - name: Create combined issue report
+        id: create-combined-report
+        run: |
+          cat > combined-report.md << 'EOF'
+          # 🔗 Link Rot Guard Report
+          
+          ## Overview
+          
+          This report checks for broken links in two places:
+          1. **Markdown source files** - Links in the repository
+          2. **Deployed website** - All links on https://mgifford.github.io/inclusive-emergency-readiness/
+          
+          ---
+          
+          EOF
+          
+          has_issues=false
+          
+          # Add markdown results
+          if [ -f .link-check-results/markdown-report.md ]; then
+            cat .link-check-results/markdown-report.md >> combined-report.md
+            has_issues=true
+          else
+            echo "## ✅ Markdown Source Files" >> combined-report.md
+            echo "" >> combined-report.md
+            echo "All links in markdown source files are working correctly." >> combined-report.md
+            echo "" >> combined-report.md
+          fi
+          
+          echo "---" >> combined-report.md
+          echo "" >> combined-report.md
+          
+          # Add website results
+          if [ -f .lychee-results/website-report.md ]; then
+            echo "## 🌐 Deployed Website" >> combined-report.md
+            echo "" >> combined-report.md
+            cat .lychee-results/website-report.md >> combined-report.md
+            
+            # Check the error marker file created by process-website-results step
+            if [ -f .lychee-results/has_errors.txt ] && grep -q "true" .lychee-results/has_errors.txt; then
+              has_issues=true
+            fi
+          else
+            echo "## ✅ Deployed Website" >> combined-report.md
+            echo "" >> combined-report.md
+            echo "All links on the deployed website are working correctly." >> combined-report.md
+            echo "" >> combined-report.md
+          fi
+          
+          if [ "$has_issues" = true ]; then
+            echo "has_issues=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_issues=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create or update issue for broken links
+        if: steps.create-combined-report.outputs.has_issues == 'true'
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const report = fs.readFileSync('.link-check-results/report.md', 'utf8');
+            const report = fs.readFileSync('combined-report.md', 'utf8');
             
             // Check if an open issue already exists
             const issues = await github.rest.issues.listForRepo({
@@ -105,39 +279,54 @@ jobs:
               labels: 'link-rot'
             });
             
+            const title = '🔗 Link Rot Detected';
+            const body = `${report}\n\n---\n*Automated check performed on ${new Date().toUTCString()}*\n*This issue was automatically created by the Link Rot Guard workflow.*`;
+            
             if (issues.data.length > 0) {
               // Update existing issue
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: body
+              });
+              
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issues.data[0].number,
-                body: `## Link Check Update - ${new Date().toISOString()}\n\n${report}`
+                body: `## 🔄 Link Check Update\n\n**Date:** ${new Date().toUTCString()}\n\nThe link checker has run again. The issue description has been updated with the latest results.`
               });
+              
+              console.log(`Updated existing issue #${issues.data[0].number}`);
             } else {
               // Create new issue
-              await github.rest.issues.create({
+              const newIssue = await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                title: '🔗 Link Rot Detected',
-                body: report,
+                title: title,
+                body: body,
                 labels: ['link-rot', 'maintenance']
               });
+              
+              console.log(`Created new issue #${newIssue.data.number}`);
             }
       
-      - name: Upload artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: link-check-results
-          path: .link-check-results/
-          retention-days: 30
-      
       - name: Summary
+        if: always()
         run: |
-          if [ -f .link-check-results/failed-links.txt ]; then
-            failed_count=$(grep -c "FAILED:" .link-check-results/failed-links.txt || echo "0")
-            echo "❌ Found $failed_count failed link(s)"
-            echo "📋 Issue created/updated with details"
+          if [ -f combined-report.md ]; then
+            # Check for errors using the same markers as earlier steps
+            if grep -q "FAILED:" combined-report.md 2>/dev/null || \
+               ([ -f .lychee-results/has_errors.txt ] && grep -q "true" .lychee-results/has_errors.txt 2>/dev/null); then
+              echo "❌ Broken links detected!"
+              echo "📋 Issue created/updated with details"
+              echo ""
+              echo "Please review the artifact for complete details."
+            else
+              echo "✅ All links are working!"
+              echo "🎉 Both markdown sources and deployed website have valid links."
+            fi
           else
-            echo "✅ All links are working!"
+            echo "⚠️  Could not generate combined report"
           fi
