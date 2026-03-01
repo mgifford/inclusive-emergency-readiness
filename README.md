@@ -1,2 +1,64 @@
-# inclusive-emergency-readiness
-Inclusive Emergency Readiness Guide
+# Inclusive Emergency Readiness Guide
+### An Open Resource for Resilient Emergency Communications
+
+[![Accessibility: WCAG 2.2 AA](https://img.shields.io/badge/Accessibility-WCAG%202.2%20AA-blue)](./ACCESSIBILITY.md)
+[![Sustainability: WSG 1.0](https://img.shields.io/badge/Sustainability-WSG%201.0-green)](./SUSTAINABILITY.md)
+[![License: CC-BY-4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
+
+In a disaster, the "disability-disaster gap" is a failure of infrastructure, not individuals. This guide is an open-source, low-bandwidth, and high-accessibility hub designed to bridge digital standards with physical survival needs.
+
+Our mission is to empower communications teams to create information that is **Reachable, Readable, and Resilient**—ensuring no one is left behind when the grid fails.
+
+---
+
+## 🚀 The Core Frameworks
+This project serves as a living implementation of four critical pillars:
+
+1.  **Accessibility (WCAG 2.2 / EN 301 549):** Technical compliance for screen readers and assistive tech.
+2.  **Sustainability (WSG 1.0):** "Survival UX" that minimizes data and battery drain on stressed networks.
+3.  **Plain Language & Easy Read:** Cognitive accessibility to counter the "situational disability" of high-stress trauma.
+4.  **National Standards:** Direct alignment with **[CAN-ASC-6.4 (Emergency Measures)](https://accessible.canada.ca/creating-accessibility-standards/can-asc-64-emergency-measures)**.
+
+---
+
+## 📂 Resource Highlights
+
+### 🧠 Cognitive Accessibility (Plain Language & Easy Read)
+* **[One Idea Per Line (ASAN)](https://autisticadvocacy.org/wp-content/uploads/2021/07/One-Idea-Per-Line.pdf):** The "survival layout" for neurodivergent users.
+* **[18F Content Guide](https://guides.18f.org/content-guide/our-approach/plain-language/):** Tactical ways to strip "bureaucratic-speak" from alerts.
+* **[Easy Read vs. Plain Language](https://informationaccessgroup.com/easy-read-versus-plain-language/):** Understanding the different levels of cognitive support.
+
+### 📡 Digital Resilience & Multi-Platform Strategy
+* **Beyond X/Twitter:** Strategies for decentralized outreach via **Mastodon, Bluesky, and SMS**.
+* **[FEMA: Putting People First](https://web.archive.org/web/20250118002914/https://www.fema.gov/sites/default/files/documents/fema_npd_planning-considerations-putting-people-first_2024.pdf):** Integrating the "Whole Community" into digital response.
+* **[King County Inclusive Comms](https://kingcounty.gov/en/dept/executive-services/governance-leadership/emergency-management/teams-committees/inclusive-communications):** A regional model for multi-channel, linguistically diverse alerts.
+
+### 🖨 Digital-to-Physical (The Offline Bridge)
+* **[Glia Open Source Medical Devices](https://glia.org/):** 3D-printing medical hardware when supply chains fail.
+* **[TMAP (Tactile Map Automated Production)](https://lighthouse-sf.org/tmap/):** Generating physical navigation tools for the blind from digital data.
+
+---
+
+## 🤖 Automated Governance
+This repository uses **GitHub Actions** to maintain the "Golden Record":
+* **Link-Rot Guard:** Weekly automated checks that move dead links to **Archive.org** snapshots.
+* **Clarity Linter:** Automated readability testing to ensure content stays at a **Grade 6** level.
+
+---
+
+## 🤝 How to Contribute
+We are building this to be forked and adapted by municipalities worldwide.
+* [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our technical commitment.
+* [**SUSTAINABILITY.md**](./SUSTAINABILITY.md) - Our performance manifesto.
+* [**AGENTS.md**](./AGENTS.md) - Instructions for AI and human contributors.
+
+### Contributing to Standards
+We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. If you are a member of the standards committee, please open an Issue to discuss technical implementations.
+
+---
+
+## 📜 License
+This project is licensed under the **Creative Commons Attribution 4.0 International (CC-BY-4.0)**. 
+
+***
+*"The most accessible information is the information that actually reaches the user when everything else fails."*
