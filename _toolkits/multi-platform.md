@@ -658,7 +658,7 @@ Before posting any emergency alert:
 - [ ] CamelCase hashtags
 - [ ] High contrast text on images (7:1 ratio)
 - [ ] Emoji used sparingly with text
-- [ ] Plain language (Grade 6-7 level)
+- [ ] Plain language (Grade 6, max 7.0 Flesch-Kincaid)
 - [ ] Key information in first sentence
 - [ ] Descriptive link text
 - [ ] Tested with screen reader
@@ -737,7 +737,7 @@ Before posting any emergency alert:
 #### Alt Text Guides
 
 - **[X/Twitter Accessibility](https://help.twitter.com/en/using-twitter/accessibility-features)** - Platform-specific guidance
-- **[Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)** - Alt text best practices
+- **[Microsoft Alt Text Guide](https://support.microsoft.com/en-us/office/everything-you-need-to-know-to-write-effective-alt-text-df98f884-ca3d-456c-807b-1a1fa82f5dc2)** - Alt text best practices
 
 ## Content Adaptation
 
