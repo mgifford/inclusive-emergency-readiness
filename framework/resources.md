@@ -512,7 +512,7 @@ Use them to build emergency systems that work when everything else fails.
 ---
 
 <div class="alert alert-success">
-  <strong>Quick Start:</strong> Download the <a href="https://autisticadvocacy.org/wp-content/uploads/2021/07/One-Idea-Per-Line.pdf" target="_blank" rel="noopener noreferrer">One Idea Per Line</a> guide today. Use it for your next emergency alert. See the difference right away.
+  **Quick Start:** Download the <a href="https://autisticadvocacy.org/wp-content/uploads/2021/07/One-Idea-Per-Line.pdf" target="_blank" rel="noopener noreferrer">One Idea Per Line</a> guide today. Use it for your next emergency alert. See the difference right away.
 </div>
 
 ## Related Framework Resources

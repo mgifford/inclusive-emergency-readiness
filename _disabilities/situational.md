@@ -446,7 +446,7 @@ Test under stress.
 ---
 
 <div class="alert alert-danger">
-  <strong>Critical Insight:</strong> Situational disabilities prove that accessibility isn't "for them." It's for everyone. It's for you when you're having the worst day of your life.
+  **Critical Insight:** Situational disabilities prove that accessibility isn't "for them." It's for everyone. It's for you when you're having the worst day of your life.
 </div>
 
 ## Resources

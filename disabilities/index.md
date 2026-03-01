@@ -19,7 +19,7 @@ This section shows you how—and what to do about it.
 
 ### Vision Disabilities
 
-[Read Full Guide →](/_disabilities/vision.html)
+[Read Full Guide →](/disabilities/vision/)
 
 **Impact:** Cannot see visual-only alerts, maps, signs, or low-contrast text.
 
@@ -29,7 +29,7 @@ This section shows you how—and what to do about it.
 
 ### Hearing Disabilities
 
-[Read Full Guide →](/_disabilities/hearing.html)
+[Read Full Guide →](/disabilities/hearing/)
 
 **Impact:** Cannot hear audio sirens, loudspeaker announcements, or phone calls.
 
@@ -39,7 +39,7 @@ This section shows you how—and what to do about it.
 
 ### Cognitive Disabilities
 
-[Read Full Guide →](/_disabilities/cognitive.html)
+[Read Full Guide →](/disabilities/cognitive/)
 
 **Impact:** Cannot process complex language, long instructions, or information overload.
 
@@ -49,7 +49,7 @@ This section shows you how—and what to do about it.
 
 ### Situational Disabilities
 
-[Read Full Guide →](/_disabilities/situational.html)
+[Read Full Guide →](/disabilities/situational/)
 
 **Impact:** Anyone can experience temporary disabilities during emergencies (stress, lost devices, language barriers).
 
@@ -87,10 +87,10 @@ In every emergency, you are communicating with:
 
 If you're new to accessibility in emergencies:
 
-1. **Read:** [Cognitive Disabilities](/_disabilities/cognitive.html) - Learn the "One Idea Per Line" principle
-2. **Apply:** [Plain Language Toolkit](/_toolkits/plain-language.html) - Write clear instructions
-3. **Check:** [Digital Egress Checklist](/_toolkits/digital-egress.html) - Test your website
-4. **Implement:** [Emergency Templates](/_templates/alert-template.html) - Use proven templates
+1. **Read:** [Cognitive Disabilities](/disabilities/cognitive/) - Learn the "One Idea Per Line" principle
+2. **Apply:** [Plain Language Toolkit](/toolkits/plain-language/) - Write clear instructions
+3. **Check:** [Digital Egress Checklist](/toolkits/digital-egress/) - Test your website
+4. **Implement:** [Emergency Templates](/templates/alert-template/) - Use proven templates
 
 ## The Bottom Line
 
@@ -107,7 +107,7 @@ Disability is human diversity.
 ---
 
 <div class="alert alert-success">
-  <strong>Quick Action:</strong> Pick one disability type. Read the guide. Apply one recommendation today.
+  **Quick Action:** Pick one disability type. Read the guide. Apply one recommendation today.
 </div>
 
 ## All Guides

@@ -320,5 +320,5 @@ Because they do.
 ---
 
 <div class="alert alert-danger">
-  <strong>Critical:</strong> Print this checklist. Put it in your emergency operations manual. Review it quarterly.
+  **Critical:** Print this checklist. Put it in your emergency operations manual. Review it quarterly.
 </div>
