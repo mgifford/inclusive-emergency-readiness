@@ -12,10 +12,14 @@ Emergency communication is not a feature—**it's infrastructure**.
 When disaster strikes, the digital divide becomes deadly.
 
 <div class="alert alert-danger">
-  **Critical Reality:** Every year, emergency alerts fail to reach people with disabilities. This guide exists to change that.
+  **Critical Reality:** Every year, emergency alerts fail to reach people with disabilities. We are building this guide to change that—together.
 </div>
 
-## What This Guide Offers
+## What This Guide Aspires to Offer
+
+This is a **community-driven resource** created by people with disabilities, emergency management professionals, accessibility specialists, and municipal teams working together.
+
+**We don't have all the answers.** We are learning from real emergencies, testing implementations, and continuously improving based on your feedback and expertise.
 
 ### For Government & Municipal Teams
 
@@ -23,9 +27,11 @@ You are responsible for emergency communication.
 
 You need to reach **everyone**.
 
-This guide shows you how.
+We aim to show you how—and we need your feedback to improve.
 
 ### Built on Three Frameworks
+
+We strive to align with:
 
 1. **WCAG 2.2 Level AA/AAA** - Technical accessibility standards
 2. **W3C Web Sustainability Guidelines (WSG) 1.0** - Low-bandwidth, high-resilience design  
@@ -34,9 +40,10 @@ This guide shows you how.
 Plus: **Plain Language** and **Easy Read** for cognitive accessibility.
 
 > **📋 Project Governance**: Review our operational standards:
-> - [ACCESSIBILITY.md](ACCESSIBILITY.md) - Our accessibility commitment and standards
-> - [SUSTAINABILITY.md](SUSTAINABILITY.md) - Performance and resilience requirements
-> - [AGENTS.md](AGENTS.md) - Protocols for contributors (AI and human)
+> - [ACCESSIBILITY.md]({{ '/ACCESSIBILITY.html' | relative_url }}) - Our accessibility commitment and standards
+> - [SUSTAINABILITY.md]({{ '/SUSTAINABILITY.html' | relative_url }}) - Performance and resilience requirements
+> - [CONTRIBUTING.md]({{ '/CONTRIBUTING.html' | relative_url }}) - How to help improve this guide
+> - [AGENTS.md]({{ '/AGENTS.html' | relative_url }}) - Protocols for contributors (AI and human)
 
 ## Quick Start Guides
   
@@ -62,26 +69,27 @@ Access the [Resource Directory]({{ '/framework/resources.html' | relative_url }}
 
 **CAN-ASC-6.4** is Canada's accessibility standard for Emergency Measures.
 
-This repository serves as a **living implementation** of what emergency systems should do.
+This repository aspires to serve as a **living implementation** of what emergency systems should do, based on real-world testing and community feedback.
 
 ### Why This Matters
 
 **For Standards Bodies:**
 - Evidence-based case study for "Sustainable ICT in Emergency Measures"
-- Concrete implementation examples
-- Open for testing and feedback
+- Concrete implementation examples for testing
+- Open for community feedback and iteration
 
 **For Municipalities:**
-- Fork this repository
+- Fork this repository to get started
 - Update with local information
 - Deploy better emergency communications
 - No need to start from scratch
-- Contribute to this resource
+- **Please contribute your learnings back** to help others
 
 **For Researchers:**
 - Real-world data on accessibility metrics
 - Automated testing results
 - Community feedback integration
+- Case studies of what works (and what doesn't)
 
 👉 **[Read the full CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }})**
 
@@ -229,6 +237,24 @@ Grade 6+ reading level triggers warnings.
 
 ---
 
+## Help Us Improve This Guide
+
+**We need your expertise.**
+
+This guide aspires to be comprehensive, accurate, and trustworthy—but we can only get there with community input.
+
+### We Especially Value:
+
+✅ **People with disabilities** - Your lived experience is essential  
+✅ **Emergency professionals** - Share what actually works in disasters  
+✅ **Municipal teams** - Tell us what you need for implementation  
+✅ **Accessibility specialists** - Help us meet and exceed standards
+
+**Ready to contribute?** Read our [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}) to get started.
+
+**Found a barrier?** [Open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues) labeled `accessibility-barrier` for priority review.
+
+---
 
 **Start Here:** If you're new to accessibility, begin with [Cognitive Disabilities in Emergencies]({{ '/disabilities/cognitive.html' | relative_url }}). It explains the "One Idea Per Line" principle that guides this entire guide.
 

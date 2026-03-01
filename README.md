@@ -1,23 +1,27 @@
 # Inclusive Emergency Readiness Guide
-### An Open Resource for Resilient Emergency Communications
+### A Community Resource Aspiring to Comprehensive Emergency Communications
 
 [![Accessibility: WCAG 2.2 AA](https://img.shields.io/badge/Accessibility-WCAG%202.2%20AA-blue)](./ACCESSIBILITY.md)
 [![Sustainability: WSG 1.0](https://img.shields.io/badge/Sustainability-WSG%201.0-green)](./SUSTAINABILITY.md)
 [![License: CC-BY-4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
-In a disaster, the "disability-disaster gap" is a failure of infrastructure, not individuals. This guide is an open-source, low-bandwidth, and high-accessibility hub designed to bridge digital standards with physical survival needs.
+In a disaster, the "disability-disaster gap" is a failure of infrastructure, not individuals. This guide is a community-driven, open-source effort to bridge digital standards with physical survival needs through low-bandwidth, high-accessibility emergency communications.
 
-Our mission is to empower communications teams to create information that is **Reachable, Readable, and Resilient**—ensuring no one is left behind when the grid fails.
+**We are building this together.** Our aspiration is to create resources that empower communications teams to develop information that is **Reachable, Readable, and Resilient**—ensuring no one is left behind when the grid fails.
+
+**This guide needs your expertise.** We especially value contributions from people with disabilities and emergency management professionals who have built tools for real disaster situations.
 
 ---
 
 ## 🚀 The Core Frameworks
-This project serves as a living implementation of four critical pillars:
+This project aspires to be a living implementation of four critical pillars:
 
-1.  **Accessibility (WCAG 2.2 / EN 301 549):** Technical compliance for screen readers and assistive tech.
-2.  **Sustainability (WSG 1.0):** "Survival UX" that minimizes data and battery drain on stressed networks.
-3.  **Plain Language & Easy Read:** Cognitive accessibility to counter the "situational disability" of high-stress trauma.
-4.  **National Standards:** Direct alignment with **[CAN-ASC-6.4 (Emergency Measures)](https://accessible.canada.ca/creating-accessibility-standards/can-asc-64-emergency-measures)**.
+1.  **Accessibility (WCAG 2.2 / EN 301 549):** Technical compliance for screen readers and assistive tech
+2.  **Sustainability (WSG 1.0):** "Survival UX" that minimizes data and battery drain on stressed networks
+3.  **Plain Language & Easy Read:** Cognitive accessibility to counter the "situational disability" of high-stress trauma
+4.  **National Standards:** Alignment with **[CAN-ASC-6.4 (Emergency Measures)](https://accessible.canada.ca/creating-accessibility-standards/can-asc-64-emergency-measures)**
+
+We strive to implement these standards based on real-world testing and community feedback.
 
 ### 🏗️ Survival Web Design
 This site is built using **[Survival Web Design](./SURVIVAL_WEB_DESIGN.md)** principles:
@@ -58,22 +62,34 @@ This repository uses **GitHub Actions** to maintain the "Golden Record":
 ---
 
 ## 🤝 How to Contribute
-We are building this to be forked and adapted by municipalities worldwide.
-* [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our technical commitment.
-* [**SUSTAINABILITY.md**](./SUSTAINABILITY.md) - Our performance manifesto.
-* [**SURVIVAL_WEB_DESIGN.md**](./SURVIVAL_WEB_DESIGN.md) - How this site is built for resilience.
-* [**AGENTS.md**](./AGENTS.md) - Instructions for AI and human contributors.
-* [**DEPLOYMENT.md**](./DEPLOYMENT.md) - Deployment and testing guide.
+
+**We need your help to make this guide comprehensive, accurate, and trustworthy.**
+
+This is a community-driven project that welcomes contributions from:
+* **People with disabilities** - Your lived experience is essential
+* **Emergency management professionals** - Share what works in real disasters
+* **Accessibility specialists** - Help us meet and exceed standards
+* **Municipal teams** - Tell us what you need for implementation
+* **Anyone** who wants to help make emergency communications more inclusive
+
+👉 **[Read the full Contributing Guide](./CONTRIBUTING.md)** to get started.
+
+We are building this to be forked and adapted by municipalities worldwide:
+* [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our technical commitment
+* [**SUSTAINABILITY.md**](./SUSTAINABILITY.md) - Our performance requirements
+* [**SURVIVAL_WEB_DESIGN.md**](./SURVIVAL_WEB_DESIGN.md) - How this site is built for resilience
+* [**AGENTS.md**](./AGENTS.md) - Protocols for AI and human contributors
+* [**DEPLOYMENT.md**](./DEPLOYMENT.md) - Deployment and testing guide
 
 ### Contributing to Standards
-We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. 
+We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. This repository serves as a functional prototype and testing ground.
 
-**New Resources:**
-* [**CAN-ASC-6.4 Case Study**](./framework/can-asc-case-study.html) - How this repository serves as a functional prototype for Emergency Measures standards
+**Implementation Resources:**
+* [**CAN-ASC-6.4 Case Study**](./framework/can-asc-case-study.html) - How this repository serves as a prototype for Emergency Measures standards
 * [**Fork Guide for Municipalities**](./framework/fork-guide.html) - Step-by-step guide to adapt this for your local area
 * [**Understanding Workflows**](./framework/workflows-guide.html) - Guide to automated checks and CI workflows
 
-If you are a member of the standards committee, please open an Issue to discuss technical implementations.
+If you are a member of the standards committee or have expertise in emergency management, **please open an Issue** to discuss technical implementations and share your experience.
 
 ---
 
