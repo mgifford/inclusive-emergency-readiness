@@ -44,7 +44,7 @@ The logo features:
 
 ### Social Media Card
 - **File:** `assets/images/social-card.png`
-- **Dimensions:** 1200×630px
+- **Dimensions:** 1200×530px
 - **Size:** 76KB
 - **Usage:** Open Graph (Facebook), Twitter Card previews
 
