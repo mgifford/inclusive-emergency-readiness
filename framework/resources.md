@@ -1,17 +1,19 @@
 ---
 layout: default
-title: "Global Standards & Cognitive Accessibility Resources"
+title: "Resource Directory: Global Standards & Accessibility"
 category: framework
-summary: "A curated directory of global standards, academic research, and practical toolkits for emergency preparedness that is reachable, readable, and resilient."
+summary: "A comprehensive directory of global standards, research, and practical tools for accessible, sustainable, and resilient emergency preparedness."
 reading_level: "Grade 6"
 last_updated: 2026-03-01
 ---
 
-# Resource Directory: Global Standards & Cognitive Accessibility
+# Resource Directory: Global Standards & Accessibility
 
-This page links to important resources.
+This page links to important resources for emergency communication.
 
 These resources help you make emergency information that everyone can use.
+
+They cover accessibility, sustainability, plain language, digital-to-physical resilience, and multi-platform communications.
 
 ---
 
@@ -433,6 +435,17 @@ Use this matrix to check resources on your site:
 1. **Build to Standards:** WCAG 2.2 Level AA minimum
 2. **Optimize for Crisis:** WSG 1.0 for low-bandwidth situations
 3. **Test Resilience:** Make sure content works offline and on old devices
+
+---
+
+## Summary: Multi-Platform Digital Redundancy Checklist
+
+Based on these resources, an inclusive digital strategy should move beyond a single platform and include:
+
+1. **Platform Diversity:** Simultaneous posting to **Facebook, Mastodon, Bluesky**, and local community boards.
+2. **SMS/Text-to-911:** Ensuring that the primary emergency contact method is accessible to non-verbal and Deaf users.
+3. **Cross-Device Compatibility:** Ensuring alerts function across mobile, desktop, and wearable tech (haptics).
+4. **Translation & Plain Language:** Real-time translation capabilities and Grade 6 reading level for all public-facing alerts.
 
 ---
 

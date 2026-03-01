@@ -1,22 +1,22 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
   <ul>
     <li>
-      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
     </li>
     <li>
-      <a href="/disabilities/" {% if page.url contains "/disabilities/" %}aria-current="page"{% endif %}>Disability Impacts</a>
+      <a href="{{ '/disabilities/' | relative_url }}" {% if page.url contains "/disabilities/" %}aria-current="page"{% endif %}>Disability Impacts</a>
     </li>
     <li>
-      <a href="/framework/matrix.html" {% if page.url == "/framework/matrix.html" %}aria-current="page"{% endif %}>Framework Matrix</a>
+      <a href="{{ '/framework/matrix.html' | relative_url }}" {% if page.url == "/framework/matrix.html" %}aria-current="page"{% endif %}>Framework Matrix</a>
     </li>
     <li>
-      <a href="/framework/resources.html" {% if page.url == "/framework/resources.html" %}aria-current="page"{% endif %}>Resources</a>
+      <a href="{{ '/framework/resources.html' | relative_url }}" {% if page.url == "/framework/resources.html" %}aria-current="page"{% endif %}>Resources</a>
     </li>
     <li>
-      <a href="/toolkits/" {% if page.url contains "/toolkits/" %}aria-current="page"{% endif %}>Toolkits</a>
+      <a href="{{ '/toolkits/' | relative_url }}" {% if page.url contains "/toolkits/" %}aria-current="page"{% endif %}>Toolkits</a>
     </li>
     <li>
-      <a href="/templates/" {% if page.url contains "/templates/" %}aria-current="page"{% endif %}>Templates</a>
+      <a href="{{ '/templates/' | relative_url }}" {% if page.url contains "/templates/" %}aria-current="page"{% endif %}>Templates</a>
     </li>
   </ul>
 </nav>
