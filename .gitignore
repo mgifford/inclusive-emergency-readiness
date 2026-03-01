@@ -17,6 +17,8 @@ _site/
 /test/version_tmp/
 /tmp/
 Gemfile.lock
+vendor/bundle/
+.bundle/
 
 # Node
 node_modules/
