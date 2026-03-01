@@ -198,8 +198,8 @@ const CACHE_NAME = 'resilience-comms-v1';
 const PRECACHE_URLS = [
   '/',
   '/offline.html',
-  '/assets/css/emergency.scss',
-  '/assets/css/print.scss',
+  '/assets/css/emergency.css',
+  '/assets/css/print.css',
   '/manifest.json'
 ];
 
@@ -271,7 +271,7 @@ Located at `/assets/css/print.scss`:
     size: letter;
     
     @bottom-right {
-      content: "Page " counter(page) " of " counter(pages);
+      content: "Page " counter(page);
     }
     
     @bottom-left {
@@ -346,7 +346,7 @@ a[href^="#"]:after {
 }
 
 .alert::before {
-  content: "⚠ IMPORTANT: ";
+  content: "IMPORTANT: ";
   font-weight: bold;
 }
 
@@ -355,7 +355,7 @@ a[href^="#"]:after {
 }
 
 .alert-danger::before {
-  content: "⚠⚠ CRITICAL: ";
+  content: "CRITICAL: ";
 }
 
 // Emergency contact boxes
@@ -364,12 +364,14 @@ a[href^="#"]:after {
   padding: 8pt;
   
   &::before {
-    content: "☎ EMERGENCY CONTACT: ";
+    content: "EMERGENCY CONTACT: ";
     font-weight: bold;
     font-size: 14pt;
   }
 }
 ```
+
+**Note:** Unicode symbols (⚠, ☎) should be included in the HTML markup with appropriate ARIA labels, not generated via CSS `::before` content, to ensure screen reader compatibility. The actual print.scss file includes these symbols for visual distinction in printed documents, but the HTML should contain semantic markup.
 
 **Hide Non-Essential Elements:**
 ```scss
