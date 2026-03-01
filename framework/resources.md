@@ -517,12 +517,12 @@ Use them to build emergency systems that work when everything else fails.
 
 ## Related Framework Resources
 
-- [Framework Matrix: WCAG, WSG & Plain Language](/framework/matrix.html) - See how these standards work together
-- [CAN-ASC-6.4 Case Study](/framework/can-asc-case-study.html) - How this repository supports Emergency Measures standards
-- [Fork Guide for Municipalities](/framework/fork-guide.html) - Adapt this project for your area
-- [Understanding Workflows](/framework/workflows-guide.html) - Guide to automated checks
-- [Plain Language Toolkit](/toolkits/plain-language.html) - Step-by-step guide
-- [Cognitive Disabilities in Emergencies](/disabilities/cognitive.html) - Understand the impact
+- [Framework Matrix: WCAG, WSG & Plain Language]({{ '/framework/matrix.html' | relative_url }}) - See how these standards work together
+- [CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }}) - How this repository supports Emergency Measures standards
+- [Fork Guide for Municipalities]({{ '/framework/fork-guide.html' | relative_url }}) - Adapt this project for your area
+- [Understanding Workflows]({{ '/framework/workflows-guide.html' | relative_url }}) - Guide to automated checks
+- [Plain Language Toolkit]({{ '/toolkits/plain-language.html' | relative_url }}) - Step-by-step guide
+- [Cognitive Disabilities in Emergencies]({{ '/disabilities/cognitive.html' | relative_url }}) - Understand the impact
 
 ---
 

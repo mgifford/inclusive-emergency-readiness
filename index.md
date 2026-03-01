@@ -41,19 +41,19 @@ Plus: **Plain Language** and **Easy Read** for cognitive accessibility.
 ## Quick Start Guides
   
 ### 🚨 Need an Emergency Alert NOW?
-Go to [Emergency Templates](/templates/) for ready-to-use alert templates.
+Go to [Emergency Templates]({{ '/templates/' | relative_url }}) for ready-to-use alert templates.
 
 ### 📚 Understanding Disability Impacts
-Explore [The Disability Spectrum](/disabilities/) to learn how emergencies affect different communities.
+Explore [The Disability Spectrum]({{ '/disabilities/' | relative_url }}) to learn how emergencies affect different communities.
 
 ### 🛠️ Building Accessible Content
-Check out [Tactical Toolkits](/toolkits/) for step-by-step implementation guides.
+Check out [Tactical Toolkits]({{ '/toolkits/' | relative_url }}) for step-by-step implementation guides.
 
 ### 📊 Meeting Standards
-Review the [Framework Matrix](/framework/matrix.html) for WCAG/WSG/Plain Language crosswalks.
+Review the [Framework Matrix]({{ '/framework/matrix.html' | relative_url }}) for WCAG/WSG/Plain Language crosswalks.
 
 ### 📖 Global Standards & Resources
-Access the [Resource Directory](/framework/resources.html) for global academic research and practical toolkits.
+Access the [Resource Directory]({{ '/framework/resources.html' | relative_url }}) for global academic research and practical toolkits.
 
 
 ---
@@ -83,9 +83,9 @@ This repository serves as a **living implementation** of what emergency systems 
 - Automated testing results
 - Community feedback integration
 
-👉 **[Read the full CAN-ASC-6.4 Case Study](/framework/can-asc-case-study.html)**
+👉 **[Read the full CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }})**
 
-👉 **[Fork Guide for Municipalities](/framework/fork-guide.html)**
+👉 **[Fork Guide for Municipalities]({{ '/framework/fork-guide.html' | relative_url }})**
 
 ### Digital Egress: A New Concept
 
@@ -98,7 +98,7 @@ Just as buildings have physical fire exits, websites need **Digital Egress**.
 2. Read it stressed (Grade 6 language)
 3. Save it offline (works without internet)
 
-👉 **[Digital Egress Checklist](/toolkits/digital-egress.html)**
+👉 **[Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})**
 
 ---
 
@@ -110,7 +110,7 @@ This repository uses GitHub Actions to maintain quality.
 
 **Seeing readability warnings?** That's intentional - they help us maintain plain language.
 
-👉 **[Understanding Workflows Guide](/framework/workflows-guide.html)**
+👉 **[Understanding Workflows Guide]({{ '/framework/workflows-guide.html' | relative_url }})**
 
 
 ## Why Accessibility Matters in Emergencies
@@ -186,19 +186,19 @@ This site follows "Survival Web Design" principles:
 ## How to Use This Guide
 
 ### 1. Learn
-Read [The Disability Spectrum](/disabilities/) to understand impacts.
+Read [The Disability Spectrum]({{ '/disabilities/' | relative_url }}) to understand impacts.
 
 ### 2. Plan
-Review the [Framework Matrix](/framework/matrix.html) to meet standards.
+Review the [Framework Matrix]({{ '/framework/matrix.html' | relative_url }}) to meet standards.
 
 ### 3. Build
-Use [Tactical Toolkits](/toolkits/) for implementation.
+Use [Tactical Toolkits]({{ '/toolkits/' | relative_url }}) for implementation.
 
 ### 4. Deploy
-Adapt [Emergency Templates](/templates/) for your community.
+Adapt [Emergency Templates]({{ '/templates/' | relative_url }}) for your community.
 
 ### 5. Test
-Run the [Digital Egress Checklist](/toolkits/digital-egress.html) before go-live.
+Run the [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }}) before go-live.
 
 ## Automated Quality
 
@@ -230,5 +230,5 @@ Grade 6+ reading level triggers warnings.
 ---
 
 
-**Start Here:** If you're new to accessibility, begin with [Cognitive Disabilities in Emergencies](/disabilities/cognitive.html). It explains the "One Idea Per Line" principle that guides this entire guide.
+**Start Here:** If you're new to accessibility, begin with [Cognitive Disabilities in Emergencies]({{ '/disabilities/cognitive.html' | relative_url }}). It explains the "One Idea Per Line" principle that guides this entire guide.
 

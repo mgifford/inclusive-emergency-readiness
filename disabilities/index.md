@@ -19,7 +19,7 @@ This section shows you how—and what to do about it.
 
 ### Vision Disabilities
 
-[Read Full Guide →](/disabilities/vision/)
+[Read Full Guide →]({{ '/disabilities/vision/' | relative_url }})
 
 **Impact:** Cannot see visual-only alerts, maps, signs, or low-contrast text.
 
@@ -29,7 +29,7 @@ This section shows you how—and what to do about it.
 
 ### Hearing Disabilities
 
-[Read Full Guide →](/disabilities/hearing/)
+[Read Full Guide →]({{ '/disabilities/hearing/' | relative_url }})
 
 **Impact:** Cannot hear audio sirens, loudspeaker announcements, or phone calls.
 
@@ -39,7 +39,7 @@ This section shows you how—and what to do about it.
 
 ### Cognitive Disabilities
 
-[Read Full Guide →](/disabilities/cognitive/)
+[Read Full Guide →]({{ '/disabilities/cognitive/' | relative_url }})
 
 **Impact:** Cannot process complex language, long instructions, or information overload.
 
@@ -49,7 +49,7 @@ This section shows you how—and what to do about it.
 
 ### Situational Disabilities
 
-[Read Full Guide →](/disabilities/situational/)
+[Read Full Guide →]({{ '/disabilities/situational/' | relative_url }})
 
 **Impact:** Anyone can experience temporary disabilities during emergencies (stress, lost devices, language barriers).
 
@@ -87,10 +87,10 @@ In every emergency, you are communicating with:
 
 If you're new to accessibility in emergencies:
 
-1. **Read:** [Cognitive Disabilities](/disabilities/cognitive/) - Learn the "One Idea Per Line" principle
-2. **Apply:** [Plain Language Toolkit](/toolkits/plain-language/) - Write clear instructions
-3. **Check:** [Digital Egress Checklist](/toolkits/digital-egress/) - Test your website
-4. **Implement:** [Emergency Templates](/templates/alert-template/) - Use proven templates
+1. **Read:** [Cognitive Disabilities]({{ '/disabilities/cognitive/' | relative_url }}) - Learn the "One Idea Per Line" principle
+2. **Apply:** [Plain Language Toolkit]({{ '/toolkits/plain-language/' | relative_url }}) - Write clear instructions
+3. **Check:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }}) - Test your website
+4. **Implement:** [Emergency Templates]({{ '/templates/alert-template/' | relative_url }}) - Use proven templates
 
 ## The Bottom Line
 

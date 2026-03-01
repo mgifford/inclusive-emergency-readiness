@@ -78,7 +78,7 @@ It shows what emergency systems should do for **all disabilities**.
 - One idea per line
 - Bullets and numbers
 
-**Evidence:** See [Plain Language Toolkit](/toolkits/plain-language.html)
+**Evidence:** See [Plain Language Toolkit]({{ '/toolkits/plain-language.html' | relative_url }})
 
 ### Pillar 4: Physical Resilience
 
@@ -116,7 +116,7 @@ Websites need **Digital Egress**.
 
 ### Implementation
 
-We built a [Digital Egress Checklist](/toolkits/digital-egress.html).
+We built a [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }}).
 
 Use it to test your emergency website.
 
@@ -131,8 +131,8 @@ Use it to test your emergency website.
 **Solution:** Fork this repo. Test the concepts. Propose changes.
 
 **Next Steps:**
-1. Review the [Framework Matrix](/framework/matrix.html)
-2. Test the [Digital Egress Checklist](/toolkits/digital-egress.html)
+1. Review the [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
+2. Test the [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
 3. Open an Issue to discuss technical details
 
 ### For Municipalities and Agencies
@@ -142,7 +142,7 @@ Use it to test your emergency website.
 **Solution:** Fork this repo. Update local info. Deploy.
 
 **Next Steps:**
-1. Read the [Fork Guide](/framework/fork-guide.html)
+1. Read the [Fork Guide]({{ '/framework/fork-guide.html' | relative_url }})
 2. Update contact info and local resources
 3. Deploy using [DEPLOYMENT.md](/DEPLOYMENT.md)
 
@@ -269,10 +269,10 @@ Open an Issue on GitHub to discuss:
 
 ## Related Resources
 
-- [Framework Matrix: WCAG, WSG & Plain Language](/framework/matrix.html)
-- [Digital Egress Checklist](/toolkits/digital-egress.html)
-- [Fork Guide for Municipalities](/framework/fork-guide.html)
-- [Disability-Specific Impact](/disabilities/)
+- [Framework Matrix: WCAG, WSG & Plain Language]({{ '/framework/matrix.html' | relative_url }})
+- [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+- [Fork Guide for Municipalities]({{ '/framework/fork-guide.html' | relative_url }})
+- [Disability-Specific Impact]({{ '/disabilities/' | relative_url }})
 
 ---
 
