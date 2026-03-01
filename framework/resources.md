@@ -69,6 +69,38 @@ This reduces mental load.
 
 **Why it matters:** Direct, clear instructions save time and lives during disasters.
 
+### Plain Language and Easy Read Guide
+
+**Link:** [Plain Language and Easy Read Guide (Center on Disability)](https://centerondisability.org/plain-language-and-easy-read/){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Knowing the difference between Plain Language and Easy Read.
+
+**Who it's for:** Public information officers and content designers.
+
+**Why it matters:** Easy Read formats give life-saving instructions with simple text and pictures.
+
+People with intellectual disabilities need this format during disasters.
+
+### CalHR Plain Language Guide
+
+**Link:** [CalHR Plain Language Guide](https://www.calhr.ca.gov/about-calhr/divisions-programs/deia-toolkit/templates-guides/plain-language-guide/){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** A step-by-step toolkit to turn jargon into clear instructions.
+
+**Who it's for:** Government employees and communications teams.
+
+**Why it matters:** It teaches "Action-Oriented" writing for evacuation orders and safety checklists.
+
+### Face-to-Face Communications During Emergencies
+
+**Link:** [Face-to-Face Communications During Emergencies (ASC)](https://publications.gc.ca/collections/collection_2022/nac-asc/AS4-24-2021-eng.pdf){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Practical steps for first responders who work with people with disabilities.
+
+**Who it's for:** First responders, emergency managers, and volunteer leaders.
+
+**Why it matters:** It shows the "human-to-human" bridge when digital tools fail.
+
 ---
 
 ## 3. Digital Resilience & Sustainable Design
@@ -93,9 +125,57 @@ This reduces mental load.
 
 **Why it matters:** Provides a way to make medical tools when supply chains break.
 
+### Section 508: Emergency Response Guidance
+
+**Link:** [Section 508: Emergency Response Guidance](https://www.section508.gov/manage/policy-framework/guidance-by-policy-type/emergency-response/){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Making sure all alerts, PDFs, and web dashboards meet federal rules.
+
+**Who it's for:** IT teams and digital compliance officers.
+
+**Why it matters:** It gives the legal and technical baseline for accessible government emergency technology.
+
 ---
 
-## 4. Implementation Matrix: The "Emergency Mode" Logic
+## 4. Community Examples & Real-World Models
+
+*These programs show how to do inclusive emergency communication in practice.*
+
+### King County Inclusive Communications Program
+
+**Link:** [King County Inclusive Communications Program](https://kingcounty.gov/en/dept/executive-services/governance-leadership/emergency-management/teams-committees/inclusive-communications){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** A model for multi-channel outreach with many languages and disability support.
+
+**Who it's for:** City and county emergency teams.
+
+**Why it matters:** Shows how to spread communications across many platforms so one failure does not stop all alerts.
+
+### FEMA: Planning Considerations for Putting People First
+
+**Link:** [FEMA: Planning Considerations for Putting People First](https://web.archive.org/web/20250118002914/https://www.fema.gov/sites/default/files/documents/fema_npd_planning-considerations-putting-people-first_2024.pdf){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Planning that uses the "Whole Community" approach in every phase of a disaster.
+
+**Who it's for:** Policy makers and regional planners.
+
+**Why it matters:** It changes the focus from "special needs" to universal accessibility.
+
+This ensures infrastructure serves everyone.
+
+### City of Ottawa Emergency Registry
+
+**Link:** [City of Ottawa Emergency Registry](https://ottawa.ca/en/city-hall/creating-equal-inclusive-and-diverse-city/accessibility-city){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** An example of a voluntary registry where people can identify support needs before a crisis.
+
+**Who it's for:** Residents and first responders.
+
+**Why it matters:** It allows targeted rescue operations that focus on the most vulnerable households.
+
+---
+
+## 5. Implementation Matrix: The "Emergency Mode" Logic
 
 Use this matrix to check resources on your site:
 
