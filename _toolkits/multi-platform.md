@@ -407,7 +407,7 @@ Emergency posts must be readable for people with low vision.
 - White text on dark background (or reverse)
 - No text on busy backgrounds
 - Minimum 4.5:1 contrast ratio (WCAG AA)
-- Prefer 7:1 contrast ratio (WCAG AAA)
+- **Emergency graphics must use 7:1 contrast ratio (WCAG AAA)** for print and low vision
 
 **Color choices:**
 - Never use color alone to convey urgency
@@ -658,7 +658,7 @@ Before posting any emergency alert:
 - [ ] CamelCase hashtags
 - [ ] High contrast text on images (7:1 ratio)
 - [ ] Emoji used sparingly with text
-- [ ] Plain language (Grade 6 level)
+- [ ] Plain language (Grade 6-7 level)
 - [ ] Key information in first sentence
 - [ ] Descriptive link text
 - [ ] Tested with screen reader
@@ -911,7 +911,7 @@ Update your platforms.
 - **[X/Twitter Accessibility](https://help.twitter.com/en/using-twitter/accessibility-features)** - Platform features and guidance
 - **[Facebook Accessibility](https://www.facebook.com/help/accessibility)** - Meta's accessibility resources  
 - **[Mastodon Documentation](https://docs.joinmastodon.org/)** - Built-in accessibility features
-- **[Bluesky Documentation](https://blueskyweb.xyz/)** - Emerging platform guidance
+- **[Bluesky on GitHub](https://github.com/bluesky-social)** - Official Bluesky documentation and resources
 
 ### Testing and Validation
 
