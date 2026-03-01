@@ -371,7 +371,10 @@ a[href^="#"]:after {
 }
 ```
 
-**Note:** Unicode symbols (⚠, ☎) should be included in the HTML markup with appropriate ARIA labels, not generated via CSS `::before` content, to ensure screen reader compatibility. The actual print.scss file includes these symbols for visual distinction in printed documents, but the HTML should contain semantic markup.
+**Accessibility Note:** 
+- **Text labels** like "IMPORTANT:", "CRITICAL:", and "EMERGENCY CONTACT:" can be safely added via CSS `::before` content for print styling, as they are purely presentational and supplement semantic HTML markup.
+- **Unicode symbols** (⚠, ☎) that convey meaning should be included in the HTML markup with appropriate ARIA labels, not generated solely via CSS, to ensure screen reader users receive the information.
+- The actual `print.scss` file includes both text labels and symbols in `::before` content for visual print distinction, but critical semantic information should always be present in the HTML structure with proper heading levels, ARIA landmarks, and role attributes.
 
 **Hide Non-Essential Elements:**
 ```scss
