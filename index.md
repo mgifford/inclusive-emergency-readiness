@@ -39,8 +39,6 @@ Plus: **Plain Language** and **Easy Read** for cognitive accessibility.
 > - [AGENTS.md](AGENTS.md) - Protocols for contributors (AI and human)
 
 ## Quick Start Guides
-
-<div class="quick-start-grid">
   
 ### 🚨 Need an Emergency Alert NOW?
 Go to [Emergency Templates](/templates/) for ready-to-use alert templates.
@@ -57,7 +55,6 @@ Review the [Framework Matrix](/framework/matrix.html) for WCAG/WSG/Plain Languag
 ### 📖 Global Standards & Resources
 Access the [Resource Directory](/framework/resources.html) for global academic research and practical toolkits.
 
-</div>
 
 ---
 
