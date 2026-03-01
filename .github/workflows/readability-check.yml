@@ -109,7 +109,7 @@ jobs:
               >> .readability-results/report.md
             echo "2. **Use simpler words** (avoid jargon)" \
               >> .readability-results/report.md
-            echo "3. **Use active voice** (\"Do this\" not done)" \
+            echo "3. **Use active voice** (\"Do this\" not \"This should be done\")" \
               >> .readability-results/report.md
             echo "4. **Break up long paragraphs** (one idea each)" \
               >> .readability-results/report.md
