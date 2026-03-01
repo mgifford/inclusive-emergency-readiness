@@ -173,46 +173,53 @@ Add to commit message:
 
 ---
 
-## Understanding Workflow Run #22534171950
+## Example: Understanding a Readability Check Run
 
-**This is the specific run mentioned in the issue.**
+**Note:** This section uses a real workflow run as an example. The principles apply to all readability checker runs.
 
-### What Happened
+### What Happens in a Typical Run
 
-1. A commit was pushed to a branch
-2. The readability checker ran
-3. It found files over Grade 6
-4. It posted warnings
-5. It completed with exit code 0
+1. A commit is pushed to a branch
+2. The readability checker runs automatically
+3. It analyzes all markdown files
+4. It finds files over Grade 6 reading level
+5. It posts warnings (but does not block the merge)
+6. The workflow completes
 
-### Why It Shows as "Failed"
+### Why Warnings Don't Block Merges
 
-The workflow conclusion was "failure" but the workflow intentionally exits with code 0.
+The workflow is designed to be **informational, not blocking**.
 
-**This is a design choice.**
+**How it works:**
+- The workflow step exits with code 0 (success)
+- Warnings are posted as comments on Pull Requests
+- Contributors can review and decide if changes are needed
 
-**Reason:** We want warnings, not blockers.
+**Reason:** Some technical documentation needs higher reading levels.
 
 ### What the Warnings Mean
 
-The workflow flagged files for being too complex.
+The workflow flags files that exceed Grade 6 level.
 
-**This is informational.**
+**This is informational guidance.**
 
-You can:
-- Simplify the flagged files
-- Leave them as-is if they're technical docs
-- Add an explanation why they need complex language
+Your options:
+- Simplify the flagged files if they're public-facing
+- Leave them as-is if they're technical reference docs
+- Add a note explaining why complex language is needed
 
-### How to See the Details
+### How to See Workflow Details
 
-1. Go to: https://github.com/mgifford/inclusive-emergency-readiness/actions/runs/22534171950
-2. Click on the job name
-3. Read the step summaries
-4. Download artifacts for full report
+**For any failed or completed run:**
+
+1. Go to the repository's **Actions** tab
+2. Click on **Linter of Clarity** workflow
+3. Select the specific run you want to review
+4. Click on the job name to see detailed logs
+5. Download artifacts for the full report
 
 **Artifacts contain:**
-- Full readability report
+- Full readability report with scores
 - List of passing files
 - Recommendations for improvement
 
