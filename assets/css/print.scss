@@ -1,0 +1,307 @@
+/*
+ * Print Stylesheet
+ * Optimized for Emergency Binders
+ * 
+ * Design for:
+ * - High legibility
+ * - Efficient ink usage
+ * - Clear information hierarchy
+ * - Emergency reference
+ */
+
+@media print {
+  
+  // ============================================================================
+  // Page Setup
+  // ============================================================================
+  
+  @page {
+    margin: 1.5cm;
+    size: letter;
+  }
+  
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  // ============================================================================
+  // Typography
+  // ============================================================================
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+  
+  h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    border-bottom: 2pt solid #000;
+    padding-bottom: 6pt;
+  }
+  
+  h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 18pt;
+    margin-bottom: 8pt;
+    border-bottom: 1pt solid #000;
+    padding-bottom: 4pt;
+  }
+  
+  h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 14pt;
+    margin-bottom: 6pt;
+  }
+  
+  h4, h5, h6 {
+    font-size: 12pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 10pt;
+    margin-bottom: 4pt;
+  }
+  
+  p {
+    margin-bottom: 8pt;
+    orphans: 3;
+    widows: 3;
+  }
+  
+  // ============================================================================
+  // Links
+  // ============================================================================
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  // Print URLs after links
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    font-style: italic;
+  }
+  
+  // Don't print URLs for internal links
+  a[href^="#"]:after {
+    content: "";
+  }
+  
+  // ============================================================================
+  // Hide Non-Essential Elements
+  // ============================================================================
+  
+  .site-header,
+  .site-nav,
+  .site-footer,
+  nav,
+  .no-print,
+  .skip-link {
+    display: none !important;
+  }
+  
+  // ============================================================================
+  // Lists
+  // ============================================================================
+  
+  ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 8pt;
+  }
+  
+  li {
+    margin-bottom: 4pt;
+  }
+  
+  // ============================================================================
+  // Tables
+  // ============================================================================
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 12pt;
+    page-break-inside: avoid;
+  }
+  
+  th, td {
+    border: 1pt solid #000;
+    padding: 6pt;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+    background: #e5e5e5 !important;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+  }
+  
+  // ============================================================================
+  // Alert Boxes
+  // ============================================================================
+  
+  .alert {
+    border: 2pt solid #000;
+    padding: 8pt;
+    margin-bottom: 12pt;
+    page-break-inside: avoid;
+  }
+  
+  .alert-danger {
+    border-width: 3pt;
+  }
+  
+  .alert::before {
+    content: "⚠ IMPORTANT: ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4pt;
+  }
+  
+  .alert-danger::before {
+    content: "⚠⚠ CRITICAL: ";
+  }
+  
+  // ============================================================================
+  // Code Blocks
+  // ============================================================================
+  
+  pre, code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10pt;
+    border: 1pt solid #000;
+    padding: 4pt;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  pre {
+    padding: 8pt;
+    margin-bottom: 12pt;
+    page-break-inside: avoid;
+  }
+  
+  // ============================================================================
+  // Checklist
+  // ============================================================================
+  
+  .checklist li::before {
+    content: "☐ ";
+    font-size: 14pt;
+  }
+  
+  .checklist li.checked::before {
+    content: "☑ ";
+  }
+  
+  // ============================================================================
+  // Page Breaks
+  // ============================================================================
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  p, blockquote, ul, ol, dl, tr {
+    page-break-inside: avoid;
+  }
+  
+  // Force page break before major sections
+  .page-break-before {
+    page-break-before: always;
+  }
+  
+  // ============================================================================
+  // Footer for Each Page
+  // ============================================================================
+  
+  @page {
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 10pt;
+    }
+    
+    @bottom-left {
+      content: "Resilience Comms Emergency Guide";
+      font-size: 10pt;
+    }
+  }
+  
+  // ============================================================================
+  // Emergency-Specific Styles
+  // ============================================================================
+  
+  // Make evacuation templates highly visible
+  .template[data-type="evacuation"] {
+    border: 3pt solid #000;
+    padding: 12pt;
+  }
+  
+  // Emergency contact boxes
+  .emergency-contact {
+    border: 2pt solid #000;
+    padding: 8pt;
+    margin: 12pt 0;
+    page-break-inside: avoid;
+    
+    &::before {
+      content: "☎ EMERGENCY CONTACT: ";
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6pt;
+      font-size: 14pt;
+    }
+  }
+  
+  // One Idea Per Line - add extra spacing for clarity
+  .one-idea-per-line p {
+    margin-bottom: 6pt;
+    line-height: 2;
+  }
+  
+  // ============================================================================
+  // QR Codes (if present)
+  // ============================================================================
+  
+  .qr-code {
+    page-break-inside: avoid;
+    margin: 12pt 0;
+  }
+  
+  // ============================================================================
+  // Document Header (for binder reference)
+  // ============================================================================
+  
+  body::before {
+    content: "Printed: " attr(data-print-date);
+    display: block;
+    text-align: right;
+    font-size: 10pt;
+    font-style: italic;
+    margin-bottom: 12pt;
+    padding-bottom: 6pt;
+    border-bottom: 1pt solid #000;
+  }
+}

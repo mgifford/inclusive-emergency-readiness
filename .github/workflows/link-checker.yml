@@ -1,0 +1,143 @@
+name: Link Rot Guard
+
+# Purpose: Weekly check of all external URLs
+# If a link fails, automatically append or replace with Wayback Machine snapshot
+
+on:
+  schedule:
+    # Run every Sunday at 2 AM UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch: # Allow manual triggers
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq
+      
+      - name: Check all links
+        id: link-check
+        run: |
+          # Find all markdown files
+          find . -name "*.md" -type f > files.txt
+          
+          # Extract URLs from markdown files
+          grep -oP '(?<=\()https?://[^\)]+(?=\))' $(cat files.txt) | sort -u > urls.txt || true
+          
+          # Check each URL
+          mkdir -p .link-check-results
+          
+          while IFS= read -r url; do
+            echo "Checking: $url"
+            
+            # Check if URL is accessible
+            response=$(curl -L -s -o /dev/null -w "%{http_code}" --max-time 10 "$url" || echo "000")
+            
+            if [ "$response" -ge 400 ] || [ "$response" = "000" ]; then
+              echo "FAILED: $url (Status: $response)" >> .link-check-results/failed-links.txt
+              
+              # Get Wayback Machine snapshot
+              archive_url="https://web.archive.org/web/$url"
+              echo "Archive: $archive_url" >> .link-check-results/failed-links.txt
+            else
+              echo "OK: $url (Status: $response)" >> .link-check-results/working-links.txt
+            fi
+          done < urls.txt
+        continue-on-error: true
+      
+      - name: Create report
+        id: create-report
+        run: |
+          if [ -f .link-check-results/failed-links.txt ]; then
+            echo "failed=true" >> $GITHUB_OUTPUT
+            
+            # Create detailed report
+            cat > .link-check-results/report.md << 'EOF'
+          # Link Rot Guard Report
+          
+          ## Failed Links
+          
+          The following links are no longer accessible:
+          
+          EOF
+            
+            cat .link-check-results/failed-links.txt >> .link-check-results/report.md
+            
+            echo "" >> .link-check-results/report.md
+            echo "## Recommended Actions" >> .link-check-results/report.md
+            echo "" >> .link-check-results/report.md
+            echo "1. Review each failed link" >> .link-check-results/report.md
+            echo "2. Replace with Wayback Machine archive URL if appropriate" >> .link-check-results/report.md
+            echo "3. Find alternative current sources" >> .link-check-results/report.md
+            echo "4. Remove links that are no longer relevant" >> .link-check-results/report.md
+          else
+            echo "failed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create issue for failed links
+        if: steps.create-report.outputs.failed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('.link-check-results/report.md', 'utf8');
+            
+            // Check if an open issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'link-rot'
+            });
+            
+            if (issues.data.length > 0) {
+              // Update existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: `## Link Check Update - ${new Date().toISOString()}\n\n${report}`
+              });
+            } else {
+              // Create new issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '🔗 Link Rot Detected',
+                body: report,
+                labels: ['link-rot', 'maintenance']
+              });
+            }
+      
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-results
+          path: .link-check-results/
+          retention-days: 30
+      
+      - name: Summary
+        run: |
+          if [ -f .link-check-results/failed-links.txt ]; then
+            failed_count=$(grep -c "FAILED:" .link-check-results/failed-links.txt || echo "0")
+            echo "❌ Found $failed_count failed link(s)"
+            echo "📋 Issue created/updated with details"
+          else
+            echo "✅ All links are working!"
+          fi
