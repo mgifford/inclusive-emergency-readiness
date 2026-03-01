@@ -1,3 +1,5 @@
+---
+---
 /*
  * Resilience Comms: Emergency Stylesheet
  * "Survival UX" Design System
@@ -261,6 +263,8 @@ main {
   margin-bottom: $spacing-md;
   border-left: 5px solid $color-primary;
   background-color: #f0f8ff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
   &.alert-danger {
     border-left-color: $color-accent;
@@ -413,6 +417,89 @@ table {
 }
 
 // ============================================================================
+// Cards & Modern Layouts
+// ============================================================================
+
+.card {
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+  
+  &:hover,
+  &:focus-visible {
+    border-color: $color-primary;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+  margin: $spacing-lg 0;
+}
+
+// Quick start grid styling (from index.md)
+.quick-start-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+  margin: $spacing-lg 0;
+  
+  > * {
+    background-color: #f0f8ff;
+    padding: $spacing-md;
+    border-left: 5px solid $color-primary;
+    border-radius: 6px;
+    
+    &:hover,
+    &:focus-within {
+      background-color: #e6f2ff;
+    }
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: $color-primary;
+  }
+}
+
+// CTA buttons container
+.cta-buttons {
+  display: flex;
+  gap: $spacing-md;
+  margin: $spacing-lg 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+// Blockquote styling
+blockquote {
+  border-left: 4px solid $color-primary;
+  padding-left: $spacing-md;
+  margin-left: 0;
+  font-style: italic;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: $spacing-md;
+  border-radius: 4px;
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ============================================================================
 // Footer
 // ============================================================================
 
@@ -503,31 +590,110 @@ body.low-data {
 }
 
 // ============================================================================
-// Responsive Design
+// Responsive Design (Mobile-First)
 // ============================================================================
 
-@media (max-width: 768px) {
+// Base styles are mobile-first (above)
+// Progressive enhancement for larger screens
+
+// Small tablets and large phones (portrait)
+@media (min-width: 576px) {
+  .container,
+  .container-wide {
+    padding: 0 $spacing-md;
+  }
+  
+  .quick-start-grid,
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+// Tablets (portrait)
+@media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
   
   .site-nav ul {
-    flex-direction: column;
-    gap: $spacing-xs;
+    flex-direction: row;
+    gap: $spacing-md;
   }
   
-  .container,
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .site-branding {
+    margin-bottom: 0;
+  }
+  
+  .accessibility-controls {
+    margin-top: 0;
+  }
+  
+  .cta-buttons {
+    flex-direction: row;
+    
+    .btn {
+      width: auto;
+      flex: 1 1 auto;
+      min-width: 200px;
+    }
+  }
+}
+
+// Tablets (landscape) and small desktops
+@media (min-width: 992px) {
+  .container {
+    padding: 0 $spacing-lg;
+  }
+  
+  main {
+    padding: $spacing-xl * 1.5 0;
+  }
+}
+
+// Large desktops
+@media (min-width: 1200px) {
   .container-wide {
-    padding: 0 $spacing-sm;
+    padding: 0 $spacing-xl;
+  }
+}
+
+// Extra small devices - ensure readability
+@media (max-width: 375px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .site-title {
+    font-size: 1.3rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
   }
 }
 
 // ============================================================================
 // Print Styles
 // ============================================================================
+// Note: Print styles are loaded separately via print.scss in the layout
 
 @media print {
-  @import 'print';
+  // Hide non-essential elements for print
+  .no-print,
+  .accessibility-controls {
+    display: none !important;
+  }
 }
 
 // ============================================================================
