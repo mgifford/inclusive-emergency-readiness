@@ -20,146 +20,150 @@ on:
 jobs:
   readability-check:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      
+
       - name: Install readability tools
         run: |
           npm install -g text-readability
           pip install textstat
-      
+
       - name: Check readability
         id: readability
         run: |
           # Create results directory
           mkdir -p .readability-results
-          
+
           # Find all markdown files (excluding README and generated files)
           find . -name "*.md" -type f \
             -not -path "./node_modules/*" \
             -not -path "./_site/*" \
             -not -path "./vendor/*" \
             -not -name "README.md" > markdown-files.txt
-          
+
           # Process each file
           echo "# Readability Report" > .readability-results/report.md
           echo "" >> .readability-results/report.md
           echo "Generated: $(date)" >> .readability-results/report.md
           echo "" >> .readability-results/report.md
-          
+
           has_issues=false
-          
+
           while IFS= read -r file; do
             if [ -f "$file" ]; then
               echo "Checking: $file"
-              
-              # Extract text content (remove YAML frontmatter, code blocks, and HTML)
+
+              # Extract text content (remove YAML frontmatter, code blocks, HTML)
               content=$(sed '/^---$/,/^---$/d' "$file" | \
                         sed '/^```/,/^```$/d' | \
                         sed 's/<[^>]*>//g' | \
                         grep -v '^#' | \
                         tr '\n' ' ')
-              
+
               if [ -n "$content" ]; then
-                # Calculate Flesch-Kincaid Grade Level using Python textstat
-                grade=$(python3 << EOF
-import textstat
-import sys
-text = """$content"""
-if len(text.strip()) > 0:
-    grade = textstat.flesch_kincaid_grade(text)
-    print(f"{grade:.1f}")
-else:
-    print("0.0")
-EOF
-)
-                
-                # Calculate Flesch Reading Ease
-                ease=$(python3 << EOF
-import textstat
-import sys
-text = """$content"""
-if len(text.strip()) > 0:
-    ease = textstat.flesch_reading_ease(text)
-    print(f"{ease:.1f}")
-else:
-    print("100.0")
-EOF
-)
-                
+                # Calculate readability scores using Python (single line)
+                grade=$(echo "$content" | python3 -c 'import textstat, sys; text=sys.stdin.read(); print(f"{textstat.flesch_kincaid_grade(text):.1f}" if len(text.strip())>0 else "0.0")')
+                ease=$(echo "$content" | python3 -c 'import textstat, sys; text=sys.stdin.read(); print(f"{textstat.flesch_reading_ease(text):.1f}" if len(text.strip())>0 else "100.0")')
+
                 # Grade 6 is the target (Flesch-Kincaid Grade Level)
                 # Flesch Reading Ease: 60-70 is ideal (Grade 6-8)
-                
-                if (( $(echo "$grade > 6.0" | bc -l) )); then
+
+                # Use Python for floating point comparison
+                if python3 -c "import sys; sys.exit(0 if float('$grade') > 6.0 else 1)"; then
                   has_issues=true
                   echo "⚠️  **$file**" >> .readability-results/report.md
-                  echo "   - Grade Level: $grade (Target: ≤6.0)" >> .readability-results/report.md
-                  echo "   - Reading Ease: $ease (Target: ≥60)" >> .readability-results/report.md
+                  echo "   - Grade Level: $grade (Target: ≤6.0)" \
+                    >> .readability-results/report.md
+                  echo "   - Reading Ease: $ease (Target: ≥60)" \
+                    >> .readability-results/report.md
                   echo "" >> .readability-results/report.md
-                  
+
                   # Add to summary
-                  echo "⚠️ $file: Grade $grade (Target: ≤6)" >> $GITHUB_STEP_SUMMARY
+                  echo "⚠️ $file: Grade $grade (Target: ≤6)" \
+                    >> $GITHUB_STEP_SUMMARY
                 else
-                  echo "✅ $file: Grade $grade" >> .readability-results/passing.txt
+                  echo "✅ $file: Grade $grade" \
+                    >> .readability-results/passing.txt
                 fi
               fi
             fi
           done < markdown-files.txt
-          
+
           if [ "$has_issues" = true ]; then
             echo "has_issues=true" >> $GITHUB_OUTPUT
-            
+
             echo "" >> .readability-results/report.md
             echo "## Recommendations" >> .readability-results/report.md
             echo "" >> .readability-results/report.md
-            echo "To improve readability to Grade 6 or lower:" >> .readability-results/report.md
+            echo "To improve readability to Grade 6 or lower:" \
+              >> .readability-results/report.md
             echo "" >> .readability-results/report.md
-            echo "1. **Use shorter sentences** (15 words or less)" >> .readability-results/report.md
-            echo "2. **Use simpler words** (avoid jargon and technical terms)" >> .readability-results/report.md
-            echo "3. **Use active voice** (\"Do this\" not \"This should be done\")" >> .readability-results/report.md
-            echo "4. **Break up long paragraphs** (one idea per paragraph)" >> .readability-results/report.md
-            echo "5. **Use bullet points** for lists" >> .readability-results/report.md
-            echo "6. **Define technical terms** when they must be used" >> .readability-results/report.md
+            echo "1. **Use shorter sentences** (15 words or less)" \
+              >> .readability-results/report.md
+            echo "2. **Use simpler words** (avoid jargon)" \
+              >> .readability-results/report.md
+            echo "3. **Use active voice** (\"Do this\" not \"This should be done\")" \
+              >> .readability-results/report.md
+            echo "4. **Break up long paragraphs** (one idea each)" \
+              >> .readability-results/report.md
+            echo "5. **Use bullet points** for lists" \
+              >> .readability-results/report.md
+            echo "6. **Define technical terms** when they must be used" \
+              >> .readability-results/report.md
             echo "" >> .readability-results/report.md
             echo "### Tools for Improvement" >> .readability-results/report.md
             echo "" >> .readability-results/report.md
-            echo "- [Hemingway Editor](http://www.hemingwayapp.com/)" >> .readability-results/report.md
-            echo "- [Readable.com](https://readable.com/)" >> .readability-results/report.md
-            echo "- [PlainLanguage.gov](https://www.plainlanguage.gov/)" >> .readability-results/report.md
+            echo "- [Hemingway Editor](http://www.hemingwayapp.com/)" \
+              >> .readability-results/report.md
+            echo "- [Readable.com](https://readable.com/)" \
+              >> .readability-results/report.md
+            echo "- [PlainLanguage.gov](https://www.plainlanguage.gov/)" \
+              >> .readability-results/report.md
           else
             echo "has_issues=false" >> $GITHUB_OUTPUT
           fi
         continue-on-error: true
-      
+
       - name: Post PR comment
-        if: github.event_name == 'pull_request' && steps.readability.outputs.has_issues == 'true'
+        if: |
+          github.event_name == 'pull_request' &&
+          steps.readability.outputs.has_issues == 'true'
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const report = fs.readFileSync('.readability-results/report.md', 'utf8');
-            
+            const report = fs.readFileSync(
+              '.readability-results/report.md',
+              'utf8'
+            );
+
             // Find existing comment
             const comments = await github.rest.issues.listComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number
             });
-            
+
             const existingComment = comments.data.find(
-              comment => comment.user.login === 'github-actions[bot]' && 
+              comment => comment.user.login === 'github-actions[bot]' &&
                          comment.body.includes('Readability Report')
             );
-            
-            const body = `## 📖 Readability Report\n\n${report}\n\n---\n*This check ensures emergency content is accessible to people with cognitive disabilities and those under stress.*`;
-            
+
+            const body = `## 📖 Readability Report
+
+            ${report}
+
+            ---
+            *This check ensures emergency content is accessible to people with
+            cognitive disabilities and those under stress.*`;
+
             if (existingComment) {
               await github.rest.issues.updateComment({
                 owner: context.repo.owner,
@@ -175,7 +179,7 @@ EOF
                 body: body
               });
             }
-      
+
       - name: Upload artifacts
         if: always()
         uses: actions/upload-artifact@v4
@@ -183,7 +187,7 @@ EOF
           name: readability-results
           path: .readability-results/
           retention-days: 30
-      
+
       - name: Fail if readability issues found
         if: steps.readability.outputs.has_issues == 'true'
         run: |
@@ -194,7 +198,7 @@ EOF
           echo "This is a warning, not a failure."
           echo "Emergency content MUST be accessible to everyone."
           exit 0  # Don't fail the build, just warn
-      
+
       - name: Success message
         if: steps.readability.outputs.has_issues != 'true'
         run: |
