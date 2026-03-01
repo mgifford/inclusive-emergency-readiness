@@ -59,6 +59,62 @@ Access the [Resource Directory](/framework/resources.html) for global academic r
 
 </div>
 
+---
+
+## A Functional Prototype for CAN-ASC-6.4
+
+**CAN-ASC-6.4** is Canada's accessibility standard for Emergency Measures.
+
+This repository serves as a **living implementation** of what emergency systems should do.
+
+### Why This Matters
+
+**For Standards Bodies:**
+- Evidence-based case study for "Sustainable ICT in Emergency Measures"
+- Concrete implementation examples
+- Open for testing and feedback
+
+**For Municipalities:**
+- Fork this repository
+- Update with local information
+- Deploy a compliant emergency site in hours
+- No need to start from scratch
+
+**For Researchers:**
+- Real-world data on accessibility metrics
+- Automated testing results
+- Community feedback integration
+
+👉 **[Read the full CAN-ASC-6.4 Case Study](/framework/can-asc-case-study.html)**
+
+👉 **[Fork Guide for Municipalities](/framework/fork-guide.html)**
+
+### Digital Egress: A New Concept
+
+Just as buildings have physical fire exits, websites need **Digital Egress**.
+
+> **Digital Egress** is the minimum viable information path a user needs when their technology is failing.
+
+**The Three Rules:**
+1. Find it fast (3 clicks or less)
+2. Read it stressed (Grade 6 language)
+3. Save it offline (works without internet)
+
+👉 **[Digital Egress Checklist](/toolkits/digital-egress.html)**
+
+---
+
+## Understanding Our Automated Workflows
+
+This repository uses GitHub Actions to maintain quality.
+
+**Having CI issues?** Check our workflow guide for explanations.
+
+**Seeing readability warnings?** That's intentional - they help us maintain plain language.
+
+👉 **[Understanding Workflows Guide](/framework/workflows-guide.html)**
+
+
 ## Why Accessibility Matters in Emergencies
 
 ### The Vision Gap
