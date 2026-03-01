@@ -58,7 +58,7 @@ We actively seek to support and implement the draft requirements of **Accessibil
 ---
 
 ## 📜 License
-This project is licensed under the **Creative Commons Attribution 4.0 International (CC-BY-4.0)**. 
+Content for this project is licensed under the **Creative Commons Attribution 4.0 International (CC-BY-4.0)**. Code is licnesed under the AGPL.
 
 ***
 *"The most accessible information is the information that actually reaches the user when everything else fails."*
