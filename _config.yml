@@ -1,0 +1,103 @@
+# Resilience Comms: The Inclusive Emergency Blueprint
+# Jekyll Configuration for GitHub Pages
+
+# Site settings
+title: "Resilience Comms: The Inclusive Emergency Blueprint"
+description: "A comprehensive guide for government and municipal communication teams to create accessible, inclusive emergency information that reaches everyone."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Author/Organization
+author:
+  name: "Inclusive Emergency Readiness Project"
+  email: "contact@example.org"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Kramdown settings for accessibility
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    block:
+      line_numbers: false
+
+# Collections
+collections:
+  disabilities:
+    output: true
+    permalink: /disabilities/:name/
+  toolkits:
+    output: true
+    permalink: /toolkits/:name/
+  templates:
+    output: true
+    permalink: /templates/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "disabilities"
+    values:
+      layout: "disability"
+  - scope:
+      path: ""
+      type: "toolkits"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "templates"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+
+# Include files
+include:
+  - _pages
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO and social
+twitter:
+  username: 
+  card: summary
+
+# Accessibility features
+accessibility:
+  skip_links: true
+  landmarks: true
+  aria_labels: true
+
+# Sustainability settings (WSG 1.0 compliance)
+sustainability:
+  optimize_images: true
+  minimize_requests: true
+  cache_control: true
+  lazy_loading: false # Intentionally off for emergency context
+
+# Emergency-specific settings
+emergency:
+  high_contrast_default: false
+  low_data_mode: false
+  offline_enabled: true
+  print_optimized: true

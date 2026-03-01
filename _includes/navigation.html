@@ -1,0 +1,32 @@
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <ul>
+    <li>
+      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+    </li>
+    <li>
+      <a href="/disabilities/" {% if page.url contains "/disabilities/" %}aria-current="page"{% endif %}>Disability Impacts</a>
+    </li>
+    <li>
+      <a href="/framework/matrix.html" {% if page.url contains "/framework/" %}aria-current="page"{% endif %}>Framework Matrix</a>
+    </li>
+    <li>
+      <a href="/toolkits/" {% if page.url contains "/toolkits/" %}aria-current="page"{% endif %}>Toolkits</a>
+    </li>
+    <li>
+      <a href="/templates/" {% if page.url contains "/templates/" %}aria-current="page"{% endif %}>Templates</a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  .site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-nav a[aria-current="page"] {
+    border-bottom-color: white;
+    font-weight: 700;
+  }
+</style>

@@ -1,0 +1,115 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About This Project</h3>
+        <p>
+          {{ site.description }}
+        </p>
+        <p>
+          Built with urgency. Designed for resilience. Made for everyone.
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/disabilities/">Disability Impacts</a></li>
+          <li><a href="/framework/matrix.html">Framework Matrix</a></li>
+          <li><a href="/toolkits/">Toolkits</a></li>
+          <li><a href="/templates/">Templates</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Standards</h3>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener">WCAG 2.2</a></li>
+          <li><a href="https://w3c.github.io/sustyweb/" target="_blank" rel="noopener">WSG 1.0</a></li>
+          <li><a href="https://www.scc.ca/en/standardsdb/standards/29634" target="_blank" rel="noopener">CAN-ASC-6.4</a></li>
+          <li><a href="https://www.plainlanguage.gov/" target="_blank" rel="noopener">Plain Language</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://glia.org/" target="_blank" rel="noopener">Glia (3D Medical Supplies)</a></li>
+          <li><a href="https://www.a11yproject.com/" target="_blank" rel="noopener">A11Y Project</a></li>
+          <li><a href="https://www.inclusion-europe.eu/" target="_blank" rel="noopener">Inclusion Europe</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>
+        <strong>Emergency Accessibility Matters:</strong> When lives are on the line, accessibility isn't optional—it's essential.
+      </p>
+      <p>
+        &copy; {{ 'now' | date: "%Y" }} {{ site.title }}. 
+        Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>.
+      </p>
+      <p>
+        <a href="https://github.com/mgifford/inclusive-emergency-readiness" target="_blank" rel="noopener">
+          View on GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover,
+  .footer-section a:focus {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media print {
+    .footer-content {
+      display: none;
+    }
+    
+    .footer-bottom {
+      border-top: 1pt solid #000;
+      padding-top: 12pt;
+    }
+  }
+</style>

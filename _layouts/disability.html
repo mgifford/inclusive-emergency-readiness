@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<article class="disability-page">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    
+    {% if page.summary %}
+    <p class="page-summary">{{ page.summary }}</p>
+    {% endif %}
+    
+    <div class="page-meta">
+      {% if page.disability_type %}
+      <span class="badge">{{ page.disability_type | capitalize }}</span>
+      {% endif %}
+      
+      {% if page.reading_level %}
+      <span class="badge">Reading Level: {{ page.reading_level }}</span>
+      {% endif %}
+      
+      {% if page.wcag_focus %}
+      <span class="badge">WCAG Focus: {{ page.wcag_focus | join: ', ' }}</span>
+      {% endif %}
+      
+      {% if page.last_updated %}
+      <span class="last-updated">Last updated: {{ page.last_updated | date: "%B %d, %Y" }}</span>
+      {% endif %}
+    </div>
+  </header>
+  
+  <div class="page-content one-idea-per-line">
+    {{ content }}
+  </div>
+  
+  <footer class="page-footer">
+    <div class="page-navigation">
+      {% if page.previous %}
+      <a href="{{ page.previous.url }}" class="btn">← Previous: {{ page.previous.title }}</a>
+      {% endif %}
+      
+      {% if page.next %}
+      <a href="{{ page.next.url }}" class="btn">Next: {{ page.next.title }} →</a>
+      {% endif %}
+    </div>
+    
+    <div class="page-actions no-print">
+      <h2>Quick Actions</h2>
+      <ul>
+        <li><a href="#" onclick="window.print(); return false;">🖨️ Print this page</a></li>
+        <li><a href="#" id="toggle-high-contrast">🎨 Toggle high contrast</a></li>
+        <li><a href="#" id="toggle-low-data">📊 Toggle low data mode</a></li>
+      </ul>
+    </div>
+  </footer>
+</article>
+
+<style>
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #0066cc;
+  }
+  
+  .page-summary {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem 0;
+  }
+  
+  .page-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .badge {
+    background-color: #0066cc;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .last-updated {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .page-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #ccc;
+  }
+  
+  .page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .page-actions ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .page-actions li {
+    margin-bottom: 0.5rem;
+  }
+</style>

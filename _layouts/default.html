@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  
+  <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.author.name }}">
+  
+  <!-- Accessibility -->
+  <meta name="color-scheme" content="light dark">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0066cc">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Resilience Comms">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/emergency.scss">
+  <link rel="stylesheet" href="/assets/css/print.scss" media="print">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <!-- SEO -->
+  {% seo %}
+  
+  <!-- Feed -->
+  {% feed_meta %}
+</head>
+<body class="{% if page.high_contrast %}high-contrast{% endif %} {% if page.low_data %}low-data{% endif %}" data-print-date="{{ 'now' | date: '%Y-%m-%d' }}">
+  
+  <!-- Skip Link for Keyboard Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  {% include header.html %}
+  
+  <!-- Main Content -->
+  <main id="main-content" role="main" aria-label="Main content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  {% include footer.html %}
+  
+  <!-- Accessibility Features Toggle -->
+  <script src="/assets/js/mode-toggle.js" defer></script>
+  
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/assets/js/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch(error => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+  
+</body>
+</html>
