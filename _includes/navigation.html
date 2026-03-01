@@ -7,7 +7,10 @@
       <a href="/disabilities/" {% if page.url contains "/disabilities/" %}aria-current="page"{% endif %}>Disability Impacts</a>
     </li>
     <li>
-      <a href="/framework/matrix.html" {% if page.url contains "/framework/" %}aria-current="page"{% endif %}>Framework Matrix</a>
+      <a href="/framework/matrix.html" {% if page.url == "/framework/matrix.html" %}aria-current="page"{% endif %}>Framework Matrix</a>
+    </li>
+    <li>
+      <a href="/framework/resources.html" {% if page.url == "/framework/resources.html" %}aria-current="page"{% endif %}>Resources</a>
     </li>
     <li>
       <a href="/toolkits/" {% if page.url contains "/toolkits/" %}aria-current="page"{% endif %}>Toolkits</a>
