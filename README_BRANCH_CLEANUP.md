@@ -2,9 +2,22 @@
 
 This guide provides step-by-step instructions to consolidate your repository to only the `main` branch.
 
-## Quick Start (Recommended)
+## Method 1: GitHub Actions Workflow (Easiest)
 
-Run the automated cleanup script:
+**Recommended for repository administrators**
+
+1. Go to https://github.com/mgifford/inclusive-emergency-readiness/actions/workflows/cleanup-branches.yml
+2. Click "Run workflow"
+3. Type `DELETE` in the confirmation field
+4. Click the green "Run workflow" button
+5. Wait for the workflow to complete
+6. Check the summary for results
+
+This method is safest and provides an audit trail.
+
+## Method 2: Automated Script
+
+Run the automated cleanup script locally:
 
 ```bash
 ./cleanup-branches.sh
@@ -16,13 +29,17 @@ The script will:
 3. Delete each branch
 4. Verify only `main` remains
 
-## Alternative: Manual Deletion via GitHub Web UI
+**Requires:** GitHub CLI (`gh`) installed and authenticated
+
+**Requires:** GitHub CLI (`gh`) installed and authenticated
+
+## Method 3: Manual Deletion via GitHub Web UI
 
 1. Go to https://github.com/mgifford/inclusive-emergency-readiness/branches
 2. For each branch (except `main`), click the trash icon
 3. Confirm deletion
 
-## Alternative: Using GitHub CLI Manually
+## Method 4: Using GitHub CLI Manually
 
 Delete branches one at a time:
 
@@ -56,7 +73,8 @@ main
 ## Files Created by This PR
 
 - `BRANCH_CLEANUP.md` - Detailed documentation of branches to delete
-- `cleanup-branches.sh` - Automated deletion script
+- `cleanup-branches.sh` - Automated deletion script  
+- `.github/workflows/cleanup-branches.yml` - GitHub Actions workflow for automated cleanup
 - `README_BRANCH_CLEANUP.md` - This file
 
 ## Why Can't the Agent Delete Branches Automatically?

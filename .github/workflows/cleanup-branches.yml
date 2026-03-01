@@ -1,0 +1,134 @@
+name: Branch Cleanup (Manual Trigger)
+
+# This workflow can be manually triggered to delete all non-main branches
+# Use with caution - this is a destructive operation
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: 'Type DELETE to confirm branch deletion'
+        required: true
+        type: string
+      exclude_branches:
+        description: 'Comma-separated list of branches to keep (besides main)'
+        required: false
+        type: string
+        default: ''
+
+jobs:
+  cleanup-branches:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Verify confirmation
+        run: |
+          if [ "${{ inputs.confirmation }}" != "DELETE" ]; then
+            echo "❌ Confirmation not received. Expected 'DELETE', got '${{ inputs.confirmation }}'"
+            exit 1
+          fi
+          echo "✓ Confirmation received"
+      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Fetch all branches
+        run: |
+          git fetch --all
+          
+      - name: List branches to delete
+        id: list
+        run: |
+          echo "### Branches to be deleted:" >> $GITHUB_STEP_SUMMARY
+          
+          # Get all remote branches except main
+          branches=$(git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | xargs)
+          
+          # Parse excluded branches
+          IFS=',' read -ra EXCLUDED <<< "${{ inputs.exclude_branches }}"
+          
+          # Filter out excluded branches
+          filtered_branches=""
+          for branch in $branches; do
+            skip=false
+            for excluded in "${EXCLUDED[@]}"; do
+              excluded=$(echo "$excluded" | xargs) # trim whitespace
+              if [ "$branch" = "$excluded" ]; then
+                skip=true
+                break
+              fi
+            done
+            
+            if [ "$skip" = false ]; then
+              filtered_branches="$filtered_branches $branch"
+              echo "- \`$branch\`" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+          
+          # Count branches
+          count=$(echo "$filtered_branches" | wc -w)
+          echo "Total: $count branches" >> $GITHUB_STEP_SUMMARY
+          
+          # Export for next step
+          echo "branches=$filtered_branches" >> $GITHUB_OUTPUT
+          echo "count=$count" >> $GITHUB_OUTPUT
+      
+      - name: Delete branches
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branches="${{ steps.list.outputs.branches }}"
+          count="${{ steps.list.outputs.count }}"
+          
+          if [ "$count" -eq 0 ]; then
+            echo "✓ No branches to delete"
+            exit 0
+          fi
+          
+          echo "Deleting $count branches..."
+          
+          deleted=0
+          failed=0
+          
+          for branch in $branches; do
+            echo "Deleting $branch..."
+            
+            if gh api \
+              "repos/${{ github.repository }}/git/refs/heads/$branch" \
+              -X DELETE; then
+              echo "✓ Deleted $branch"
+              ((deleted++))
+            else
+              echo "✗ Failed to delete $branch"
+              ((failed++))
+            fi
+          done
+          
+          echo "### Results" >> $GITHUB_STEP_SUMMARY
+          echo "- ✓ Successfully deleted: $deleted branches" >> $GITHUB_STEP_SUMMARY
+          
+          if [ $failed -gt 0 ]; then
+            echo "- ✗ Failed to delete: $failed branches" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+      
+      - name: Verify cleanup
+        run: |
+          echo "### Remaining branches:" >> $GITHUB_STEP_SUMMARY
+          git branch -r | grep -v 'HEAD' | sed 's/origin\///' | while read branch; do
+            echo "- \`$branch\`" >> $GITHUB_STEP_SUMMARY
+          done
+          
+          remaining=$(git branch -r | grep -v 'HEAD' | wc -l)
+          
+          if [ $remaining -eq 1 ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "✓ **Success! Only main branch remains.**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "⚠️ **Warning: $remaining branches still exist.**" >> $GITHUB_STEP_SUMMARY
+          fi
