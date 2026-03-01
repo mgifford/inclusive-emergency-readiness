@@ -50,8 +50,10 @@ This site is built using **[Survival Web Design](./SURVIVAL_WEB_DESIGN.md)** pri
 
 ## 🤖 Automated Governance
 This repository uses **GitHub Actions** to maintain the "Golden Record":
-* **Link-Rot Guard:** Weekly automated checks that move dead links to **Archive.org** snapshots.
+* **Link-Rot Guard:** Weekly automated checks of both source files and the deployed website (https://mgifford.github.io/inclusive-emergency-readiness/). Broken links are automatically reported with **Archive.org** snapshots as alternatives.
 * **Clarity Linter:** Automated readability testing to ensure content stays at a **Grade 6** level.
+
+👉 **[See workflow documentation](./.github/README.md)** for details on automated checks.
 
 ---
 
