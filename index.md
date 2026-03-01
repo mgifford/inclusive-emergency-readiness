@@ -116,21 +116,23 @@ This repository uses GitHub Actions to maintain quality.
 ## Why Accessibility Matters in Emergencies
 
 ### The Vision Gap
-People who are blind cannot see visual-only alerts.
+People who are blind cannot see visual-only alerts or read inaccessible communications.
 
 People with low vision cannot read small, low-contrast text.
 
-People who are color blind miss color-coded warnings.
+People who are color blind miss color-coded warnings (especially common red/green combinations).
 
 ### The Hearing Gap
-People who are Deaf miss audio-only sirens.
+People who are Deaf miss audio-only sirens and radio updates.
 
-People who are hard of hearing cannot understand garbled loudspeaker announcements.
+Many in the deaf community see sign as their first language, not the written or spoken language.
+
+People who are hard of hearing (or just stressed) cannot understand garbled loudspeaker announcements.
 
 ### The Mobility Gap
 People with mobility disabilities cannot evacuate quickly.
 
-People using wheelchairs cannot access shelters without ramps.
+People using wheelchairs cannot find which shelters might have ramps, accessible washrooms, etc.
 
 ### The Cognitive Gap
 People with cognitive disabilities cannot parse bureaucratic language.
@@ -138,11 +140,17 @@ People with cognitive disabilities cannot parse bureaucratic language.
 People under stress (everyone in an emergency) cannot process complex information.
 
 ### The Technology Gap
-People in rural areas hit bandwidth limits.
+People in rural areas have bandwidth challenges when the systems are working, let alone in a disaster.
 
 People with older devices cannot load heavy websites.
 
-People with dying batteries cannot afford animated graphics.
+People with dying batteries cannot afford animated graphics or JavaScript heavy sites. 
+
+### Language / Culture
+
+The first language of people reading may not be the language of communication.
+
+Plain language helps everyone, but especially those who may not be native speakers.
 
 ## Real-World Emergency Failures
 
@@ -151,31 +159,25 @@ People with dying batteries cannot afford animated graphics.
 
 **Result:** Many people with cognitive disabilities did not understand they needed to leave.
 
-**Outcome:** Preventable deaths.
-
 ### 2011 Tōhoku Earthquake & Tsunami (Japan)
 **Problem:** Warning systems were primarily audio-based.
 
 **Result:** Deaf community members did not receive warnings.
-
-**Outcome:** Higher mortality rates in the Deaf community.
 
 ### COVID-19 Pandemic (2020-2023)
 **Problem:** Public health guidance changed frequently without plain language versions.
 
 **Result:** People with cognitive disabilities could not follow changing protocols.
 
-**Outcome:** Higher infection rates in disability communities.
-
 ## The Solution: Survival UX
 
 This site follows "Survival Web Design" principles:
 
-✅ **Static-First:** No heavy JavaScript. Works on any device.
+✅ **Static-First:** Limited JavaScript. Works on a wide-range of device.
 
-✅ **High-Contrast:** WCAG AAA compliant. Readable in bright sunlight.
+✅ **High-Contrast:** WCAG AA compliant. Readable in bright sunlight.
 
-✅ **Low-Data Mode:** Strips images and fonts. Saves battery and bandwidth.
+✅ **Low-Data Aware:** Strips images and fonts. Saves battery and bandwidth.
 
 ✅ **Offline-First:** Progressive Web App. Works without internet once visited.
 
@@ -212,11 +214,10 @@ Grade 6+ reading level triggers warnings.
 
 ## Get Started Now
 
-<div class="cta-buttons">
-  <a href="/disabilities/" class="btn btn-large">Understand Disability Impacts →</a>
-  <a href="/templates/" class="btn btn-large">Use Emergency Templates →</a>
-  <a href="/toolkits/" class="btn btn-large">Access Toolkits →</a>
-</div>
+- Understand Disability Impacts →
+- Use Emergency Templates →
+- Access Toolkits →
+
 
 ## The Mission
 
@@ -228,6 +229,6 @@ Grade 6+ reading level triggers warnings.
 
 ---
 
-<div class="alert alert-success">
-  <strong>Start Here:</strong> If you're new to accessibility, begin with <a href="/disabilities/cognitive.html">Cognitive Disabilities in Emergencies</a>. It explains the "One Idea Per Line" principle that guides this entire guide.
-</div>
+
+**Start Here:** If you're new to accessibility, begin with [Cognitive Disabilities in Emergencies](/disabilities/cognitive.html). It explains the "One Idea Per Line" principle that guides this entire guide.
+
