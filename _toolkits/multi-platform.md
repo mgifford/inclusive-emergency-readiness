@@ -365,7 +365,7 @@ Screen readers read alt text aloud.
 1. **Start with the action:** "Evacuate now" before describing details
 2. **Include key numbers:** Addresses, phone numbers, times
 3. **Describe maps clearly:** Routes, landmarks, destinations
-4. **Keep it under 150 words:** Screen readers work best with concise text
+4. **Keep it concise:** Aim for 100-150 words (750-900 characters). Platform limits vary.
 5. **Don't say "image of":** Just describe what it shows
 6. **Include text from images:** If the image has text, include it in alt text
 
@@ -572,7 +572,8 @@ They're easier to understand under stress.
    - Community culture expects it
    - Built-in reminder
 
-3. **No character limits on alt text:**
+3. **Generous character limits:**
+   - 1,500 characters for alt text
    - More detailed descriptions possible
    - Better for complex maps
 
@@ -658,7 +659,7 @@ Before posting any emergency alert:
 - [ ] CamelCase hashtags
 - [ ] High contrast text on images (7:1 ratio)
 - [ ] Emoji used sparingly with text
-- [ ] Plain language (Grade 6, max 7.0 Flesch-Kincaid)
+- [ ] Plain language (Grade 6, below 7.0 Flesch-Kincaid)
 - [ ] Key information in first sentence
 - [ ] Descriptive link text
 - [ ] Tested with screen reader
