@@ -173,7 +173,7 @@ Check:
 
 #### Logo
 
-Replace: `/assets/images/logo.svg`
+Replace: `/assets/images/IER-a11y-logo.svg`
 
 **Requirements:**
 - SVG format (for scaling)
