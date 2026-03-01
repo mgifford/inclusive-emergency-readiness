@@ -419,7 +419,7 @@ Emergency posts must be readable for people with low vision.
 #### Font Choices
 
 **For emergency graphics:**
-- San serif fonts (Arial, Helvetica, Roboto)
+- Sans-serif fonts (Arial, Helvetica, Roboto)
 - Minimum 18pt font size
 - Bold for key information
 - No all-caps (harder to read)
@@ -736,8 +736,7 @@ Before posting any emergency alert:
 
 #### Alt Text Guides
 
-- **Harvard Digital Accessibility** - Social media accessibility guide
-- **Twitter Accessibility** - Platform-specific guidance
+- **X/Twitter Accessibility** - Platform-specific guidance
 - **Microsoft Accessibility** - Alt text best practices
 
 ## Content Adaptation
@@ -909,11 +908,10 @@ Update your platforms.
 
 ### Platform Accessibility Docs
 
-- **X/Twitter Accessibility** - Platform features and guidance
-- **Facebook Accessibility** - Meta's accessibility resources  
-- **Instagram Accessibility** - Visual platform accessibility
-- **Mastodon Accessibility** - Built-in accessibility features
-- **Bluesky Docs** - Emerging platform guidance
+- **[X/Twitter Accessibility](https://help.twitter.com/en/using-twitter/accessibility-features)** - Platform features and guidance
+- **[Facebook Accessibility](https://www.facebook.com/help/accessibility)** - Meta's accessibility resources  
+- **[Mastodon Documentation](https://docs.joinmastodon.org/)** - Built-in accessibility features
+- **[Bluesky Documentation](https://blueskyweb.xyz/)** - Emerging platform guidance
 
 ### Testing and Validation
 
