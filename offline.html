@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Resilience Comms</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f5f5f5;
+    }
+    
+    .offline-container {
+      background-color: white;
+      padding: 2rem;
+      border-left: 5px solid #cc0000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #cc0000;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+      font-size: 18px;
+    }
+    
+    .icon {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    
+    .info-box {
+      background-color: #fff8f0;
+      border-left: 3px solid #cc6600;
+      padding: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    ul {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .emergency-numbers {
+      background-color: #fff0f0;
+      border: 2px solid #cc0000;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .emergency-numbers h2 {
+      color: #cc0000;
+      margin-bottom: 1rem;
+    }
+    
+    .number {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0066cc;
+      margin: 0.5rem 0;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="icon">📡</div>
+    
+    <h1>You Are Offline</h1>
+    
+    <p><strong>This page has been cached for offline use.</strong></p>
+    
+    <p>You are viewing a saved version of Resilience Comms. Some content may not be up to date.</p>
+    
+    <div class="info-box">
+      <h2>What You Can Do</h2>
+      <ul>
+        <li><strong>Reconnect:</strong> Find a Wi-Fi network or move to an area with cell service</li>
+        <li><strong>Call for help:</strong> Use the emergency numbers below (calling works even without data)</li>
+        <li><strong>Use SMS:</strong> Text messages work when data doesn't</li>
+        <li><strong>Save battery:</strong> Close other apps, lower brightness, enable low power mode</li>
+      </ul>
+    </div>
+    
+    <div class="emergency-numbers">
+      <h2>Emergency Numbers (Work Without Internet)</h2>
+      
+      <p><strong>Emergency (Life-threatening):</strong></p>
+      <p class="number">911</p>
+      
+      <p><strong>Police (Non-emergency):</strong></p>
+      <p class="number">311</p>
+      
+      <p><strong>Poison Control:</strong></p>
+      <p class="number">1-800-222-1222</p>
+      
+      <p><strong>Crisis/Mental Health:</strong></p>
+      <p class="number">988</p>
+      
+      <p><strong>Red Cross:</strong></p>
+      <p class="number">1-800-733-2767</p>
+    </div>
+    
+    <div class="info-box">
+      <h2>Offline Emergency Resources</h2>
+      <ul>
+        <li><strong>Battery life:</strong> Lower screen brightness, close apps, airplane mode</li>
+        <li><strong>Water:</strong> 1 gallon per person per day minimum</li>
+        <li><strong>Food:</strong> Non-perishable items for 3 days minimum</li>
+        <li><strong>First aid:</strong> Basic supplies, prescription medications</li>
+        <li><strong>Radio:</strong> Battery or hand-crank for updates</li>
+      </ul>
+    </div>
+    
+    <h2>When Connection Returns</h2>
+    <p>This page will automatically refresh when you're back online.</p>
+    <p>Bookmark this site for offline access during future emergencies.</p>
+    
+    <a href="/" class="btn">Try to Reconnect</a>
+  </div>
+  
+  <script>
+    // Auto-refresh when back online
+    window.addEventListener('online', function() {
+      setTimeout(function() {
+        window.location.reload();
+      }, 1000);
+    });
+    
+    // Show online status
+    if (navigator.onLine) {
+      document.body.innerHTML = '<div style="text-align:center; padding:2rem;"><h1>You are back online!</h1><p>Reloading page...</p></div>';
+      setTimeout(function() {
+        window.location.href = '/';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
