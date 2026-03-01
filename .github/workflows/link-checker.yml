@@ -13,6 +13,8 @@ jobs:
   check-markdown-links:
     name: Check Markdown Source Links
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
       - name: Checkout repository
@@ -99,6 +101,8 @@ jobs:
   check-website-links:
     name: Check Deployed Website Links
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
       - name: Checkout repository
@@ -184,6 +188,10 @@ jobs:
     needs: [check-markdown-links, check-website-links]
     if: always()
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      actions: read
     
     steps:
       - name: Download markdown results
