@@ -4,7 +4,7 @@
 # Site settings
 title: "Resilience Comms: The Inclusive Emergency Blueprint"
 description: "A comprehensive guide for government and municipal communication teams to create accessible, inclusive emergency information that reaches everyone."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/inclusive-emergency-readiness" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Author/Organization
