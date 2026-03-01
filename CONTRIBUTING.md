@@ -18,7 +18,7 @@ Your feedback helps ensure this guide remains practical, inclusive, trustworthy,
 
 ## About This Guide
 
-This is a **community-driven guide** that aspires to be comprehensive, accurate, and trustworthy. We don't claim to have all the answers. We are building this together, learning from:
+This is a **community-driven guide** that aspires to be comprehensive, accurate, and trustworthy. We do not claim to have all the answers. We are building this together, learning from:
 
 - Real emergency situations and what worked (or didn't)
 - Expertise from accessibility and emergency management professionals
@@ -31,10 +31,10 @@ This is a **community-driven guide** that aspires to be comprehensive, accurate,
 ## Ways to Contribute
 
 ### Share Your Experience
-- Report barriers you've encountered during emergencies
-- Describe what accessibility features helped you in a crisis
-- Share emergency communication strategies that worked in your community
-- Tell us about tools or systems you've built for emergency response
+- Report barriers you've encountered during emergencies.
+- Describe what accessibility features helped you in a crisis.
+- Share emergency communication strategies that worked in your community.
+- Tell us about tools or systems you've built for emergency response.
 
 ### Improve Content
 - Open issues for gaps, missing information, or unclear guidance

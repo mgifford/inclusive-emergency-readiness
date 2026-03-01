@@ -7,7 +7,7 @@
 
 In a disaster, the "disability-disaster gap" is a failure of infrastructure, not individuals. This guide is a community-driven, open-source effort to bridge digital standards with physical survival needs through low-bandwidth, high-accessibility emergency communications.
 
-**We are building this together.** Our aspiration is to create resources that empower communications teams to develop information that is **Reachable, Readable, and Resilient**—ensuring no one is left behind when the grid fails.
+**We are building this together.** Our aspiration is to create resources that empower communications teams to develop information that is **Reachable, Readable, and Resilient** — ensuring no one is left behind when the grid fails.
 
 **This guide needs your expertise.** We especially value contributions from people with disabilities and emergency management professionals who have built tools for real disaster situations.
 
