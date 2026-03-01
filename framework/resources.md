@@ -255,7 +255,7 @@ The goal is to ensure that digital assets are designed with their physical "afte
 
 **Why it matters:** It provides the legal and technical baseline for accessibility in the U.S. federal government, which sets a standard for state and local agencies.
 
-#### ASIS Online: Inclusive Security Policies and Response Plans (2025)
+#### ASIS Online: Inclusive Security Resources
 
 **Link:** [ASIS Online](https://www.asisonline.org/){:target="_blank" rel="noopener noreferrer"}
 
@@ -263,7 +263,7 @@ The goal is to ensure that digital assets are designed with their physical "afte
 
 **Who it's for:** Security professionals and facilities managers.
 
-**Why it matters:** Highlights the 2025 shift toward treating accessibility not as an "add-on" but as a core component of safety and security planning.
+**Why it matters:** ASIS provides ongoing resources and standards for treating accessibility as a core component of safety and security planning, not an "add-on."
 
 ### Multi-Platform & Tactical Communication
 
@@ -299,25 +299,25 @@ The goal is to ensure that digital assets are designed with their physical "afte
 
 ### Academic & Technological Research
 
-#### ScienceDirect: Advances in Inclusive Disaster Technology (2025)
+#### ScienceDirect: Inclusive Disaster Technology Research
 
 **Link:** [ScienceDirect](https://www.sciencedirect.com/){:target="_blank" rel="noopener noreferrer"}
 
-**Useful For:** Reviewing peer-reviewed data on how emerging technologies (AI and IoT) are being leveraged for disaster resilience.
+**Useful For:** Searching peer-reviewed research on how emerging technologies (AI and IoT) are being leveraged for disaster resilience and accessibility.
 
 **Who it's for:** Researchers, academics, and tech developers.
 
-**Why it matters:** Provides the empirical evidence needed to support investment in accessible digital infrastructure.
+**Why it matters:** This academic database provides empirical evidence to support investment in accessible digital infrastructure. Search for terms like "inclusive disaster management," "accessible emergency alerts," or "disability disaster technology."
 
-#### Springer: Universal Access in Emergency Digital Interfaces (2025)
+#### Springer: Universal Access Research
 
 **Link:** [Springer](https://www.springer.com/){:target="_blank" rel="noopener noreferrer"}
 
-**Useful For:** Analyzing the usability of digital emergency interfaces and the psychological factors of interacting with tech under stress.
+**Useful For:** Finding research on the usability of digital emergency interfaces and the psychological factors of interacting with tech under stress.
 
 **Who it's for:** UX researchers and interface designers.
 
-**Why it matters:** It addresses the "cognitive accessibility" required when users are in high-pressure disaster situations.
+**Why it matters:** Springer publishes research addressing "cognitive accessibility" required when users are in high-pressure disaster situations. Check the "Universal Access in the Information Society" journal for relevant articles.
 
 #### EENA: Technological Breakthroughs in Inclusive Comms
 
