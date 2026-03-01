@@ -702,9 +702,14 @@ body.low-data {
 // ============================================================================
 // Print Styles
 // ============================================================================
+// Note: Print styles are loaded separately via print.scss in the layout
 
 @media print {
-  @import 'print';
+  // Hide non-essential elements for print
+  .no-print,
+  .accessibility-controls {
+    display: none !important;
+  }
 }
 
 // ============================================================================
