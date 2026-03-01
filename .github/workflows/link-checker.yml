@@ -135,7 +135,16 @@ jobs:
         run: |
           bundle install
           # Read baseurl from config, handling both quoted and unquoted values
-          BASEURL=$(grep "^baseurl:" _config.yml | sed -E 's/^baseurl:\s*"?([^"]*)"?.*/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          BASEURL=$(grep "^baseurl:" _config.yml | sed -E 's/^baseurl:\s*"?([^"#]*)"?.*/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          
+          # Verify baseurl was extracted successfully
+          if [ -z "$BASEURL" ]; then
+            echo "Warning: Could not extract baseurl from _config.yml, using empty baseurl"
+            BASEURL=""
+          else
+            echo "Using baseurl: $BASEURL"
+          fi
+          
           bundle exec jekyll build --baseurl="$BASEURL"
         continue-on-error: false
       
@@ -159,7 +168,8 @@ jobs:
               # Extract just the path part
               path=$(echo "$match" | sed -E 's/.*\(([^)]+)\).*/\1/')
               
-              # Skip if it's a liquid template variable or contains {{
+              # Skip if it contains liquid syntax - defensive check in case regex matched unexpectedly
+              # This handles edge cases where markdown might contain malformed liquid template syntax
               if echo "$path" | grep -q "{{"; then
                 continue
               fi
@@ -184,11 +194,11 @@ jobs:
               fi
             done
             
-            # Also check for Liquid relative_url filter syntax: {{ '/path/' | relative_url }}
-            # Extract paths from relative_url filter calls
-            grep -oP "\{\{\s*'[^']+'\s*\|\s*relative_url\s*\}\}" "$file" 2>/dev/null | while IFS= read -r match; do
-              # Extract the path from {{ '/path/' | relative_url }} syntax
-              path=$(echo "$match" | sed -E "s/.*'([^']+)'.*/\1/")
+            # Also check for Liquid relative_url filter syntax: {{ '/path/' | relative_url }} or {{ "/path/" | relative_url }}
+            # Extract paths from relative_url filter calls, supporting both single and double quotes
+            grep -oP "\{\{\s*['\"][^'\"]+['\"]\s*\|\s*relative_url\s*\}\}" "$file" 2>/dev/null | while IFS= read -r match; do
+              # Extract the path from {{ '/path/' | relative_url }} or {{ "/path/" | relative_url }} syntax
+              path=$(echo "$match" | sed -E "s/.*['\"]([^'\"]+)['\"].*/\1/")
               
               # Convert the path to what it should be in _site
               check_path="_site${path}"
