@@ -11,15 +11,15 @@ last_updated: 2026-03-02
 
 ## Why This Matters
 
-Many older adults need extra support during emergencies.
+Many older adults need extra help in emergencies.
 
-But they may not see themselves as having extra needs.
+But they may not think they need extra help.
 
-They may not respond to messages that use the word "disability."
+They may ignore messages that use the word "disability."
 
-**The challenge:** How do you reach people who need help but do not identify with labels?
+**The challenge:** How do you reach people who need help but do not use labels?
 
-**The solution:** Focus on actions and needs, not labels.
+**The solution:** Talk about actions and needs, not labels.
 
 ---
 
@@ -27,14 +27,14 @@ They may not respond to messages that use the word "disability."
 
 ### The Problem
 
-**Traditional approach:** "Are you disabled? Do you need special help?"
+**Old way:** "Are you disabled? Do you need special help?"
 
-**Result:** Many seniors say "no" and miss critical support.
+**Result:** Many seniors say "no" and miss important help.
 
 **Why this happens:**
 - They see themselves as independent
-- The word "disability" does not fit their identity
-- They have been managing for years
+- The word "disability" does not fit who they are
+- They have been fine for years
 - Asking for help feels like giving up
 
 ### The Better Way
@@ -82,41 +82,41 @@ They answer "no" to identity labels.
 
 ### Build Trust Networks
 
-Seniors trust familiar voices more than government alerts.
+Seniors trust people they know more than government alerts.
 
 **The principle:** Use messengers seniors already trust.
 
 ### Trusted Messengers for Seniors
 
 **1. Senior Centers**
-- Where: Community centers, recreation programs
-- Why: Regular contact, known staff, familiar spaces
-- How: Post information on bulletin boards, share at events, train staff
+- Where: Community centers, activity programs
+- Why: Regular contact, known staff, familiar place
+- How: Post info on bulletin boards, share at events, train staff
 
-**2. Faith-Based Organizations**
+**2. Faith Groups**
 - Where: Churches, synagogues, mosques, temples
-- Why: Regular attendance, trusted leaders, social connections
+- Why: Regular attendance, trusted leaders, social ties
 - How: Share through bulletins, announcements, care networks
 
 **3. Meals-on-Wheels**
 - Where: Home delivery programs
-- Why: Daily contact, trusted relationship, already checking on wellness
-- How: Drivers can share printed guides, check preparedness
+- Why: Daily contact, trusted relationship, already check on people
+- How: Drivers can share printed guides, check plans
 
 **4. Home Health Services**
 - Where: Visiting nurses, personal care workers
 - Why: Regular home visits, know individual needs, trusted caregivers
-- How: Include emergency prep in care plans
+- How: Add emergency prep to care plans
 
 **5. Pharmacies**
 - Where: Local drugstores, mail-order services
 - Why: Monthly contact, know medication needs, trusted relationship
-- How: Include prep tips with prescriptions, post information
+- How: Add prep tips with prescriptions, post info
 
-### Implementation Strategy
+### How to Do This
 
-**Step 1: Identify Partners**
-- List all senior-serving organizations in your area
+**Step 1: Find Partners**
+- List all groups that help seniors in your area
 - Contact leaders
 - Explain the mission
 
@@ -127,8 +127,8 @@ Seniors trust familiar voices more than government alerts.
 - One page maximum
 
 **Step 3: Train Messengers**
-- Brief staff on questions to ask
-- Provide talking points
+- Brief staff on what to ask
+- Give talking points
 - Give them tools to help
 
 **Step 4: Track Reach**
@@ -146,12 +146,12 @@ Emergency plans must support this.
 
 ### The Power of 3 Network
 
-**Definition:** Three people who can help you in an emergency.
+**What it is:** Three people who can help you in an emergency.
 
 **Why 3?**
 - One person may be away
-- One person may be affected too
-- Three provides backup
+- One person may be hurt too
+- Three gives you backup
 
 ### How to Build Your Power of 3
 
@@ -245,23 +245,23 @@ These fail when power goes out.
 - Keep: Fresh batteries on hand
 - Test: Monthly
 
-### The Tactile-First Principle
+### The Touch-First Principle
 
-**Rule:** You should be able to find critical items in the dark.
+**Rule:** You should be able to find key items in the dark.
 
-**Why:** Power outages happen at night. Flashlights may not be handy.
+**Why:** Power goes out at night. You may not have a flashlight.
 
-**How to implement:**
+**How to do this:**
 
 1. **Create texture markers**
-   - Use tape on medication bottles
+   - Put tape on medication bottles
    - Different textures = different meds
    - Feel the difference without seeing
 
 2. **Organize by touch**
    - Keep emergency items in same spot always
    - Use boxes with different shapes
-   - Count steps to important locations
+   - Count steps to important places
 
 3. **Practice without light**
    - Turn off lights
@@ -285,20 +285,20 @@ Audio alerts must work for age-related hearing changes.
 
 ### Audio Alert Standards
 
-**1. Frequency (Tone)**
+**1. Tone**
 - Use: 500-2000 Hz range
-- Avoid: High-pitched beeps above 3000 Hz
+- Avoid: High beeps above 3000 Hz
 - Why: Older ears hear lower tones better
 
-**2. Cadence (Speed)**
+**2. Speed**
 - Speak: 100-120 words per minute
 - Pause: 2 seconds between sentences
-- Why: Allows time to process
+- Why: Gives time to understand
 
 **3. Background**
 - Use: Silence only
 - Avoid: Music, sound effects
-- Why: Reduces confusion
+- Why: Less confusing
 
 **4. Voice**
 - Use: One clear voice
@@ -306,9 +306,9 @@ Audio alerts must work for age-related hearing changes.
 - Why: Easier to understand
 
 **5. Repetition**
-- Repeat: Critical information 2-3 times
-- Exact words: Same phrasing each time
-- Why: Ensures comprehension
+- Repeat: Important info 2-3 times
+- Exact words: Same words each time
+- Why: Makes sure people understand
 
 ### Audio Script Template
 
@@ -359,11 +359,11 @@ Stay home after 6 PM.
 
 ---
 
-### Visual Clarity for Seniors
+### Clear Visuals for Seniors
 
-Older eyes need different design standards.
+Older eyes need different design.
 
-**The changes that happen:**
+**What changes:**
 - Need more light to read
 - Need larger text
 - Need more contrast
@@ -392,31 +392,31 @@ Older eyes need different design standards.
 - Line spacing: 1.5 minimum
 - Paragraph spacing: Extra space between
 - Margins: Wide (1 inch minimum)
-- Why: Prevents lines from blurring together
+- Why: Keeps lines from running together
 
 **5. Paper**
 - Use: Matte finish only
 - Avoid: Glossy paper
 - Why: Reduces glare
 
-### Reading in Panic Standards
+### Reading During Panic
 
 Stress makes reading harder.
 
-Design must account for this.
+Design must help with this.
 
-**The principle:** Each line should contain only one idea.
+**The principle:** Each line should have only one idea.
 
-**Bad example:**
+**Bad:**
 ```
-Evacuate the building immediately using the nearest exit, 
+Leave the building right away using the nearest exit, 
 taking your emergency kit and medication with you, and 
-proceed to the assembly point at the parking lot.
+go to the meeting point at the parking lot.
 ```
 
-**Good example:**
+**Good:**
 ```
-Evacuate now.
+Leave now.
 
 Use the nearest exit.
 
@@ -441,7 +441,7 @@ Go to the parking lot.
 
 ---
 
-## Implementation Guide
+## How to Use This Guide
 
 ### For Emergency Managers
 
@@ -526,23 +526,23 @@ Go to the parking lot.
 
 ### County Health Department
 
-**Challenge:** Smart-home users unprepared for power loss.
+**Challenge:** People with smart homes not ready for power loss.
 
 **Solution:** "Tech Check" program
 - Visited seniors with smart homes
 - Created backup plan for each device
-- Provided flashlights and written guides
+- Gave flashlights and written guides
 - Result: 89% felt more prepared
 
 ### Faith Community Network
 
-**Challenge:** Isolated seniors not receiving alerts.
+**Challenge:** Alone seniors not getting alerts.
 
 **Solution:** Trusted messenger program
 - Trained church volunteers
 - Created printed guides
 - Volunteers visited monthly
-- Result: 100% of isolated seniors now have Power of 3
+- Result: 100% of alone seniors now have Power of 3
 
 ---
 
@@ -652,9 +652,9 @@ _______________
 
 ## Summary
 
-**The core principle:** Focus on what people need, not what you call them.
+**The main rule:** Focus on what people need, not what you call them.
 
-**The strategy:**
+**The plan:**
 1. Ask about specific needs, not identity labels
 2. Use messengers seniors already trust
 3. Build Power of 3 support networks
