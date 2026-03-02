@@ -1,9 +1,9 @@
 ---
 layout: disability
-title: "Cognitive Disabilities in Emergencies"
+title: "Thinking and Learning Needs in Emergencies"
 category: disability
 disability_type: cognitive
-summary: "How cognitive disabilities affect emergency information processing and what communicators must do differently."
+summary: "How thinking and memory needs affect understanding emergency information and what communicators must do differently."
 wcag_focus:
   - "3.1 Readable"
   - "3.2 Predictable"
@@ -12,7 +12,7 @@ reading_level: "Grade 6"
 last_updated: 2026-03-01
 ---
 
-# Cognitive Disabilities in Emergencies
+# Thinking and Learning Needs in Emergencies
 
 ## One Idea Per Line
 
@@ -20,13 +20,13 @@ This page follows the "One Idea Per Line" principle.
 
 Each line contains only one concept.
 
-This makes information easier to process.
+This makes information easier to understand.
 
 Especially during high-stress emergencies.
 
-## What Are Cognitive Disabilities?
+## What Are Thinking and Learning Needs?
 
-Cognitive disabilities affect how people think.
+Thinking and learning needs affect how people think.
 
 They affect how people learn.
 
@@ -34,48 +34,48 @@ They affect how people remember.
 
 They affect how people solve problems.
 
-### Types of Cognitive Disabilities
+### Types of Thinking and Learning Needs
 
-**Learning disabilities:**
-- Dyslexia (reading difficulties)
-- Dyscalculia (math difficulties)
-- Dysgraphia (writing difficulties)
+**Learning needs:**
+- Dyslexia (trouble reading)
+- Dyscalculia (trouble with math)
+- Dysgraphia (trouble writing)
 
-**Attention disabilities:**
+**Attention needs:**
 - ADHD (Attention Deficit Hyperactivity Disorder)
-- Attention disorders
+- Attention problems
 
-**Memory disabilities:**
+**Memory needs:**
 - Short-term memory loss
-- Working memory difficulties
+- Trouble holding things in mind
 - Dementia
 - Alzheimer's disease
 
-**Autism spectrum:**
+**Autism and related:**
 - Autism
-- Asperger's syndrome
-- Pervasive developmental disorder
+- Asperger's
+- Similar needs
 
-**Intellectual disabilities:**
+**Intellectual needs:**
 - Down syndrome
 - Fragile X syndrome
-- Fetal alcohol spectrum disorder
+- Fetal alcohol disorder
 
 **Brain injuries:**
 - Traumatic brain injury (TBI)
 - Stroke
-- Concussion
+- Head injuries
 
-## Emergency Impacts
+## How Emergencies Create Problems
 
-### Information Overload
+### Too Much Information at Once
 
 **The Problem:**
-Emergency alerts often contain too much information at once.
+Emergency alerts often have too much information.
 
-Multiple pieces of data compete for attention.
+Many pieces of data compete for attention.
 
-People with cognitive disabilities cannot filter what matters most.
+People cannot filter what matters most.
 
 **Real-World Failure:**
 A wildfire alert includes:
@@ -88,16 +88,16 @@ A wildfire alert includes:
 
 Someone with ADHD sees all of this.
 
-They cannot identify the critical action.
+They cannot find the critical action.
 
 They freeze.
 
 They do not evacuate in time.
 
-### Complex Language
+### Hard Words and Long Sentences
 
 **The Problem:**
-Emergency communications use bureaucratic language.
+Emergency messages use hard words.
 
 They use technical terms.
 
@@ -106,24 +106,24 @@ They use passive voice.
 They use compound sentences.
 
 **Real-World Failure:**
-"Residents in zones A through D are hereby advised to evacuate to designated emergency shelters or alternative safe locations outside the affected perimeter."
+"People in zones A, B, C, and D: Leave now. Go to Main Street School or another safe place outside the danger area."
 
 Someone with dyslexia reads this.
 
-They cannot parse "hereby advised."
+They cannot understand "hereby advised."
 
-They do not know what "designated" means.
+They do not know what "another safe place" means.
 
-They do not understand "affected perimeter."
+They do not understand "danger area."
 
 They do not evacuate.
 
-### Time Pressure
+### Not Enough Time to Think
 
 **The Problem:**
 Emergencies require fast decisions.
 
-People with cognitive disabilities need more time to process.
+People need more time to understand information.
 
 They need more time to plan.
 
@@ -142,12 +142,12 @@ They cannot decide where to go.
 
 They run out of time.
 
-### Memory Load
+### Too Many Steps to Remember
 
 **The Problem:**
-Emergency instructions require remembering multiple steps.
+Emergency instructions require remembering many steps.
 
-People with memory disabilities cannot hold all steps in mind.
+People with memory needs cannot hold all steps in mind.
 
 They forget critical information.
 
@@ -162,16 +162,16 @@ They leave without turning off the gas.
 
 This creates a secondary hazard.
 
-### Unfamiliar Situations
+### New and Unfamiliar Situations
 
 **The Problem:**
-Emergencies are novel situations.
+Emergencies are new situations.
 
-People with intellectual disabilities rely on familiar routines.
+People rely on familiar routines.
 
-Novel situations cause confusion.
+New situations cause confusion.
 
-Novel situations cause fear.
+New situations cause fear.
 
 **Real-World Failure:**
 A flood requires evacuation by bus.
@@ -190,7 +190,7 @@ They move on.
 
 The person is left behind.
 
-## What Communicators Must Do
+## How to Write Better Emergency Messages
 
 ### Principle 1: One Action Per Message
 
@@ -206,7 +206,7 @@ The person is left behind.
 "Go to Main Street School."
 
 **Not this:**
-"Proceed to the designated emergency shelter facility."
+"Proceed to the chosen emergency shelter facility."
 
 ### Principle 3: Use Active Voice
 
@@ -214,7 +214,7 @@ The person is left behind.
 "The fire department will call you."
 
 **Not this:**
-"You will be contacted by emergency personnel."
+"You will be contacted by emergency workers."
 
 ### Principle 4: Break Into Steps
 
@@ -225,7 +225,7 @@ The person is left behind.
 4. Go to the parking lot
 
 **Not this:**
-"Secure utilities, gather necessities, exit premises, and report to the staging area."
+"Secure utilities, gather needs, exit building, and report to the staging area."
 
 ### Principle 5: Use Visual Supports
 
@@ -248,7 +248,7 @@ The person is left behind.
 **Not this:**
 "Report to the emergency shelter."
 
-### Principle 7: Provide Advance Notice
+### Principle 7: Give Early Warning
 
 **Do this:**
 "A storm is coming in 3 days. We will send updates every day."
@@ -256,7 +256,7 @@ The person is left behind.
 **Not this:**
 "Severe weather alert: Take immediate action."
 
-### Principle 8: Remove Time Pressure When Possible
+### Principle 8: Give More Time When Possible
 
 **Do this:**
 "You have 2 hours to pack. We will help you."
@@ -268,13 +268,13 @@ The person is left behind.
 
 ### 3.1.1 Language of Page (Level A)
 
-**What it means:**
-Declare the language of your web page.
-
 **Why it matters:**
 Screen readers need to know what language to use.
 
-Translation tools need to know what language to translate from.
+Translation tools need to know what language.
+
+**What it means:**
+Set the language of your web page.
 
 **How to do it:**
 ```html
@@ -283,11 +283,11 @@ Translation tools need to know what language to translate from.
 
 ### 3.1.2 Language of Parts (Level AA)
 
-**What it means:**
-Declare when you change languages within a page.
-
 **Why it matters:**
 Mixed-language content needs proper pronunciation.
+
+**What it means:**
+Mark when you change languages within a page.
 
 **How to do it:**
 ```html
@@ -296,35 +296,35 @@ Mixed-language content needs proper pronunciation.
 
 ### 3.1.3 Unusual Words (Level AAA)
 
-**What it means:**
-Provide definitions for unusual words.
-
 **Why it matters:**
-People with cognitive disabilities may not know specialized terms.
+People may not know special terms.
+
+**What it means:**
+Give meaning for unusual words.
 
 **How to do it:**
 Use a glossary link.
 
-Or provide inline definitions.
+Or give inline meaning.
 
-### 3.1.4 Abbreviations (Level AAA)
-
-**What it means:**
-Spell out abbreviations on first use.
+### 3.1.4 Spell Out Short Forms (Level AAA)
 
 **Why it matters:**
-People with cognitive disabilities may not know what letters stand for.
+People may not know what letters stand for.
+
+**What it means:**
+Spell out short forms on first use.
 
 **How to do it:**
 "Emergency Operations Center (EOC)"
 
 ### 3.1.5 Reading Level (Level AAA)
 
+**Why it matters:**
+Hard text stops people from understanding.
+
 **What it means:**
 Text should be Grade 6 reading level or lower.
-
-**Why it matters:**
-Complex text excludes people with cognitive disabilities.
 
 **How to do it:**
 Use short words.
@@ -335,11 +335,11 @@ Use active voice.
 
 ### 3.2.1 On Focus (Level A)
 
+**Why it matters:**
+Unexpected changes confuse people.
+
 **What it means:**
 Focus should not trigger unexpected changes.
-
-**Why it matters:**
-Unexpected changes confuse people with cognitive disabilities.
 
 **How to do it:**
 Do not auto-submit forms on focus.
@@ -348,11 +348,11 @@ Do not auto-navigate on focus.
 
 ### 3.2.2 On Input (Level A)
 
+**Why it matters:**
+Unexpected changes interrupt thinking.
+
 **What it means:**
 Input should not trigger unexpected changes.
-
-**Why it matters:**
-Unexpected changes interrupt cognitive processes.
 
 **How to do it:**
 Provide a submit button.
@@ -361,11 +361,11 @@ Do not auto-submit.
 
 ### 3.2.3 Consistent Navigation (Level AA)
 
+**Why it matters:**
+People rely on patterns.
+
 **What it means:**
 Navigation should be in the same place on every page.
-
-**Why it matters:**
-People with cognitive disabilities rely on patterns.
 
 **How to do it:**
 Use the same header on every page.
@@ -374,11 +374,11 @@ Put navigation in the same location.
 
 ### 3.2.4 Consistent Identification (Level AA)
 
+**Why it matters:**
+Different labels cause confusion.
+
 **What it means:**
 Use the same labels for the same functions.
-
-**Why it matters:**
-Inconsistent labels cause confusion.
 
 **How to do it:**
 If a button says "Next" on one page, it should say "Next" on all pages.
@@ -387,11 +387,11 @@ Not "Continue" or "Proceed."
 
 ### 3.3.1 Error Identification (Level A)
 
+**Why it matters:**
+People may not notice small error signs.
+
 **What it means:**
 Clearly identify errors.
-
-**Why it matters:**
-People with cognitive disabilities may not notice subtle error indicators.
 
 **How to do it:**
 Use text to describe errors.
@@ -400,11 +400,11 @@ Not just color.
 
 ### 3.3.2 Labels or Instructions (Level A)
 
-**What it means:**
-Provide clear labels for all inputs.
-
 **Why it matters:**
-People with cognitive disabilities need explicit instructions.
+People need clear instructions.
+
+**What it means:**
+Give clear labels for all inputs.
 
 **How to do it:**
 Label every form field.
@@ -413,27 +413,27 @@ Provide format examples.
 
 ### 3.3.3 Error Suggestion (Level AA)
 
-**What it means:**
-Suggest how to fix errors.
-
 **Why it matters:**
-People with cognitive disabilities may not know how to correct mistakes.
+People may not know how to fix mistakes.
+
+**What it means:**
+Show how to fix errors.
 
 **How to do it:**
 "Phone number must be 10 digits. You entered 9 digits."
 
 ### 3.3.4 Error Prevention (Level AA)
 
+**Why it matters:**
+People benefit from confirmation steps.
+
 **What it means:**
 Prevent errors for important actions.
-
-**Why it matters:**
-People with cognitive disabilities benefit from confirmation steps.
 
 **How to do it:**
 Add a confirmation page for critical actions.
 
-Allow users to review before submitting.
+Let users review before submitting.
 
 ## Emergency Communication Checklist
 
@@ -443,13 +443,13 @@ Use this checklist for every emergency message:
 - [ ] Is there one main action?
 - [ ] Is the action stated in the first sentence?
 - [ ] Are all words in common use?
-- [ ] Are all abbreviations spelled out?
+- [ ] Are all short forms spelled out?
 - [ ] Are sentences 15 words or less?
 - [ ] Is the message in active voice?
 - [ ] Are there visual supports?
 - [ ] Is the message repeated?
 - [ ] Is the message consistent with previous messages?
-- [ ] Can someone act on this without remembering other information?
+- [ ] Can someone act on this without remembering other details?
 
 ## Tools and Resources
 
@@ -470,10 +470,10 @@ Use this checklist for every emergency message:
 
 ### Testing
 Test your content with:
-- People with cognitive disabilities
+- People with thinking and memory needs
 - Family caregivers
 - Special education teachers
-- Cognitive accessibility consultants
+- Access consultants
 
 ## Case Studies
 
@@ -489,12 +489,12 @@ Used one-sentence instructions.
 Repeated information every 30 minutes.
 
 **Result:**
-98% evacuation compliance in areas serving people with developmental disabilities.
+98% of people left in time in areas with developmental needs.
 
 ### Failure: Hurricane Katrina
 
 **What went wrong:**
-Evacuation orders used complex legal language.
+Evacuation orders used hard legal language.
 
 Messages assumed access to cars.
 
@@ -503,13 +503,13 @@ Messages assumed familiarity with highway systems.
 Messages assumed ability to read maps.
 
 **Result:**
-Many people with cognitive disabilities did not evacuate.
+Many people did not evacuate.
 
 Some died in the flood.
 
 ## The Bottom Line
 
-Cognitive accessibility is survival accessibility.
+Clear writing is survival writing.
 
 If someone cannot understand your message, they cannot act.
 
