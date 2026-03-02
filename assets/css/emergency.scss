@@ -250,11 +250,25 @@ a {
 }
 
 .site-logo {
-  height: 48px;
-  max-height: 48px;
+  height: 56px;
+  max-height: 56px;
   width: auto;
   display: block;
-  border-radius: 4px;
+}
+
+// Site title is visually hidden when the full-logo image (social-card.svg) is visible.
+// Preserved in the accessibility tree for screen reader heading navigation.
+// Shown in low-data mode when the logo image is hidden.
+.site-title-wrap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .site-title {
@@ -907,6 +921,18 @@ body.high-contrast {
   // Hide logo image; site title text remains visible
   .site-logo {
     display: none;
+  }
+  
+  // Show site title text when the logo image is hidden
+  .site-title-wrap {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
   }
   
   // Simplify borders
