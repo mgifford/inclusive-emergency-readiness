@@ -87,6 +87,25 @@ This is a **community-driven guide** that aspires to be comprehensive, accurate,
 - Think about physical backups (print, offline storage)
 - Account for power outages and infrastructure failures
 
+### Start Now, Improve Always
+**We embrace progressive improvement over paralyzed perfectionism.**
+
+When contributing:
+- Small improvements are valuable (don't wait to submit the "perfect" PR)
+- Incomplete is better than missing (a partial template helps someone today)
+- Speed matters in emergencies (quick iteration beats slow perfection)
+- Track progress, not perfection (Bronze → Silver → Gold approach)
+
+**See our [Start Now Framework](./framework/start-now.html)** for how this mindset applies to emergency preparedness.
+
+When reviewing contributions:
+- Appreciate incremental improvements
+- Suggest next steps rather than blocking on perfection
+- Help contributors build on their work iteratively
+- Prioritize working solutions over comprehensive ones
+
+**In disasters, a simple solution deployed today saves more lives than a perfect solution deployed next month.**
+
 ## Pull Request Guidelines
 
 ### Before Submitting
