@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+# Resilience Comms: The Inclusive Emergency Blueprint
+
 ## Planners need to start now to ensure that sending alerts reaches everyone.
 
 **This guide helps you write emergency communications.**
