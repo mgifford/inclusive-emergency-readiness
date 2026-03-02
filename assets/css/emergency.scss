@@ -388,7 +388,7 @@ a {
     }
     
     &[aria-current="page"] {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
       font-weight: 700;
     }
     
@@ -440,7 +440,7 @@ a {
     
     // Active state when a dropdown child is the current page
     &[aria-current="true"] {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
       font-weight: 700;
     }
     
@@ -1104,6 +1104,13 @@ body.low-data {
     
     a {
       color: #6699ff;
+    }
+    
+    // Headings have an explicit color (#1a1a1a) that overrides body color inheritance.
+    // Override here so headings are visible on the dark background.
+    // #e5e5e5 on #1a1a1a achieves >13:1 contrast ratio (exceeds WCAG AAA)
+    h1, h2, h3, h4, h5, h6 {
+      color: #e5e5e5;
     }
     
     // Table even rows retain light background (#f9f9f9 from base CSS)
