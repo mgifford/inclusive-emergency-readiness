@@ -39,6 +39,7 @@ last_updated: 2026-03-01
 - ASL or LSQ is their first language
 - Need sign language interpreters
 - Written text may be harder to read
+- Interpreters provide clearest communication
 
 **ASL** (what it means): American Sign Language. A visual language using hand signs.
 
@@ -367,12 +368,12 @@ Auto-play startles users and drains batteries.
 ## Tools You Can Use
 
 ### Test Captions
-**Use captioning tools (verify availability):**
-- YouTube auto-sync (check current features)
-- Amara Editor (online option)
-- Subtitle Edit (downloadable software)
+**Note:** Tool availability changes. Verify these work before recommending.
 
-**Note:** Tool availability changes. Verify these work before recommending to users.
+**Captioning tools to try:**
+- YouTube auto-sync
+- Amara Editor
+- Subtitle Edit
 
 ### Create Captions
 **File format for web captions:**
