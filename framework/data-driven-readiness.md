@@ -796,6 +796,10 @@ We're not there yet. But data-driven readiness gets us closer with every disaste
 
 ---
 
+> **Related:** Digital data only captures people who are visible online. Learn how to identify and reach populations that fall outside digital systems in [Data Fidelity and Ethical Mapping]({{ '/framework/data-ethics-mapping.html' | relative_url }}).
+
+---
+
 **Questions? Feedback? Corrections?**
 
 This guide aspires to be comprehensive and accurate, but we recognize we're continuously learning from real-world implementations.

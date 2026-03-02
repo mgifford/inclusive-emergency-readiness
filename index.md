@@ -78,6 +78,7 @@ Use this table to find the right guide for your situation.
 | **Check your team's readiness** | [Ready-Willing-Able Self-Assessment]({{ '/framework/rwa-framework.html' | relative_url }}) | 1 hour |
 | **Make shelters accessible** | [Physical-Digital Intersection Guide]({{ '/framework/physical-digital.html' | relative_url }}) | 2 hours |
 | **Protect people who need power** | [Data-Driven Readiness]({{ '/framework/data-driven-readiness.html' | relative_url }}) | 2 hours |
+| **Use data responsibly and ethically** | [Data Fidelity and Ethical Mapping]({{ '/framework/data-ethics-mapping.html' | relative_url }}) | 1 hour |
 | **Use AI to improve content** | [LLM Prompts for Accessible Alerts]({{ '/framework/llm-prompts.html' | relative_url }}) | 30 min |
 | **Use accessible maps in disasters** | [Maps, Disasters, and Accessibility]({{ '/framework/maps-accessibility.html' | relative_url }}) | 1 hour |
 | **Reach older adults** | [Seniors and Identity: Functional-Needs Language]({{ '/framework/seniors-identity.html' | relative_url }}) | 1 hour |
