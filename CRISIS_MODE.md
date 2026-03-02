@@ -41,7 +41,7 @@ During disasters and emergencies:
 
 **All pages include:**
 - Complete HTML document
-- Inline CSS (~3.2KB base)
+- Inline CSS (~1.7KB minified)
 - Zero external requests
 - Zero JavaScript
 - Zero images
@@ -56,10 +56,9 @@ During disasters and emergencies:
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Crisis Mode - Emergency Information</title>
   <style>
-    /* All CSS inlined - minified for size */
+    /* All CSS inlined - minified for size - ~1.7KB */
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:sans-serif;line-height:1.6;color:#000;background:#fff}
-    /* ~2.5KB of essential styles */
   </style>
 </head>
 <body>

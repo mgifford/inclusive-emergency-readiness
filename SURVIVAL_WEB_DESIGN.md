@@ -25,20 +25,20 @@ This document explains the technical design decisions behind **Resilience Comms*
 **Location:** `/crisis.html`, `/crisis-templates.html`, `/crisis-disabilities.html`
 
 **Architecture:**
-- **Layout:** `_layouts/crisis.html` with inline CSS (~3.2KB base)
+- **Layout:** `_layouts/crisis.html` with inline CSS (~1.7KB minified)
 - **Zero External Requests:** All CSS inlined, no images, no JavaScript, no fonts
 - **Page Weights:**
   - Crisis Home: 6.4KB total
   - Crisis Templates: 8.1KB total
   - Crisis Disabilities: 11.1KB total
-- **Payload Reduction:** 98% smaller than full site (~500KB → ~5-11KB)
+- **Payload Reduction:** 98% smaller than full site (~500KB → ~6-11KB)
 
 **Technical Constraints:**
 ```html
 <!-- Inline CSS only - no external stylesheets -->
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-/* Minified, essential styles only */
+/* Minified, essential styles - ~1.7KB total */
 </style>
 
 <!-- No JavaScript whatsoever -->
