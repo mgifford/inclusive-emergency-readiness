@@ -698,8 +698,12 @@ table {
     font-weight: 700;
   }
   
+  tr:nth-child(odd) {
+    background-color: #f5f5f5; // ~4% gray offset from white page background
+  }
+
   tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #ebebeb; // ~8% gray offset from white page background
   }
 }
 
@@ -1113,11 +1117,14 @@ body.low-data {
       color: #e5e5e5;
     }
     
-    // Table even rows retain light background (#f9f9f9 from base CSS)
-    // Override inherited dark mode text color with #717171 for sufficient contrast
-    // #717171 text on #f9f9f9 background achieves 4.64:1 ratio (meets WCAG AA)
+    // Table zebra striping: subtle rows relative to dark mode page background (#1a1a1a)
+    // Odd rows: ~5% lighter (#272727), Even rows: ~10% lighter (#333333)
+    // Overrides light mode backgrounds; text inherits #e5e5e5 for sufficient contrast
+    table tr:nth-child(odd) {
+      background-color: #272727;
+    }
     table tr:nth-child(even) {
-      color: #717171;
+      background-color: #333333;
     }
     
     // Header site title and navigation links need white color on blue background
