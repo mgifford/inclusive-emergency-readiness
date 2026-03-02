@@ -125,6 +125,11 @@ You must reach all people.
 
 **You learn:** How to make shelters accessible
 
+### Protect Electricity-Dependent Populations
+**Go to:** [Data-Driven Readiness]({{ '/framework/data-driven-readiness.html' | relative_url }})
+
+**You learn:** How to use databases to find and help people who need power for medical equipment
+
 ### Use AI Tools
 **Go to:** [LLM Prompts Guide]({{ '/framework/llm-prompts.html' | relative_url }})
 

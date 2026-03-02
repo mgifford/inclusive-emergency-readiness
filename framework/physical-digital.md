@@ -84,6 +84,8 @@ Make physical spaces safe for everyone.
 - People without formal healthcare
 - Equipment not covered by Medicare
 
+> **Learn More:** For comprehensive guidance on emPOWER and international equivalents, see [Data-Driven Readiness]({{ '/framework/data-driven-readiness.html' | relative_url }})
+
 ### Creating a Functional Needs Registry
 
 **Aspiration vs. Reality:**
