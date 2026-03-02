@@ -183,13 +183,13 @@ The goal is to ensure that digital assets are designed with their physical "afte
 
 **Why it matters:** In a disaster, supply chains break. Glia allows communities to "print" their own medical infrastructure using digital files downloaded before the crisis.
 
-**Clinical Validation:** Glia's stethoscope has demonstrated comparable frequency response to traditional models in controlled studies. Research shows performance within acceptable clinical ranges for basic auscultation. However, effectiveness depends on:
+**Clinical Validation:** Glia's stethoscope has demonstrated comparable frequency response to traditional models in published research, including validation studies by healthcare professionals using the devices in clinical settings. The stethoscopes have been used by practitioners in multiple countries. However, effectiveness depends on:
 - Print material quality and printer calibration
 - Proper assembly following exact specifications
 - User training on the specific device
 - Regular maintenance and inspection
 
-**Important:** Not all 3D-printed medical devices have clinical validation. Verify specific model certifications before use in clinical settings. Performance may vary based on manufacturing conditions.
+**Important:** Not all 3D-printed medical devices have clinical validation. Verify specific model certifications and review published studies before use in clinical settings. Performance may vary based on manufacturing conditions. For Glia-specific research and clinical validation documentation, visit [Glia.org/research](https://glia.org/research){:target="_blank" rel="noopener noreferrer"}.
 
 #### Field Ready: Local Manufacturing for Humanitarian Relief
 

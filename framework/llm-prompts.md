@@ -3,7 +3,7 @@ layout: default
 title: "LLM Prompts for Inclusive Emergency Communications"
 category: framework
 summary: "Ready-to-use prompts for large language models to audit, improve, and create accessible emergency communications."
-reading_level: "Grade 7"
+reading_level: "Grade 6"
 last_updated: 2026-03-02
 ---
 

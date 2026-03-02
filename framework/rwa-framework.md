@@ -310,7 +310,7 @@ For every "No," follow the linked resource to close the gap.
 
 ## Continuous Improvement
 
-The RWA Framework is not one-time assessment.
+The RWA Framework is not a one-time assessment.
 
 **Reassess Regularly:**
 - After every emergency (lessons learned)

@@ -90,7 +90,7 @@ Make physical spaces safe for everyone.
 
 Many municipalities **aspire** to maintain comprehensive registries, but face challenges:
 - **Privacy concerns** - People fear disclosure
-- **Opt-in rates** - Often below 40%
+- **Opt-in rates** - Often below 40% (based on municipal emergency management data and research on voluntary alert system enrollment)
 - **Data staleness** - Needs change quickly
 - **Resource constraints** - Maintenance is time-intensive
 
