@@ -3,258 +3,342 @@ layout: default
 title: Home
 ---
 
-# Resilience Comms: The Inclusive Emergency Blueprint
+# Inclusive Emergency Readiness
 
-## When the power goes out, will your message still get through?
+## Send alerts that reach everyone.
 
-Emergency communication is not a feature—**it's infrastructure**.
+**This guide helps you write emergency alerts.**
 
-When disaster strikes, the digital divide becomes deadly.
+All people can understand them.
+
+All people can access them.
+
+**Who uses this guide:**
+- Government teams
+- Emergency managers
+- First responders
+
+**The problem:** Every year, alerts miss many people.
 
 <div class="alert alert-danger">
-  **Critical Reality:** Every year, emergency alerts fail to reach people with disabilities. We are building this guide to change that — together.
+  **Act now.** Use this guide. Save lives.
 </div>
 
-## What This Guide Aspires to Offer
+## What You Get
 
-This is a **community-driven resource** created by people with disabilities, emergency management professionals, accessibility specialists, and municipal teams working together.
+People with access needs built this guide.
 
-**We don't have all the answers.** We are learning from real emergencies, testing implementations, and continuously improving based on your feedback and expertise.
+Emergency experts helped.
 
-### For Government & Municipal Teams
+**You get:**
+- Alert templates you can use now
+- How-to guides
+- Testing tools
 
-You are responsible for emergency communication.
+**Our goal:** Help you reach all people.
 
-You need to reach **everyone**.
+### For Government Teams
 
-We aim to show you how — and we need your feedback to improve.
+You send emergency messages.
 
-### Built on Three Frameworks
+You must reach all people.
 
-We strive to align with:
+**This guide shows you how to:**
+- Write clear alerts
+- Pick the right channels
+- Test your messages
+- Fix problems
 
-1. **WCAG 2.2 Level AA/AAA** - Technical accessibility standards
-2. **W3C Web Sustainability Guidelines (WSG) 1.0** - Low-bandwidth, high-resilience design  
-3. **CAN-ASC-6.4 (Emergency Measures)** - Strategic Canadian standards for inclusive disaster response
+### Rules This Guide Follows
 
-Plus: **Plain Language** and **Easy Read** for cognitive accessibility.
+**WCAG 2.2**
+- What it is: Rules for web sites
+- Why: Screen readers can read the page
 
-> **📋 Project Governance**: Review our operational standards:
-> - [ACCESSIBILITY.md]({{ '/ACCESSIBILITY.html' | relative_url }}) - Our accessibility commitment and standards
-> - [SUSTAINABILITY.md]({{ '/SUSTAINABILITY.html' | relative_url }}) - Performance and resilience requirements
-> - [CONTRIBUTING.md]({{ '/CONTRIBUTING.html' | relative_url }}) - How to help improve this guide
-> - [AGENTS.md]({{ '/AGENTS.html' | relative_url }}) - Protocols for contributors (AI and human)
+**WSG 1.0**
+- What it is: Rules for small files
+- Why: Sites work when networks are slow
 
-## Quick Start Guides
-  
-### 🚨 Need an Emergency Alert NOW?
-Go to [Emergency Templates]({{ '/templates/' | relative_url }}) for ready-to-use alert templates.
+**CAN-ASC-6.4**
+- What it is: Canadian rules for crises
+- Why: Shows what works in real events
 
-### 📚 Understanding Disability Impacts
-Explore [The Disability Spectrum]({{ '/disabilities/' | relative_url }}) to learn how emergencies affect different communities.
+**Plain Language**
+- What it is: Simple writing
+- Why: Everyone can understand fast
 
-### 🛠️ Building Accessible Content
-Check out [Tactical Toolkits]({{ '/toolkits/' | relative_url }}) for step-by-step implementation guides.
+> **Learn more:**
+> - [ACCESSIBILITY.md]({{ '/ACCESSIBILITY.html' | relative_url }}) - Rules we follow
+> - [SUSTAINABILITY.md]({{ '/SUSTAINABILITY.html' | relative_url }}) - How we keep sites fast
+> - [CONTRIBUTING.md]({{ '/CONTRIBUTING.html' | relative_url }}) - Help improve this
+> - [AGENTS.md]({{ '/AGENTS.html' | relative_url }}) - Rules for helpers
 
-### 📊 Meeting Standards
-Review the [Framework Matrix]({{ '/framework/matrix.html' | relative_url }}) for WCAG/WSG/Plain Language crosswalks.
+## Start Here
 
-### 📖 Global Standards & Resources
-Access the [Resource Directory]({{ '/framework/resources.html' | relative_url }}) for global academic research and practical toolkits.
+### Need an Alert Now?
+**Go to:** [Emergency Templates]({{ '/templates/' | relative_url }})
+
+**You get:** Templates you can use right away
+
+### Learn About Access Needs
+**Go to:** [The Access Spectrum]({{ '/disabilities/' | relative_url }})
+
+**You learn:** How crises affect different people
+
+### Build Content
+**Go to:** [Tactical Toolkits]({{ '/toolkits/' | relative_url }})
+
+**You get:** Step-by-step guides
+
+### Meet Standards
+**Go to:** [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
+
+**You learn:** Rules you must follow
+
+### Find Tools
+**Go to:** [Resource Directory]({{ '/framework/resources.html' | relative_url }})
+
+**You get:** Links to expert tools
 
 
 ---
 
-## A Functional Prototype for CAN-ASC-6.4
+## CAN-ASC-6.4: A Working Example
 
-**CAN-ASC-6.4** is Canada's accessibility standard for Emergency Measures.
+**CAN-ASC-6.4** is Canada's rule for crisis access.
 
-This repository aspires to serve as a **living implementation** of what emergency systems should do, based on real-world testing and community feedback.
+This guide shows how to follow that rule.
 
-### Why This Matters
+### Why This Helps
 
-**For Standards Bodies:**
-- Evidence-based case study for "Sustainable ICT in Emergency Measures"
-- Concrete implementation examples for testing
-- Open for community feedback and iteration
+**Standards Groups:**
+- See real examples
+- Test what works
+- Get user feedback
 
-**For Municipalities:**
-- Fork this repository to get started
-- Update with local information
-- Deploy better emergency communications
-- No need to start from scratch
-- **Please contribute your learnings back** to help others
+**Cities:**
+- Copy this guide
+- Add your local info
+- Help people faster
+- Share what you learn
 
-**For Researchers:**
-- Real-world data on accessibility metrics
-- Automated testing results
-- Community feedback integration
-- Case studies of what works (and what doesn't)
+**Researchers:**
+- Study real data
+- See test results
+- Learn from users
+- Write case studies
 
-👉 **[Read the full CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }})**
+**Learn more:**
+- [CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }})
+- [Copy This Guide]({{ '/framework/fork-guide.html' | relative_url }})
 
-👉 **[Fork Guide for Municipalities]({{ '/framework/fork-guide.html' | relative_url }})**
+### Digital Egress: Your Exit Plan
 
-### Digital Egress: A New Concept
+**Digital Egress** means: Your escape path when devices fail.
 
-Just as buildings have physical fire exits, websites need **Digital Egress**.
-
-> **Digital Egress** is the minimum viable information path a user needs when their technology is failing.
+Think of a fire exit for web sites.
 
 **The Three Rules:**
-1. Find it fast (3 clicks or less)
-2. Read it stressed (Grade 6 language)
-3. Save it offline (works without internet)
+1. Find it fast (3 clicks max)
+2. Read it stressed (Grade 6 words)
+3. Save it offline (Works with no internet)
 
-👉 **[Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})**
+**Learn more:** [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
 
 ---
 
-## Understanding Our Automated Workflows
+## How We Test Quality
 
-This repository uses GitHub Actions to maintain quality.
+This site tests itself with GitHub Actions.
 
-**Having CI issues?** Check our workflow guide for explanations.
+**Having CI problems?** Read our [workflow guide]({{ '/framework/workflows-guide.html' | relative_url }}).
 
-**Seeing readability warnings?** That's intentional - they help us maintain plain language.
+**See readability warnings?** That is good. It keeps language simple.
 
-👉 **[Understanding Workflows Guide]({{ '/framework/workflows-guide.html' | relative_url }})**
+## Who Gets Left Behind
 
+### People Who Cannot See
 
-## Why Accessibility Matters in Emergencies
+**The problem:**
+- Alerts use visuals only
+- Maps use color only
+- Signs have no audio
+- TV text has no sound
 
-### The Vision Gap
-People who are blind cannot see visual-only alerts or read inaccessible communications.
+**Who this affects:**
+- People who are blind
+- People with low vision
+- People in dark rooms
+- People in smoke
+- People with broken screens
 
-People with low vision cannot read small, low-contrast text.
+**What happens:**
+- Cannot see danger zones
+- Miss evacuation orders
+- Cannot find shelters
 
-People who are color blind miss color-coded warnings (especially common red/green combinations).
+### People Who Cannot Hear
 
-### The Hearing Gap
-People who are Deaf miss audio-only sirens and radio updates.
+**The problem:**
+- Alerts use audio only
+- Sirens make sound
+- No text shows
+- Loudspeakers have no captions
+- Radio has no text
 
-Many in the deaf community see sign as their first language, not the written or spoken language.
+**Who this affects:**
+- People who are Deaf
+- People who are hard of hearing  
+- People in loud places
+- People with broken audio
 
-People who are hard of hearing (or just stressed) cannot understand garbled loudspeaker announcements.
+**What happens:**
+- Cannot hear warnings
+- Miss instructions
+- Cannot call for help
 
-### The Mobility Gap
-People with mobility disabilities cannot evacuate quickly.
+### People Who Need Simple Words
 
-People using wheelchairs cannot find which shelters might have ramps, accessible washrooms, etc.
+**The problem:**
+- Language is complex
+- Sentences are long
+- Terms are technical
+- Steps are many
 
-### The Cognitive Gap
-People with cognitive disabilities cannot parse bureaucratic language.
+**Who this affects:**
+- People with thinking problems
+- People with reading problems
+- People under stress
+- People learning the language
 
-People under stress (everyone in an emergency) cannot process complex information.
+**What happens:**
+- Cannot understand alerts
+- Cannot follow steps
+- Freeze and do not act
 
-### The Technology Gap
-People in rural areas have bandwidth challenges when the systems are working, let alone in a disaster.
+### People With Old Devices
 
-People with older devices cannot load heavy websites.
+**The problem:**
+- Web sites are heavy
+- Sites need fast internet
+- Files are large
+- Code breaks on old devices
 
-People with dying batteries cannot afford animated graphics or JavaScript heavy sites. 
+**Who this affects:**
+- People in rural areas
+- People with old phones
+- People with dying batteries
+- People on slow networks
 
-### Language / Culture
+**What happens:**
+- Sites do not load
+- Info arrives too late
+- Devices die
 
-The first language of people reading may not be the language of communication.
-
-Plain language helps everyone, but especially those who may not be native speakers.
-
-## Real-World Emergency Failures
+## Past Failures
 
 ### Hurricane Katrina (2005)
-**Problem:** Evacuation orders used complex legal language.
+**Problem:** Orders used legal language.
 
-**Result:** Many people with cognitive disabilities did not understand they needed to leave.
+**Result:** People did not understand. They did not leave.
 
-### 2011 Tōhoku Earthquake & Tsunami (Japan)
-**Problem:** Warning systems were primarily audio-based.
+### Japan Earthquake (2011)
+**Problem:** Warnings used audio only.
 
-**Result:** Deaf community members did not receive warnings.
+**Result:** Deaf people did not hear them.
 
-### COVID-19 Pandemic (2020-2023)
-**Problem:** Public health guidance changed frequently without plain language versions.
+### COVID-19 (2020-2023)
+**Problem:** Rules changed fast. No plain language.
 
-**Result:** People with cognitive disabilities could not follow changing protocols.
+**Result:** People could not follow rules.
 
-## The Solution: Survival UX
+## How This Site Works
 
-This site follows "Survival Web Design" principles:
+**Survival Web Design** means: Design that works when everything fails.
 
-✅ **Static-First:** Limited JavaScript. Works on a wide-range of device.
+This site follows these rules:
 
-✅ **High-Contrast:** WCAG AA compliant. Readable in bright sunlight.
+✅ **Static-First:** Little code. Works on all devices.
 
-✅ **Low-Data Aware:** Strips images and fonts. Saves battery and bandwidth.
+✅ **High-Contrast:** Easy to read. Works in sunlight.
 
-✅ **Offline-First:** Progressive Web App. Works without internet once visited.
+✅ **Low-Data:** Small files. Saves battery.
 
-✅ **Print-Ready:** Every page optimized for emergency binders.
+✅ **Offline-First:** Works with no internet.
 
-## How to Use This Guide
+✅ **Print-Ready:** Prints well for binders.
+
+## Five Steps
 
 ### 1. Learn
-Read [The Disability Spectrum]({{ '/disabilities/' | relative_url }}) to understand impacts.
+**Read:** [The Access Spectrum]({{ '/disabilities/' | relative_url }})
+
+**You learn:** How crises affect people
 
 ### 2. Plan
-Review the [Framework Matrix]({{ '/framework/matrix.html' | relative_url }}) to meet standards.
+**Read:** [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
+
+**You learn:** Standards to meet
 
 ### 3. Build
-Use [Tactical Toolkits]({{ '/toolkits/' | relative_url }}) for implementation.
+**Use:** [Tactical Toolkits]({{ '/toolkits/' | relative_url }})
+
+**You learn:** How to create content
 
 ### 4. Deploy
-Adapt [Emergency Templates]({{ '/templates/' | relative_url }}) for your community.
+**Copy:** [Emergency Templates]({{ '/templates/' | relative_url }})
+
+**You learn:** Templates for your area
 
 ### 5. Test
-Run the [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }}) before go-live.
+**Run:** [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
 
-## Automated Quality
+**You learn:** If your site works
 
-This site includes two GitHub Actions:
+## Two Tests
 
-**🔗 Link-Rot Guard**  
-Checks all external URLs weekly.  
-Dead links are replaced with Wayback Machine archives.
+This site tests itself:
 
-**📖 Linter of Clarity**  
-Checks readability on every commit.  
-Grade 6+ reading level triggers warnings.
+**Link Checker**  
+- Checks all links each week
+- Replaces dead links
 
-## Get Started Now
+**Readability Checker**  
+- Checks reading level
+- Warns if too hard
 
-- Understand Disability Impacts →
-- Use Emergency Templates →
-- Access Toolkits →
+## Get Started
+
+- [Understand Access Needs]({{ '/disabilities/' | relative_url }})
+- [Use Templates]({{ '/templates/' | relative_url }})
+- [Access Toolkits]({{ '/toolkits/' | relative_url }})
 
 
 ## The Mission
 
-**Accessibility isn't a checkbox.**
+Accessibility saves lives.
 
-**It's survival architecture.**
+When disaster strikes, reach everyone.
 
-**When lives are on the line, your message must reach everyone.**
-
----
-
-## Help Us Improve This Guide
-
-**We need your expertise.**
-
-This guide aspires to be comprehensive, accurate, and trustworthy—but we can only get there with community input.
-
-### We Especially Value:
-
-✅ **People with disabilities** - Your lived experience is essential  
-✅ **Emergency professionals** - Share what actually works in disasters  
-✅ **Municipal teams** - Tell us what you need for implementation  
-✅ **Accessibility specialists** - Help us meet and exceed standards
-
-**Ready to contribute?** Read our [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}) to get started.
-
-**Found a barrier?** [Open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues) labeled `accessibility-barrier` for priority review.
+This guide shows you how.
 
 ---
 
-**Start Here:** If you're new to accessibility, begin with [Cognitive Disabilities in Emergencies]({{ '/disabilities/cognitive.html' | relative_url }}). It explains the "One Idea Per Line" principle that guides this entire guide.
+## Help Us Improve
+
+We need your help.
+
+We learn from:
+- People with disabilities
+- Emergency professionals
+- Municipal teams
+- Accessibility experts
+
+**Want to help?** Read [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}).
+
+**Found a problem?** [Open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues).
+
+---
+
+**New to this?** Start with [Thinking Problems in Crises]({{ '/disabilities/cognitive.html' | relative_url }}). It explains "One Idea Per Line."
 
