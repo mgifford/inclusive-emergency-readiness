@@ -2,121 +2,127 @@
 layout: default
 title: "Multi-Platform Emergency Communication"
 category: toolkit
-summary: "Strategies for distributing emergency alerts beyond traditional platforms to reach everyone, everywhere."
+summary: "How to send emergency alerts on many platforms so everyone gets them."
 reading_level: "Grade 6"
 last_updated: 2026-03-01
 ---
 
-# The Multi-Platform Pivot
+# Send Alerts to Everyone
 
-## Beyond X/Twitter: Reaching Everyone
+## Reach People on Many Platforms
 
-Social media platforms change.
+Social media sites change.
 
-Platforms fail.
+Sites fail.
 
-Platforms get blocked.
+Sites get blocked.
 
-**You need a multi-platform strategy.**
+**You need many platforms.**
 
-## The Core Principle
+## The Main Rule
 
-**Never depend on one platform.**
+**Never use just one site.**
 
-If your emergency alerts only go to X/Twitter, you will miss people.
+Alerts on just X/Twitter miss people.
 
-If your alerts only go to Facebook, you will miss people.
+Alerts on just Facebook miss people.
 
-**Distribute everywhere.**
+**Send alerts to all sites.**
 
 ## Platform Strategy
 
-### Tier 1: Critical Platforms (Use Always)
+Use these platforms.
 
-#### SMS/Text Messages
-**Why:** Works when internet doesn't.
+### Level 1: Must-Use Platforms
 
-**Pros:**
-- 160 character limit forces brevity
-- Works on any phone
-- Doesn't require data
-- High open rates (98%)
+#### Text Messages (SMS)
+**Why:** Works without internet.
 
-**Cons:**
-- Character limit
-- No images or rich formatting
-- Opt-in required
+**Good things:**
+- Forces short messages
+- 160 letters max
+- Any phone works
+- No data plan needed
+- Almost everyone reads texts
+- 98% open texts
 
-**Best practices:**
-- Keep under 160 characters
-- Include link for details
-- Use URL shortener
-- No abbreviations
-- Send from consistent number
+**Bad things:**
+- Very short limit
+- No photos
+- People must sign up
+
+**How to use:**
+- Keep under 160 letters
+- Add link for more info
+- Make link short
+- Spell out all words
+- Use same phone number always
 
 **Example:**
 ```
-EVACUATION ORDER: Zone A residents must leave now. 
-Shelter at Main St School. Details: bit.ly/evacZoneA
+LEAVE NOW: Zone A must go. 
+Go to Main St School. More: bit.ly/evacZoneA
 ```
 
 #### Email
-**Why:** Universal and reliable.
+**Why:** Everyone has it. Works well.
 
-**Pros:**
-- Can include detailed information
-- Supports formatting and attachments
-- Delivery confirmation available
-- Archived automatically
+**Good things:**
+- Lots of details
+- Works with photos
+- Works with files
+- Can confirm sent
+- Saves automatically
 
-**Cons:**
-- Requires internet
-- May go to spam
-- Not everyone checks frequently
+**Bad things:**
+- Needs internet
+- May go to junk mail
+- People don't check often
 
-**Best practices:**
-- Subject line has action: "EVACUATE NOW - Zone A"
-- Plain text + HTML versions
-- Critical info in first 3 lines
-- Mobile-friendly
-- Include contact info in footer
+**How to use:**
+- Subject tells action
+- Example: "LEAVE NOW - Zone A"
+- Send both plain and fancy
+- Put key info in first 3 lines
+- Must work on phones
+- Add phone at bottom
 
 #### Government Website
-**Why:** Official source of truth.
+**Why:** Your official site.
 
-**Pros:**
-- You control the content
-- Always available
-- Can be updated instantly
+**Good things:**
+- You control what it says
+- Always there
+- Can update right away
 - Works without social media
 
-**Cons:**
-- People need to find it
-- May go down under heavy traffic
+**Bad things:**
+- People must know web address
+- May crash if many visit
 
-**Best practices:**
-- Prominent alert banner
-- Update homepage immediately
-- Use simple, fast-loading design
-- Have backup hosting ready
-- Test with high traffic loads
+**How to use:**
+- Put alert at top
+- Update home page right away
+- Keep it simple and fast
+- Have backup site ready
+- Test with many visitors
 
-### Tier 2: Major Social Platforms
+### Level 2: Big Social Media Sites
 
 #### X/Twitter
-**Why:** Fast distribution, wide reach.
+**Why:** Sends fast. Many people see it.
 
-**Best practices:**
-- Pin critical tweets
-- Use hashtags: #EmergencyAlert #YourCity
-- Quote tweet for updates
-- Include image with embedded text
-- Alt text on all images
-- Thread for longer messages
+**How to use:**
+- Pin top posts
+- Use tags: #EmergencyAlert #City
+- Quote old post to update
+- Add photo with words
+- Describe all photos
+- Make thread for long messages
 
 **Example:**
 ```
-🚨 EVACUATION ORDER - ZONE A 🚨
+🚨 LEAVE NOW - ZONE A 🚨
 
 Leave NOW. 
 
@@ -126,193 +132,199 @@ Map: [image with alt text]
 
 Questions? Call 555-1234
 
-#CityNameEmergency #EvacuateNow
+#CityEmergency #LeaveNow
 ```
 
 #### Facebook
-**Why:** Large audience, especially older adults.
+**Why:** Many people use it. Older people like it.
 
-**Best practices:**
-- Post to official page
+**How to use:**
+- Post on official page
 - Pin post to top
-- Share to community groups
-- Use "Crisis Response" feature
-- Live video for updates
-- Check-in feature for safety
+- Share to local groups
+- Use "Crisis" tool
+- Do live video updates
+- Let people say they are safe
 
 #### Instagram
-**Why:** Visual platform, younger audience.
+**Why:** Good for photos. Younger people like it.
 
-**Best practices:**
-- Stories for updates
-- Carousel posts for steps
-- Reels for instructions
-- Accessible design (high contrast text)
-- Alt text on images
-- Link in bio to details
+**How to use:**
+- Use Stories for updates
+- Use many photos for steps
+- Use short videos for how-to
+- Use high contrast
+- Describe all photos
+- Put link in bio
 
 #### YouTube
-**Why:** Video instructions are powerful.
+**Why:** Videos teach well.
 
-**Best practices:**
-- Short videos (under 2 minutes)
-- Captions (not auto-generated)
-- Transcript in description
-- Clear title with "EMERGENCY" prefix
-- Thumbnail with key text
-- Upload as "Unlisted" for specific communities
+**How to use:**
+- Keep videos short
+- Under 2 minutes
+- Add words on screen
+- Not auto
+- Type out video words
+- Put "EMERGENCY" in title
+- Show key text in preview
+- Set to "Unlisted" for some
 
-### Tier 3: Emerging Platforms
+### Level 3: New Platforms
 
 #### Mastodon
-**Why:** Decentralized, growing fast, privacy-focused.
+**Why:** Spread out network. Growing fast. Private.
 
-**Characteristics:**
-- Federated network (multiple servers)
-- No algorithm manipulation
-- Chronological feed
-- Character limit: 500 (most servers)
+**What it is:**
+- Many small servers
+- Posts show in time order
+- Can write 500 letters
+- Most servers allow this
 - No ads
+- No hidden sorting
 
-**Best practices:**
-- Post from official government instance
-- Use Content Warnings for sensitive info
-- Hashtags work well
-- Can include links
-- Respect local server rules
+**How to use:**
+- Post from your government account
+- Warn before hard-to-see content
+- Tags work well
+- Can add links
+- Follow each server's rules
 
 **Example:**
 ```
 EMERGENCY ALERT
 
-Evacuation order for Zone A.
+Leave order for Zone A.
 
-Leave immediately.
+Leave right away.
 
 Shelter: Main Street School, 100 Main St
 
-More info: [government website]
+More: [government website]
 
 #EmergencyAlert #CityName
 ```
 
 #### Bluesky
-**Why:** X/Twitter alternative, growing rapidly.
+**Why:** Like old Twitter. Growing fast.
 
-**Characteristics:**
-- Decentralized protocol (AT Protocol)
-- Similar to early Twitter
-- 300 character limit
-- Custom feeds
-- Portable identity
+**What it is:**
+- Spread out network
+- AT Protocol uses spread out tech
+- Data is not in one place
+- Works like early Twitter
+- Can write 300 letters
+- Take account anywhere
 
-**Best practices:**
-- Similar to Twitter approach
-- Use feeds for emergency alerts
-- Embed images with text
-- Link to official source
-- Build custom emergency feed
+**How to use:**
+- Use like Twitter
+- Make special feed for emergencies
+- Add photos with words
+- Link to your official site
 
 #### Threads
-**Why:** Instagram integration, Meta platform.
+**Why:** Part of Instagram. Meta owns it.
 
-**Characteristics:**
-- Instagram account required
-- Similar to Twitter/X
-- 500 character limit
-- Image support
+**What it is:**
+- Must have Instagram account
+- Works like Twitter/X
+- Can write 500 letters
+- Can add photos
 
-**Best practices:**
-- Similar to Twitter strategy
-- Leverage Instagram audience
-- Cross-post wisely
-- Include visuals
+**How to use:**
+- Use like Twitter
+- Reach Instagram users
+- Share carefully
+- Add pictures
 
-### Tier 4: Specialized Channels
+### Level 4: Special Use Sites
 
 #### WhatsApp
-**Why:** Widely used globally, especially for communities.
+**Why:** Used around the world. Good for groups.
 
-**Best practices:**
-- Official broadcast channel
-- Groups for neighborhoods
-- Status updates
-- No spam (trust is critical)
-- Include images with text
+**How to use:**
+- Make official broadcast
+- Make groups for areas
+- Post status updates
+- Don't spam (need trust)
+- Add photos with words
 
 #### Telegram
-**Why:** Secure messaging, channels for broadcasting.
+**Why:** Private messages. Can send to many.
 
-**Best practices:**
-- Create official channel
-- Broadcast to large audiences
-- Supports rich media
-- Works in restricted regions
+**How to use:**
+- Make official channel
+- Send to large groups
+- Can use photos and videos
+- Works in blocked countries
 
 #### Signal
-**Why:** Secure, privacy-focused.
+**Why:** Very private.
 
-**Best practices:**
-- For sensitive communications
-- Groups for coordination
-- End-to-end encrypted
-- Trusted by privacy advocates
+**How to use:**
+- Use for secret messages
+- Make groups for helpers
+- All messages are locked
+- Encrypted means locked
+- Privacy groups trust it
 
 #### Nextdoor
-**Why:** Neighborhood-focused, local reach.
+**Why:** For neighbors only. Very local.
 
-**Best practices:**
-- Post as official agency
-- Geographical targeting
-- Community trust
-- Good for localized alerts
+**How to use:**
+- Post as official account
+- Target specific areas
+- Community trusts it
+- Good for local alerts
 
-#### Amateur Radio (Ham Radio)
-**Why:** Works when everything else fails.
+#### Ham Radio
+**Why:** Works when all else fails.
 
-**Best practices:**
-- Partner with local ham radio operators
-- Designated emergency frequency
-- Coordinate with ARES/RACES
-- Backup communication plan
+**How to use:**
+- Work with radio fans
+- Pick emergency station
+- Work with ARES/RACES
+- These are radio helpers
+- Have backup plan
 
-### Tier 5: Traditional Media (Still Critical)
+### Level 5: Old Media (Still Important)
 
-#### TV Broadcast
-**Why:** Reaches people who don't use internet.
+#### TV
+**Why:** Reaches people without internet.
 
-**Best practices:**
-- Emergency broadcast system
-- Lower third text crawl
-- Captions always
-- Interrupt regular programming
-- Sign language interpreter
+**How to use:**
+- Use emergency TV system
+- Show text at bottom
+- Always add captions
+- Break into shows
+- Have sign language person
 
 #### Radio
-**Why:** Works in cars, during power outages.
+**Why:** Works in cars. Works without power.
 
-**Best practices:**
-- Emergency alert system
-- Multiple stations
-- Repeat frequently (every 10 minutes)
-- Clear, simple language
-- Include Spanish stations
+**How to use:**
+- Use emergency radio
+- Use many stations
+- Say it often (every 10 min)
+- Use clear, simple words
+- Use Spanish stations too
 
-#### Print Newspapers
-**Why:** Physical reference, trusted source.
+#### Newspapers
+**Why:** Physical copy. People trust it.
 
-**Best practices:**
-- Front page alerts
-- Large clear type
-- QR codes to digital content
-- Delivered to homes
-- Available at distribution points
+**How to use:**
+- Put alert on front page
+- Use large clear letters
+- Add QR codes for web
+- QR codes are square codes
+- Deliver to homes
+- Put at stores
 
-## The Distribution Matrix
+## Compare All Platforms
 
-| Platform | Speed | Reach | Reliability | Accessibility |
-|----------|-------|-------|-------------|---------------|
-| SMS | ⚡️⚡️⚡️ | 🌍🌍🌍 | ✅✅✅ | ♿️♿️♿️ |
+| Platform | Speed | Reach | Works Well | Easy Access |
+|----------|-------|-------|------------|-------------|
+| Text (SMS) | ⚡️⚡️⚡️ | 🌍🌍🌍 | ✅✅✅ | ♿️♿️♿️ |
 | Email | ⚡️⚡️ | 🌍🌍🌍 | ✅✅ | ♿️♿️ |
 | Website | ⚡️⚡️⚡️ | 🌍🌍 | ✅✅ | ♿️♿️♿️ |
 | X/Twitter | ⚡️⚡️⚡️ | 🌍🌍 | ✅ | ♿️♿️ |
@@ -322,160 +334,170 @@ More info: [government website]
 | Radio | ⚡️ | 🌍🌍🌍 | ✅✅✅ | ♿️ |
 | TV | ⚡️ | 🌍🌍 | ✅✅ | ♿️♿️ |
 
-⚡️ = Speed  
-🌍 = Reach  
-✅ = Reliability  
-♿️ = Accessibility
+⚡️ = Speed (how fast)
+🌍 = Reach (how many)
+✅ = Works Well
+♿️ = Easy Access
 
-## Accessibility: Making Social Media Inclusive
+## Make Posts Easy to Use
 
-### Why Accessibility Matters in Emergencies
+### Why Easy Access Matters
 
-During emergencies, accessible social media saves lives.
+In emergencies, easy posts save lives.
 
-People with disabilities need the same information, at the same time, in the same format.
+People with disabilities need the same info at the same time.
 
-**If your emergency alert isn't accessible, you're leaving people behind.**
+**If your alert isn't easy to use, some people can't get it.**
 
-### Alt Text: The Critical Element
+### Photo Descriptions Are Critical
 
 #### What is Alt Text?
 
-Alt text describes images for people who can't see them.
+Alt text describes photos for blind people.
 
-Screen readers read alt text aloud.
+Screen readers read screens out loud. They read alt text.
 
-**Every emergency image needs alt text.**
+**Every emergency photo needs alt text.**
 
 #### How to Write Alt Text for Emergencies
 
-**Be specific and action-oriented:**
+**Be clear. Tell what to do.**
 
 ❌ Bad: "Map"
-✅ Good: "Evacuation map showing Zone A highlighted in red, evacuation route on Highway 1 north to Main Street School"
+✅ Good: "Map shows Zone A in red. Leave on Highway 1 north. Go to Main St School"
 
 ❌ Bad: "Emergency alert"
-✅ Good: "Flood warning: Water rising rapidly in downtown area. Evacuate immediately to higher ground"
+✅ Good: "Flood warning: Water rising fast. Leave now. Go to high ground"
 
 ❌ Bad: "Chart"
-✅ Good: "Bar chart showing air quality index at 250 (very unhealthy). Stay indoors with windows closed"
+✅ Good: "Chart shows air is very bad (250). Stay inside. Close windows"
 
 #### Alt Text Rules for Emergency Posts
 
-1. **Start with the action:** "Evacuate now" before describing details
-2. **Include key numbers:** Addresses, phone numbers, times
-3. **Describe maps clearly:** Routes, landmarks, destinations
-4. **Keep it concise:** Aim for 100-150 words (750-900 characters). Platform limits vary.
-5. **Don't say "image of":** Just describe what it shows
-6. **Include text from images:** If the image has text, include it in alt text
+1. **Start with action:** Say "Leave now" first
+2. **Include key numbers:** Address, phone, time
+3. **Describe maps:** Routes, landmarks, where to go
+4. **Keep it short:** Use 100-150 words
+5. **Don't say "image of":** Just say what it shows
+6. **Include text from photos:** Say words from photo
 
-#### Platform-Specific Alt Text
+#### How to Add Alt Text on Each Site
 
 **X/Twitter:**
-- Use the "Add description" button
-- 1,000 character limit
-- Shows as "ALT" badge on image
+- Click "Add description" button
+- Can write up to 1,000 letters
+- Shows "ALT" badge on photo
 
 **Facebook:**
-- Click "Edit" on image
-- Select "Alternative Text"
-- Write custom description (don't use auto-generated)
+- Click "Edit" on photo
+- Click "Alternative Text"
+- Write your own (don't use auto)
 
 **Instagram:**
-- Advanced Settings → Write Alt Text
-- Also include description in caption
-- Auto-generated alt text is usually poor
+- Go to Advanced Settings
+- Click Write Alt Text
+- Also put words in caption
+- Auto text is often wrong
 
 **Mastodon:**
-- Click "Describe what is in this media" 
-- 1,500 character limit
-- Posts marked with "ALT" badge
-- Can enforce alt text requirement in settings
+- Click "Describe what is in this media"
+- Can write up to 1,500 letters
+- Shows "ALT" badge
+- Can make alt text required
 
 **Bluesky:**
 - Click "Add alt text" when uploading
-- Similar to Twitter interface
-- Shows indicator when alt text present
+- Works like Twitter
+- Shows badge when done
 
-### Visual Design for Accessibility
+### Make Photos Easy to See
 
-#### High Contrast Requirements
+#### High Contrast Needs
 
-Emergency posts must be readable for people with low vision.
+People with low vision must see your posts.
 
-**Text on images:**
-- White text on dark background (or reverse)
-- No text on busy backgrounds
-- Minimum 4.5:1 contrast ratio (WCAG AA)
-- **Emergency graphics must use 7:1 contrast ratio (WCAG AAA)** for print and low vision
+**Text on photos:**
+- White text on dark
+- Or opposite (dark on white)
+- No text on busy background
+- Need 4.5:1 contrast
+- WCAG AA is standard
+- **Emergency needs 7:1**
+- WCAG AAA is best for print
 
 **Color choices:**
-- Never use color alone to convey urgency
-- Use both color AND text labels
-- Red + "DANGER" text
-- Yellow + "WARNING" text
-- Green + "ALL CLEAR" text
+- Never use only color
+- Use color AND words
+- Red plus "DANGER" words
+- Yellow plus "WARNING" words
+- Green plus "ALL CLEAR" words
 
 #### Font Choices
 
-**For emergency graphics:**
-- Sans-serif fonts (Arial, Helvetica, Roboto)
-- Minimum 18pt font size
-- Bold for key information
-- No all-caps (harder to read)
-- Left-aligned text (easier to scan)
+**For emergency pictures:**
+- Simple fonts (Arial, Helvetica, Roboto)
+- At least 18 point size
+- Bold for key info
+- Don't use ALL CAPS (hard to read)
+- Line up text on left
 
 ### Captions and Video
 
-#### Video Requirements
+#### Video Needs
 
 All emergency videos must have:
 
-1. **Captions (not subtitles):**
-   - Include sound effects: "[siren wailing]"
-   - Include speaker names
-   - Indicate tone: "[urgent tone]"
-   - Don't use auto-captions (70% accurate is not enough)
+1. **Captions (words on screen):**
+   - Not translations
+   - Show sound: "[siren]"
+   - Show who talks
+   - Show tone: "[urgent]"
+   - Don't use auto (70% right only)
 
-2. **Audio description:**
-   - Describe visual-only information
-   - Insert between dialogue
-   - Critical for evacuation routes shown visually
+2. **Audio description (say what you see):**
+   - Describe what's on screen
+   - Say it between talking
+   - Key for exit routes
 
-3. **Transcript:**
-   - Full text version
-   - Post in comments or description
-   - Include time stamps for key information
+3. **Transcript (all words typed):**
+   - Type all words
+   - Put in comments
+   - Show what time key info is
 
-#### Platform Video Accessibility
+#### Add Captions on Each Site
 
 **YouTube:**
-- Upload .srt caption file
-- Professional captions > auto-generated
-- Add transcript to description
-- Use clear title: "EMERGENCY: Evacuation Instructions"
+- Upload .srt file
+- .srt is caption format
+- Pay for captions (better)
+- Type all words in description
+- Use clear title: "EMERGENCY: How to Leave"
 
 **Facebook:**
-- Upload .srt file or use caption editor
-- Preview captions before posting
-- Auto-play is muted (captions are critical)
+- Upload .srt file
+- .srt is caption format
+- Type captions yourself
+- Check before posting
+- Videos start muted
 
 **Instagram/TikTok:**
-- Embed captions in video (burned-in)
-- Use text overlays for key points
+- Put captions in video
+- Burned-in means stuck on
+- Use text for key points
 - Keep under 60 seconds
-- Strong visual contrast
+- Use high contrast
 
 **Twitter/X:**
-- Upload captions with video
-- First frame should show key message
-- Videos auto-play muted (need visual cues)
+- Upload captions
+- First frame shows key message
+- Videos start muted
+- Need text on screen
 
-### Hashtags for Accessibility
+### Tags for Easy Access
 
-#### How to Write Accessible Hashtags
+#### How to Write Easy Tags
 
-Use **CamelCase** (capitalize each word):
+Use **CamelCase** (make each word start with big letter):
 
 ❌ Bad: #emergencyalert
 ✅ Good: #EmergencyAlert
@@ -483,308 +505,320 @@ Use **CamelCase** (capitalize each word):
 ❌ Bad: #evacuation zone a
 ✅ Good: #EvacuationZoneA
 
-**Why?** Screen readers can parse CamelCase hashtags more accurately.
+**Why?** Screen readers read CamelCase better.
 
-#### Limit Hashtags
+#### Limit Tags
 
-- Use 2-3 relevant hashtags maximum
-- Too many hashtags clutter screen reader output
-- Place at end of post, not middle
+- Use 2-3 tags only
+- Too many tags confuse screen readers
+- Put tags at end of post
 
-### Links and URLs
+### Links and Web Addresses
 
-#### Accessible Link Practices
+#### How to Make Good Links
 
-1. **Use descriptive link text:**
+1. **Say where link goes:**
    - ❌ "Click here"
-   - ✅ "Read evacuation instructions"
+   - ✅ "Read how to leave"
 
-2. **Shorten URLs carefully:**
-   - Use branded shorteners (bit.ly/CityNameEmergency)
-   - Make URLs somewhat readable
-   - Test shortened links before emergency
+2. **Shorten long addresses:**
+   - Use your city name
+   - Example: bit.ly/CityEmergency
+   - Make it easy to read
+   - Test links before emergency
 
-3. **Include full URL in print versions:**
-   - Someone might need to type it
-   - QR code + full URL
+3. **Show full address in print:**
+   - People may type it
+   - Use QR code plus full address
+   - QR codes are square codes
 
-### Emoji Usage
+### Picture Symbols (Emoji)
 
 #### When to Use Emoji
 
 ✅ Good uses:
-- 🚨 Alert/urgency indicator
-- ⚠️ Warning symbol
-- 🏥 Hospital/medical
+- 🚨 Alert or urgent
+- ⚠️ Warning
+- 🏥 Hospital or medical
 - 🚗 Transportation
-- 📱 Contact/phone
+- 📱 Contact or phone
 
 ❌ Bad uses:
-- Complex combinations (👨‍👩‍👧‍👦)
-- Skin tone modifiers (may render differently)
-- Ambiguous emoji (🙏 pray or thank you?)
-- Decorative only
+- Hard combos like 👨‍👩‍👧‍👦
+- Skin colors (look different)
+- Confusing emoji like 🙏 (pray or thanks?)
+- Just for looks
 
 #### Emoji Rules
 
-1. **Use sparingly:** 1-2 per post
-2. **Use at start:** Helps screen reader users skip if needed
-3. **Always include text:** Never emoji alone
-4. **Universal symbols:** Widely recognized across cultures
+1. **Use few:** 1-2 per post
+2. **Use at start:** Helps readers skip if needed
+3. **Always add words:** Never use emoji alone
+4. **Use common symbols:** Known in all cultures
 
-### Plain Language on Social Media
+### Simple Words on Social Media
 
-#### Writing for Emergency Social Posts
+#### Writing Emergency Social Posts
 
 **One idea per sentence.**
 
-Short sentences work better on social media.
+Short sentences work better.
 
-They're easier to read quickly.
+They're easy to read fast.
 
-They're easier to translate.
+They're easy to translate.
 
-They're easier to understand under stress.
+They're easy to understand when stressed.
 
-#### Avoid Jargon
+#### Avoid Hard Words
 
-❌ "Stage 3 evacuation protocol initiated"
-✅ "Evacuation order: Leave now"
+❌ "Stage 3 protocol started"
+✅ "Leave now"
 
-❌ "AQI exceeds acceptable thresholds"
-✅ "Air quality is dangerous. Stay inside."
+❌ "AQI is too high"
+✅ "Air is dangerous. Stay inside."
 
 ❌ "Shelter in place directive"
 ✅ "Stay home. Lock doors and windows."
 
-### Platform-Specific Accessibility Features
+### Special Features on Each Site
 
-#### Mastodon Accessibility Advantages
+#### Mastodon Good Features
 
-1. **Content Warnings (CW):**
-   - Use for sensitive content
-   - "CW: Graphic emergency images"
-   - Reader can choose to expand
-   - Reduces trauma triggers
+1. **Content Warnings:**
+   - CW means warning
+   - Use for hard content
+   - Example: "CW: Graphic images"
+   - Reader can choose to look
+   - Protects from trauma
 
-2. **Alt text enforcement:**
-   - Can require alt text on all images
-   - Community culture expects it
-   - Built-in reminder
+2. **Alt text rules:**
+   - Can require alt text on all photos
+   - People expect it
+   - Site reminds you
 
-3. **Generous character limits:**
-   - 1,500 characters for alt text
-   - More detailed descriptions possible
+3. **Long letter limits:**
+   - 1,500 letters for alt text
+   - Can give more detail
    - Better for complex maps
 
-4. **Chronological feed:**
-   - No algorithm hiding urgent posts
+4. **Time order feed:**
+   - No hidden sorting
    - Pinned posts stay visible
-   - Better for time-sensitive alerts
+   - Better for time alerts
 
-#### Bluesky Accessibility Features
+#### Bluesky Good Features
 
-1. **Decentralized identity:**
-   - Account portable across servers
-   - Don't lose followers if server down
+1. **Take account anywhere:**
+   - Move account to other servers
+   - Keep followers if server goes down
 
 2. **Custom feeds:**
-   - Create "Emergency Alerts" feed
-   - Users can subscribe directly
-   - Algorithm-free emergency communication
+   - Make "Emergency Alerts" feed
+   - Users sign up directly
+   - No hidden sorting
 
-3. **Similar to early Twitter:**
-   - Familiar interface for users
-   - Easy transition from X/Twitter
+3. **Like early Twitter:**
+   - Users know how to use it
+   - Easy switch from X/Twitter
 
-#### SMS Accessibility Advantages
+#### Text Message (SMS) Good Features
 
 1. **Works without internet:**
-   - Most accessible in infrastructure failure
-   - Reaches feature phones
+   - Best when systems fail
+   - Works on basic phones
    - No app needed
 
-2. **Text-only format:**
-   - Automatically accessible
-   - Screen readers handle natively
-   - No images to describe
+2. **Text only:**
+   - Already easy to use
+   - Screen readers work well
+   - No photos to describe
 
-3. **High urgency perception:**
-   - People read texts immediately
-   - 98% open rate
-   - Direct to device
+3. **People read texts fast:**
+   - People read right away
+   - 98% open texts
+   - Goes right to phone
 
-### Testing Your Accessibility
+### Test Your Posts
 
-#### Screen Reader Testing
+#### Test with Screen Reader
 
-Test every emergency post with a screen reader:
+Test every post with a screen reader (tool that reads screen):
 
 **Free screen readers:**
-- **NVDA** (Windows) - free, most common
-- **VoiceOver** (Mac/iOS) - built-in
-- **TalkBack** (Android) - built-in
+- **NVDA** for Windows - free, most used
+- **VoiceOver** for Mac/iOS - on device
+- **TalkBack** for Android - on device
 
 **What to check:**
-1. Does alt text make sense without seeing image?
-2. Are hashtags spoken correctly?
-3. Does link text indicate destination?
-4. Is key information at the beginning?
+1. Alt text makes sense?
+2. Tags sound right?
+3. Link text says where?
+4. Key info at start?
 
-#### Keyboard Navigation
+#### Test with Keyboard Only
 
 Test without a mouse:
 
-1. Can you tab through all elements?
-2. Can you activate links with Enter?
-3. Is focus order logical?
-4. Are interactive elements clearly marked?
+1. Can you tab through parts?
+2. Can you press Enter on links?
+3. Does tab order make sense?
+4. Can you tell what clicks?
 
-#### Low Vision Testing
+#### Test for Low Vision
 
-Test with accessibility tools:
+Test with tools:
 
-1. Zoom to 200% - still readable?
-2. High contrast mode - still visible?
-3. Color blind simulator - information still clear?
-4. Small screen (mobile) - text large enough?
+1. Zoom to 200% - can read?
+2. High contrast - can see?
+3. Color blind test - clear?
+4. Small screen - text big?
 
-### Accessibility Checklist for Emergency Posts
+### Checklist for Emergency Posts
 
-Before posting any emergency alert:
+Before posting any alert:
 
-- [ ] Alt text on all images (descriptive, action-oriented)
-- [ ] Captions on all videos (not auto-generated)
-- [ ] Transcript available or in comments
-- [ ] CamelCase hashtags
-- [ ] High contrast text on images (7:1 ratio)
-- [ ] Emoji used sparingly with text
-- [ ] Plain language (Grade 6, below 7.0 Flesch-Kincaid)
-- [ ] Key information in first sentence
-- [ ] Descriptive link text
+- [ ] Alt text on all photos (clear)
+- [ ] Captions on all videos (not auto)
+- [ ] All words typed out
+- [ ] CamelCase tags (big letter each word)
+- [ ] High contrast text on photos (7:1)
+- [ ] Few emoji with text
+- [ ] Simple words (Grade 6-7)
+- [ ] Key info in first sentence
+- [ ] Links say where they go
 - [ ] Tested with screen reader
-- [ ] Works on mobile devices
-- [ ] Shortened URLs are readable
-- [ ] No color-only information
-- [ ] Large clear fonts in graphics
+- [ ] Works on phones
+- [ ] Short web addresses are readable
+- [ ] Don't use only color
+- [ ] Large clear letters in pictures
 
-### Common Accessibility Mistakes
+### Common Mistakes
 
-#### Mistake 1: Image-Only Information
+#### Mistake 1: Photo-Only Info
 
-**Problem:** Critical details only in image with no alt text.
+**Problem:** Key details only in photo. No alt text.
 
-**Solution:** Include key information in post text AND alt text.
-
-**Example:**
-❌ [Posts evacuation map image only]
-✅ "Evacuation map below. Zone A residents: Take Highway 1 north to Main Street School at 100 Main St. [Image with full alt text]"
-
-#### Mistake 2: Auto-Generated Captions
-
-**Problem:** Video with inaccurate auto-captions.
-
-**Solution:** Edit or upload professional captions.
+**Solution:** Put key info in post AND alt text.
 
 **Example:**
-❌ Auto-caption: "Leave the bilking now" (meant "building")
-✅ Manual caption: "Leave the building now"
+❌ [Posts map only]
+✅ "Map below. Zone A: Take Highway 1 north. Go to Main St School. 100 Main St. [Photo with full alt text]"
 
-#### Mistake 3: Ambiguous Emoji
+#### Mistake 2: Auto Captions
 
-**Problem:** Emoji without text context.
+**Problem:** Video with wrong auto captions.
 
-**Solution:** Always pair emoji with clear text.
+**Solution:** Fix or add good captions.
+
+**Example:**
+❌ Auto: "Leave the bilking now" (meant "building")
+✅ Good: "Leave the building now"
+
+#### Mistake 3: Confusing Emoji
+
+**Problem:** Emoji without text.
+
+**Solution:** Always use emoji with clear text.
 
 **Example:**
 ❌ "🏃‍♂️🏃‍♀️➡️🏫"
-✅ "Evacuate now 🚨 Go to Main Street School"
+✅ "Leave now 🚨 Go to Main Street School"
 
 #### Mistake 4: Low Contrast
 
-**Problem:** Light gray text on white background in image.
+**Problem:** Light gray text on white in photo.
 
 **Solution:** Use high contrast. Test with tools.
 
 **Example:**
-❌ #CCCCCC text on #FFFFFF background (1.6:1)
-✅ #000000 text on #FFFFFF background (21:1)
+❌ Light gray on white (1.6:1 is bad)
+✅ Black on white (21:1 is good)
 
-#### Mistake 5: Link Ambiguity
+#### Mistake 5: Bad Links
 
-**Problem:** "Click here" or raw URLs.
+**Problem:** "Click here" or raw web address.
 
-**Solution:** Descriptive link text.
+**Solution:** Say where link goes.
 
 **Example:**
-❌ "More info: http://bit.ly/x7k2p9"
-✅ "More info: [Read full evacuation details](http://bit.ly/CityEvac)"
+❌ "http://bit.ly/x7k2p9"
+✅ "[Read details](http://bit.ly/City)"
 
-### Resources for Accessible Social Media
+### Resources for Easy Access
 
-#### Accessibility Guidelines
+#### Rules and Guides
 
-- **[Section 508](https://www.section508.gov/)** - Federal social media accessibility standards
-- **[WCAG 2.2](https://www.w3.org/WAI/WCAG22/quickref/)** - Web Content Accessibility Guidelines
-- **[Accessible Social](https://www.accessible-social.com/)** - Social media accessibility best practices
+- **[Section 508]** - Federal social media rules
+  - Link: https://www.section508.gov/
+- **[WCAG 2.2]** - Web access rules
+  - Link: https://www.w3.org/WAI/WCAG22/quickref/
+- **[Accessible Social]** - Social media how-to
+  - Link: https://www.accessible-social.com/
 
 #### Testing Tools
 
-- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)** - Test color contrast ratios
-- **[WAVE](https://wave.webaim.org/)** - Web accessibility evaluation
-- **[axe DevTools](https://www.deque.com/axe/devtools/)** - Browser accessibility testing
-- **[Color Oracle](https://colororacle.org/)** - Color blindness simulator
+- **[WebAIM Contrast Checker]** - Test color
+  - Link: https://webaim.org/resources/contrastchecker/
+- **[WAVE]** - Web access check
+  - Link: https://wave.webaim.org/
+- **[axe DevTools]** - Browser test
+  - Link: https://www.deque.com/axe/devtools/
+- **[Color Oracle]** - Color blind test
+  - Link: https://colororacle.org/
 
 #### Alt Text Guides
 
-- **[X/Twitter Accessibility](https://help.twitter.com/en/using-twitter/accessibility-features)** - Platform-specific guidance
-- **[Microsoft Alt Text Guide](https://support.microsoft.com/en-us/office/everything-you-need-to-know-to-write-effective-alt-text-df98f884-ca3d-456c-807b-1a1fa82f5dc2)** - Alt text best practices
+- **[X/Twitter Accessibility]** - How to use X
+  - Link: https://help.twitter.com/en/using-twitter/accessibility-features
+- **[Microsoft Alt Text Guide]** - Alt text how-to
+  - Link: https://support.microsoft.com/office/everything-you-need-to-know-to-write-effective-alt-text-df98f884-ca3d-456c-807b-1a1fa82f5dc2
 
-## Content Adaptation
+## Change Message for Each Site
 
-### SMS Version (160 characters)
+### Text Message Version (160 letters)
 ```
-EVACUATION: Zone A leave NOW. 
+LEAVE NOW: Zone A go NOW. 
 Go to Main St School, 100 Main St. 
-Info: bit.ly/evacA
+More: bit.ly/evacA
 ```
 
-### Social Media Version (280 characters)
+### Social Media Version (280 letters)
 ```
-🚨 EVACUATION ORDER - ZONE A 🚨
+🚨 LEAVE NOW - ZONE A 🚨
 
 You must leave NOW.
 
 Where: Main Street School
 Address: 100 Main Street
 
-Open 24/7. Free food, water, beds.
+Open all day. Free food, water, beds.
 
 Need help? Call 555-1234
 
-Full details: [link]
+Full info: [link]
 
 #EmergencyAlert
 ```
 
-### Email Version (Detailed)
+### Email Version (Long)
 ```
-Subject: EVACUATION ORDER - ZONE A - LEAVE NOW
+Subject: LEAVE NOW - ZONE A
 
-EVACUATION ORDER
+LEAVE NOW
 
 Who: Everyone in Zone A
-When: Leave in the next 2 hours
-Where: Main Street School, 100 Main Street
+When: Leave in 2 hours
+Where: Main St School, 100 Main St
 
 [Map]
 
-What to bring:
+Bring:
 - ID
 - Medicine
 - Phone charger
 
-Transportation:
+How to get there:
 - Drive: Take Highway 1 north
 - No car: Bus at City Hall every 30 min
 
@@ -793,143 +827,154 @@ Call: 555-1234
 Text: 555-1235
 Email: emergency@city.gov
 
-[Full details]
+[Full info]
 ```
 
-## Automation & Tools
+## Tools to Help
 
-### Social Media Management
-- **Hootsuite** - Schedule and monitor multiple platforms
-- **Buffer** - Simple multi-platform posting
-- **Sprout Social** - Enterprise social management
+### Manage Social Media
+- **Hootsuite** - Schedule posts. Watch sites.
+- **Buffer** - Simple posting.
+- **Sprout Social** - Big company tools.
 
-### Alert Distribution
-- **Everbridge** - Mass notification system
-- **AlertMedia** - Emergency communication platform
-- **Nixle** - Community alerts
+### Send Alerts
+- **Everbridge** - Send to many people.
+- **AlertMedia** - Send emergency messages.
+- **Nixle** - Send community alerts.
 
-### URL Shorteners
-- **Bitly** - Track clicks, custom domains
-- **TinyURL** - Simple, fast
-- **Your own** - Host your own for control
+### Shorten Web Addresses
+- **Bitly** - See who clicks. Use your name.
+- **TinyURL** - Simple and fast.
+- **Your own** - Host your own.
 
-## The Crisis Communication Protocol
+## When to Post
 
-### Phase 1: Immediate Alert (0-15 minutes)
+### Step 1: First Alert (0-15 minutes)
 
-1. SMS to opt-in list
-2. Post to website homepage
-3. Post to X/Twitter (pin tweet)
-4. Post to Facebook (pin post)
-5. Emergency broadcast (TV/radio)
+1. Text to sign-up list
+2. Post to website home page
+3. Post to X/Twitter (pin it to top)
+4. Post to Facebook (pin it to top)
+5. Emergency TV/radio
 
-### Phase 2: Widespread Distribution (15-60 minutes)
+### Step 2: Send Everywhere (15-60 minutes)
 
-1. Email to subscribers
-2. Instagram post + story
+1. Email to people signed up
+2. Instagram post plus story
 3. Mastodon post
 4. Bluesky post
 5. YouTube video
-6. WhatsApp broadcast
+6. WhatsApp send
 7. Nextdoor post
 
-### Phase 3: Sustained Updates (Every 2 hours)
+### Step 3: Keep Updating (Every 2 hours)
 
-1. Update all platforms
-2. Respond to questions
-3. Correct misinformation
-4. Share user-generated content (verified)
+1. Update all sites
+2. Answer questions
+3. Fix wrong info
+4. Share user content (check it first)
 
-### Phase 4: All-Clear (When safe)
+### Step 4: All Clear (When safe)
 
-1. Post to all platforms
-2. Thank the community
-3. Provide recovery information
-4. Document lessons learned
+1. Post to all sites
+2. Thank community
+3. Give recovery info
+4. Write what you learned
 
-## Testing Your Strategy
+## Test Your Plan
 
-### Monthly Tests
-- [ ] Send test SMS
-- [ ] Post to all platforms
-- [ ] Verify links work
-- [ ] Check login credentials
+### Test Each Month
+- [ ] Send test text message
+- [ ] Post to all sites
+- [ ] Check links work
+- [ ] Check you can log in
 - [ ] Update contact lists
 
-### Quarterly Exercises
-- [ ] Full simulation
-- [ ] Multi-platform coordination
-- [ ] Measure response times
-- [ ] Review analytics
-- [ ] Update procedures
+### Test Every 3 Months
+- [ ] Full practice run
+- [ ] Use many sites together
+- [ ] Check response speed
+- [ ] Look at numbers
+- [ ] Update steps
 
 ## Common Mistakes
 
-### Mistake 1: Platform Dependency
-Relying on one platform only.
+### Mistake 1: Using One Site Only
+Using only one site.
 
-**Solution:** Distribute everywhere, every time.
+**Fix:** Send to all sites, every time.
 
-### Mistake 2: Inconsistent Messaging
-Different messages on different platforms.
+### Mistake 2: Different Messages
+Each site says something different.
 
-**Solution:** Core message stays same, format adapts.
+**Fix:** Main message stays same. Format changes.
 
-### Mistake 3: Ignoring Emerging Platforms
-Only using traditional platforms.
+### Mistake 3: Ignoring New Sites
+Only using old sites.
 
-**Solution:** Adopt new platforms early.
+**Fix:** Start using new sites early.
 
-### Mistake 4: No Backup Plan
-Primary platform goes down.
+### Mistake 4: No Backup
+Main site goes down.
 
-**Solution:** Have backup platforms ready.
+**Fix:** Have backup sites ready.
 
-## The Bottom Line
+## The Main Point
 
-Social media platforms are tools, not solutions.
+Social media sites are tools, not answers.
 
-Diversify your distribution.
+Use many different sites.
 
 Test your systems.
 
-Update your platforms.
+Update your sites.
 
-**Reach people where they are, not where you want them to be.**
+**Reach people where they are.**
 
 ---
 
-## Additional Resources
+## More Help
 
-### Accessibility Standards
+### Rules and Standards
 
-- **[Section 508 Social Media](https://www.section508.gov/create/social-media/)** - Federal requirements for accessible social media
-- **[Harvard Social Media Accessibility](https://www.harvard.edu/in-focus/the-accessible-world/social-media-accessibility-best-practices/)** - Best practices from Harvard
-- **[Accessible Social](https://www.accessible-social.com/)** - Comprehensive accessibility guides for all platforms
+- **[Section 508 Social Media]** - Federal rules
+  - Link: https://www.section508.gov/create/social-media/
+- **[Harvard Social Media Accessibility]** - How-to from Harvard
+  - Link: https://www.harvard.edu/in-focus/the-accessible-world/social-media-accessibility-best-practices/
+- **[Accessible Social]** - Full guides
+  - Link: https://www.accessible-social.com/
 
-### Platform Accessibility Docs
+### Site How-To Guides
 
-- **[X/Twitter Accessibility](https://help.twitter.com/en/using-twitter/accessibility-features)** - Platform features and guidance
-- **[Facebook Accessibility](https://www.facebook.com/help/accessibility)** - Meta's accessibility resources  
-- **[Mastodon Documentation](https://docs.joinmastodon.org/)** - Built-in accessibility features
-- **[Bluesky on GitHub](https://github.com/bluesky-social)** - Official Bluesky documentation and resources
+- **[X/Twitter Accessibility]** - How to use X
+  - Link: https://help.twitter.com/en/using-twitter/accessibility-features
+- **[Facebook Accessibility]** - Meta's guides
+  - Link: https://www.facebook.com/help/accessibility
+- **[Mastodon Documentation]** - Easy access features
+  - Link: https://docs.joinmastodon.org/
+- **[Bluesky on GitHub]** - Official guides
+  - Link: https://github.com/bluesky-social
 
-### Testing and Validation
+### Testing Tools
 
-- **[WAVE Browser Extension](https://wave.webaim.org/extension/)** - Free accessibility testing
-- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)** - Color contrast validation
-- **[Hemingway Editor](https://hemingwayapp.com/)** - Plain language checking
-- **[NVDA Screen Reader](https://www.nvaccess.org/)** - Free Windows screen reader
+- **[WAVE Browser Extension]** - Free testing
+  - Link: https://wave.webaim.org/extension/
+- **[WebAIM Contrast Checker]** - Color check
+  - Link: https://webaim.org/resources/contrastchecker/
+- **[Hemingway Editor]** - Simple language check
+  - Link: https://hemingwayapp.com/
+- **[NVDA Screen Reader]** - Free Windows reader
+  - Link: https://www.nvaccess.org/
 
 ---
 
 <div class="alert alert-success">
   
-**Action Items:**
+**Do This Now:**
 
-- Create accounts on Mastodon and Bluesky this week
+- Make accounts on Mastodon and Bluesky this week
 - Test your next post with a screen reader
-- Add alt text to all images in your media library
-- Train your team on accessibility basics
+- Add alt text to all photos you have
+- Train your team on easy access basics
 
 </div>

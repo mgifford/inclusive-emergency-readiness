@@ -11,9 +11,9 @@ last_updated: 2026-03-01
 
 ## What Is Plain Language?
 
-Plain language is clear and direct communication.
+Plain language is clear, direct words.
 
-Your audience understands it the first time they read it.
+Your reader understands the first time.
 
 No confusion. No rereading. No guessing.
 
@@ -38,7 +38,7 @@ During emergencies:
 **Why:** Short sentences are easier to process under stress.
 
 ❌ **Wrong:**
-"In the event of an emergency evacuation order, residents should gather essential personal items including but not limited to identification documents, prescription medications, and emergency supplies before departing their residence."
+"If there's an emergency order to leave, people should get important items like ID, medicine, and emergency supplies before leaving home."
 
 ✅ **Right:**
 "Leave now. Bring your ID. Bring your medicine. Bring water."
@@ -105,20 +105,20 @@ During emergencies:
 
 **Know who you're writing for.**
 
-| Audience | Adjust For |
+| Audience | What to Do |
 |----------|-----------|
 | General public | Grade 6 reading level |
-| Elderly | Larger text, fewer steps |
+| Elderly | Bigger text, fewer steps |
 | Children | Simple words, short sentences |
-| Non-native English speakers | No idioms, clear structure |
-| People with cognitive disabilities | One idea per line |
+| Non-native English | No idioms, clear layout |
+| People with thinking disabilities | One idea per line |
 
 ### 6. Put the Most Important Information First
 
 **People scan. They don't read every word.**
 
 ❌ **Wrong Order:**
-"The emergency operations center has been monitoring weather conditions throughout the region and based on current meteorological data and predictive modeling, officials have determined that evacuation of the following areas is necessary: zones A, B, and C."
+"The emergency center watched the weather. Based on current data, officials say people in zones A, B, and C must leave."
 
 ✅ **Right Order:**
 "Leave now if you live in zones A, B, or C."
@@ -128,7 +128,7 @@ During emergencies:
 **Lists are easier to scan than paragraphs.**
 
 ❌ **Paragraph:**
-"Before you leave, you should turn off the gas, lock all doors and windows, take your emergency kit which should include water, food, medicine, flashlight, and radio, and notify your family members of your departure."
+"Before you leave, turn off the gas. Lock all doors and windows. Take your emergency kit with water, food, medicine, flashlight, and radio. Tell your family you are leaving."
 
 ✅ **List:**
 Before you leave:
@@ -145,7 +145,7 @@ Before you leave:
 "Shelter in place."
 
 ✅ **Defined:**
-"Shelter in place means stay inside your home. Close all doors and windows."
+"Shelter in place means stay in your home. Close all doors and windows."
 
 ---
 
@@ -246,10 +246,10 @@ Revise based on feedback.
 
 ## Common Mistakes
 
-### Mistake 1: Bureaucratic Language
+### Mistake 1: Big Words
 
-❌ **Bureaucratic:**
-"Pursuant to emergency management protocol 2024-15..."
+❌ **Big words:**
+"Per emergency protocol 2024-15..."
 
 ✅ **Plain:**
 "Emergency alert:"
@@ -265,7 +265,7 @@ Revise based on feedback.
 ### Mistake 3: Hidden Action
 
 ❌ **Hidden:**
-"An evacuation order is in effect for the following areas..."
+"An order to leave is in effect for these areas..."
 
 ✅ **Clear:**
 "Leave now if you live in these areas:"
@@ -273,30 +273,30 @@ Revise based on feedback.
 ### Mistake 4: Vague Time
 
 ❌ **Vague:**
-"Evacuate as soon as possible."
+"Leave as soon as you can."
 
 ✅ **Specific:**
 "Leave in the next 2 hours."
 
 ### Mistake 5: Missing Information
 
-❌ **Incomplete:**
+❌ **Missing:**
 "Go to the emergency shelter."
 
 ✅ **Complete:**
-"Go to Main Street School. Address: 100 Main Street. Open 24/7. Free food and beds."
+"Go to Main Street School. Address: 100 Main Street. Open all day. Free food and beds."
 
 ## Plain Language Checklist
 
-- [ ] Reading level is Grade 6 or lower
+- [ ] Grade 6-7 reading level
 - [ ] Sentences are 15 words or fewer
 - [ ] Words are simple and common
-- [ ] Active voice is used
-- [ ] Most important information is first
-- [ ] Lists and bullets are used
-- [ ] Technical terms are defined
-- [ ] Specific (not vague) language
-- [ ] No jargon or bureaucratic language
+- [ ] Active voice used
+- [ ] Most important info is first
+- [ ] Lists and bullets used
+- [ ] Hard words are defined
+- [ ] Specific (not vague) words
+- [ ] No jargon or big words
 - [ ] Tested with real people
 
 ## Examples: Before & After
@@ -304,7 +304,7 @@ Revise based on feedback.
 ### Example 1: Evacuation
 
 ❌ **Before:**
-"Residents domiciled within the geographical perimeter designated as evacuation zone A are hereby advised to vacate their premises and relocate to approved emergency shelter facilities."
+"People living in the area called zone A must leave their homes. Go to approved emergency shelter buildings."
 
 ✅ **After:**
 "You must leave now if you live in zone A. Go to Main Street School."
@@ -312,7 +312,7 @@ Revise based on feedback.
 ### Example 2: Shelter
 
 ❌ **Before:**
-"The emergency operations center has established a temporary shelter facility capable of accommodating displaced residents with basic necessities provision."
+"The emergency center made a shelter for people who lost their homes. It has basic supplies."
 
 ✅ **After:**
 "The shelter is open. We have food, water, and beds. Address: 100 Main Street."
@@ -320,7 +320,7 @@ Revise based on feedback.
 ### Example 3: Water Safety
 
 ❌ **Before:**
-"Due to contamination of the municipal water supply, a precautionary boil water advisory has been implemented for all consumers until further notification."
+"The city water is dirty. Don't drink tap water. Boil it first. We'll tell you when it's safe."
 
 ✅ **After:**
 "Do not drink tap water. Boil it for 1 minute first. This order stays until we tell you it's safe."
@@ -342,15 +342,15 @@ Revise based on feedback.
 - **Center for Plain Language**
 - **Federal Plain Language Training**
 
-## The Bottom Line
+## The Main Point
 
 Plain language is not "dumbing down."
 
-It's clearing up.
+It's making things clear.
 
-It's respecting your audience's time.
+It respects your reader's time.
 
-It's ensuring understanding.
+It helps understanding.
 
 **In emergencies, plain language saves lives.**
 
@@ -359,5 +359,5 @@ It's ensuring understanding.
 ---
 
 <div class="alert alert-success">
-  **Quick Start:** Take your next emergency alert. Apply the checklist. Cut it by 50%. Test it with someone. Repeat.
+  **Quick Start:** Take your next alert. Use the checklist. Cut it by half. Test it with someone. Do it again.
 </div>
