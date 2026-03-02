@@ -2,19 +2,71 @@
 
 ## Overview
 
-**Crisis Mode** is an ultra-low-bandwidth mirror of the Inclusive Emergency Readiness guide, designed to function on 2G networks, satellite links, and congested mesh networks during emergency situations.
+**Low-bandwidth support** is built directly into the main site rather than maintained as a
+separate set of pages. The site uses the CSS `prefers-reduced-data` media query and a matching
+JavaScript check to automatically strip non-essential elements when the user's browser or OS
+signals a preference for reduced data usage.
+
+Users can also enable **Low Data Mode** manually using the accessibility toggle in the site header.
 
 ## Design Philosophy: "Degrade Gracefully"
 
-We follow a **"Degrade Gracefully"** philosophy: stripping away aesthetics in Crisis Mode so a person with one bar of signal has the same access as someone on fiber.
+We follow a **"Degrade Gracefully"** philosophy: stripping away aesthetics automatically when
+bandwidth is constrained, so a person with one bar of signal has the same access as someone on
+fiber.
 
-**Information is infrastructure.** We practice what we preach by maintaining a **network-agnostic** text mirror that functions when cell towers are congested or damaged.
+**Information is infrastructure.** The site is **network-agnostic**: it degrades gracefully
+when cell towers are congested or damaged.
 
 ### The Conditional Resilience Layer
 
-Crisis Mode implements a **Conditional Resilience Layer** aligned with Web Sustainability Guidelines (WSG 1.0). This ensures life-saving information loads on 2G networks where standard web overhead causes timeouts and failures.
+Low-data support implements a **Conditional Resilience Layer** aligned with Web Sustainability
+Guidelines (WSG 1.0). This ensures life-saving information loads on 2G networks where standard
+web overhead causes timeouts and failures.
 
-**Performance vs. Survival:** Most websites prioritize appearance. Crisis Mode prioritizes reach. Every byte removed is another person who can access critical information when infrastructure is stressed.
+**Performance vs. Survival:** Most websites prioritize appearance. Low Data Mode prioritizes
+reach. Every byte removed is another person who can access critical information when
+infrastructure is stressed.
+
+## How It Works
+
+### CSS: `@media (prefers-reduced-data: reduce)`
+
+> **Browser support note:** `prefers-reduced-data` is an experimental media feature with
+> limited browser adoption (primarily available in some mobile browsers behind a flag as of
+> 2025). The CSS rules are forward-looking — they will activate automatically as browsers adopt
+> the feature. In the meantime, **manual Low Data Mode** (via the header toggle) is the
+> primary mechanism for users who need reduced-data rendering.
+
+When the user's browser reports the `prefers-reduced-data: reduce` preference, the stylesheet
+automatically:
+
+- Hides the decorative logo image (site title text remains)
+- Removes background images and box shadows
+- Simplifies gradient backgrounds
+- Hides supplementary footer columns (reducing DOM size)
+
+### JavaScript: auto-detect and respect preference
+
+`assets/js/mode-toggle.js` checks `window.matchMedia('(prefers-reduced-data: reduce)')` on
+page load and, if matched, adds the `low-data` class to `<body>`. This class is also applied
+when a user manually enables Low Data Mode via the header toggle. It disables background images,
+decorative borders, and custom fonts.
+
+The Service Worker (for offline use) is skipped when `prefers-reduced-data` is active, saving
+an extra network round-trip.
+
+### Page Weight Indicator
+
+A small inline script in `_layouts/default.html` reads
+`performance.getEntriesByType('resource')` after the page loads and displays the total
+transferred kilobytes as a fixed badge in the bottom-right corner. This gives authors and testers
+immediate feedback on page weight without needing external tools.
+
+### Manual Override
+
+Users can still toggle Low Data Mode manually via the header accessibility controls regardless
+of their OS/browser setting.
 
 ## The Problem
 
@@ -33,30 +85,34 @@ During disasters and emergencies:
 
 ## The Solution: The 14KB Rule
 
-**TCP Slow-Start:** The internet's transport protocol (TCP) uses a congestion control mechanism called "slow-start":
+**TCP Slow-Start:** The internet's transport protocol (TCP) uses a congestion control mechanism
+called "slow-start":
 - First packet: Limited to ~14KB (10 TCP segments × 1460 bytes)
 - Each round-trip: Window doubles (if no packet loss)
 - On congested/damaged networks: Packet loss forces restart
 
-**Crisis Mode Design Principle:**
-> If an entire emergency information page fits within 14KB, it loads in a single round-trip, dramatically improving reliability and speed on stressed networks.
+**Design Principle:**
+> Keep each page under 14KB where possible so it loads in a single round-trip on stressed networks.
 
 ## Technical Architecture
 
-### Page Specifications
+### Supplementary Crisis Pages
 
-| Page | Size | Description |
-|------|------|-------------|
-| `/crisis.html` | 6.4KB | Landing page with quick access links |
-| `/crisis-templates.html` | 8.1KB | Emergency alert templates |
-| `/crisis-disabilities.html` | 11.1KB | Disability considerations |
+The site still includes Markdown-based supplementary pages for low-bandwidth use:
 
-**All pages include:**
-- Complete HTML document
-- Inline CSS (~1.7KB minified)
-- Zero external requests
-- Zero JavaScript
-- Zero images
+| Page | Description |
+|------|-------------|
+| `/crisis.html` | Landing page with quick access links |
+| `/crisis-templates.html` | Emergency alert templates |
+| `/crisis-disabilities.html` | Disability considerations |
+
+These pages use the `crisis` layout which inlines all CSS and has zero external requests,
+zero JavaScript, and zero images.
+
+**Note:** These pages are kept as a lightweight fallback. The main site's built-in
+`prefers-reduced-data` support is the primary bandwidth-saving mechanism.
+
+
 
 ### Zero Dependencies
 
@@ -277,9 +333,9 @@ Crisis Mode works with:
 ## Maintenance
 
 ### Content Updates
-1. Edit `.html` files in repository root
+1. Edit `.md` files in repository root (`crisis.md`, `crisis-templates.md`, `crisis-disabilities.md`)
 2. Keep content concise and essential
-3. Monitor page sizes: `wc -c crisis*.html`
+3. Monitor page sizes: `wc -c crisis*.md`
 4. Target: Keep under 11KB per page
 
 ### CSS Updates
