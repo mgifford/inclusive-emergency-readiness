@@ -70,6 +70,31 @@
           <a href="https://github.com/mgifford/inclusive-emergency-readiness/issues" target="_blank" rel="noopener noreferrer">Report Issues</a> · 
           <a href="https://github.com/mgifford/inclusive-emergency-readiness/pulls" target="_blank" rel="noopener noreferrer">Submit Pull Requests</a>
         </p>
+
+        <!-- Social sharing -->
+        <div class="social-share" aria-label="Share this page on social media">
+          <p class="social-share-label"><strong>Share this resource:</strong></p>
+          <ul class="social-share-list">
+            <li>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" class="social-share-btn social-share-linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn (opens in new tab)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/intent/compose?text={{ page.title | default: site.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="social-share-btn social-share-bluesky" target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky (opens in new tab)">
+                <svg width="20" height="20" viewBox="0 0 360 320" fill="currentColor" aria-hidden="true" focusable="false"><path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-7.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-53.6 105.1 51.5 67.7 74.3 14.7 103.4-29.7 29.1 44.4 51.9 97.4 103.4 29.7 57.2-75.1 5.1-96.5-53.6-105.1 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C285.6-1 270.5-7.9 230 22c-41.3 29.2-85.7 88.3-102 120z"/></svg>
+                Bluesky
+              </a>
+            </li>
+            <li>
+              <a href="https://mastodonshare.com/?text={{ page.title | default: site.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}" class="social-share-btn social-share-mastodon" target="_blank" rel="noopener noreferrer" aria-label="Share on Mastodon (opens in new tab)">
+                <svg width="20" height="20" viewBox="0 0 74 79" fill="currentColor" aria-hidden="true" focusable="false"><path d="M73.7014 17.4323C72.7318 11.1023 66.8596 6.02 60.3981 5.0117C59.2941 4.83722 54.8928 4.2232 44.5685 4.2232H44.4826C34.1582 4.2232 32.0093 4.83722 30.9053 5.0117C24.6876 5.98853 18.4916 10.6452 17.0029 17.0617C16.2797 20.2075 16.2008 23.6679 16.3357 26.8636C16.5356 31.4977 16.5754 36.1236 17.0027 40.7378C17.2963 43.7498 17.7979 46.7417 18.5049 49.6876C19.8683 55.4413 25.5547 60.2013 31.1882 62.0981C37.1985 64.0899 43.6988 64.4184 49.8904 62.9974C50.5754 62.8417 51.2474 62.6621 51.906 62.4585C53.3942 61.9937 55.0617 61.4603 56.3518 60.5174C56.3826 60.4946 56.4076 60.4651 56.4248 60.4311C56.442 60.3971 56.4509 60.3595 56.4509 60.3215V55.652C56.4509 55.4851 56.3679 55.3298 56.2347 55.2366C56.1034 55.1434 55.9339 55.1236 55.7835 55.1794C52.9208 56.2361 49.9158 56.8125 46.8834 56.8125C40.3991 56.8125 38.5668 53.7028 38.0522 52.3724C37.657 51.2831 37.418 50.1394 37.3437 48.9814C37.3437 48.9814 43.6968 50.4786 49.8904 50.1975C51.5618 50.1217 53.233 49.9849 54.8928 49.778C61.5498 48.9365 67.8348 44.9927 68.5508 38.4917C68.6235 37.8025 68.7694 36.0386 68.7694 35.3203V35.3197C68.7694 32.9171 68.9437 27.4033 68.5508 21.5906C68.4831 20.4738 68.1685 19.4037 67.6229 18.4464C67.0783 17.4877 66.3189 16.6656 65.4042 16.0366C64.4895 15.4075 63.4436 14.9876 62.3436 14.8037C61.5 14.6537 60.6439 14.5812 59.7877 14.5869H59.7558V14.5869H59.7239C52.0534 14.5869 44.2956 15.2539 37.0151 17.4323C30.4069 19.4531 25.0938 23.6469 24.8024 30.4023C24.7921 30.6434 24.7858 30.8858 24.7858 31.1301C24.7858 31.3737 24.7921 31.616 24.8024 31.8565C24.8973 34.3023 25.2694 36.7161 25.9077 39.0584C27.8066 45.9003 33.3285 50.2267 38.6888 51.5017C44.0487 52.7777 49.6506 52.5267 54.8928 51.0017C54.8928 51.0017 56.6504 55.7516 50.0979 56.8125C44.0991 57.7786 38.4972 56.3274 37.3437 55.9965C37.1693 55.9461 36.983 55.9891 36.8452 56.1098C36.7074 56.2305 36.6348 56.4115 36.6532 56.5964C36.8688 58.7765 38.5668 60.8613 40.0791 62.3093C42.0208 64.175 44.4826 65.4484 47.1534 65.9344C53.8518 67.1524 60.6948 66.4218 66.9546 63.8372C70.5625 62.3249 73.9283 59.7905 74.0 55.652V26.8636C74.0 23.3994 74.0 20.0417 73.7014 17.4323Z"/></svg>
+                Mastodon
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       
       <p class="copyright">
@@ -185,6 +210,59 @@
   .contribute-text a:hover,
   .contribute-text a:focus {
     text-decoration-thickness: 2px;
+  }
+
+  .social-share {
+    margin-top: 1.5rem;
+  }
+
+  .social-share-label {
+    margin-bottom: 0.75rem;
+    color: white;
+  }
+
+  .social-share-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .social-share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: white;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .social-share-linkedin {
+    background-color: #0A66C2;
+  }
+
+  .social-share-bluesky {
+    background-color: #0085FF;
+  }
+
+  .social-share-mastodon {
+    background-color: #6364FF;
+  }
+
+  .social-share-btn:hover,
+  .social-share-btn:focus {
+    filter: brightness(1.15);
+    text-decoration: underline;
+    outline: 3px solid white;
+    outline-offset: 2px;
   }
   
   .copyright,

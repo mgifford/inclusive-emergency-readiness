@@ -25,22 +25,38 @@
   <meta name="apple-mobile-web-app-title" content="Resilience Comms">
   <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
   
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph (LinkedIn, Bluesky, Mastodon, Facebook) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
   <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
   <meta property="og:image:alt" content="Inclusive Emergency Readiness - Accessible emergency exit symbol with person using mobility aid">
+  <meta property="og:image:width" content="785">
+  <meta property="og:image:height" content="373">
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="en_US">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
-  <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
-  <meta name="twitter:image:alt" content="Inclusive Emergency Readiness - Accessible emergency exit symbol with person using mobility aid">
+
+  <!-- JSON-LD Structured Data (Google SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | append: site.baseurl | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.author.name | default: site.title | jsonify }}
+    }{% if page.title and page.title != "Home" %},
+    "mainEntity": {
+      "@type": "WebPage",
+      "name": {{ page.title | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "description": {{ page.summary | default: site.description | strip_html | strip_newlines | truncate: 160 | jsonify }}
+    }{% endif %}
+  }
+  </script>
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/emergency.css' | relative_url }}">

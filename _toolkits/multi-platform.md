@@ -769,8 +769,6 @@ Before posting any alert:
 
 #### Alt Text Guides
 
-- **[X/Twitter Accessibility]** - How to use X
-  - Link: https://help.twitter.com/en/using-twitter/accessibility-features
 - **[Microsoft Alt Text Guide]** - Alt text how-to
   - Link: https://support.microsoft.com/office/everything-you-need-to-know-to-write-effective-alt-text-df98f884-ca3d-456c-807b-1a1fa82f5dc2
 
@@ -946,8 +944,6 @@ Update your sites.
 
 ### Site How-To Guides
 
-- **[X/Twitter Accessibility]** - How to use X
-  - Link: https://help.twitter.com/en/using-twitter/accessibility-features
 - **[Facebook Accessibility]** - Meta's guides
   - Link: https://www.facebook.com/help/accessibility
 - **[Mastodon Documentation]** - Easy access features

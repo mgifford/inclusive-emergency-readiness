@@ -76,11 +76,14 @@ include:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# SEO and social
-twitter:
-  username: 
-  card: summary
+# Social media profiles (LinkedIn, Mastodon, Bluesky - no Twitter/X)
+social:
+  links:
+    - https://www.linkedin.com/in/mgifford/
+    - https://mastodon.social/@mgifford
+    - https://bsky.app/profile/mgifford.bsky.social
 
 # Accessibility features
 accessibility:
