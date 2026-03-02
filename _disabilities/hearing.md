@@ -1,6 +1,6 @@
 ---
 layout: disability
-title: "Users Requiring Visual Information"
+title: "Users Requiring Visual Alternatives to Audio"
 category: disability
 disability_type: hearing
 summary: "How to reach people who cannot hear audio alerts during crises and what you must do."
@@ -11,7 +11,7 @@ reading_level: "Grade 6"
 last_updated: 2026-03-01
 ---
 
-# Users Requiring Visual Information
+# Users Requiring Visual Alternatives to Audio
 
 ## Provide captions and visual alerts. Always.
 
@@ -367,10 +367,12 @@ Auto-play startles users and drains batteries.
 ## Tools You Can Use
 
 ### Test Captions
-**Use these free tools:**
-- YouTube auto-sync (start with this)
-- Amara Editor (online)
-- Subtitle Edit (download)
+**Use captioning tools (verify availability):**
+- YouTube auto-sync (check current features)
+- Amara Editor (online option)
+- Subtitle Edit (downloadable software)
+
+**Note:** Tool availability changes. Verify these work before recommending to users.
 
 ### Create Captions
 **File format for web captions:**
