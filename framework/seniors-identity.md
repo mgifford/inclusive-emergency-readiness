@@ -245,7 +245,7 @@ These fail when power goes out.
 - Keep: Fresh batteries on hand
 - Test: Monthly
 
-### The Touch-First Principle
+### Finding Items by Touch
 
 **Rule:** You should be able to find key items in the dark.
 
@@ -536,13 +536,13 @@ Go to the parking lot.
 
 ### Faith Community Network
 
-**Challenge:** Alone seniors not getting alerts.
+**Challenge:** Seniors living alone not getting alerts.
 
 **Solution:** Trusted messenger program
 - Trained church volunteers
 - Created printed guides
 - Volunteers visited monthly
-- Result: 100% of alone seniors now have Power of 3
+- Result: 100% of seniors living alone now have Power of 3
 
 ---
 
