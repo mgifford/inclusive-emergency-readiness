@@ -198,7 +198,7 @@ For every "No," follow the linked resource to close the gap.
 **Priority:** Get leadership buy-in.
 
 **Actions:**
-1. Present the case for accessibility as life-safety issue
+1. Present the case for accessibility as a life-safety issue
 2. Show legal requirements (ADA, CAN-ASC-6.4)
 3. Share examples of emergency failures
 4. Request budget allocation
