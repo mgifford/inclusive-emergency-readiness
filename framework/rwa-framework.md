@@ -234,7 +234,7 @@ Retake this assessment every 3 months.
 
 **Goal:** Improve your score by 2-3 points each quarter.
 
-**Example Progress:**
+**Example Progress** (assuming consistent 2-3 point improvement per quarter):
 - **Quarter 1:** Score 4/15 (Built 3 templates, tested one channel)
 - **Quarter 2:** Score 7/15 (Added Easy Read, trained staff on Plain Language)
 - **Quarter 3:** Score 10/15 (Set up multi-channel alerts, ran first drill)

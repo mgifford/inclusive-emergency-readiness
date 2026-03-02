@@ -3,7 +3,7 @@ layout: default
 title: "Start Now: Your First Steps"
 category: framework
 summary: "Don't wait for perfect. Start today with one small action. Build progress, not perfection."
-reading_level: "Grade 6"
+reading_level: "Grade 3.7 (Flesch-Kincaid Grade Level)"
 last_updated: 2026-03-02
 ---
 
