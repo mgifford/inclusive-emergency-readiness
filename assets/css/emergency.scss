@@ -865,6 +865,12 @@ body.low-data {
       color: #6699ff;
     }
     
+    // Table even rows need darker text for sufficient contrast
+    // #717171 on #f9f9f9 background achieves 4.64:1 ratio (meets WCAG AA)
+    table tr:nth-child(even) {
+      color: #717171;
+    }
+    
     // Header site title and navigation links need white color on blue background
     // Achieves 7:1 contrast ratio on #0066cc background (exceeds WCAG AA)
     .site-title a,
@@ -911,6 +917,12 @@ body.low-data {
       &.alert-success {
         background-color: #203a20;
         color: #ccffcc;
+        
+        // Links need lighter blue for contrast on green background
+        // #6ba0ff on #203a20 achieves 4.80:1 ratio (meets WCAG AA)
+        a {
+          color: #6ba0ff;
+        }
       }
     }
     
