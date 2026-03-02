@@ -104,6 +104,21 @@ You must reach all people.
 
 **You get:** Links to expert tools
 
+### Check Your Readiness
+**Go to:** [Ready-Willing-Able Framework]({{ '/framework/rwa-framework.html' | relative_url }})
+
+**You learn:** If your team is ready for inclusive emergency communications
+
+### Plan Physical Spaces
+**Go to:** [Physical-Digital Intersection]({{ '/framework/physical-digital.html' | relative_url }})
+
+**You learn:** How to make shelters accessible
+
+### Use AI Tools
+**Go to:** [LLM Prompts Guide]({{ '/framework/llm-prompts.html' | relative_url }})
+
+**You get:** Ready-to-use prompts to improve your content
+
 
 ---
 

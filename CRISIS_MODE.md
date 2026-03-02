@@ -4,6 +4,18 @@
 
 **Crisis Mode** is an ultra-low-bandwidth mirror of the Inclusive Emergency Readiness guide, designed to function on 2G networks, satellite links, and congested mesh networks during emergency situations.
 
+## Design Philosophy: "Degrade Gracefully"
+
+We follow a **"Degrade Gracefully"** philosophy: stripping away aesthetics in Crisis Mode so a person with one bar of signal has the same access as someone on fiber.
+
+**Information is infrastructure.** We practice what we preach by maintaining a **network-agnostic** text mirror that functions when cell towers are congested or damaged.
+
+### The Conditional Resilience Layer
+
+Crisis Mode implements a **Conditional Resilience Layer** aligned with Web Sustainability Guidelines (WSG 1.0). This ensures life-saving information loads on 2G networks where standard web overhead causes timeouts and failures.
+
+**Performance vs. Survival:** Most websites prioritize appearance. Crisis Mode prioritizes reach. Every byte removed is another person who can access critical information when infrastructure is stressed.
+
 ## The Problem
 
 During disasters and emergencies:

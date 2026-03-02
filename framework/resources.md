@@ -183,6 +183,14 @@ The goal is to ensure that digital assets are designed with their physical "afte
 
 **Why it matters:** In a disaster, supply chains break. Glia allows communities to "print" their own medical infrastructure using digital files downloaded before the crisis.
 
+**Clinical Validation:** Glia's stethoscope has demonstrated comparable frequency response to traditional models in controlled studies. Research shows performance within acceptable clinical ranges for basic auscultation. However, effectiveness depends on:
+- Print material quality and printer calibration
+- Proper assembly following exact specifications
+- User training on the specific device
+- Regular maintenance and inspection
+
+**Important:** Not all 3D-printed medical devices have clinical validation. Verify specific model certifications before use in clinical settings. Performance may vary based on manufacturing conditions.
+
 #### Field Ready: Local Manufacturing for Humanitarian Relief
 
 **Link:** [Field Ready](https://www.fieldready.org/){:target="_blank" rel="noopener noreferrer"}
@@ -322,6 +330,26 @@ The goal is to ensure that digital assets are designed with their physical "afte
 **Who it's for:** Broadcast engineers and public information officers.
 
 **Why it matters:** Focuses on the "No One Left Behind" principle in mass alerting.
+
+**Important Context on Alert Systems:**
+
+**Wireless Emergency Alerts (WEA):**
+- WEA is mandated in the US but has known limitations
+- Character support varies by region and carrier
+- As of 2026, full Unicode support is not universal
+- Non-English character sets (Chinese, Arabic, etc.) may not display correctly on all devices
+- Spanish language support is more widely available but not guaranteed
+- Always test WEA messages on multiple devices and carriers before relying on them
+
+**Alert Opt-In Rates:**
+Research and municipal data indicate that opt-in rates for non-mandatory alert systems often remain below 40%. This underscores the critical need for:
+- Multiple distribution channels (not relying on opt-in alone)
+- Automatic enrollment where legally permitted
+- Regular promotion of alert registration
+- Alternative notification methods (sirens, door-to-door, community networks)
+- Assumption that opt-in systems will miss the majority of residents
+
+**Multi-Channel Strategy:** Never rely on a single alert channel. Use redundant methods to maximize reach.
 
 #### Convey911: Emergency Communication System Innovations
 

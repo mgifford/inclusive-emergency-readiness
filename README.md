@@ -29,8 +29,19 @@ This site is built using **[Survival Web Design](./SURVIVAL_WEB_DESIGN.md)** pri
 * **High-Contrast/Low-Data Mode:** Battery and bandwidth preservation
 * **Offline-First:** Progressive Web App (PWA) for offline access
 * **Print-Ready:** Emergency binder optimization
+* **Crisis Mode:** Ultra-low-bandwidth mirror for 2G networks (14KB rule)
 
 👉 **[Read the full technical documentation](./SURVIVAL_WEB_DESIGN.md)** to understand how this site is architected for maximum resilience.
+
+👉 **[See Crisis Mode in action](./CRISIS_MODE.md)** - A "Degrade Gracefully" approach that ensures equal access on any network.
+
+### 📊 Ready-Willing-Able Framework
+Assess your organization's readiness for inclusive emergency communications using the **[RWA Framework](./framework/rwa-framework.html)**:
+* **Willing:** Leadership commitment and prioritization
+* **Ready:** Pre-built infrastructure and templates
+* **Able:** Staff skills and training
+
+This self-assessment tool helps identify gaps and prioritize improvements.
 
 ---
 
@@ -78,8 +89,16 @@ We are building this to be forked and adapted by municipalities worldwide:
 * [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our technical commitment
 * [**SUSTAINABILITY.md**](./SUSTAINABILITY.md) - Our performance requirements
 * [**SURVIVAL_WEB_DESIGN.md**](./SURVIVAL_WEB_DESIGN.md) - How this site is built for resilience
+* [**CRISIS_MODE.md**](./CRISIS_MODE.md) - Ultra-low-bandwidth emergency access
 * [**AGENTS.md**](./AGENTS.md) - Protocols for AI and human contributors
 * [**DEPLOYMENT.md**](./DEPLOYMENT.md) - Deployment and testing guide
+
+### Key Implementation Resources
+
+**Framework & Assessment:**
+* [**RWA Framework**](./framework/rwa-framework.html) - Self-assess your organization's readiness
+* [**Physical-Digital Intersection**](./framework/physical-digital.html) - Bridge digital and physical accessibility
+* [**LLM Prompts**](./framework/llm-prompts.html) - Use AI tools to improve communications
 
 ### Contributing to Standards
 We actively seek to support and implement the draft requirements of **Accessibility Standards Canada (CAN-ASC-6.4)**. This repository serves as a functional prototype and testing ground.
