@@ -7,11 +7,9 @@ title: "Tactical Toolkits"
 
 ## Practical Guides for Accessible Emergency Communication
 
-These are not theory.
+Designed to be practical. These are step-by-step guides.
 
-These are step-by-step guides.
-
-Use them to build accessible emergency communication.
+Use them to build more accessible emergency communication. Especially in an emergency, this will matter.
 
 ## Available Toolkits
 
