@@ -16,7 +16,7 @@ last_updated: 2026-03-01
 
 ## Plain Language Version
 
-**Use this template for immediate evacuation orders.**
+**Use this for urgent evacuations.**
 
 ---
 
@@ -28,85 +28,87 @@ last_updated: 2026-03-01
 
 ---
 
-## YOU MUST LEAVE NOW
+## LEAVE NOW
+
+**Leave in:** [X hours / X minutes]
 
 **Danger:** [Fire / Flood / Chemical spill / Other]
 
-**Location:** [Street names or zone numbers]
-
-**You have:** [X hours / X minutes] to leave
+**Location:** [Streets or zones]
 
 ---
 
 ## WHO MUST LEAVE
 
-Everyone in these areas must leave now:
+Leave if you are in:
 
-- [Zone A / Street name]
-- [Zone B / Street name]
-- [Zone C / Street name]
+- [Zone A]
+- [Zone B]
+- [Zone C]
 
-[Link to map] [Show me on a map]
+[Link to map] [Map]
 
 ---
 
 ## WHERE TO GO
 
-**Shelter address:**  
-[Building name]  
-[Street address]  
-[City, Postal Code]
+Go to [Building name].
 
-**What you will find there:**
-- Water and food
+**Address:**  
+[Street address]  
+[City]
+
+**At shelter:**
+- Water
+- Food
 - Beds
 - Bathrooms
-- [Medical care / Pet care / Other]
+- [Medical / Pets]
 
-[Link to directions] [Get directions]
+[Link to directions] [Directions]
 
 ---
 
 ## HOW TO GET THERE
 
 **By car:**
-Take [Highway/Street name] to [Street name].
+Take [Highway] to [Street].
 
 **No car?**
-Buses will pick you up at [Location].  
-Buses leave every [30 minutes].
+Bus picks you up at [Location].  
+Bus leaves every [30 minutes].
 
-**Need help leaving?**
-Call: [Phone number]  
-Text: [Phone number]
+**Need help?**
+Call: [Phone]  
+Text: [Phone]
 
 ---
 
 ## WHAT TO BRING
 
-Bring only these items:
+Bring only:
 
 1. Photo ID
 2. Medicine
 3. Phone charger
 4. One change of clothes
-5. Important papers (if you have time)
+5. Important papers (if time)
 
 **Pets:**
-Bring your pets. We have space for them.
+Bring pets. We have space.
 
 ---
 
 ## BEFORE YOU LEAVE
 
-Do these things in this order:
+Do this:
 
-1. Turn off the gas (if you can)
-2. Lock your doors
-3. Tell a friend or family member you are leaving
+1. Turn off gas (if safe)
+2. Lock doors
+3. Tell a friend
 
 **Do NOT:**
-- Go back for belongings
+- Go back
 - Stop for gas
 - Take photos
 
@@ -114,25 +116,25 @@ Do these things in this order:
 
 ## ROAD CLOSURES
 
-These roads are closed:
+Closed roads:
 
-- [Road name]
-- [Road name]
+- [Road]
+- [Road]
 
-Use these roads instead:
+Use these:
 
-- [Road name]
-- [Road name]
+- [Road]
+- [Road]
 
-[Link to map] [Show me safe routes]
+[Link to map] [Safe routes]
 
 ---
 
 ## WHEN YOU ARRIVE
 
-1. Go to the registration desk
-2. Give your name and address
-3. Staff will help you find a bed
+1. Go to registration
+2. Give name and address
+3. Staff will help
 
 ---
 
@@ -140,40 +142,40 @@ Use these roads instead:
 
 We will:
 - Keep you safe
-- Give you updates every [X hours]
-- Tell you when it is safe to go home
+- Update you every [X hours]
+- Tell you when safe to return
 
 You can:
-- Stay as long as you need
-- Call family for free
-- Get help with your needs
+- Stay as long as needed
+- Call family free
+- Get help
 
 ---
 
 ## QUESTIONS?
 
-**Call:** [Phone number] (Available 24/7)  
-**Text:** [Phone number] (For Deaf/Hard of Hearing)  
-**Email:** [Email address]  
-**Website:** [URL]
+**Call:** [Phone] (24/7)  
+**Text:** [Phone] (For Deaf)  
+**Email:** [Email]  
+**Web:** [URL]
 
-**Language help:**
+**Languages:**
 Press [1] for English  
 Press [2] for French  
 Press [3] for Spanish  
-[Add other languages]
+[Add others]
 
 ---
 
 ## IMPORTANT
 
-This is a mandatory evacuation order.
-
 You must leave.
+
+This is mandatory.
 
 Your safety is our priority.
 
-We will help you.
+We will help.
 
 ---
 
@@ -183,7 +185,7 @@ We will help you.
 
 ## Easy Read Version
 
-**Use this version for people with intellectual disabilities or low literacy.**
+**Use this for people with intellectual disabilities or low literacy.**
 
 ---
 
@@ -231,7 +233,7 @@ A bus will take you.
 
 **Need help?**  
 Call [Phone number].  
-We will help you leave.
+We will help.
 
 ## What to bring?
 
@@ -266,111 +268,92 @@ We will keep you safe.
 
 ## Accessible Formats
 
-This template is available in:
+Available in:
 
-- **Large print** (18pt font minimum)
-- **High contrast** (Black text on white background)
-- **Screen reader optimized** (Semantic HTML)
-- **Printable** (Optimized for emergency binders)
-- **SMS** (Text message version)
-- **Audio** (MP3 recording)
-- **Sign language video** (ASL/LSQ)
+- Large print (18pt+)
+- High contrast
+- Screen reader
+- Print
+- SMS
+- Audio
+- Sign language
 
 ## Translation Notes
 
-When translating this template:
-
-- Keep sentences short (15 words or less)
-- Use common words only
-- Maintain the numbered list structure
-- Preserve the "Do NOT" warnings
-- Keep the reading level at Grade 6 or lower
+When translating:
+- Short sentences (under 15 words)
+- Common words
+- Keep lists
+- Keep warnings
+- Grade 6 max
 
 ## Customization Guidelines
 
-### Required Information
+### Required
 
-Always include:
-- Date and time of order
-- Issuing agency
-- Specific locations affected
-- Evacuation deadline
-- Shelter address
-- Transportation options
-- Contact information
+Include:
+- Date, time
+- Agency
+- Areas
+- Deadline
+- Shelter
+- Transport
+- Phone
 
-### Optional Information
+### Optional
 
-Include only if relevant:
-- Pet accommodations
-- Medical services at shelter
-- Road closures
-- Alternative routes
+If relevant:
+- Pets
+- Medical
+- Closures
+- Routes
 
-### What to AVOID
+### Avoid
 
-Do not include:
-- Legal disclaimers (use simple language instead)
-- Technical jargon
-- Multiple phone numbers (prioritize one main number)
-- Instructions to check websites during evacuation
+Skip:
+- Legal text
+- Tech words
+- Many phones
+- Web checks
 
-## Testing This Template
+## Testing
 
-Before using this template in an emergency:
+Before use:
 
-1. **Readability test:** Confirm Grade 6 reading level or lower
-2. **Screen reader test:** Read with NVDA or JAWS
-3. **Print test:** Print and verify legibility
-4. **Cognitive test:** Have someone unfamiliar with the area follow the instructions
-5. **Translation test:** Verify translations maintain simplicity
+1. Grade 6 check
+2. Screen reader test
+3. Print test
+4. New person test
+5. Translation test
 
-## Distribution Methods
+## Distribution
 
-Use all available channels:
+Use all:
 
-- **Digital:**
-  - Emergency alert system
-  - Social media
-  - Email
-  - SMS
+**Digital:** Alerts, social, email, SMS
 
-- **Physical:**
-  - Door-to-door notifications
-  - Community bulletin boards
-  - Loudspeaker announcements
-  - Radio/TV
+**Physical:** Doors, boards, speakers, radio
 
-- **Accessible:**
-  - TTY/TDD for Deaf/Hard of Hearing
-  - Sign language interpreters
-  - Large print flyers
-  - Audio recordings
+**Access:** TTY, sign, print, audio
 
-## Legal Considerations
+## Legal
 
-This template uses plain language to ensure comprehension.
+Plain language is valid.
 
-It maintains legal validity while prioritizing clarity.
-
-Consult your legal department to confirm compliance with local regulations.
+Check your team.
 
 ## Credits
 
-This template follows:
-- WCAG 2.2 Level AA standards
-- Plain Language Association International guidelines
-- Inclusion Europe Easy Read standards
-- CAN-ASC-6.4 Emergency Measures
+Follows WCAG 2.2 AA, Plain Language, Easy Read, CAN-ASC-6.4.
 
 ## License
 
-This template is public domain.
+Public domain.
 
-Use it freely.
+Use freely.
 
-Modify it for your needs.
+Modify freely.
 
-Share it widely.
+Share widely.
 
-**The goal: Save lives through clear communication.**
+**Goal: Save lives with clear words.**

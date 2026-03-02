@@ -13,312 +13,312 @@ last_updated: 2026-03-01
 
 **Egress** means "a way out."
 
-In buildings, egress is emergency exits.
+In buildings, egress means emergency exits.
 
-In digital spaces, egress is **accessible escape routes.**
+Online, egress means **easy escape routes.**
 
-Your emergency website is a digital egress point.
+Your emergency website is a way out.
 
-It must work when everything else fails.
+It must work when all else fails.
 
-## The Survival-Ready Test
+## Is Your Site Survival-Ready?
 
 A website is "survival-ready" if it works when:
 
-- Power is limited (battery dying)
-- Internet is slow (low bandwidth)
-- Device is old (limited processing power)
-- User is stressed (cognitive overload)
-- Time is critical (seconds matter)
+- Power is low (battery dying)
+- Internet is slow (low speed)
+- Device is old (slow computer)
+- User is stressed (hard to think)
+- Time is short (seconds matter)
 
 ## The Checklist
 
-### Part 1: Performance
+### Part 1: Speed
 
 #### Load Time
 - [ ] Page loads in under 3 seconds on 3G
 - [ ] Total page size under 500KB
-- [ ] Critical CSS is inlined
-- [ ] No blocking JavaScript
-- [ ] Images are optimized (WebP format)
+- [ ] Key CSS is inline (in the page)
+- [ ] No blocking scripts
+- [ ] Photos are small (WebP format)
 
-**Why it matters:** Slow sites don't load during emergencies.
+**Why it matters:** Slow sites don't load in emergencies.
 
 **How to test:** Use Google PageSpeed Insights.
 
-#### Battery Drain
-- [ ] No auto-playing videos
+#### Battery Use
+- [ ] No auto-play videos
 - [ ] No heavy animations
-- [ ] Dark mode available
-- [ ] Minimal JavaScript
-- [ ] No resource-intensive features
+- [ ] Dark mode option
+- [ ] Little JavaScript
+- [ ] No power-hungry features
 
-**Why it matters:** Dead phone = no information.
+**Why it matters:** Dead phone means no info.
 
 **How to test:** Check DevTools Performance tab.
 
-### Part 2: Accessibility
+### Part 2: Easy Access
 
-#### Screen Reader
-- [ ] All images have alt text
-- [ ] Headings are properly nested (H1, H2, H3)
-- [ ] Skip link to main content exists
-- [ ] Form labels are explicit
-- [ ] ARIA landmarks are used correctly
+#### Screen Reader (Tool That Reads Screen)
+- [ ] All photos have alt text
+- [ ] Headings are in order (H1, H2, H3)
+- [ ] Skip link to main content
+- [ ] Form labels are clear
+- [ ] ARIA tags used right
 
 **Why it matters:** 7 million Americans use screen readers.
 
 **How to test:** Use NVDA or VoiceOver.
 
-#### Keyboard Navigation
-- [ ] All functions work without a mouse
-- [ ] Tab order is logical
-- [ ] Focus indicators are visible
+#### Keyboard Only
+- [ ] All tasks work without a mouse
+- [ ] Tab order makes sense
+- [ ] Can see where you are
 - [ ] No keyboard traps
-- [ ] Shortcuts documented
+- [ ] Shortcuts listed
 
 **Why it matters:** Not everyone can use a mouse.
 
-**How to test:** Unplug your mouse and navigate.
+**How to test:** Unplug your mouse. Try to use site.
 
 #### Color and Contrast
-- [ ] Text has 4.5:1 contrast minimum
-- [ ] Color is never the only indicator
-- [ ] High contrast mode available
-- [ ] Works in grayscale
+- [ ] Text has 4.5:1 contrast at least
+- [ ] Never use only color to show meaning
+- [ ] High contrast mode option
+- [ ] Works in black and white
 - [ ] Links are underlined
 
 **Why it matters:** 8% of men are color blind.
 
 **How to test:** Use WebAIM Contrast Checker.
 
-#### Text and Typography
+#### Text and Letters
 - [ ] Font size at least 16px
 - [ ] Text can zoom to 200%
 - [ ] Line height at least 1.5
-- [ ] No justified text
-- [ ] Plain language (Grade 6 level)
+- [ ] Don't justify text (make edges line up)
+- [ ] Simple words (Grade 6-7 level)
 
-**Why it matters:** Reading ability drops under stress.
+**Why it matters:** Reading gets harder when stressed.
 
-**How to test:** Use Hemingway Editor for readability.
+**How to test:** Use Hemingway Editor.
 
-### Part 3: Content
+### Part 3: What You Say
 
-#### Critical Information First
-- [ ] Main action is in the first sentence
-- [ ] No preamble or disclaimers
-- [ ] Address is visible without scrolling
+#### Key Info First
+- [ ] Main action is in first sentence
+- [ ] No intro or warnings first
+- [ ] Address shows without scrolling
 - [ ] Phone number is clickable
-- [ ] Date and time are at the top
+- [ ] Date and time at top
 
-**Why it matters:** People scan, they don't read.
+**Why it matters:** People scan. They don't read all.
 
-**How to test:** Five-second test with unfamiliar users.
+**How to test:** Five-second test with new users.
 
-#### Plain Language
-- [ ] Reading level is Grade 6 or lower
+#### Simple Words
+- [ ] Grade 6-7 reading level
 - [ ] Sentences are 15 words or less
-- [ ] Active voice used
-- [ ] Jargon is defined
+- [ ] Use active voice
+- [ ] Hard words are defined
 - [ ] One idea per paragraph
 
-**Why it matters:** Cognitive load is high in emergencies.
+**Why it matters:** Thinking is hard in emergencies.
 
 **How to test:** Use textstat or Flesch-Kincaid tools.
 
-#### Visual Structure
+#### How It Looks
 - [ ] Bullet points for lists
 - [ ] Numbers for steps
-- [ ] White space between sections
-- [ ] Bold for key terms
-- [ ] Icons support text
+- [ ] White space between parts
+- [ ] Bold for key words
+- [ ] Pictures support text
 
-**Why it matters:** Structure aids comprehension.
+**Why it matters:** Layout helps understanding.
 
-**How to test:** Print and review on paper.
+**How to test:** Print and check on paper.
 
-### Part 4: Multi-Format
+### Part 4: Many Formats
 
 #### Print
-- [ ] Print stylesheet exists
-- [ ] URLs are printed after links
-- [ ] Page breaks are logical
+- [ ] Print style sheet exists
+- [ ] Web addresses print after links
+- [ ] Page breaks make sense
 - [ ] Black text on white
-- [ ] All content is visible
+- [ ] All content shows
 
-**Why it matters:** Emergency binders are essential.
+**Why it matters:** Paper binders are key.
 
 **How to test:** Print the page.
 
-#### Mobile
-- [ ] Responsive design works on small screens
-- [ ] No horizontal scrolling
-- [ ] Touch targets are 44px minimum
+#### Mobile Phone
+- [ ] Works on small screens
+- [ ] No side scrolling
+- [ ] Touch targets are 44px at least
 - [ ] Phone numbers are tappable
-- [ ] Forms work on mobile keyboards
+- [ ] Forms work on phone keyboards
 
-**Why it matters:** 85% access internet via mobile.
+**Why it matters:** 85% use internet on phones.
 
-**How to test:** Use device emulator + real device.
+**How to test:** Use phone emulator plus real phone.
 
-#### Offline
-- [ ] Service worker caches content
+#### Offline (No Internet)
+- [ ] Service worker saves content
 - [ ] Offline page exists
-- [ ] Critical info available offline
-- [ ] PWA manifest included
-- [ ] Installation prompt available
+- [ ] Key info works offline
+- [ ] PWA file included (PWA means phone app)
+- [ ] Install prompt shows
 
 **Why it matters:** Internet fails in disasters.
 
-**How to test:** Enable airplane mode and reload.
+**How to test:** Turn on airplane mode. Reload page.
 
-### Part 5: Multi-Channel
+### Part 5: Many Channels
 
 #### Social Media
 - [ ] Text-only version for Twitter/X
-- [ ] Image has embedded text backup
-- [ ] Link to full information
-- [ ] Hashtag is simple
-- [ ] Cross-posted to multiple platforms
+- [ ] Photo has text backup
+- [ ] Link to full info
+- [ ] Tag is simple
+- [ ] Posted to many sites
 
 **Why it matters:** People are where they are.
 
 **How to test:** Post to test accounts.
 
-#### SMS
-- [ ] Message is under 160 characters
-- [ ] No abbreviations
+#### Text Messages
+- [ ] Message under 160 letters
+- [ ] No short forms
 - [ ] Link is short
-- [ ] Reply-to number works
-- [ ] Multiple languages available
+- [ ] Reply number works
+- [ ] Many languages available
 
-**Why it matters:** SMS works when apps don't.
+**Why it matters:** Texts work when apps don't.
 
-**How to test:** Send to real phone numbers.
+**How to test:** Send to real phones.
 
 #### Email
 - [ ] Subject line has action
 - [ ] Plain text version exists
 - [ ] HTML is simple
-- [ ] Images have alt text
-- [ ] Footer has contact info
+- [ ] Photos have alt text
+- [ ] Bottom has contact info
 
-**Why it matters:** Email is still universal.
+**Why it matters:** Email still works everywhere.
 
-**How to test:** Send to multiple email clients.
+**How to test:** Send to many email programs.
 
-### Part 6: Technical
+### Part 6: Tech
 
-#### HTML
+#### HTML Code
 - [ ] Valid HTML5
-- [ ] Semantic elements used
-- [ ] Language is declared
+- [ ] Semantic tags used (tags with meaning)
+- [ ] Language is set
 - [ ] Meta description exists
 - [ ] No broken links
 
-**Why it matters:** Valid code is robust code.
+**Why it matters:** Good code is strong code.
 
 **How to test:** Use W3C Validator.
 
 #### Security
-- [ ] HTTPS enabled
+- [ ] HTTPS on (secure web)
 - [ ] No mixed content
-- [ ] CSP headers set
-- [ ] XSS protection enabled
-- [ ] Data is encrypted
+- [ ] CSP headers set (blocks bad code)
+- [ ] XSS protection on (blocks harmful scripts)
+- [ ] Data is locked (encrypted means locked)
 
-**Why it matters:** Trust is critical in emergencies.
+**Why it matters:** Trust is key in emergencies.
 
 **How to test:** Use SecurityHeaders.com.
 
-#### Performance Monitoring
-- [ ] Error tracking enabled
-- [ ] Uptime monitoring active
+#### Watching Performance
+- [ ] Error tracking on
+- [ ] Uptime watching active
 - [ ] Load time alerts set
-- [ ] Broken link checker runs weekly
+- [ ] Link checker runs weekly
 - [ ] Backup site exists
 
 **Why it matters:** You need to know if it breaks.
 
-**How to test:** Set up monitoring tools.
+**How to test:** Set up watching tools.
 
-## Emergency Severity Levels
+## Emergency Levels
 
-### Level 1: Information
+### Level 1: Info
 Website can load in 5 seconds.
 
-Examples: Weather advisories, traffic alerts.
+Examples: Weather news, traffic alerts.
 
 ### Level 2: Warning
 Website must load in 3 seconds.
 
-Examples: Storm warnings, air quality alerts.
+Examples: Storm warnings, air alerts.
 
-### Level 3: Evacuation
+### Level 3: Leave Now
 Website must load in 1 second.
 
-Examples: Wildfire evacuation, chemical spill.
+Examples: Wildfire, chemical spill.
 
-**Adjust requirements based on severity.**
+**Change needs based on how bad it is.**
 
-## Quick Wins
+## Quick Fixes
 
-If you only have 1 hour:
+If you have 1 hour:
 
-1. Add alt text to images (15 min)
-2. Increase text contrast (10 min)
+1. Add alt text to photos (15 min)
+2. Make text darker (10 min)
 3. Add skip link (5 min)
-4. Check mobile view (10 min)
+4. Check phone view (10 min)
 5. Test with keyboard (10 min)
-6. Create print stylesheet (10 min)
+6. Make print style sheet (10 min)
 
-If you only have 1 day:
+If you have 1 day:
 
-Add all Level A WCAG requirements.
+Add all Level A WCAG needs.
 
 If you have 1 week:
 
-Complete this entire checklist.
+Do this whole checklist.
 
 ## Tools
 
 ### Testing Tools
-- **Lighthouse** - Built into Chrome DevTools
-- **WAVE** - Web accessibility evaluation
-- **axe DevTools** - Accessibility testing
-- **Pa11y** - Automated testing
-- **WebPageTest** - Performance testing
+- **Lighthouse** - Built into Chrome tools
+- **WAVE** - Web access check
+- **axe DevTools** - Access testing
+- **Pa11y** - Auto testing
+- **WebPageTest** - Speed testing
 
-### Optimization Tools
-- **ImageOptim** - Image compression
+### Make It Better Tools
+- **ImageOptim** - Make photos smaller
 - **PurgeCSS** - Remove unused CSS
-- **Terser** - JavaScript minification
-- **Critical** - Extract critical CSS
+- **Terser** - Make scripts smaller
+- **Critical** - Pull out key CSS
 
-### Monitoring Tools
-- **UptimeRobot** - Uptime monitoring
+### Watching Tools
+- **UptimeRobot** - Watch if site is up
 - **Dead Link Checker** - Find broken links
 - **Google Search Console** - SEO and errors
 
-## The Bottom Line
+## The Main Point
 
 Digital egress is not optional.
 
-When disasters strike, your website is a lifeline.
+When disaster hits, your website saves lives.
 
 Test it like lives depend on it.
 
-Because they do.
+They do.
 
 **Run this checklist before every emergency season.**
 
-**Update it after every incident.**
+**Update it after every event.**
 
-**Make digital egress a priority.**
+**Make digital egress a top priority.**
 
 ---
 
 <div class="alert alert-danger">
-  **Critical:** Print this checklist. Put it in your emergency operations manual. Review it quarterly.
+  **Critical:** Print this checklist. Put it in your emergency manual. Check it every 3 months.
 </div>
