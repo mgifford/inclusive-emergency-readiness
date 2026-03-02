@@ -44,9 +44,11 @@ The logo features:
 
 ### Social Media Card
 - **File:** `assets/images/social-card.png`
-- **Dimensions:** 1200×530px
+- **Dimensions:** 1200×630px recommended (current: 785×373px — see note below)
 - **Size:** 76KB
-- **Usage:** Open Graph (Facebook), Twitter Card previews
+- **Usage:** Open Graph previews for LinkedIn, Bluesky, Mastodon, and other social networks
+
+> **Note:** LinkedIn recommends a minimum of 1200×627px for large card previews. The current image at 785×373px will still render but may appear as a small thumbnail. Updating the social-card.png to 1200×630px will improve LinkedIn sharing quality.
 
 ### Icon Source (SVG)
 - **File:** `assets/images/icon.svg`
@@ -71,8 +73,7 @@ The following meta tags are automatically included in all pages via `_layouts/de
 - **PWA Manifest:** Links to `manifest.json` with icon references
 - **Apple Touch Icon:** For iOS devices
 - **Favicon:** For browser tabs
-- **Open Graph Tags:** For Facebook and other social media
-- **Twitter Card Tags:** For Twitter previews
+- **Open Graph Tags:** For LinkedIn, Bluesky, Mastodon, and other social networks
 
 ### Accessibility Features
 
