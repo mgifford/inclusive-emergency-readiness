@@ -443,6 +443,7 @@ Thank you for helping keep everyone safe.
 - [Disability Spectrum]({{ '/disabilities/' | relative_url }})
 - [RWA Framework]({{ '/framework/rwa-framework.html' | relative_url }})
 - [Resource Directory]({{ '/framework/resources.html' | relative_url }})
+- [Data Fidelity and Ethical Mapping]({{ '/framework/data-ethics-mapping.html' | relative_url }}) — understanding the limits of digital data in emergency response
 
 ---
 
