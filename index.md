@@ -119,6 +119,11 @@ You must reach all people.
 
 **You get:** Ready-to-use prompts to improve your content
 
+### Navigate Disasters
+**Go to:** [Maps, Disasters, and Accessibility]({{ '/framework/maps-accessibility.html' | relative_url }})
+
+**You learn:** How mapping tools help people with disabilities during emergencies
+
 
 ---
 

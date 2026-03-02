@@ -98,6 +98,7 @@ We are building this to be forked and adapted by municipalities worldwide:
 **Framework & Assessment:**
 * [**RWA Framework**](./framework/rwa-framework.html) - Self-assess your organization's readiness
 * [**Physical-Digital Intersection**](./framework/physical-digital.html) - Bridge digital and physical accessibility
+* [**Maps, Disasters, and Accessibility**](./framework/maps-accessibility.html) - How mapping tools coordinate disaster response
 * [**LLM Prompts**](./framework/llm-prompts.html) - Use AI tools to improve communications
 
 ### Contributing to Standards
