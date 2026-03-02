@@ -242,6 +242,7 @@ We value:
 
 For technical standards and automated checks, see:
 - [ACCESSIBILITY.md](./ACCESSIBILITY.md) - Accessibility commitment
+- [CONTENT_DESIGN.md](./CONTENT_DESIGN.md) - Content design principles and review checklist
 - [AGENTS.md](./AGENTS.md) - Protocols for AI and human contributors
 - [SUSTAINABILITY.md](./SUSTAINABILITY.md) - Performance requirements
 - [DEPLOYMENT.md](./DEPLOYMENT.md) - Testing and deployment guide

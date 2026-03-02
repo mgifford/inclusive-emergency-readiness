@@ -1,20 +1,22 @@
 # Inclusive Emergency Readiness Guide
-### A Community Resource Aspiring to Comprehensive Emergency Communications
+### A community resource for accessible emergency communications
 
 [![Accessibility: WCAG 2.2 AA](https://img.shields.io/badge/Accessibility-WCAG%202.2%20AA-blue)](./ACCESSIBILITY.md)
 [![Sustainability: WSG 1.0](https://img.shields.io/badge/Sustainability-WSG%201.0-green)](./SUSTAINABILITY.md)
 [![License: CC-BY-4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
-In a disaster, the "disability-disaster gap" is a failure of infrastructure, not individuals. This guide is a community-driven, open-source effort to bridge digital standards with physical survival needs through low-bandwidth, high-accessibility emergency communications.
+**Emergency alerts miss too many people.** People with disabilities are disproportionately harmed in disasters — not because of their disability, but because communications systems fail them. This guide helps you fix that.
 
-**We are building this together.** Our aspiration is to create resources that empower communications teams to develop information that is **Reachable, Readable, and Resilient** — ensuring no one is left behind when the grid fails.
+Use this guide to write emergency communications that everyone can receive, read, and act on — including people using screen readers, people on slow networks, and people under severe stress.
 
-**This guide needs your expertise.** We especially value contributions from people with disabilities and emergency management professionals who have built tools for real disaster situations.
+**New here?** [Start in 30 minutes with the Bronze level](./framework/start-now.html) — no prior knowledge needed.
+
+**Have lived experience?** [Your contribution is essential](./CONTRIBUTING.md) — share what worked (or didn't) in a real emergency.
 
 ---
 
-## 🚀 The Core Frameworks
-This project aspires to be a living implementation of four critical pillars:
+## 🚀 Four Pillars for Reaching Everyone
+This project implements four principles that together ensure no one is left behind:
 
 1.  **Accessibility (WCAG 2.2 / EN 301 549):** Technical compliance for screen readers and assistive tech
 2.  **Sustainability (WSG 1.0):** "Survival UX" that minimizes data and battery drain on stressed networks
@@ -39,9 +41,9 @@ This site is built using **[Survival Web Design](./SURVIVAL_WEB_DESIGN.md)** pri
 * **Print-Ready:** Emergency binder optimization
 * **Crisis Mode:** Ultra-low-bandwidth mirror for 2G networks (14KB rule)
 
-👉 **[Read the full technical documentation](./SURVIVAL_WEB_DESIGN.md)** to understand how this site is architected for maximum resilience.
+👉 **[How this site is built for resilience — Survival Web Design](./SURVIVAL_WEB_DESIGN.md)**
 
-👉 **[See Crisis Mode in action](./CRISIS_MODE.md)** - A "Degrade Gracefully" approach that ensures equal access on any network.
+👉 **[How the site stays accessible on 2G networks — Crisis Mode](./CRISIS_MODE.md)**
 
 ### 📊 Ready-Willing-Able Framework
 Assess your organization's readiness for inclusive emergency communications using the **[RWA Framework](./framework/rwa-framework.html)**:
@@ -76,7 +78,7 @@ This repository uses **GitHub Actions** to maintain the "Golden Record":
 * **Link-Rot Guard:** Weekly automated checks of both source files and the deployed website (https://mgifford.github.io/inclusive-emergency-readiness/). Broken links are automatically reported with **Archive.org** snapshots as alternatives.
 * **Clarity Linter:** Automated readability testing to ensure content stays at a **Grade 6** level.
 
-👉 **[See workflow documentation](./.github/README.md)** for details on automated checks.
+👉 **[How automated checks work — Workflow documentation](./.github/README.md)**
 
 ---
 
@@ -91,10 +93,11 @@ This is a community-driven project that welcomes contributions from:
 * **Municipal teams** - Tell us what you need for implementation
 * **Anyone** who wants to help make emergency communications more inclusive
 
-👉 **[Read the full Contributing Guide](./CONTRIBUTING.md)** to get started.
+👉 **[How to contribute — Contributing Guide](./CONTRIBUTING.md)**
 
 We are building this to be forked and adapted by municipalities worldwide:
-* [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our technical commitment
+* [**ACCESSIBILITY.md**](./ACCESSIBILITY.md) - Our accessibility commitment and standards
+* [**CONTENT_DESIGN.md**](./CONTENT_DESIGN.md) - How we apply content design best practices
 * [**SUSTAINABILITY.md**](./SUSTAINABILITY.md) - Our performance requirements
 * [**SURVIVAL_WEB_DESIGN.md**](./SURVIVAL_WEB_DESIGN.md) - How this site is built for resilience
 * [**CRISIS_MODE.md**](./CRISIS_MODE.md) - Ultra-low-bandwidth emergency access

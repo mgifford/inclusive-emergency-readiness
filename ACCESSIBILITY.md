@@ -1,31 +1,67 @@
-# Accessibility Statement (ACCESSIBILITY.md)
+# Accessibility Statement
 
-## Our Commitment
-In an emergency, accessibility is not a feature; it is a life-saving requirement. This project is committed to ensuring that emergency information reaches everyone, regardless of their physical, sensory, or cognitive abilities, or the limitations of their hardware and environment.
+> **Summary:** This project meets WCAG 2.2 Level AA. All emergency guides use plain language and work offline. If you find an accessibility barrier, [open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues) with the label `accessibility-barrier`. We respond within 24 hours.
 
-We aim to meet and exceed **WCAG 2.2 Level AA** standards, while specifically targeting **Level AAA** for cognitive accessibility and contrast, as these are critical under high-stress disaster conditions.
+## What This Means for You
 
-## Standards & Frameworks
-This project aligns with:
-* **WCAG 2.2:** Web Content Accessibility Guidelines.
-* **EN 301 549:** The harmonized European standard for ICT accessibility.
-* **CAN-ASC-6.4:** Accessibility Standards Canada - Emergency Measures.
-* **Plain Language & Easy Read:** Following ASAN and 18F standards to ensure information is understandable during "situational disability" caused by trauma.
+Emergency information must reach everyone — not just people on fast connections with perfect vision and no stress.
 
-## Key Features for Emergencies
-* **One Idea Per Line:** Critical survival instructions follow Easy Read protocols.
-* **Digital-to-Physical Readiness:** All content is optimized for screen readers AND for physical printing (high-contrast, ink-saving CSS).
-* **Tactile Support:** We prioritize the inclusion of tactile graphic descriptions and TMAP-compatible data.
-* **Non-Verbal Support:** Our resources emphasize multi-platform communication (SMS, Mastodon, Bluesky) to avoid reliance on voice-based emergency systems.
+This project ensures that:
+
+- People using screen readers can access all content
+- Pages load on slow or failing networks
+- Language is simple enough to understand under stress
+- Content prints clearly for emergency binders
+- Multi-platform delivery does not depend on voice or audio alone
+
+## Standards We Follow
+
+We align with four frameworks:
+
+| Standard | What it covers | Why it matters |
+|----------|---------------|----------------|
+| **[WCAG 2.2](https://www.w3.org/WAI/WCAG22/quickref/) Level AA** | Web accessibility rules | Screen readers and assistive tools work on every page |
+| **[EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_302000/301549/03.02.01_60/en_301549v030201p.pdf)** | European ICT accessibility standard | Supports international implementations |
+| **[CAN-ASC-6.4](https://accessible.canada.ca/creating-accessibility-standards/can-asc-64-emergency-measures)** | Canadian emergency measures | Tested against real disaster scenarios |
+| **[Plain Language](https://guides.18f.org/content-guide/our-approach/plain-language/) & [Easy Read](https://autisticadvocacy.org/wp-content/uploads/2021/07/One-Idea-Per-Line.pdf)** | Reading level and layout | Understandable under trauma and stress |
+
+We aim for **WCAG 2.2 Level AAA** for cognitive accessibility and contrast. Both are critical when people face high stress.
+
+## How We Apply Accessibility
+
+**One idea per line**
+Critical survival instructions follow Easy Read protocols. One action. One line. Easier to follow under stress.
+
+**Works offline and in print**
+All content is optimized for printing and for Progressive Web App (PWA) offline access. Use it without internet.
+
+**Tactile map support**
+We include [TMAP](https://lighthouse-sf.org/tmap/)-compatible descriptions so blind users can navigate physical spaces.
+
+**Multi-platform delivery**
+We avoid voice-only systems. Content distributes via SMS, Mastodon, and Bluesky so Deaf users are not left out.
 
 ## Known Limitations
-While we strive for universal access, some third-party resources we link to (such as legacy government PDFs) may not yet be fully remediated. Our **AGENTS.md** protocol ensures we prioritize linking to accessible versions or providing Plain Language summaries where possible.
 
-## Feedback & Remediation
-If you find a barrier that could hinder safety during an emergency:
-1. Open a **GitHub Issue** with the label `accessibility-barrier`.
-2. Describe the barrier and the specific emergency context (e.g., "cannot read evacuation map via screen reader").
-3. We prioritize these issues with a 24-hour triage goal.
+Some linked third-party resources (such as legacy government PDFs) may not be fully accessible.
+
+When we find these gaps:
+
+1. We note them openly
+2. We link to accessible versions where available
+3. We provide plain-language summaries as an alternative
+
+See [AGENTS.md](./AGENTS.md) for how we handle broken links and inaccessible external resources.
+
+## Report an Accessibility Barrier
+
+Found something that could prevent someone from getting emergency information?
+
+1. [Open a GitHub issue](https://github.com/mgifford/inclusive-emergency-readiness/issues) with the label `accessibility-barrier`
+2. Describe the barrier and the emergency context — for example: "cannot read the evacuation map with a screen reader"
+3. We triage these issues within 24 hours
+
+Your report helps keep this guide life-saving for everyone.
 
 ---
-*Adapted from the [mgifford/accessibility.md](https://mgifford.github.io/ACCESSIBILITY.md) template.*
+*Adapted from the [ACCESSIBILITY.md template](https://mgifford.github.io/ACCESSIBILITY.md).*
