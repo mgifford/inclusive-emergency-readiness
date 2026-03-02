@@ -240,7 +240,7 @@ If emPOWER shows 500 people in a county:
 - 1,000 people (private insurance holders)
 - 1,500 people (including informal caregivers)
 
-**Action:** Always plan for 2-3x the emPOWER count to account for gaps.
+**Action:** Always plan for 2-3x the emPOWER count to account for gaps. This multiplier is a recommended practice based on field experience—track your actual vs. registered populations to refine it for your community.
 
 ---
 
@@ -250,6 +250,8 @@ Different countries use different models to identify and protect electricity-dep
 
 ### Overview Table
 
+**Note:** For screen reader users, a list-based version follows the table.
+
 | Country | System Name | Model Type | Who Maintains | Responder Access |
 |---------|-------------|------------|---------------|------------------|
 | **USA** | emPOWER | Healthcare Claims | Federal Government (HHS) | Emergency managers via data-use agreement |
@@ -257,6 +259,14 @@ Different countries use different models to identify and protect electricity-dep
 | **Australia** | Life Support Equipment Registers | Retailer-Managed | Energy Retailers | Emergency services request from retailers |
 | **Japan** | Hinan Kodo Yoshien-sha | Municipal Census | Local Governments | Community support workers and neighbors |
 | **France** | Registre Nominatif | Voluntary Municipal | Town Halls (Mairies) | Local emergency services direct access |
+
+**List Format:**
+
+- **USA - emPOWER:** Healthcare claims model maintained by Federal Government (HHS). Emergency managers access via data-use agreement.
+- **UK - Priority Services Register (PSR):** Utility-managed model maintained by energy companies. Responders coordinate with utility companies.
+- **Australia - Life Support Equipment Registers:** Retailer-managed model maintained by energy retailers. Emergency services request from retailers.
+- **Japan - Hinan Kodo Yoshien-sha:** Municipal census model maintained by local governments. Community support workers and neighbors provide access.
+- **France - Registre Nominatif:** Voluntary municipal model maintained by town halls (mairies). Local emergency services have direct access.
 
 ---
 
@@ -528,11 +538,20 @@ Use this checklist to evaluate or build a functional-needs registry:
 
 **The Challenge:** People's needs change constantly.
 
-**Decay Rates:**
-- **0-6 months:** 90-95% accurate
-- **6-12 months:** 75-85% accurate
-- **12-18 months:** 50-60% accurate
+**Estimated Decay Rates (Based on Municipal Experience):**
+
+*Note: These are approximations based on emergency management experience, not rigorous research. Your community's rates may vary.*
+
+- **0-6 months:** Approximately 90-95% accurate
+- **6-12 months:** Approximately 75-85% accurate
+- **12-18 months:** Approximately 50-60% accurate
 - **18+ months:** Essentially unreliable
+
+**Why Data Decays:**
+- People move
+- Medical conditions change
+- Equipment no longer needed
+- Contact information becomes outdated
 
 **Best Practice:** 
 - Require annual renewal
@@ -600,9 +619,11 @@ Use this checklist to evaluate or build a functional-needs registry:
 **Operational Impact:**
 
 If your registry shows 500 people:
-- **Plan for:** 1,000-1,500 people (2-3x multiplier)
+- **Plan for:** 1,000-1,500 people (2-3x multiplier recommended by emergency management practitioners)
 - **Budget for:** Supplies for 1,500 people
 - **Expect:** More people showing up at shelters than on your list
+
+*Note: The 2-3x multiplier is a recommended practice based on field experience. Your community may need a different multiplier based on local opt-in rates and demographic factors. Track actual vs. registered populations during each event to refine your multiplier.*
 
 **Mitigation Strategies:**
 
