@@ -865,12 +865,14 @@ body.low-data {
       color: #6699ff;
     }
     
-    // Header links need higher contrast on blue background
-    .site-header a {
+    // Header site title and navigation links need white color on blue background
+    .site-title a,
+    .site-nav a {
       color: #ffffff;
     }
     
     // Community banner github link should maintain proper contrast
+    // The button has white background, so #0066cc text provides 4.5:1 ratio
     .community-banner .github-link {
       color: #0066cc;
     }
