@@ -3,26 +3,20 @@ layout: default
 title: Home
 ---
 
-# Inclusive Emergency Readiness
+## Planners need to start now to ensure that sending alerts reaches everyone.
 
-<div class="alert alert-warning">
-  <strong>LOW BANDWIDTH?</strong> This site automatically adapts when your browser or OS signals a data-saving preference. You can also enable <strong>Low Data Mode</strong> manually using the toggle in the header.
-</div>
-
-## Send alerts that reach everyone.
-
-**This guide helps you write emergency alerts.**
+**This guide helps you write emergency communications.**
 
 All people can understand them.
 
-All people can access them.
+All people can access them. This focuses on those aspects that touch digital accessibility. 
 
-**Who uses this guide:**
+**Who might use this guide:**
 - Government teams
 - Emergency managers
 - First responders
 
-**The problem:** Every year, alerts miss many people.
+**The problem:** Every year, emergency alerts miss many people.
 
 <div class="alert alert-danger">
   **Act now.** Use this guide. Save lives.
@@ -80,6 +74,10 @@ You must reach all people.
 > - [SUSTAINABILITY.md]({{ '/SUSTAINABILITY.html' | relative_url }}) - How we keep sites fast
 > - [CONTRIBUTING.md]({{ '/CONTRIBUTING.html' | relative_url }}) - Help improve this
 > - [AGENTS.md]({{ '/AGENTS.html' | relative_url }}) - Rules for helpers
+
+<div class="alert alert-warning">
+  <strong>LOW BANDWIDTH?</strong> This site automatically adapts when your browser or OS signals a data-saving preference. You can also enable <strong>Low Data Mode</strong> manually using the toggle in the header.
+</div>
 
 ## Start Here
 
