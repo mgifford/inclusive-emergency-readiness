@@ -6,7 +6,7 @@ title: Home
 # Inclusive Emergency Readiness
 
 <div class="alert alert-warning">
-  <strong>LOW BANDWIDTH?</strong> Switch to <a href="{{ '/crisis.html' | relative_url }}"><strong>Crisis Mode</strong></a> - Ultra-low-bandwidth version (~5KB, works on 2G networks)
+  <strong>LOW BANDWIDTH?</strong> This site automatically adapts when your browser or OS signals a data-saving preference. You can also enable <strong>Low Data Mode</strong> manually using the toggle in the header.
 </div>
 
 ## Send alerts that reach everyone.

@@ -46,9 +46,6 @@
   <link rel="stylesheet" href="{{ '/assets/css/emergency.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
   
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  
   <!-- SEO -->
   {% seo %}
   
@@ -76,19 +73,50 @@
   <!-- Accessibility Features Toggle -->
   <script src="{{ '/assets/js/mode-toggle.js' | relative_url }}" defer></script>
   
-  <!-- Service Worker Registration -->
+  <!-- Service Worker Registration (skipped when prefers-reduced-data is set) -->
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('{{ '/assets/js/service-worker.js' | relative_url }}')
-          .then(registration => {
-            console.log('Service Worker registered:', registration);
-          })
-          .catch(error => {
-            console.log('Service Worker registration failed:', error);
-          });
-      });
+      var skipSW = window.matchMedia && window.matchMedia('(prefers-reduced-data: reduce)').matches;
+      if (!skipSW) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('{{ '/assets/js/service-worker.js' | relative_url }}')
+            .then(function(registration) {
+              console.log('Service Worker registered:', registration);
+            })
+            .catch(function(error) {
+              console.log('Service Worker registration failed:', error);
+            });
+        });
+      }
     }
+  </script>
+  
+  <!-- Page weight indicator: shows total transfer size after load -->
+  <script>
+    window.addEventListener('load', function() {
+      // Skip in reduced-data mode to avoid unnecessary JS execution
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-data: reduce)').matches) return;
+      if (!window.performance || !window.performance.getEntriesByType) return;
+      var entries = window.performance.getEntriesByType('resource');
+      var totalBytes = 0;
+      entries.forEach(function(e) {
+        if (e.transferSize) totalBytes += e.transferSize;
+      });
+      // Also count the navigation entry (the HTML document itself)
+      var navEntries = window.performance.getEntriesByType('navigation');
+      if (navEntries.length && navEntries[0].transferSize) {
+        totalBytes += navEntries[0].transferSize;
+      }
+      if (totalBytes > 0) {
+        var kb = (totalBytes / 1024).toFixed(1);
+        var indicator = document.createElement('div');
+        indicator.id = 'page-weight-indicator';
+        indicator.className = 'page-weight-indicator';
+        indicator.setAttribute('aria-hidden', 'true');
+        indicator.textContent = kb + ' KB';
+        document.body.appendChild(indicator);
+      }
+    });
   </script>
   
 </body>

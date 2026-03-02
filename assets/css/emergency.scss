@@ -710,16 +710,20 @@ body.high-contrast {
 // Low Data Mode
 // ============================================================================
 
-body.low-data {
-  // Remove background images
+// Mixin shared by both manual low-data class and prefers-reduced-data media query
+@mixin low-data-styles {
   background-image: none !important;
-  
-  // Remove custom fonts (use system fonts only)
   font-family: sans-serif;
   
   * {
     background-image: none !important;
     font-family: inherit;
+    box-shadow: none !important;
+  }
+  
+  // Hide logo image; site title text remains visible
+  .site-logo {
+    display: none;
   }
   
   // Simplify borders
@@ -729,6 +733,30 @@ body.low-data {
   
   h2 {
     border-bottom: 1px solid $color-text;
+  }
+  
+  // Remove decorative community banner gradient
+  .community-banner {
+    background: #004080 !important;
+  }
+}
+
+body.low-data {
+  @include low-data-styles;
+}
+
+// ============================================================================
+// Prefers Reduced Data (browser/OS preference)
+// Applies the same optimizations as manual low-data mode when the user's
+// browser or OS signals they prefer less data usage.
+// See: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data
+// Note: This is an experimental feature with limited browser support (2025).
+// Manual Low Data Mode (body.low-data) remains the primary mechanism.
+// ============================================================================
+
+@media (prefers-reduced-data: reduce) {
+  body {
+    @include low-data-styles;
   }
 }
 
@@ -823,6 +851,32 @@ body.low-data {
   
   h2 {
     font-size: 1.3rem;
+  }
+}
+
+// ============================================================================
+// Page Weight Indicator
+// Injected by JS after page load; shows total transferred KB in corner.
+// ============================================================================
+
+.page-weight-indicator {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: #000000;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-family: $font-family-mono;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  opacity: 0.7;
+  z-index: $z-modal;
+  pointer-events: none;
+}
+
+@media print {
+  .page-weight-indicator {
+    display: none;
   }
 }
 

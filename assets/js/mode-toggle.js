@@ -32,9 +32,35 @@
       updateButtonState('high-contrast-toggle', true);
     }
     
-    if (getPreference('low-data')) {
-      body.classList.add('low-data');
-      updateButtonState('low-data-toggle', true);
+    // Shared helper: enable or disable low-data mode
+    function applyLowData(enable) {
+      if (enable) {
+        body.classList.add('low-data');
+        updateButtonState('low-data-toggle', true);
+      } else {
+        body.classList.remove('low-data');
+        updateButtonState('low-data-toggle', false);
+      }
+    }
+    
+    // Auto-enable low-data mode when browser/OS signals reduced-data preference.
+    // Users can still override this manually via the toggle button.
+    const prefersReducedData = window.matchMedia && window.matchMedia('(prefers-reduced-data: reduce)');
+    if (prefersReducedData && prefersReducedData.matches) {
+      applyLowData(true);
+    } else if (getPreference('low-data')) {
+      applyLowData(true);
+    }
+    
+    // Keep in sync if the preference changes while the page is open
+    if (prefersReducedData && prefersReducedData.addEventListener) {
+      prefersReducedData.addEventListener('change', function(e) {
+        if (e.matches) {
+          applyLowData(true);
+        } else if (!getPreference('low-data')) {
+          applyLowData(false);
+        }
+      });
     }
     
     const savedTextSize = localStorage.getItem('text-size');
