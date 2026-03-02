@@ -51,5 +51,8 @@ Thumbs.db
 dist/
 build/
 
+# Accessibility testing results
+.a11y-results/
+
 # Downloaded tools
 actionlint

@@ -1,0 +1,27 @@
+{
+  "defaults": {
+    "timeout": 30000,
+    "wait": 1000,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    },
+    "runners": [
+      "axe"
+    ],
+    "standard": "WCAG2AA",
+    "ignore": []
+  },
+  "urls": [
+    "https://mgifford.github.io/inclusive-emergency-readiness/",
+    "https://mgifford.github.io/inclusive-emergency-readiness/disabilities/",
+    "https://mgifford.github.io/inclusive-emergency-readiness/toolkits/",
+    "https://mgifford.github.io/inclusive-emergency-readiness/templates/",
+    "https://mgifford.github.io/inclusive-emergency-readiness/framework/resources/",
+    "https://mgifford.github.io/inclusive-emergency-readiness/framework/matrix/",
+    "https://mgifford.github.io/inclusive-emergency-readiness/framework/can-asc-case-study/"
+  ]
+}
