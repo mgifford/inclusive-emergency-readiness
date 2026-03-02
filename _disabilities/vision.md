@@ -1,9 +1,9 @@
 ---
 layout: disability
-title: "Vision Disabilities in Emergencies"
+title: "Users Requiring Non-Visual Information"
 category: disability
 disability_type: vision
-summary: "How vision disabilities affect emergency information access and what communicators must do differently."
+summary: "How to reach people who cannot see visual alerts during crises and what you must do."
 wcag_focus:
   - "1.1 Text Alternatives"
   - "1.3 Adaptable"
@@ -12,93 +12,126 @@ reading_level: "Grade 6"
 last_updated: 2026-03-01
 ---
 
-# Vision Disabilities in Emergencies
+# Users Requiring Non-Visual Information
 
-## Types of Vision Disabilities
+## Provide text for all visuals. Always.
 
-**Blindness:**
-- Complete or near-complete vision loss
-- Rely on screen readers and audio
-- Cannot see visual alerts
+**Who needs this:**
+- People who cannot see
+- People with partial vision
+- People who cannot tell colors apart
+- People in dark or smoky rooms
+- People with broken screens
+- People using screen readers
 
-**Low Vision:**
-- Partial vision loss
-- Need magnification and high contrast
-- Struggle with small text and low contrast
+## Access Needs
 
-**Color Blindness:**
-- Cannot distinguish certain colors
-- Most common: red-green color blindness
-- Miss color-coded warnings
+### People Who Cannot See
+- Use screen readers (software that reads text aloud)
+- Need text versions of all images
+- Cannot see visual-only alerts
 
-## Emergency Impacts
+### People With Partial Vision
+- Need text they can make bigger
+- Need high contrast (dark text on light background)
+- Struggle with small or gray text
+
+### People Who Cannot Tell Colors Apart
+- Most common: Cannot tell red from green
+- Cannot use color-only codes
+- Miss color-only warnings
+
+### Situational Barriers
+- Power outage (dark room)
+- Fire or disaster (smoke-filled room)
+- Broken device screen
+- Bright sunlight (glare on screen)
+
+## Crisis Impacts
 
 ### Visual-Only Alerts Fail
 
-**The Problem:**
-Many emergency alerts are visual only.
+**Action needed:** Add text and audio to all visual alerts.
 
-Maps show evacuation zones in color.
+**Why it fails:**
+Maps use color only.
 
-Signs point to emergency exits.
+Signs use symbols only.
 
-TV news shows scrolling text without audio.
+TV scrolls text with no audio.
 
-**Real-World Failure:**
-A wildfire evacuation map uses red for danger zones.
+**Real crisis:**
+A wildfire map uses red for danger zones.
 
-Someone who is color blind cannot distinguish red from green.
+Someone cannot tell red from green.
 
-They do not know if their home is in the danger zone.
+They do not know their home is in danger.
 
-They do not evacuate.
+They do not leave.
 
-### Small Text Kills
+### Small Text Can Kill
 
-**The Problem:**
-Emergency PDFs use 8-point font.
+**Action needed:** Use large text (16px minimum).
 
-Websites do not allow zoom.
+**Why it fails:**
+Emergency PDFs use tiny font.
 
-Text has poor contrast.
+Web sites do not let you zoom.
 
-**Real-World Failure:**
-A shelter address is printed in small gray text.
+Text uses poor contrast.
 
-Someone with low vision cannot read it.
+**Real crisis:**
+A shelter address is in small gray text.
+
+Someone with partial vision cannot read it.
 
 They cannot find the shelter.
 
-They are stranded.
+They get stranded.
 
-### Images Without Descriptions
+### Images Without Text
 
-**The Problem:**
-Emergency maps have no text alternatives.
+**Action needed:** Provide text for every image.
 
-Infographics show data visually only.
+**Why it fails:**
+Maps have no text version.
 
-Photos show damage without captions.
+Charts show data with no text.
 
-**Real-World Failure:**
-A flood map shows affected areas.
+Photos have no description.
+
+**Real crisis:**
+A flood map shows danger areas.
 
 The image has no alt text.
 
-A screen reader says "image."
+**Alt text** (what it means): Text that screen readers read aloud to describe an image.
 
-Someone who is blind has no information.
+A screen reader says "image" only.
 
-## What Communicators Must Do
+Someone who cannot see has no information.
 
-### Principle 1: Provide Text Alternatives
+## What You Must Do
 
-**For images:**
+### Rule 1: Add Text to All Images
+
+**For images, write this:**
 ```html
-<img src="evacuation-map.jpg" 
-     alt="Evacuation map showing zones A, B, and C in red. 
-          Leave these zones immediately.">
+<img src="map.jpg" 
+     alt="Map showing zones A, B, and C in red. 
+          Leave these zones now.">
 ```
+
+**What the code means:**
+- `img src` = the image file
+- `alt` = text description that screen readers read
+
+**Screen reader** (what it means): Software that reads web pages aloud.
+
+**Write good alt text:**
+- Say what the image shows
+- Include key information
+- State the action needed
 
 **For complex graphics:**
 Provide a detailed text description.
@@ -106,22 +139,28 @@ Provide a detailed text description.
 **For videos:**
 Include audio descriptions.
 
-### Principle 2: Never Use Color Alone
+### Rule 2: Never Use Color Alone
+
+**You must combine color with text and symbols.**
 
 **Do this:**
-Use color + text + icons.
-
-Red zone = "DANGER - EVACUATE NOW" + warning icon.
+Red zone + text "DANGER" + warning icon.
 
 **Not this:**
 Red zone only.
 
-### Principle 3: High Contrast Always
+People who cannot see colors will miss the warning.
 
-**Text contrast ratios:**
-- Normal text: 4.5:1 minimum (WCAG AA)
-- Large text: 3:1 minimum (WCAG AA)
-- Emergency content: 7:1 recommended (WCAG AAA)
+### Rule 3: Use High Contrast Always
+
+**You must make text easy to see.**
+
+**Contrast ratio** (what it means): How different dark and light are. Higher is better.
+
+**What you need:**
+- Normal text: 4.5 to 1 minimum
+- Large text: 3 to 1 minimum
+- Emergency text: 7 to 1 (best)
 
 **Do this:**
 Black text on white background.
@@ -129,127 +168,192 @@ Black text on white background.
 **Not this:**
 Gray text on light gray background.
 
-### Principle 4: Large, Resizable Text
+### Rule 4: Make Text Large and Zoomable
 
-**Minimum font size:** 16px (1rem)
+**You must use big text people can make bigger.**
 
-**Allow zoom:** 200% minimum without loss of content.
+**Minimum size:** 16 pixels.
 
-**Never disable zoom:**
+**Zoom** (what it means): Making text bigger on your device.
+
+**You must let users zoom to 200%.**
+
+Do not block zoom with code.
+
+**This code blocks zoom (wrong):**
 ```html
-<!-- WRONG -->
 <meta name="viewport" content="width=device-width, initial-scale=1, 
       maximum-scale=1, user-scalable=no">
+```
 
-<!-- RIGHT -->
+**This code allows zoom (right):**
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-### Principle 5: Clear Visual Hierarchy
+The first code stops people from zooming.
 
-**Use headings properly:**
+The second code lets people zoom freely.
+
+### Rule 5: Use Clear Structure
+
+**You must organize content with headings.**
+
+**Semantic HTML** (what it means): Code that describes what each part does.
+
+**Use headings in order:**
 - H1 for page title
 - H2 for major sections
-- H3 for subsections
+- H3 for smaller sections
 
-**Use semantic HTML:**
+**Use these tags:**
 ```html
 <nav>Navigation</nav>
 <main>Main content</main>
-<aside>Additional info</aside>
+<aside>Extra information</aside>
 ```
 
-### Principle 6: Accessible PDFs
+These tags tell screen readers what each part is.
 
-**Do this:**
-- Create PDFs from accessible source documents
-- Tag all content properly
-- Include alt text for images
-- Use real text, not images of text
+### Rule 6: Make PDFs Readable
+
+**You must create PDFs that screen readers can read.**
+
+**PDF** (what it means): A document file that looks the same on all devices.
+
+**You must do this:**
+- Use real text (not pictures of text)
+- Add tags to all content
+- Add alt text to all images
 - Test with screen readers
 
-**Not this:**
-- Scanned documents without OCR
-- Images of text
-- Untagged PDFs
+**Do not do this:**
+- Scan paper to make PDFs
+- Use images instead of text
+- Skip tagging
 
-## WCAG 2.2 Requirements for Vision
+## Standards You Must Meet
 
-### 1.1.1 Non-text Content (Level A)
-All images must have text alternatives.
+**WCAG** (what it means): Web Content Accessibility Guidelines. Rules for making websites work for everyone.
 
-### 1.3.1 Info and Relationships (Level A)
-Visual structure must be programmatically determinable.
+### Standard 1.1.1: Add Text to All Images
 
-### 1.4.1 Use of Color (Level A)
-Color cannot be the only way to convey information.
+**User impact:** Screen readers can describe images.
 
-### 1.4.3 Contrast (Minimum) (Level AA)
-Text must have 4.5:1 contrast ratio.
+**You must provide alt text for every image.**
 
-### 1.4.6 Contrast (Enhanced) (Level AAA)
-Text must have 7:1 contrast ratio.
+Without alt text, users hear only "image."
 
-### 1.4.11 Non-text Contrast (Level AA)
-UI components must have 3:1 contrast ratio.
+They miss critical information.
 
-## Emergency Communication Checklist
+### Standard 1.3.1: Code Structure Correctly
 
-- [ ] All images have descriptive alt text
-- [ ] Color is never used alone to convey information
-- [ ] Text has at least 4.5:1 contrast ratio
-- [ ] Font size is at least 16px
-- [ ] Page can be zoomed to 200%
-- [ ] Headings are properly structured (H1, H2, H3)
-- [ ] Links have clear, descriptive text
-- [ ] PDFs are tagged and accessible
-- [ ] Maps have text alternatives
-- [ ] Videos have audio descriptions
+**User impact:** Screen readers understand page layout.
 
-## Tools and Testing
+**You must use proper HTML tags.**
 
-### Contrast Checkers
-- WebAIM Contrast Checker
-- Color Contrast Analyzer
+Use heading tags (H1, H2, H3) in order.
 
-### Screen Readers
+Use list tags for lists.
+
+Screen readers announce structure to users.
+
+### Standard 1.4.1: Do Not Use Color Alone
+
+**User impact:** Color-blind users understand warnings.
+
+**You must combine color with text.**
+
+Red + "DANGER" works.
+
+Red alone fails.
+
+### Standard 1.4.3: Use Enough Contrast
+
+**User impact:** People with low vision read text.
+
+**You must use 4.5 to 1 contrast minimum.**
+
+Test your colors with a contrast checker.
+
+### Standard 1.4.6: Use High Contrast for Critical Info
+
+**User impact:** Everyone reads text easily.
+
+**You should use 7 to 1 contrast for emergencies.**
+
+This is the best level.
+
+### Standard 1.4.11: Make Buttons Visible
+
+**User impact:** Users find and use controls.
+
+**You must make buttons stand out.**
+
+Buttons need 3 to 1 contrast with background.
+
+## Your Checklist
+
+**Test your emergency site with these:**
+
+- [ ] All images have alt text
+- [ ] You never use color alone
+- [ ] Text contrast is 4.5 to 1 minimum
+- [ ] Font size is 16 pixels minimum
+- [ ] Users can zoom to 200%
+- [ ] Headings go in order (H1, H2, H3)
+- [ ] Links say where they go
+- [ ] PDFs have tags and alt text
+- [ ] Maps include text descriptions
+- [ ] Videos include audio descriptions
+
+## Tools You Can Use
+
+### Test Contrast
+**Use these free tools:**
+- WebAIM Contrast Checker (online)
+- Color Contrast Analyzer (download)
+
+### Test With Screen Readers
+**Download these programs:**
 - NVDA (Windows, free)
-- JAWS (Windows)
-- VoiceOver (Mac/iOS)
-- TalkBack (Android)
+- JAWS (Windows, paid)
+- VoiceOver (Mac and iPhone, built-in)
+- TalkBack (Android, built-in)
 
-### Browser Extensions
-- WAVE (Web Accessibility Evaluation Tool)
-- Accessibility Insights
+### Test Your Whole Site
+**Add these to your browser:**
+- WAVE (finds accessibility problems)
+- Accessibility Insights (checks standards)
 
-## Case Study: Success
+## Real Success Story
 
-### British Columbia Emergency Info
+### British Columbia Emergency System
 
-**What they did:**
-- High contrast black text on white
-- All maps include text descriptions
-- Font size: 18px minimum
-- Icons paired with text labels
-- PDFs created with accessibility tags
+**What they did right:**
+- Used black text on white background
+- Added text to every map
+- Made font 18 pixels (large)
+- Put text with every icon
+- Tagged all PDFs for screen readers
 
-**Result:**
-95% of people with vision disabilities could access emergency information independently.
+**What happened:**
+95 out of 100 people with vision needs accessed emergency info alone.
 
-## The Bottom Line
+No help needed.
 
-Vision accessibility is survival accessibility.
+## Key Points
 
-If someone cannot see your alert, they cannot act.
+**Vision access is survival access.**
 
-Provide text alternatives always.
+People who cannot see your alert cannot act.
 
-Use high contrast always.
-
-Make text large and zoomable.
-
-Never use color alone.
-
-Test with screen readers.
+**You must:**
+- Add text to all images
+- Use high contrast (4.5 to 1 minimum)
+- Make text large (16 pixels minimum)
+- Let users zoom to 200%
+- Never use color alone
+- Test with screen readers
 
 **Clear vision access saves lives.**
