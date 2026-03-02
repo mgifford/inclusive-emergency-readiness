@@ -99,6 +99,8 @@ These platforms use crowdsourced mapping to coordinate emergency response.
 
 **Why it matters:** Resilience starts before the emergency. These maps show existing community assets.
 
+**How it helps accessibility:** Shows locations of accessible services, support networks, and community resources that people with disabilities rely on daily and during emergencies.
+
 ---
 
 ## 2. Accessible Navigation Tools
