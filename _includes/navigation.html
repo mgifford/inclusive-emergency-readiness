@@ -34,5 +34,8 @@
     <li>
       <a href="{{ '/templates/' | relative_url }}" {% if page.url contains "/templates/" %}aria-current="page"{% endif %}>Templates</a>
     </li>
+    <li>
+      <a href="{{ '/about.html' | relative_url }}" {% if page.url == "/about.html" %}aria-current="page"{% endif %}>About</a>
+    </li>
   </ul>
 </nav>
