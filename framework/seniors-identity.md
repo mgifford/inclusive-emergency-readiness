@@ -3,7 +3,7 @@ layout: default
 title: "Seniors & Identity: Age-Friendly Emergency Readiness"
 category: framework
 summary: "Guidance for supporting older adults through functional-needs messaging, trust networks, and aging-in-place strategies—without disability labels."
-reading_level: "Grade 6"
+reading_level: "Grade 8"
 last_updated: 2026-03-02
 ---
 
@@ -201,7 +201,7 @@ Emergency plans must support this.
    - Update information
    - Stay connected
 
-**Download template:** [Power of 3 Contact Sheet](#) (Coming soon)
+**Print this template:** See "Printable Resources" section below for the Power of 3 Contact Sheet
 
 ---
 
