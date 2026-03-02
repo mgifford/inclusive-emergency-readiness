@@ -140,6 +140,11 @@ You must reach all people.
 
 **You learn:** How mapping tools help people with disabilities during emergencies
 
+### Support Seniors
+**Go to:** [Seniors & Identity]({{ '/framework/seniors-identity.html' | relative_url }})
+
+**You learn:** How to reach older adults using functional-needs language and trusted messengers
+
 
 ---
 
