@@ -1,0 +1,276 @@
+name: Accessibility Testing (Light/Dark Mode)
+
+# Purpose: Test accessibility in both light and dark color schemes
+# Uses pa11y-ci with axe-core to detect WCAG violations
+# Identifies issues that appear in both modes vs. single mode
+# Helps determine if issues need universal or mode-specific color fixes
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+      - '**.html'
+      - '**.scss'
+      - '**.css'
+      - 'assets/**'
+      - '_layouts/**'
+      - '_includes/**'
+      - '.github/workflows/accessibility-test.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+      - '**.html'
+      - '**.scss'
+      - '**.css'
+      - 'assets/**'
+  schedule:
+    # Run weekly on Mondays at 3 AM UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch: # Allow manual triggers
+
+jobs:
+  accessibility-test:
+    name: Test Light and Dark Modes
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Chromium for Puppeteer
+        run: |
+          # Install Chromium dependencies
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libnspr4 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libasound2
+      
+      - name: Create results directory
+        run: mkdir -p .a11y-results
+      
+      - name: Test Light Mode
+        id: test-light
+        run: |
+          echo "Testing light mode..."
+          node scripts/test-light-mode.js || echo "light_has_issues=true" >> $GITHUB_OUTPUT
+        continue-on-error: true
+      
+      - name: Test Dark Mode
+        id: test-dark
+        run: |
+          echo "Testing dark mode..."
+          node scripts/test-dark-mode.js || echo "dark_has_issues=true" >> $GITHUB_OUTPUT
+        continue-on-error: true
+      
+      - name: Compare Results
+        id: compare
+        run: |
+          echo "Comparing results..."
+          node scripts/compare-results.js
+          
+          # Check if comparison file exists and extract summary
+          if [ -f .a11y-results/comparison.json ]; then
+            both_modes=$(cat .a11y-results/comparison.json | grep -o '"issuesInBothModes":[0-9]*' | cut -d':' -f2)
+            light_only=$(cat .a11y-results/comparison.json | grep -o '"issuesInLightOnly":[0-9]*' | cut -d':' -f2)
+            dark_only=$(cat .a11y-results/comparison.json | grep -o '"issuesInDarkOnly":[0-9]*' | cut -d':' -f2)
+            
+            echo "both_modes=$both_modes" >> $GITHUB_OUTPUT
+            echo "light_only=$light_only" >> $GITHUB_OUTPUT
+            echo "dark_only=$dark_only" >> $GITHUB_OUTPUT
+            
+            # Add to step summary
+            echo "## Accessibility Test Results" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| Category | Count |" >> $GITHUB_STEP_SUMMARY
+            echo "|----------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Issues in BOTH modes | **$both_modes** |" >> $GITHUB_STEP_SUMMARY
+            echo "| Issues in light mode only | $light_only |" >> $GITHUB_STEP_SUMMARY
+            echo "| Issues in dark mode only | $dark_only |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            if [ "$both_modes" -gt 0 ]; then
+              echo "⚠️ **Priority:** $both_modes issue(s) appear in both light and dark modes." >> $GITHUB_STEP_SUMMARY
+              echo "These need universal color solutions that work in both contexts." >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+        continue-on-error: true
+      
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: accessibility-test-results
+          path: .a11y-results/
+          retention-days: 30
+      
+      - name: Post PR comment with results
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Read comparison report
+            let reportContent = '';
+            try {
+              reportContent = fs.readFileSync('.a11y-results/comparison.md', 'utf8');
+            } catch (error) {
+              reportContent = '❌ Failed to generate comparison report. Check the workflow logs for details.';
+            }
+            
+            // Find existing comment
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+            
+            const existingComment = comments.data.find(
+              comment => comment.user.login === 'github-actions[bot]' &&
+                         comment.body.includes('Accessibility Testing: Light/Dark Mode')
+            );
+            
+            const body = `## ♿ Accessibility Testing: Light/Dark Mode Comparison
+            
+            ${reportContent}
+            
+            ---
+            
+            ### 📥 Download Full Results
+            
+            View the [workflow artifacts](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for:
+            - \`light-mode.json\` - All issues found in light mode
+            - \`dark-mode.json\` - All issues found in dark mode
+            - \`comparison.json\` - Detailed comparison data
+            - \`comparison.md\` - This report
+            - Screenshots of tested pages
+            
+            ---
+            
+            *Automated accessibility testing performed on ${new Date().toUTCString()}*`;
+            
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body: body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body
+              });
+            }
+      
+      - name: Create or update issue for accessibility problems
+        if: |
+          github.event_name != 'pull_request' &&
+          (steps.compare.outputs.both_modes > 0 || 
+           steps.compare.outputs.light_only > 0 || 
+           steps.compare.outputs.dark_only > 0)
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Read comparison report
+            let reportContent = '';
+            try {
+              reportContent = fs.readFileSync('.a11y-results/comparison.md', 'utf8');
+            } catch (error) {
+              reportContent = '❌ Failed to generate comparison report.';
+            }
+            
+            // Check if an open issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'accessibility,a11y'
+            });
+            
+            const existingIssue = issues.data.find(
+              issue => issue.title.includes('Accessibility Issues Detected')
+            );
+            
+            const title = '♿ Accessibility Issues Detected (Light/Dark Mode)';
+            const body = `${reportContent}\n\n---\n\n**Last checked:** ${new Date().toUTCString()}\n\n**Workflow run:** https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            
+            if (existingIssue) {
+              // Update existing issue
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: body
+              });
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: `## 🔄 Accessibility Check Update\n\n**Date:** ${new Date().toUTCString()}\n\nThe accessibility checker has run again. The issue description has been updated with the latest results.`
+              });
+              
+              console.log(`Updated existing issue #${existingIssue.number}`);
+            } else {
+              // Create new issue
+              const newIssue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['accessibility', 'a11y', 'wcag']
+              });
+              
+              console.log(`Created new issue #${newIssue.data.number}`);
+            }
+      
+      - name: Fail if critical issues found
+        if: steps.compare.outputs.both_modes > 0
+        run: |
+          echo "❌ Critical: ${{ steps.compare.outputs.both_modes }} issue(s) appear in BOTH light and dark modes!"
+          echo ""
+          echo "These issues need universal color solutions that work in both contexts."
+          echo "Please review the comparison report and fix these high-priority issues."
+          echo ""
+          echo "For now, this is a warning. Future versions may enforce this as a hard failure."
+          exit 0  # Don't fail the build yet, just warn
+      
+      - name: Success message
+        if: |
+          steps.compare.outputs.both_modes == 0 &&
+          steps.compare.outputs.light_only == 0 &&
+          steps.compare.outputs.dark_only == 0
+        run: |
+          echo "✅ No accessibility issues detected in either light or dark mode!"
+          echo "🎉 Excellent work on inclusive design!"

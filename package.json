@@ -1,0 +1,27 @@
+{
+  "name": "inclusive-emergency-readiness",
+  "version": "1.0.0",
+  "description": "Accessibility testing for Inclusive Emergency Readiness",
+  "scripts": {
+    "test:a11y": "pa11y-ci --config .pa11yci.json",
+    "test:a11y-light": "node scripts/test-light-mode.js",
+    "test:a11y-dark": "node scripts/test-dark-mode.js",
+    "test:a11y-compare": "node scripts/compare-results.js",
+    "validate": "node scripts/validate.js",
+    "postinstall": "echo 'Skipping Puppeteer Chromium download - using system Chrome'"
+  },
+  "devDependencies": {
+    "pa11y-ci": "^3.1.0",
+    "pa11y": "^8.0.0",
+    "axe-core": "^4.10.0",
+    "puppeteer": "^23.11.0"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "emergency",
+    "wcag"
+  ],
+  "author": "Inclusive Emergency Readiness Project",
+  "license": "MIT"
+}
