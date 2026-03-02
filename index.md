@@ -28,6 +28,10 @@ All people can access them.
   **Act now.** Use this guide. Save lives.
 </div>
 
+<div class="alert alert-success">
+  <strong>NEW:</strong> Feeling overwhelmed? Start with <a href="{{ '/framework/start-now.html' | relative_url }}"><strong>Start Now</strong></a> - Get started in 30 minutes (Bronze Level)
+</div>
+
 ## What You Get
 
 People with access needs built this guide.
@@ -78,6 +82,13 @@ You must reach all people.
 > - [AGENTS.md]({{ '/AGENTS.html' | relative_url }}) - Rules for helpers
 
 ## Start Here
+
+### Feeling Overwhelmed? Start Small.
+**Go to:** [Start Now Guide]({{ '/framework/start-now.html' | relative_url }})
+
+**You get:** Three levels - Bronze (30 min), Silver (5 hours), Gold (20 hours)
+
+**Why:** Build progress, not perfection. Start where you are.
 
 ### Need an Alert Now?
 **Go to:** [Emergency Templates]({{ '/templates/' | relative_url }})

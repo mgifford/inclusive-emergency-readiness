@@ -23,6 +23,14 @@ This project aspires to be a living implementation of four critical pillars:
 
 We strive to implement these standards based on real-world testing and community feedback.
 
+### 🚦 Start Now Framework
+Feeling overwhelmed by the documentation? **[Start Now](./framework/start-now.html)** provides three progressive levels:
+* **🥉 Bronze (30 minutes):** Send your first accessible alert today
+* **🥈 Silver (5 hours):** Build your alert toolkit this week
+* **🥇 Gold (20 hours):** Meet basic accessibility standards this month
+
+**In disasters, progress matters more than perfection.** Start where you are, use what you have, do what you can.
+
 ### 🏗️ Survival Web Design
 This site is built using **[Survival Web Design](./SURVIVAL_WEB_DESIGN.md)** principles:
 * **Static-First:** No heavy JavaScript or databases

@@ -9,6 +9,10 @@ last_updated: 2026-03-02
 
 # Ready-Willing-Able (RWA) Framework
 
+<div class="alert alert-success">
+  <strong>New to this?</strong> Start with <a href="{{ '/framework/start-now.html' | relative_url }}"><strong>Start Now</strong></a> - Get started in 30 minutes before doing this full assessment.
+</div>
+
 ## What is the RWA Framework?
 
 The **Ready-Willing-Able Framework** helps organizations assess their capacity for inclusive emergency communications.
@@ -188,6 +192,63 @@ For every "No," follow the linked resource to close the gap.
 **4-6 points:** Early stages. Start with leadership commitment and basic templates.
 
 **0-3 points:** Significant gaps. Begin with the "Willing" component to establish organizational commitment.
+
+---
+
+## Progressive Improvement: Start Where You Are
+
+**Do not wait for a perfect score.**
+
+You do not need 15/15 to save lives.
+
+You need to be better today than you were yesterday.
+
+### Your First Week: Focus on Quick Wins
+
+**If you scored 0-3 points:**
+1. Pick one template from [Emergency Templates]({{ '/templates/' | relative_url }})
+2. Send it to test your distribution channel
+3. That is progress
+
+**If you scored 4-6 points:**
+1. Create 3 pre-written templates
+2. Add one new distribution channel
+3. Test both channels
+4. That is progress
+
+**If you scored 7-9 points:**
+1. Complete one staff training session
+2. Create Easy Read versions of your top 3 alerts
+3. Run one emergency drill
+4. That is progress
+
+**If you scored 10+ points:**
+1. Engage the disability community for feedback
+2. Document your process to share with others
+3. Mentor another organization
+4. That is progress
+
+### Track Your Improvement Over Time
+
+Retake this assessment every 3 months.
+
+**Goal:** Improve your score by 2-3 points each quarter.
+
+**Example Progress:**
+- **Quarter 1:** Score 4/15 (Built 3 templates, tested one channel)
+- **Quarter 2:** Score 7/15 (Added Easy Read, trained staff on Plain Language)
+- **Quarter 3:** Score 10/15 (Set up multi-channel alerts, ran first drill)
+- **Quarter 4:** Score 13/15 (Consulted disability community, refined all templates)
+
+This is realistic, achievable progress.
+
+### Remember: Progress Over Perfection
+
+In a disaster, a 7/15 organization that acts fast saves more lives than a 15/15 organization that moves slowly.
+
+**Speed and progress matter more than perfect scores.**
+
+Your goal is improvement, not perfection.
 
 ---
 
