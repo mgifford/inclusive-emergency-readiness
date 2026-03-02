@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Contributing Guide"
+---
 # Contributing
 
 Thanks for your interest in improving the Inclusive Emergency Readiness Guide.

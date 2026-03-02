@@ -295,6 +295,7 @@ jobs:
             --exclude 'linkedin.com'
             --exclude 'twitter.com'
             --exclude 'facebook.com'
+            --exclude 'fonts.googleapis.com'
             https://mgifford.github.io/inclusive-emergency-readiness/
           format: markdown
           output: .lychee-results/website-report.md

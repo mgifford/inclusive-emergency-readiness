@@ -550,7 +550,7 @@ Use them to build emergency systems that work when everything else fails.
 - [Fork Guide for Municipalities]({{ '/framework/fork-guide.html' | relative_url }}) - Adapt this project for your area
 - [Understanding Workflows]({{ '/framework/workflows-guide.html' | relative_url }}) - Guide to automated checks
 - [Plain Language Toolkit]({{ '/toolkits/plain-language.html' | relative_url }}) - Step-by-step guide
-- [Cognitive Disabilities in Emergencies]({{ '/disabilities/cognitive.html' | relative_url }}) - Understand the impact
+- [Cognitive Disabilities in Emergencies]({{ '/disabilities/cognitive/' | relative_url }}) - Understand the impact
 
 ---
 

@@ -137,7 +137,7 @@ For every "No," follow the linked resource to close the gap.
 
 7. **Are distribution channels tested regularly?**
    - [ ] Yes
-   - [ ] No → [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+   - [ ] No → [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 
 8. **Do Easy Read versions exist for critical alerts?**
    - [ ] Yes
@@ -396,7 +396,7 @@ The RWA Framework is not a one-time assessment.
 ## Additional Resources
 
 ### Self-Assessment Tools
-- [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+- [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 - [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
 
 ### Implementation Guides
