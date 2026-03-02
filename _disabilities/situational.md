@@ -1,56 +1,60 @@
 ---
 layout: disability
-title: "Situational Disabilities in Emergencies"
+title: "Situational Barriers in Emergencies"
 category: disability
 disability_type: situational
-summary: "How anyone can experience temporary disabilities during emergencies, and why this matters for communication design."
+summary: "How anyone can face barriers during emergencies. Why this matters for alert design."
 wcag_focus:
   - "All guidelines apply"
 reading_level: "Grade 6"
 last_updated: 2026-03-01
 ---
 
-# Situational Disabilities in Emergencies
+# Situational Barriers in Emergencies
 
-## What Are Situational Disabilities?
+## What Are Barriers?
 
-**Situational disabilities are temporary limitations caused by circumstances.**
+**Barriers come and go.**
+
+They happen in situations.
+
+Not from health.
 
 They affect anyone.
 
 They are not permanent.
 
-But during an emergency, they are just as real.
+But in an emergency, they are very real.
 
-## Types of Situational Disabilities
+## Types of Barriers
 
 ### Lost or Broken Devices
 
 **The situation:**
 - Phone battery died
-- Device was damaged in disaster
-- Charger was left behind
-- Screen is cracked
+- Device broke in disaster
+- Charger left behind
+- Screen cracked
 
-**The disability:**
-Cannot access digital emergency information.
+**The barrier:**
+Cannot access digital info.
 
 **The impact:**
-Same as not having a phone at all.
+Same as not having a phone.
 
 ### High Stress and Panic
 
 **The situation:**
-- Fear response activated
-- Adrenaline flooding system
+- Fear takes over
+- Rush of adrenaline
 - Cannot think clearly
 - Tunnel vision
 
-**The disability:**
-Cognitive processing severely reduced.
+**The barrier:**
+Brain processing slows down.
 
 **The impact:**
-Same as having a cognitive disability.
+Same as a cognitive disability.
 
 ### Foreign Language
 
@@ -58,29 +62,29 @@ Same as having a cognitive disability.
 - Tourist in emergency zone
 - Recent immigrant
 - Non-English speaker
-- Limited vocabulary
+- Limited English skills
 
-**The disability:**
-Cannot understand emergency instructions.
+**The barrier:**
+Cannot understand orders.
 
 **The impact:**
-Same as having a communication disability.
+Same as a communication disability.
 
-### Carrying Children or Belongings
+### Carrying Kids or Items
 
 **The situation:**
 - Carrying a baby
 - Holding emergency supplies
-- Assisting another person
+- Helping another person
 - Both hands full
 
-**The disability:**
-Cannot use hands to operate devices.
+**The barrier:**
+Cannot use hands to use devices.
 
 **The impact:**
-Same as having a mobility disability.
+Same as a mobility disability.
 
-### Loud Environments
+### Loud Noise
 
 **The situation:**
 - Sirens blaring
@@ -88,118 +92,118 @@ Same as having a mobility disability.
 - Explosions or crashes
 - Emergency vehicles
 
-**The disability:**
-Cannot hear audio instructions.
+**The barrier:**
+Cannot hear audio orders.
 
 **The impact:**
-Same as having a hearing disability.
+Same as a hearing disability.
 
-### Bright Sunlight or Darkness
+### Bright Sun or Darkness
 
 **The situation:**
 - Power outage (darkness)
 - Midday sun glare
-- Smoke obscuring vision
+- Smoke blocks vision
 - Broken glasses
 
-**The disability:**
+**The barrier:**
 Cannot see screens or signs.
 
 **The impact:**
-Same as having a vision disability.
+Same as a vision disability.
 
-### Poor Internet Connection
+### Poor Internet
 
 **The situation:**
-- Network congestion (everyone calling)
+- Network jammed (everyone calls)
 - Damaged cell towers
 - Rural area with weak signal
-- Inside building with poor reception
+- Inside building with weak signal
 
-**The disability:**
-Cannot access online information.
+**The barrier:**
+Cannot access online info.
 
 **The impact:**
 Digital divide becomes deadly.
 
-### Injured or Exhausted
+### Injured or Tired
 
 **The situation:**
-- Physical injury
-- Extreme fatigue
+- Body injury
+- Very tired
 - Dehydration
 - Illness
 
-**The disability:**
-Reduced physical and cognitive ability.
+**The barrier:**
+Reduced body and brain power.
 
 **The impact:**
-Multiple limitations at once.
+Multiple barriers at once.
 
 ## Why This Matters
 
-### Everyone Is Temporarily Disabled in Emergencies
+### Everyone Faces Barriers in Emergencies
 
-**Normal conditions:**
-You are healthy, alert, and capable.
+**Normal times:**
+You are healthy, alert, able.
 
-**Emergency conditions:**
-You are stressed, tired, scared, and overwhelmed.
+**Emergency times:**
+You are stressed, tired, scared.
 
-**Your capacity drops by 50% or more.**
+**Your ability drops by half.**
 
-### Designing for Situational Disabilities Helps Everyone
+### Plan for Barriers Helps All
 
-If your alert works for someone in panic, it works for everyone.
+If your alert works for someone in panic, it works for all.
 
-If your website works on a dying phone, it works for everyone.
+If your website works on a dying phone, it works for all.
 
-If your instructions work in chaos, they work for everyone.
+If your orders work in chaos, they work for all.
 
 ## Emergency Impacts
 
-### Impact 1: Information Overload
+### Impact 1: Too Much Info
 
 **The problem:**
-Emergency alerts contain too much information.
+Alerts give too much info.
 
-Someone under stress cannot process it all.
+Stressed people cannot process it.
 
 **Real-world failure:**
-An evacuation alert lists:
-- 5 evacuation zones
-- 3 shelter locations
+An alert lists many things:
+- 5 evac zones
+- 3 shelter spots
 - 4 road closures
 - 2 phone numbers
 - 1 website
 
-Someone in panic reads the first line.
+Someone in panic reads line one.
 
 They freeze.
 
 They do not know what to do.
 
-They do not evacuate.
+They do not leave.
 
-### Impact 2: Complex Navigation
+### Impact 2: Hard to Find Info
 
 **The problem:**
-Emergency information is buried in menus.
+Info is buried in menus.
 
-Someone with a dying phone cannot search.
+A dying phone cannot search.
 
 **Real-world failure:**
-The evacuation information is on the website.
+The evac info is on the website.
 
-It is under: Home > Services > Emergency Management > Alerts > Current Alerts > Evacuation.
+It is buried in deep menus.
 
-Someone's phone battery is at 3%.
+Phone battery: 3%.
 
-They cannot find the information before their phone dies.
+Phone dies before finding it.
 
-They do not know where to go.
+Person does not know where to go.
 
-### Impact 3: Language Barriers
+### Impact 3: Language Barrier
 
 **The problem:**
 Alerts are only in English.
@@ -207,100 +211,98 @@ Alerts are only in English.
 Spanish speakers do not understand.
 
 **Real-world failure:**
-A wildfire threatens a community.
+A wildfire threatens a town.
 
-40% of residents speak Spanish as first language.
+40% of people speak Spanish first.
 
-The evacuation order is only in English.
+The evac order is only in English.
 
 Spanish speakers do not understand.
 
-They do not evacuate.
+They do not leave.
 
 Some die.
 
-### Impact 4: Assuming Capability
+### Impact 4: Expecting Too Much
 
 **The problem:**
-Instructions assume people can:
-- Read quickly
-- Remember multiple steps
-- Navigate complex systems
-- Make decisions under pressure
+Orders expect people to:
+- Read fast
+- Remember many steps
+- Use difficult systems
+- Make choices under pressure
 
 **Real-world failure:**
-Shelter registration requires:
-1. Finding registration table
-2. Filling out a form
-3. Showing ID
-4. Answering health questions
-5. Getting assigned a bed number
-6. Finding the bed
+Shelter check-in needs:
+1. Find sign-up table
+2. Fill out form
+3. Show ID
+4. Answer health questions
+5. Get bed number
+6. Find the bed
 
-Someone arrives exhausted and traumatized.
+Someone arrives tired and traumatized.
 
 They cannot process 6 steps.
 
-They sit in the lobby.
-
-They do not get registered.
+They sit in lobby.
 
 They do not get a bed.
 
-## What Communicators Must Do
+## What to Do
 
-### Principle 1: Design for the Worst Case
+### Principle 1: Plan for Worst
 
-**Assume:**
-- Phone battery is dying
-- Internet is slow or unavailable
-- User is panicked
-- User is injured
-- User is carrying children
-- User speaks limited English
+**Expect:**
+- Phone battery dying
+- Internet slow or gone
+- User in panic
+- User injured
+- User carrying kids
+- User speaks little English
 
-**If it works in worst case, it works always.**
+**If it works in worst case, it works.**
 
-### Principle 2: One Action, One Message
+### Principle 2: One Action Per Message
 
 **Do this:**
 "Leave now."
 
 **Not this:**
-"Residents should consider evacuating while gathering essential items and securing their homes."
+"People should think about leaving. Gather items. Secure homes."
 
-### Principle 3: Visual + Text + Audio
+### Principle 3: Use Many Formats
 
-**Provide information in multiple formats:**
-- Text (for reading)
-- Icons (for quick comprehension)
-- Audio (for listening while moving)
-- Images (for visual understanding)
+**Give info in many ways:**
+- Text for reading
+- Icons for quick grasp
+- Audio for listening
+- Images for visual grasp
 
-### Principle 4: Multiple Languages
+### Principle 4: Use Many Languages
 
-**Minimum:**
+**Basic:**
 - English
 - Spanish
-- French (in Canada)
+- French (Canada)
 
-**Ideal:**
-- All languages spoken by 5%+ of community
-- Indigenous languages
-- Sign language videos
+**Better:**
+- All languages spoken by 5%+ of town
+- Native tongues
+- Sign videos
 
-### Principle 5: Offline Capability
+### Principle 5: Works Offline
 
-**Essential information must work without internet:**
-- Printable PDFs
-- Cached web pages
-- SMS fallback
-- Radio broadcasts
+**Key info must work without internet:**
+- PDFs to print
+- Saved web pages
+- SMS backup
+- Radio broadcast
 - Physical signs
 
-### Principle 6: Minimal Steps
+### Principle 6: Few Steps
 
-**Maximum steps for critical actions:** 3
+**Max steps for key actions:** 3
 
 **Example:**
 1. Leave now
@@ -315,129 +317,131 @@ They do not get a bed.
 5. Fuel your vehicle
 6. Load your belongings
 7. Lock all doors
-8. Evacuate via designated routes
+8. Evacuate via routes
 
-### Principle 7: Clear Hierarchy
+### Principle 7: Info Order
 
-**Most important information first:**
+**Put most important info first:**
 
 ✅ **Right order:**
-1. What to do (LEAVE NOW)
-2. Where to go (Main Street School)
-3. When (in 2 hours)
-4. Why (wildfire)
-5. Details (what to bring)
+1. What to do: LEAVE NOW
+2. Where to go: Main Street School
+3. When: in 2 hours
+4. Why: wildfire
+5. Details: what to bring
 
 ❌ **Wrong order:**
-1. Background about fire
-2. Historical context
-3. List of agencies involved
+1. Fire background
+2. History
+3. List of agencies
 4. What to do
 
-## Situational Disability Checklist
+## Barrier Checklist
 
-- [ ] Works on dying phone battery (under 10%)
+- [ ] Works on dying phone (10%)
 - [ ] Works on slow internet (3G or slower)
-- [ ] Works without internet (cached/offline)
+- [ ] Works without internet (saved)
 - [ ] Reading level Grade 6 or lower
-- [ ] Critical info in first 3 seconds of viewing
-- [ ] Available in multiple languages
-- [ ] One clear action per message
-- [ ] Visual + text + audio options
-- [ ] Maximum 3 steps for critical actions
-- [ ] Large touch targets for hands-free use
-- [ ] High contrast for bright sunlight
-- [ ] Simple navigation (no menus)
-- [ ] Phone numbers are tappable
-- [ ] Maps are simple and clear
-- [ ] No jargon or technical terms
+- [ ] Key info in first 3 seconds
+- [ ] Works in many languages
+- [ ] One action per message
+- [ ] Visual + text + audio
+- [ ] Max 3 steps for key actions
+- [ ] Large touch targets
+- [ ] High contrast for bright sun
+- [ ] Easy nav (no menus)
+- [ ] Phone numbers tap to call
+- [ ] Maps simple and clear
+- [ ] No jargon or hard words
 
-## Testing for Situational Disabilities
+## Test for Barriers
 
-### Test 1: The Dying Phone Test
-Set your phone to 10% battery.
+### Test 1: Dying Phone Test
+Set phone to 10% battery.
 
-Try to find evacuation information.
+Find evac info.
 
-If you cannot find it before battery dies, redesign.
+If you cannot find it before it dies, redo it.
 
-### Test 2: The Stress Test
+### Test 2: Stress Test
 Do 50 jumping jacks.
 
-Immediately try to follow your emergency instructions.
+Now follow your orders.
 
-If you cannot, they are too complex.
+If you cannot, they are too hard.
 
-### Test 3: The Hands-Free Test
+### Test 3: Hands-Free Test
 Hold a gallon of water in each hand.
 
-Try to use your website with voice commands only.
+Use your site with voice only.
 
 If you cannot, add voice support.
 
-### Test 4: The Language Test
-Use Google Translate to translate your alert to Spanish.
+### Test 4: Language Test
+Translate your alert to Spanish.
 
 Have a Spanish speaker read it.
 
-If they do not understand, rewrite.
+If they do not get it, rewrite.
 
-### Test 5: The Chaos Test
+### Test 5: Chaos Test
 Play loud siren sounds.
 
 Flash bright lights.
 
-Try to read your emergency alert.
+Read your alert.
 
-If you cannot, increase contrast and simplify.
+If you cannot, add more contrast. Make it simpler.
 
 ## Case Study: Success
 
-### Japan Earthquake Early Warning System
+### Japan Earthquake Alert
 
 **What they did:**
-- Simple alert tones (distinct, recognizable)
-- Multi-language support (Japanese, English, Chinese, Korean)
-- Works on oldest phones
-- Offline capability
-- Clear single action: "Drop, Cover, Hold"
-- Practiced regularly
+- Simple sounds (easy to know)
+- Many languages: Japanese, English, Chinese, Korean
+- Works on old phones
+- Works offline
+- Clear action: Drop, Cover, Hold
+- Practice lots
 
 **Result:**
-High compliance even during panic.
+People follow it even in panic.
 
-Muscle memory from practice.
+Body memory from practice.
 
-Works under worst conditions.
+Works in worst cases.
 
 ## Case Study: Failure
 
-### Hurricane Katrina Evacuation (2005)
+### Hurricane Katrina Evac (2005)
 
 **What went wrong:**
-- Assumed everyone had cars
-- Assumed everyone could read complex maps
-- Assumed everyone spoke English
-- Complex multi-step instructions
-- Required internet access for details
-- No clear single action
+- Expected all had cars
+- Expected all could read maps
+- Expected all spoke English
+- Hard multi-step orders
+- Needed internet
+- No clear action
 
 **Result:**
-Many people did not evacuate.
+Many people did not leave.
 
-Situational disabilities (no car, no internet, language barrier) became deadly.
+Barriers became deadly.
+
+No car. No internet. Language barrier.
 
 ## The Bottom Line
 
-In emergencies, everyone is temporarily disabled.
+In emergencies, all face barriers.
 
-Design for the worst case.
+Plan for the worst case.
 
 Simple always wins.
 
-Multiple formats always.
+Use many formats always.
 
-Multiple languages always.
+Use many languages always.
 
 Test under stress.
 
@@ -446,22 +450,22 @@ Test under stress.
 ---
 
 <div class="alert alert-danger">
-  **Critical Insight:** Situational disabilities prove that accessibility isn't "for them." It's for everyone. It's for you when you're having the worst day of your life.
+  **Key Insight:** Barriers show access is for all. It is for you on your worst day.
 </div>
 
 ## Resources
 
-### Design for Situational Disabilities
-- Microsoft Inclusive Design Toolkit
+### Design for Barriers
+- Microsoft Design Toolkit
 - "Mismatch" by Kat Holmes
-- A11Y Project resources
+- A11Y Project help
 
 ### Stress Testing
-- Cognitive Load Theory
-- Emergency communication research
-- Crisis communication protocols
+- How the brain works under stress
+- Emergency contact research
+- Crisis contact protocols
 
 ### Multi-Language Support
 - Google Translate API
-- Professional translation services
-- Community language resources
+- Pro translation help
+- Community help
