@@ -145,6 +145,11 @@ You must reach all people.
 
 **You learn:** How to reach older adults using functional-needs language and trusted messengers
 
+### Build a Multi-Platform Outreach Strategy
+**Go to:** [Multi-Platform Outreach Strategy]({{ '/framework/multi-platform-outreach.html' | relative_url }})
+
+**You learn:** How to use Zello, Signal, WhatsApp, and Facebook Crisis Response together — plus an ASL video checklist
+
 
 ---
 
