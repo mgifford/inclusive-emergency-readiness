@@ -116,7 +116,7 @@ Websites need **Digital Egress**.
 
 ### Implementation
 
-We built a [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }}).
+We built a [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }}).
 
 Use it to test your emergency website.
 
@@ -132,7 +132,7 @@ Use it to test your emergency website.
 
 **Next Steps:**
 1. Review the [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
-2. Test the [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+2. Test the [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 3. Open an Issue to discuss technical details
 
 ### For Municipalities and Agencies
@@ -270,7 +270,7 @@ Open an Issue on GitHub to discuss:
 ## Related Resources
 
 - [Framework Matrix: WCAG, WSG & Plain Language]({{ '/framework/matrix.html' | relative_url }})
-- [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+- [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 - [Fork Guide for Municipalities]({{ '/framework/fork-guide.html' | relative_url }})
 - [Disability-Specific Impact]({{ '/disabilities/' | relative_url }})
 

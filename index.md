@@ -193,7 +193,7 @@ Think of a fire exit for web sites.
 2. Read it stressed (Grade 6 words)
 3. Save it offline (Works with no internet)
 
-**Learn more:** [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+**Learn more:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 
 ---
 
@@ -341,7 +341,7 @@ This site follows these rules:
 **You learn:** Templates for your area
 
 ### 5. Test
-**Run:** [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+**Run:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 
 **You learn:** If your site works
 
@@ -390,5 +390,5 @@ We learn from:
 
 ---
 
-**New to this?** Start with [Thinking Problems in Crises]({{ '/disabilities/cognitive.html' | relative_url }}). It explains "One Idea Per Line."
+**New to this?** Start with [Thinking Problems in Crises]({{ '/disabilities/cognitive/' | relative_url }}). It explains "One Idea Per Line."
 

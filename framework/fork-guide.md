@@ -559,7 +559,7 @@ Before going live, check:
 ## Related Resources
 
 - [CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }})
-- [Digital Egress Checklist]({{ '/toolkits/digital-egress.html' | relative_url }})
+- [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 - [Deployment Guide](/DEPLOYMENT.md)
 - [Structure Documentation](/STRUCTURE.md)
 
