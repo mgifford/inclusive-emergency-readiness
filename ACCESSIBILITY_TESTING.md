@@ -57,6 +57,19 @@ The comparison script categorizes issues:
 npm install
 ```
 
+### Validate Setup
+
+Before running tests, verify everything is configured correctly:
+
+```bash
+npm run validate
+```
+
+This will check:
+- All required files exist
+- Configuration is valid
+- Comparison logic works correctly
+
 ### Run All Tests
 
 ```bash
