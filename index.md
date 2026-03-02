@@ -5,6 +5,10 @@ title: Home
 
 # Inclusive Emergency Readiness
 
+<div class="alert alert-warning">
+  <strong>LOW BANDWIDTH?</strong> Switch to <a href="{{ '/crisis.html' | relative_url }}"><strong>Crisis Mode</strong></a> - Ultra-low-bandwidth version (~5KB, works on 2G networks)
+</div>
+
 ## Send alerts that reach everyone.
 
 **This guide helps you write emergency alerts.**
