@@ -6,6 +6,85 @@ This document explains the technical design decisions behind **Resilience Comms*
 
 ---
 
+## Crisis Mode: The Ultimate Resilience Layer
+
+**NEW:** In addition to the standard site optimizations, we now provide a **Crisis Mode** - an ultra-low-bandwidth mirror designed for extreme conditions.
+
+### The 14KB Rule & TCP Slow-Start
+
+**Technical Foundation:** The first packet of data sent over TCP (the internet's transport protocol) is limited to 14KB due to TCP slow-start congestion control. This means:
+- The first 14KB arrives in one round-trip
+- Anything beyond 14KB requires additional round-trips
+- On 2G networks, each round-trip can take 500-1000ms
+- On satellite links, round-trips can take 500-700ms
+
+**Crisis Mode Design:** By keeping entire pages under 14KB (target: 5-11KB), we ensure critical emergency information loads in a single TCP packet round-trip.
+
+### Implementation Details
+
+**Location:** `/crisis.html`, `/crisis-templates.html`, `/crisis-disabilities.html`
+
+**Architecture:**
+- **Layout:** `_layouts/crisis.html` with inline CSS (~3.2KB base)
+- **Zero External Requests:** All CSS inlined, no images, no JavaScript, no fonts
+- **Page Weights:**
+  - Crisis Home: 6.4KB total
+  - Crisis Templates: 8.1KB total
+  - Crisis Disabilities: 11.1KB total
+- **Payload Reduction:** 98% smaller than full site (~500KB → ~5-11KB)
+
+**Technical Constraints:**
+```html
+<!-- Inline CSS only - no external stylesheets -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+/* Minified, essential styles only */
+</style>
+
+<!-- No JavaScript whatsoever -->
+<!-- No images - text and Unicode characters only -->
+<!-- System fonts only - no web fonts -->
+```
+
+**Accessibility Preservation:**
+- WCAG 2.2 Level AA compliant
+- Semantic HTML5 structure
+- High contrast (black text on white background)
+- Screen reader compatible
+- Keyboard navigable
+- Printable without CSS
+
+**Network Compatibility:**
+- ✅ 2G networks (EDGE: 50-250 Kbps)
+- ✅ Satellite internet (high latency)
+- ✅ Congested mesh networks
+- ✅ Text-only browsers (Lynx, w3m)
+- ✅ Feature phones with basic HTML support
+
+**Use Cases:**
+1. **Natural Disasters:** When cell towers are overloaded
+2. **Rural Areas:** Where only 2G is available
+3. **Battery Conservation:** Minimal rendering = longer battery life
+4. **International:** Works on global minimum infrastructure
+5. **Extreme Latency:** Satellite, mesh, or damaged networks
+
+### The Human-Centric "Why"
+
+In a disaster, bandwidth is a luxury. Crisis Mode follows a "Degrade Gracefully" philosophy:
+- A person with one bar of signal in a storm has the same access to safety protocols as someone on high-speed fiber
+- Information is a form of infrastructure - it must be Network Agnostic
+- We practice what we preach by maintaining a text-primary mirror
+
+### Access Crisis Mode
+
+From the main site: Look for the alert banner at the top of the homepage
+Direct URLs:
+- `/crisis.html` - Crisis mode home
+- `/crisis-templates.html` - Emergency alert templates
+- `/crisis-disabilities.html` - Disability considerations
+
+---
+
 ## The Four Pillars of Survival Web Design
 
 ### 1. Static-First: No Heavy JavaScript or Databases

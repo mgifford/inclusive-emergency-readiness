@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | {% endif %}Crisis Mode - {{ site.title }}</title>
+<style>
+/* Crisis Mode CSS - Inline for zero external requests - Target <3KB */
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:18px}
+body{
+  font-family:sans-serif;
+  line-height:1.6;
+  color:#000;
+  background:#fff;
+  max-width:800px;
+  margin:0 auto;
+  padding:1rem
+}
+a{color:#00f;text-decoration:underline}
+a:visited{color:#551a8b}
+a:hover,a:focus{background:#ff0;color:#000;outline:2px solid #000}
+h1{font-size:1.5rem;margin:1rem 0;border-bottom:2px solid #000;padding-bottom:0.5rem}
+h2{font-size:1.25rem;margin:1rem 0 0.5rem;font-weight:bold}
+h3{font-size:1.1rem;margin:0.75rem 0 0.5rem;font-weight:bold}
+p,ul,ol{margin:0.5rem 0}
+ul,ol{margin-left:1.5rem}
+li{margin:0.25rem 0}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{position:static;left:0}
+.alert{border:3px solid #000;padding:1rem;margin:1rem 0;font-weight:bold}
+.warning{border-color:#000;background:#ff0;color:#000}
+.info{border-color:#000;background:#fff;color:#000}
+header{border-bottom:3px solid #000;padding-bottom:1rem;margin-bottom:1rem}
+footer{border-top:2px solid #000;padding-top:1rem;margin-top:2rem;font-size:0.9rem}
+.meta{font-size:0.85rem;color:#333;font-style:italic;margin:0.5rem 0}
+nav ul{list-style:none;margin:0.5rem 0}
+nav li{display:inline;margin-right:1rem}
+code,pre{font-family:monospace;background:#f5f5f5;padding:0.125rem 0.25rem}
+pre{padding:0.5rem;overflow-x:auto;border:1px solid #000}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid #000;padding:0.5rem;text-align:left}
+th{background:#000;color:#fff;font-weight:bold}
+@media print{
+  body{font-size:12pt;max-width:100%}
+  a{color:#000;text-decoration:underline}
+  .no-print{display:none}
+  h1{page-break-after:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+
+<header role="banner">
+<h1>{{ site.title }}</h1>
+<p><strong>CRISIS MODE</strong> - Ultra-Low-Bandwidth Version</p>
+<p class="meta">Text-only | No images | No JavaScript | Works on 2G</p>
+</header>
+
+<nav role="navigation" aria-label="Main navigation" class="no-print">
+<ul>
+<li><a href="{{ '/crisis.html' | relative_url }}">Home</a></li>
+<li><a href="{{ '/crisis-templates.html' | relative_url }}">Templates</a></li>
+<li><a href="{{ '/crisis-disabilities.html' | relative_url }}">Disabilities</a></li>
+<li><a href="{{ '/' | relative_url }}">Full Site</a></li>
+</ul>
+</nav>
+
+<main id="main" role="main">
+{{ content }}
+</main>
+
+<footer role="contentinfo">
+<p><strong>Crisis Mode:</strong> This page is optimized for extreme low-bandwidth conditions (2G, satellite, congested networks).</p>
+<p><strong>Total Size:</strong> ~{{ page.size | default: '5' }}KB | <strong>Standards:</strong> WCAG 2.2 AA | WSG 1.0</p>
+<p class="no-print"><a href="{{ '/' | relative_url }}">Switch to Full Site</a> (requires more bandwidth)</p>
+<p>&copy; {{ 'now' | date: '%Y' }} Inclusive Emergency Readiness Project | <a href="https://github.com/mgifford/inclusive-emergency-readiness">GitHub</a></p>
+</footer>
+
+</body>
+</html>

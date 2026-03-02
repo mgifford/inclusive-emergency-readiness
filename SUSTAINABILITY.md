@@ -3,6 +3,22 @@
 ## Our Philosophy: Digital Resilience
 Sustainability in emergency communications is about **performance under stress**. A "heavy" website consumes more energy, drains user batteries, and fails to load on congested networks. By following the **W3C Web Sustainability Guidelines (WSG) 1.0**, we ensure our information survives "Digital Famine."
 
+## Crisis Mode: Network-Agnostic Information Delivery
+
+**NEW:** We have implemented a **Crisis Mode** - an ultra-low-bandwidth mirror that reduces data payload by 98%.
+
+### The Infrastructure as Policy Statement
+Information is a form of infrastructure. To ensure our readiness guide is truly inclusive, it is built to be Network Agnostic. We practice what we preach by maintaining a text-primary mirror that remains functional even when local cellular towers are congested or damaged.
+
+### Technical Specifications
+- **Payload:** 5-11KB per page (vs. typical 500KB limit)
+- **The 14KB Rule:** Entire pages fit within a single TCP slow-start packet
+- **Dependencies:** Zero external resources (no CSS files, no JS, no images, no fonts)
+- **Networks:** Works on 2G, satellite, congested mesh networks
+- **Accessibility:** WCAG 2.2 Level AA compliant
+
+**Access Crisis Mode:** [/crisis.html]({{ '/crisis.html' | relative_url }})
+
 ## Technical Constraints (The Survival UX)
 To minimize our environmental footprint and maximize disaster resilience, we adhere to the following:
 
