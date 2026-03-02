@@ -1,202 +1,129 @@
 ---
 layout: default
 title: Home
+summary: "A practical guide for emergency managers and government teams to send accessible alerts that reach everyone — including people with disabilities."
+reading_level: "Grade 6"
+last_updated: 2026-03-02
 ---
 
 # Resilience Comms: The Inclusive Emergency Blueprint
 
-## Planners need to start now to ensure that sending alerts reaches everyone.
-
-**This guide helps you write emergency communications.**
-
-All people can understand them.
-
-All people can access them. This focuses on those aspects that touch digital accessibility. 
-
-**Who might use this guide:**
-- Government teams
-- Emergency managers
-- First responders
-
-**The problem:** Every year, emergency alerts miss many people.
-
-<div class="alert alert-danger">
-  **Act now.** Use this guide. Save lives.
-</div>
+> **Summary:** Emergency alerts miss millions of people every year. This guide shows government teams and emergency managers how to fix that — with plain language, accessible design, and multi-channel delivery.
 
 <div class="alert alert-success">
-  <strong>NEW:</strong> Feeling overwhelmed? Start with <a href="{{ '/framework/start-now.html' | relative_url }}"><strong>Start Now</strong></a> - Get started in 30 minutes (Bronze Level)
+  <strong>New here?</strong> Start with <a href="{{ '/framework/start-now.html' | relative_url }}"><strong>Start Now: Your First Steps</strong></a> — get moving in 30 minutes (Bronze Level).
+</div>
+
+**Who this guide is for:**
+- Government emergency managers
+- Municipal communication teams
+- First responders
+
+<div class="alert alert-danger">
+  <strong>Act now.</strong> Every day without accessible alerts is a day someone gets left behind.
 </div>
 
 ## What You Get
 
-People with access needs built this guide.
-
-Emergency experts helped.
+People with disabilities and emergency experts helped build this guide.
 
 **You get:**
-- Alert templates you can use now
-- How-to guides
-- Testing tools
+- Alert templates you can use today
+- Step-by-step how-to guides
+- Testing tools and checklists
 
-**Our goal:** Help you reach all people.
+**Our goal:** Help you reach every person in your community.
 
 ### For Government Teams
 
-You send emergency messages.
-
-You must reach all people.
+You send emergency messages. You must reach everyone.
 
 **This guide shows you how to:**
 - Write clear alerts
-- Pick the right channels
+- Choose the right channels
 - Test your messages
-- Fix problems
+- Fix problems fast
 
-### Rules This Guide Follows
+### Standards This Guide Follows
 
-**WCAG 2.2**
-- What it is: Rules for web sites
-- Why: Screen readers can read the page
-
-**WSG 1.0**
-- What it is: Rules for small files
-- Why: Sites work when networks are slow
-
-**CAN-ASC-6.4**
-- What it is: Canadian rules for crises
-- Why: Shows what works in real events
-
-**Plain Language**
-- What it is: Simple writing
-- Why: Everyone can understand fast
+| Standard | What It Is | Why It Matters |
+|----------|-----------|----------------|
+| **[WCAG 2.2](https://www.w3.org/WAI/WCAG22/quickref/)** | Web accessibility rules | Screen readers work on every page |
+| **[WSG 1.0](https://w3c.github.io/sustyweb/)** | Rules for small files | Sites work when networks are slow |
+| **[CAN-ASC-6.4](https://accessible.canada.ca/creating-accessibility-standards/can-asc-64-emergency-measures)** | Canadian crisis rules | Shows what works in real emergencies |
+| **Plain Language** | Simple writing | Everyone understands under stress |
 
 > **Learn more:**
-> - [ACCESSIBILITY.md]({{ '/ACCESSIBILITY.html' | relative_url }}) - Rules we follow
-> - [SUSTAINABILITY.md]({{ '/SUSTAINABILITY.html' | relative_url }}) - How we keep sites fast
-> - [CONTRIBUTING.md]({{ '/CONTRIBUTING.html' | relative_url }}) - Help improve this
-> - [AGENTS.md]({{ '/AGENTS.html' | relative_url }}) - Rules for helpers
+> - [Accessibility Statement]({{ '/ACCESSIBILITY.html' | relative_url }}) — standards we follow
+> - [Sustainability Guide]({{ '/SUSTAINABILITY.html' | relative_url }}) — how we keep sites fast
+> - [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}) — help improve this
+> - [Content Design Guide]({{ '/CONTENT_DESIGN.html' | relative_url }}) — how we write
 
 <div class="alert alert-warning">
   <strong>LOW BANDWIDTH?</strong> This site automatically adapts when your browser or OS signals a data-saving preference. You can also enable <strong>Low Data Mode</strong> manually using the toggle in the header.
 </div>
 
-## Start Here
+## Where to Start
 
-### Feeling Overwhelmed? Start Small.
-**Go to:** [Start Now Guide]({{ '/framework/start-now.html' | relative_url }})
+Use this table to find the right guide for your situation.
 
-**You get:** Three levels - Bronze (30 min), Silver (5 hours), Gold (20 hours)
-
-**Why:** Build progress, not perfection. Start where you are.
-
-### Need an Alert Now?
-**Go to:** [Emergency Templates]({{ '/templates/' | relative_url }})
-
-**You get:** Templates you can use right away
-
-### Learn About Access Needs
-**Go to:** [The Access Spectrum]({{ '/disabilities/' | relative_url }})
-
-**You learn:** How crises affect different people
-
-### Build Content
-**Go to:** [Tactical Toolkits]({{ '/toolkits/' | relative_url }})
-
-**You get:** Step-by-step guides
-
-### Meet Standards
-**Go to:** [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
-
-**You learn:** Rules you must follow
-
-### Find Tools
-**Go to:** [Resource Directory]({{ '/framework/resources.html' | relative_url }})
-
-**You get:** Links to expert tools
-
-### Check Your Readiness
-**Go to:** [Ready-Willing-Able Framework]({{ '/framework/rwa-framework.html' | relative_url }})
-
-**You learn:** If your team is ready for inclusive emergency communications
-
-### Plan Physical Spaces
-**Go to:** [Physical-Digital Intersection]({{ '/framework/physical-digital.html' | relative_url }})
-
-**You learn:** How to make shelters accessible
-
-### Protect Electricity-Dependent Populations
-**Go to:** [Data-Driven Readiness]({{ '/framework/data-driven-readiness.html' | relative_url }})
-
-**You learn:** How to use databases to find and help people who need power for medical equipment
-
-### Use AI Tools
-**Go to:** [LLM Prompts Guide]({{ '/framework/llm-prompts.html' | relative_url }})
-
-**You get:** Ready-to-use prompts to improve your content
-
-### Navigate Disasters
-**Go to:** [Maps, Disasters, and Accessibility]({{ '/framework/maps-accessibility.html' | relative_url }})
-
-**You learn:** How mapping tools help people with disabilities during emergencies
-
-### Support Seniors
-**Go to:** [Seniors & Identity]({{ '/framework/seniors-identity.html' | relative_url }})
-
-**You learn:** How to reach older adults using functional-needs language and trusted messengers
-
-### Build a Multi-Platform Outreach Strategy
-**Go to:** [Multi-Platform Outreach Strategy]({{ '/framework/multi-platform-outreach.html' | relative_url }})
-
-**You learn:** How to use Zello, Signal, WhatsApp, and Facebook Crisis Response together — plus an ASL video checklist
-
-### Plan for Multiple & Cascading Disabilities
-**Go to:** [Multiple & Cascading Disabilities]({{ '/framework/multiple-disabilities.html' | relative_url }})
-
-**You learn:** How intersecting disabilities create compounded barriers, the Complex Needs Passport template, and how international frameworks handle multi-flag populations
+| What you need | Guide | Time |
+|---------------|-------|------|
+| **Start somewhere — any level** | [Start Now: Bronze, Silver, Gold levels]({{ '/framework/start-now.html' | relative_url }}) | 30 min to 20 hours |
+| **An alert template right now** | [Emergency Alert Templates]({{ '/templates/' | relative_url }}) | Use immediately |
+| **Understand who you're reaching** | [The Access Spectrum]({{ '/disabilities/' | relative_url }}) | 30 min read |
+| **Build accessible content** | [Tactical Toolkits]({{ '/toolkits/' | relative_url }}) | Varies |
+| **Meet accessibility standards** | [Framework Matrix: WCAG, WSG & Plain Language]({{ '/framework/matrix.html' | relative_url }}) | Reference |
+| **Find external tools and research** | [Resource Directory]({{ '/framework/resources.html' | relative_url }}) | Reference |
+| **Check your team's readiness** | [Ready-Willing-Able Self-Assessment]({{ '/framework/rwa-framework.html' | relative_url }}) | 1 hour |
+| **Make shelters accessible** | [Physical-Digital Intersection Guide]({{ '/framework/physical-digital.html' | relative_url }}) | 2 hours |
+| **Protect people who need power** | [Data-Driven Readiness]({{ '/framework/data-driven-readiness.html' | relative_url }}) | 2 hours |
+| **Use AI to improve content** | [LLM Prompts for Accessible Alerts]({{ '/framework/llm-prompts.html' | relative_url }}) | 30 min |
+| **Use accessible maps in disasters** | [Maps, Disasters, and Accessibility]({{ '/framework/maps-accessibility.html' | relative_url }}) | 1 hour |
+| **Reach older adults** | [Seniors and Identity: Functional-Needs Language]({{ '/framework/seniors-identity.html' | relative_url }}) | 1 hour |
+| **Build a multi-channel strategy** | [Multi-Platform Outreach: Zello, Signal, WhatsApp]({{ '/framework/multi-platform-outreach.html' | relative_url }}) | 2 hours |
+| **Handle intersecting disabilities** | [Multiple and Cascading Disabilities]({{ '/framework/multiple-disabilities.html' | relative_url }}) | 1 hour |
 
 
 ---
 
 ## CAN-ASC-6.4: A Working Example
 
-**CAN-ASC-6.4** is Canada's rule for crisis access.
+**CAN-ASC-6.4** is Canada's standard for accessible emergency communications.
 
-This guide shows how to follow that rule.
+This guide shows how to put that standard into practice.
 
-### Why This Helps
+### How This Helps Different Groups
 
-**Standards Groups:**
+**Standards groups:**
 - See real examples
 - Test what works
 - Get user feedback
 
 **Cities:**
-- Copy this guide
-- Add your local info
+- Adapt this guide for your region
 - Help people faster
 - Share what you learn
 
 **Researchers:**
 - Study real data
 - See test results
-- Learn from users
 - Write case studies
 
 **Learn more:**
 - [CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }})
-- [Copy This Guide]({{ '/framework/fork-guide.html' | relative_url }})
+- [Adapt This Guide for Your Region]({{ '/framework/fork-guide.html' | relative_url }})
 
-### Digital Egress: Your Exit Plan
+### Digital Egress: Your Exit Plan When Devices Fail
 
-**Digital Egress** means: Your escape path when devices fail.
+**Digital egress** means your escape path when devices or internet fail.
 
-Think of a fire exit for web sites.
+Think of it as a fire exit — but for information.
 
 **The Three Rules:**
 1. Find it fast (3 clicks max)
-2. Read it stressed (Grade 6 words)
-3. Save it offline (Works with no internet)
+2. Read it under stress (Grade 6 words)
+3. Save it offline (works with no internet)
 
 **Learn more:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 
@@ -204,13 +131,15 @@ Think of a fire exit for web sites.
 
 ## How We Test Quality
 
-This site tests itself with GitHub Actions.
+This site uses automated checks on every update.
 
-**Having CI problems?** Read our [workflow guide]({{ '/framework/workflows-guide.html' | relative_url }}).
+**Link checker:** Verifies all links weekly and replaces broken ones automatically.
 
-**See readability warnings?** That is good. It keeps language simple.
+**Readability checker:** Checks reading grade level. Warns if content is too hard. This is intentional — it keeps language simple.
 
-## Who Gets Left Behind
+**Having CI problems?** Read our [workflow troubleshooting guide]({{ '/framework/workflows-guide.html' | relative_url }}).
+
+## Who Gets Left Behind When Alerts Are Inaccessible
 
 ### People Who Cannot See
 
@@ -290,7 +219,7 @@ This site tests itself with GitHub Actions.
 - Info arrives too late
 - Devices die
 
-## Past Failures
+## Real Cases: When Inaccessible Alerts Cost Lives
 
 ### Hurricane Katrina (2005)
 **Problem:** Orders used legal language.
@@ -323,50 +252,15 @@ This site follows these rules:
 
 ✅ **Print-Ready:** Prints well for binders.
 
-## Five Steps
+## Five Steps to Get Started
 
-### 1. Learn
-**Read:** [The Access Spectrum]({{ '/disabilities/' | relative_url }})
+A simple workflow if you're new to inclusive emergency communications:
 
-**You learn:** How crises affect people
-
-### 2. Plan
-**Read:** [Framework Matrix]({{ '/framework/matrix.html' | relative_url }})
-
-**You learn:** Standards to meet
-
-### 3. Build
-**Use:** [Tactical Toolkits]({{ '/toolkits/' | relative_url }})
-
-**You learn:** How to create content
-
-### 4. Deploy
-**Copy:** [Emergency Templates]({{ '/templates/' | relative_url }})
-
-**You learn:** Templates for your area
-
-### 5. Test
-**Run:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
-
-**You learn:** If your site works
-
-## Two Tests
-
-This site tests itself:
-
-**Link Checker**  
-- Checks all links each week
-- Replaces dead links
-
-**Readability Checker**  
-- Checks reading level
-- Warns if too hard
-
-## Get Started
-
-- [Understand Access Needs]({{ '/disabilities/' | relative_url }})
-- [Use Templates]({{ '/templates/' | relative_url }})
-- [Access Toolkits]({{ '/toolkits/' | relative_url }})
+1. **Learn** — [The Access Spectrum]({{ '/disabilities/' | relative_url }}): how crises affect different people
+2. **Plan** — [Framework Matrix]({{ '/framework/matrix.html' | relative_url }}): which standards to meet and why
+3. **Build** — [Tactical Toolkits]({{ '/toolkits/' | relative_url }}): create accessible content step by step
+4. **Deploy** — [Emergency Alert Templates]({{ '/templates/' | relative_url }}): ready-to-use templates for your area
+5. **Test** — [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }}): verify your site works under stress
 
 
 ## The Mission
@@ -379,9 +273,9 @@ This guide shows you how.
 
 ---
 
-## Help Us Improve
+## Help Us Make This Better
 
-We need your help.
+This guide improves through community input.
 
 We learn from:
 - People with disabilities
@@ -389,11 +283,11 @@ We learn from:
 - Municipal teams
 - Accessibility experts
 
-**Want to help?** Read [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}).
+**Want to contribute?** Read the [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}).
 
-**Found a problem?** [Open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues).
+**Found a problem?** [Open an issue on GitHub](https://github.com/mgifford/inclusive-emergency-readiness/issues).
 
 ---
 
-**New to this?** Start with [Thinking Problems in Crises]({{ '/disabilities/cognitive/' | relative_url }}). It explains "One Idea Per Line."
+**New to emergency accessibility?** Start with [Cognitive Disabilities in Crises]({{ '/disabilities/cognitive/' | relative_url }}). It explains the "One Idea Per Line" principle.
 

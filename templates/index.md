@@ -1,9 +1,14 @@
 ---
 layout: default
 title: "Emergency Alert Templates"
+summary: "Ready-to-use, accessible templates for evacuation orders and emergency alerts. Plain language. Grade 6 reading level. Print-ready."
+reading_level: "Grade 6"
+last_updated: 2026-03-02
 ---
 
 # Emergency Alert Templates
+
+> **Summary:** Copy these templates, fill in your details, and send. Each template follows WCAG 2.2, plain language standards, and Grade 6 reading level.
 
 ## Ready-to-Use Templates for Accessible Emergency Communication
 
@@ -17,7 +22,7 @@ These templates follow:
 
 ### Evacuation Order Template
 
-[Read Full Template →]({{ '/templates/alert-template/' | relative_url }})
+[Open the Evacuation Order Template]({{ '/templates/alert-template/' | relative_url }})
 
 **Use it for:** Mandatory evacuation orders when residents must leave immediately.
 
