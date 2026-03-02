@@ -870,6 +870,11 @@ body.low-data {
       color: #ffffff;
     }
     
+    // Community banner github link should maintain proper contrast
+    .community-banner .github-link {
+      color: #0066cc;
+    }
+    
     // Blockquote needs darker background in dark mode for link contrast
     blockquote {
       background-color: #2a2a2a;
