@@ -150,6 +150,11 @@ You must reach all people.
 
 **You learn:** How to use Zello, Signal, WhatsApp, and Facebook Crisis Response together — plus an ASL video checklist
 
+### Plan for Multiple & Cascading Disabilities
+**Go to:** [Multiple & Cascading Disabilities]({{ '/framework/multiple-disabilities.html' | relative_url }})
+
+**You learn:** How intersecting disabilities create compounded barriers, the Complex Needs Passport template, and how international frameworks handle multi-flag populations
+
 
 ---
 
