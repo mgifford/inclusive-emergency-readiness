@@ -230,7 +230,9 @@ a {
     padding: 1rem;
 
     @media screen and (max-width: 820px) {
-      flex-wrap: wrap;
+      // Keep branding and hamburger button on the same row.
+      // .site-branding uses min-width: 0 to allow shrinking; the hamburger is small (flex: 0 0 auto).
+      flex-wrap: nowrap;
     }
   }
 }
@@ -240,6 +242,7 @@ a {
   align-items: center;
   gap: 0.75rem;
   flex: 0 1 auto;
+  min-width: 0; // Allow shrinking to prevent overflow on small viewports
 
   @media screen and (max-width: 820px) {
     flex: 1 1 auto;
@@ -286,55 +289,235 @@ a {
   line-height: 1.4;
 }
 
+// ============================================================================
+// Navigation Toggle (hamburger button - mobile only)
+// ============================================================================
+
+.nav-toggle {
+  display: none; // Hidden on desktop; shown on mobile via media query below
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  color: $color-background;
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+  line-height: 0;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  &:focus {
+    outline: 2px solid $color-background;
+    outline-offset: 2px;
+  }
+}
+
+// ============================================================================
+// Primary Navigation
+// ============================================================================
+
 .site-nav {
   flex: 1 1 auto;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   
   @media screen and (max-width: 820px) {
-    flex: 1 1 100%;
-    order: 3;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    position: relative;
   }
   
-  ul {
+  // Top-level nav list
+  .nav-menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    flex-wrap: nowrap;
+    gap: 0.25rem;
     align-items: center;
     
     @media screen and (max-width: 820px) {
-      gap: 1rem;
-      width: 100%;
+      // Hidden until hamburger is toggled
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      min-width: 220px;
+      background-color: $color-secondary;
+      border-radius: 6px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+      z-index: 500;
+      overflow: hidden;
+      
+      &.is-open {
+        display: flex;
+      }
     }
   }
   
   li {
     margin: 0;
     padding: 0;
+    position: relative;
   }
   
+  // Nav links (top-level)
   a {
     color: $color-background;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease;
+    font-size: 0.875rem;
+    white-space: nowrap;
     display: block;
     
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: rgba(255, 255, 255, 0.15);
     }
     
     &:focus {
       outline: 2px solid $color-background;
       outline-offset: 2px;
+      border-radius: 4px;
     }
+    
+    &[aria-current="page"] {
+      background-color: rgba(255, 255, 255, 0.2);
+      font-weight: 700;
+    }
+    
+    @media screen and (max-width: 820px) {
+      border-radius: 0;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      white-space: normal;
+      width: 100%;
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
+
+// ============================================================================
+// Dropdown Menu
+// ============================================================================
+
+.nav-item-dropdown {
+  position: relative;
+  
+  // Dropdown trigger button
+  .nav-dropdown-toggle {
+    background: none;
+    border: none;
+    color: $color-background;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    
+    &:focus {
+      outline: 2px solid $color-background;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+    
+    // Active state when a dropdown child is the current page
+    &[aria-current="true"] {
+      background-color: rgba(255, 255, 255, 0.2);
+      font-weight: 700;
+    }
+    
+    @media screen and (max-width: 820px) {
+      border-radius: 0;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      white-space: normal;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.65em;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  // Rotate arrow when dropdown is open
+  .nav-dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  
+  // Dropdown panel - hidden by default
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    min-width: 200px;
+    background-color: $color-secondary;
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    z-index: 501;
+    list-style: none;
+    padding: 0.25rem 0;
+    margin: 0;
+    overflow: hidden;
+    
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      border-radius: 0;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.875rem;
+      white-space: nowrap;
+      
+      @media screen and (max-width: 820px) {
+        padding: 0.65rem 1.75rem;
+        font-size: 0.95rem;
+      }
+    }
+    
+    @media screen and (max-width: 820px) {
+      position: static;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  // Show dropdown on hover (desktop) - progressive enhancement
+  @media screen and (min-width: 821px) {
+    &:hover .nav-dropdown-menu,
+    &:focus-within .nav-dropdown-menu {
+      display: block;
+    }
+  }
+  
+  // Show dropdown when aria-expanded is true (JS-driven, all screen sizes)
+  .nav-dropdown-toggle[aria-expanded="true"] + .nav-dropdown-menu {
+    display: block;
   }
 }
 
@@ -780,22 +963,26 @@ body.low-data {
   }
 }
 
+// Mobile: show hamburger, hide nav-menu by default
+@media (max-width: 820px) {
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 // Tablets (portrait)
 @media (min-width: 768px) {
   html {
     font-size: 18px;
   }
   
-  .site-nav ul {
-    flex-direction: row;
-    gap: $spacing-md;
-  }
-  
   .site-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   
   .site-branding {
@@ -929,7 +1116,8 @@ body.low-data {
     // Header site title and navigation links need white color on blue background
     // Achieves 7:1 contrast ratio on #0066cc background (exceeds WCAG AA)
     .site-title a,
-    .site-nav a {
+    .site-nav a,
+    .site-nav .nav-dropdown-toggle {
       color: #ffffff;
     }
     

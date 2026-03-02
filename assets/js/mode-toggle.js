@@ -128,6 +128,84 @@
         }
       });
     }
+    
+    // -------------------------------------------------------------------------
+    // Navigation: Hamburger toggle (mobile)
+    // -------------------------------------------------------------------------
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', function() {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navToggle.setAttribute('aria-label', isExpanded ? 'Open navigation menu' : 'Close navigation menu');
+        navMenu.classList.toggle('is-open', !isExpanded);
+      });
+    }
+    
+    // -------------------------------------------------------------------------
+    // Navigation: Dropdown toggles
+    // -------------------------------------------------------------------------
+    const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+    
+    dropdownToggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        // Close any other open dropdowns first
+        dropdownToggles.forEach(function(other) {
+          if (other !== toggle) {
+            other.setAttribute('aria-expanded', 'false');
+          }
+        });
+        toggle.setAttribute('aria-expanded', String(!isExpanded));
+      });
+      
+      // Keyboard: Escape on the toggle itself closes the dropdown
+      toggle.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.focus();
+        }
+      });
+      
+      // Keyboard: Escape on any link inside the dropdown closes it and returns focus to the toggle
+      var dropdownMenu = toggle.nextElementSibling;
+      if (dropdownMenu) {
+        dropdownMenu.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.focus();
+          }
+        });
+      }
+    });
+    
+    // Close dropdowns when clicking outside the nav
+    // Note: per ARIA disclosure pattern, focus management is not required on outside-click;
+    // the user's focus naturally follows their pointer/click to the new target.
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item-dropdown')) {
+        dropdownToggles.forEach(function(toggle) {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+    
+    // Close nav menu and all dropdowns when Escape is pressed globally
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        if (navToggle && navMenu) {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.setAttribute('aria-label', 'Open navigation menu');
+          navMenu.classList.remove('is-open');
+        }
+        dropdownToggles.forEach(function(toggle) {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
   });
   
   // Update button visual state

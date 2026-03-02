@@ -1,16 +1,32 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <ul>
+  <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M3 6H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M3 12H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M3 18H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <ul id="nav-menu" class="nav-menu" role="list">
     <li>
       <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
     </li>
     <li>
       <a href="{{ '/disabilities/' | relative_url }}" {% if page.url contains "/disabilities/" %}aria-current="page"{% endif %}>Disability Impacts</a>
     </li>
-    <li>
-      <a href="{{ '/framework/matrix.html' | relative_url }}" {% if page.url == "/framework/matrix.html" %}aria-current="page"{% endif %}>Framework Matrix</a>
-    </li>
-    <li>
-      <a href="{{ '/framework/resources.html' | relative_url }}" {% if page.url == "/framework/resources.html" %}aria-current="page"{% endif %}>Resources</a>
+    <li class="nav-item-dropdown">
+      <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true"
+        {% if page.url == "/framework/matrix.html" or page.url == "/framework/resources.html" %}aria-current="true"{% endif %}>
+        Framework <span class="dropdown-arrow" aria-hidden="true">&#9660;</span>
+      </button>
+      <ul class="nav-dropdown-menu" role="list">
+        <li>
+          <a href="{{ '/framework/matrix.html' | relative_url }}" {% if page.url == "/framework/matrix.html" %}aria-current="page"{% endif %}>Framework Matrix</a>
+        </li>
+        <li>
+          <a href="{{ '/framework/resources.html' | relative_url }}" {% if page.url == "/framework/resources.html" %}aria-current="page"{% endif %}>Resources</a>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="{{ '/toolkits/' | relative_url }}" {% if page.url contains "/toolkits/" %}aria-current="page"{% endif %}>Toolkits</a>
@@ -20,16 +36,3 @@
     </li>
   </ul>
 </nav>
-
-<style>
-  .site-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .site-nav a[aria-current="page"] {
-    border-bottom-color: white;
-    font-weight: 700;
-  }
-</style>
