@@ -8,6 +8,8 @@ last_updated: 2026-03-02
 
 # About This Project
 
+> **Summary:** Resilience Comms is a free, open-source guide. It helps emergency managers send accessible alerts that reach everyone — including people with disabilities.
+
 **Resilience Comms: The Inclusive Emergency Blueprint** is a free, open-source guide for government and municipal communication teams.
 
 It helps you create emergency information that reaches everyone — including people with disabilities.
@@ -38,6 +40,6 @@ This project is open source. Anyone can contribute, suggest improvements, or ada
 
 See the [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}) to learn how to help.
 
-## Contact
+## Get in Touch or Report an Issue
 
 Questions or feedback? Open an issue on [GitHub](https://github.com/mgifford/inclusive-emergency-readiness).

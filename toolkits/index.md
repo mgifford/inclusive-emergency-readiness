@@ -1,9 +1,14 @@
 ---
 layout: default
 title: "Tactical Toolkits"
+summary: "Step-by-step guides to make emergency communication accessible. Start with plain language or the digital egress checklist."
+reading_level: "Grade 6"
+last_updated: 2026-03-02
 ---
 
 # Tactical Toolkits
+
+> **Summary:** Three practical guides for building accessible emergency communication. Pick the one that matches what you need most.
 
 ## Practical Guides for Accessible Emergency Communication
 
@@ -15,7 +20,7 @@ Use them to build more accessible emergency communication. Especially in an emer
 
 ### Digital Egress Checklist
 
-[Read Full Guide →]({{ '/toolkits/digital-egress/' | relative_url }})
+[Open the Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }})
 
 **What it is:** A comprehensive checklist to ensure your emergency website is "survival-ready."
 
@@ -33,7 +38,7 @@ Use them to build more accessible emergency communication. Especially in an emer
 
 ### Plain Language Guide
 
-[Read Full Guide →]({{ '/toolkits/plain-language/' | relative_url }})
+[Open the Plain Language Guide]({{ '/toolkits/plain-language/' | relative_url }})
 
 **What it is:** How to write emergency content that everyone can understand, even under stress.
 
@@ -49,9 +54,9 @@ Use them to build more accessible emergency communication. Especially in an emer
 
 ---
 
-### Multi-Platform Communication
+### Multi-Platform Communication Guide
 
-[Read Full Guide →]({{ '/toolkits/multi-platform/' | relative_url }})
+[Open the Multi-Platform Communication Guide]({{ '/toolkits/multi-platform/' | relative_url }})
 
 **What it is:** Strategies for distributing emergency alerts beyond traditional platforms.
 

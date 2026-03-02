@@ -1,9 +1,14 @@
 ---
 layout: default
 title: "The Disability Spectrum"
+summary: "How different disabilities create different barriers in emergencies — and what emergency communicators can do about each one."
+reading_level: "Grade 6"
+last_updated: 2026-03-02
 ---
 
 # The Disability Spectrum
+
+> **Summary:** Emergencies affect people with disabilities more severely than others. This section explains how — and what you can do about it.
 
 ## Understanding Disability Impacts in Emergencies
 
@@ -19,7 +24,7 @@ This section shows you how—and what to do about it.
 
 ### Vision Disabilities
 
-[Read Full Guide →]({{ '/disabilities/vision/' | relative_url }})
+[Read the Vision Disabilities Guide]({{ '/disabilities/vision/' | relative_url }})
 
 **Impact:** Cannot see visual-only alerts, maps, signs, or low-contrast text.
 
@@ -29,7 +34,7 @@ This section shows you how—and what to do about it.
 
 ### Hearing Disabilities
 
-[Read Full Guide →]({{ '/disabilities/hearing/' | relative_url }})
+[Read the Hearing Disabilities Guide]({{ '/disabilities/hearing/' | relative_url }})
 
 **Impact:** Cannot hear audio sirens, loudspeaker announcements, or phone calls.
 
@@ -39,7 +44,7 @@ This section shows you how—and what to do about it.
 
 ### Cognitive Disabilities
 
-[Read Full Guide →]({{ '/disabilities/cognitive/' | relative_url }})
+[Read the Cognitive Disabilities Guide]({{ '/disabilities/cognitive/' | relative_url }})
 
 **Impact:** Cannot process complex language, long instructions, or information overload.
 
@@ -49,7 +54,7 @@ This section shows you how—and what to do about it.
 
 ### Situational Disabilities
 
-[Read Full Guide →]({{ '/disabilities/situational/' | relative_url }})
+[Read the Situational Disabilities Guide]({{ '/disabilities/situational/' | relative_url }})
 
 **Impact:** Anyone can experience temporary disabilities during emergencies (stress, lost devices, language barriers).
 
@@ -83,14 +88,12 @@ In every emergency, you are communicating with:
 | **Cognitive** | Complex language | Cannot understand instructions | Plain language, simple steps |
 | **Situational** | Stress, chaos, barriers | Reduced capacity | Simple, multi-format, resilient |
 
-## Start Here
+## Start Here: Four Steps for New Teams
 
-If you're new to accessibility in emergencies:
-
-1. **Read:** [Cognitive Disabilities]({{ '/disabilities/cognitive/' | relative_url }}) - Learn the "One Idea Per Line" principle
-2. **Apply:** [Plain Language Toolkit]({{ '/toolkits/plain-language/' | relative_url }}) - Write clear instructions
-3. **Check:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }}) - Test your website
-4. **Implement:** [Emergency Templates]({{ '/templates/alert-template/' | relative_url }}) - Use proven templates
+1. **Read:** [Cognitive Disabilities in Crises]({{ '/disabilities/cognitive/' | relative_url }}) — learn the "One Idea Per Line" principle
+2. **Apply:** [Plain Language Toolkit]({{ '/toolkits/plain-language/' | relative_url }}) — write clear instructions under time pressure
+3. **Check:** [Digital Egress Checklist]({{ '/toolkits/digital-egress/' | relative_url }}) — test your website works for everyone
+4. **Deploy:** [Emergency Alert Templates]({{ '/templates/alert-template/' | relative_url }}) — use proven, accessible templates
 
 ## The Bottom Line
 
