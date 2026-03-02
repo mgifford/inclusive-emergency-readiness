@@ -105,15 +105,15 @@ For every "No," follow the linked resource to close the gap.
 
 1. **Has leadership signed an accessibility commitment?**
    - [ ] Yes
-   - [ ] No → [Universal Access Mandate Template]({{ '/templates/mandate.html' | relative_url }})
+   - [ ] No → Create a Universal Access mandate (see examples in [CAN-ASC-6.4 Case Study]({{ '/framework/can-asc-case-study.html' | relative_url }}))
 
 2. **Is there a dedicated budget for accessible communications?**
    - [ ] Yes
-   - [ ] No → [Budget Justification Guide]({{ '/framework/resources.html#funding' | relative_url }})
+   - [ ] No → Review [Resource Directory]({{ '/framework/resources.html' | relative_url }}) for funding justification guidance
 
 3. **Are accessibility goals in staff performance reviews?**
    - [ ] Yes
-   - [ ] No → [Performance Metrics Guide]({{ '/framework/resources.html#metrics' | relative_url }})
+   - [ ] No → Incorporate accessibility metrics into performance evaluations
 
 **Willing Score:** ___/3
 
@@ -153,23 +153,23 @@ For every "No," follow the linked resource to close the gap.
 
 11. **Do staff know Easy Read principles?**
     - [ ] Yes
-    - [ ] No → [Easy Read Standards]({{ '/framework/resources.html#plain-language' | relative_url }})
+    - [ ] No → [Plain Language Toolkit]({{ '/toolkits/plain-language.html' | relative_url }})
 
 12. **Have staff completed accessibility training in the last year?**
     - [ ] Yes
-    - [ ] No → [Training Resources]({{ '/framework/resources.html#training' | relative_url }})
+    - [ ] No → Review [Resource Directory]({{ '/framework/resources.html' | relative_url }}) for training resources
 
 13. **Have emergency drills included accessible communications?**
     - [ ] Yes
-    - [ ] No → [Stress-Test Training Guide]({{ '/framework/resources.html#testing' | relative_url }})
+    - [ ] No → Incorporate accessibility testing into regular emergency drills
 
 14. **Do staff know how to create alt text and captions?**
     - [ ] Yes
-    - [ ] No → [WCAG Guidelines]({{ '/framework/resources.html#accessibility-standards' | relative_url }})
+    - [ ] No → Review WCAG guidelines in [Resource Directory]({{ '/framework/resources.html' | relative_url }})
 
 15. **Has the team consulted with people with disabilities?**
     - [ ] Yes
-    - [ ] No → [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }})
+    - [ ] No → [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}) explains how to engage the community
 
 **Able Score:** ___/6
 
