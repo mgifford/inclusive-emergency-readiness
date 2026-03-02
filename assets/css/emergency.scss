@@ -865,6 +865,42 @@ body.low-data {
       color: #6699ff;
     }
     
+    // Header links need higher contrast on blue background
+    .site-header a {
+      color: #ffffff;
+    }
+    
+    // Blockquote needs darker background in dark mode for link contrast
+    blockquote {
+      background-color: #2a2a2a;
+      color: #e5e5e5;
+      
+      a {
+        color: #a9d7ff;
+      }
+    }
+    
+    // Alert boxes need proper contrast in dark mode
+    .alert {
+      background-color: #2a2a2a;
+      color: #e5e5e5;
+      
+      &.alert-danger {
+        background-color: #3a2020;
+        color: #ffcccc;
+      }
+      
+      &.alert-warning {
+        background-color: #3a3020;
+        color: #ffd699;
+      }
+      
+      &.alert-success {
+        background-color: #203a20;
+        color: #ccffcc;
+      }
+    }
+    
     code,
     pre {
       background-color: #2a2a2a;
@@ -873,6 +909,10 @@ body.low-data {
     .site-footer {
       background-color: #2a2a2a;
       border-top-color: #444;
+      
+      h3 {
+        color: #e5e5e5;
+      }
     }
   }
 }
