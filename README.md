@@ -5,6 +5,12 @@
 [![Sustainability: WSG 1.0](https://img.shields.io/badge/Sustainability-WSG%201.0-green)](./SUSTAINABILITY.md)
 [![License: CC-BY-4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
+> ⚠️ **EXPERIMENTAL — AI-Generated Content, Needs Real-World Validation**
+>
+> Most of this site was generated with AI assistance. **All content must be validated in real-life situations before being relied upon.** Guidance here may be incomplete, inaccurate, or untested in actual emergencies.
+>
+> **Your feedback is essential.** If you have tried anything from this guide — with positive or negative results — please [open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues) and share what happened. Provide links and references so claims can be discussed and improved by the community.
+
 **Emergency alerts miss too many people.** People with disabilities are disproportionately harmed in disasters — not because of their disability, but because communications systems fail them. This guide helps you fix that.
 
 Use this guide to write emergency communications that everyone can receive, read, and act on — including people using screen readers, people on slow networks, and people under severe stress.
