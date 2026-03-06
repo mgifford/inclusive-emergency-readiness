@@ -1,5 +1,19 @@
 <footer class="site-footer" role="contentinfo">
   <div class="container">
+
+    <div class="experimental-notice" role="note" aria-label="Experimental content notice">
+      <p class="experimental-notice__heading">⚠️ Experimental — AI-Generated Content</p>
+      <p>
+        Most of this site was generated with AI assistance. <strong>All content needs to be validated in real-life situations before being relied upon.</strong>
+        Guidance here may be incomplete, inaccurate, or untested in actual emergencies.
+      </p>
+      <p>
+        <strong>Please share your experience.</strong> If you have tried anything from this guide — positive or negative results —
+        <a href="https://github.com/mgifford/inclusive-emergency-readiness/issues" target="_blank" rel="noopener noreferrer">open an issue</a>
+        and tell us what happened. Provide links and references so claims can be discussed and improved by the community.
+      </p>
+    </div>
+
     <div class="footer-content">
       <div class="footer-section">
         <h3>About This Project</h3>
@@ -109,6 +123,45 @@
 </footer>
 
 <style>
+  .experimental-notice {
+    background-color: #4a2c00;
+    color: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .experimental-notice__heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: #ffe082;
+  }
+
+  .experimental-notice p {
+    margin: 0 0 0.75rem 0;
+    color: #fff3cd;
+  }
+
+  .experimental-notice p:last-child {
+    margin-bottom: 0;
+  }
+
+  .experimental-notice a {
+    color: #ffe082;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .experimental-notice a:hover,
+  .experimental-notice a:focus {
+    color: #ffffff;
+    text-decoration-thickness: 2px;
+  }
+
   .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -294,6 +347,24 @@
   }
   
   @media print {
+    .experimental-notice {
+      background-color: #fff8dc;
+      color: #000;
+      border: 2pt solid #000;
+    }
+
+    .experimental-notice__heading {
+      color: #000;
+    }
+
+    .experimental-notice p {
+      color: #000;
+    }
+
+    .experimental-notice a {
+      color: #000;
+    }
+
     .footer-content {
       display: none;
     }
