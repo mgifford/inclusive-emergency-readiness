@@ -1,0 +1,112 @@
+name: Agent Task
+description: A task structured for the GitHub Copilot Coding Agent to work on independently
+title: "[Agent Task]: "
+labels: ["agent-task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Writing a Good Agent Task
+
+        The [Copilot Coding Agent guide](https://accessibility.github.com/documentation/guide/getting-started-with-agents/) recommends:
+        - One clear goal per issue
+        - Binary acceptance criteria (pass/fail, not "looks good")
+        - Exact file paths to create or edit
+        - Reference to which AGENTS.md rule applies
+        - How to verify the result automatically
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence. What should exist or be different after this task is complete?
+      placeholder: "Create `framework/crisis-easy-read.md` as an Easy Read version of `crisis.md`."
+    validations:
+      required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files to Create or Edit
+      description: |
+        Exact paths. List every file the agent should touch.
+        Example: `framework/crisis-easy-read.md` (create), `crisis.md` (add link to Easy Read version)
+      placeholder: |
+        - `framework/crisis-easy-read.md` — create
+        - `crisis.md` — add link to Easy Read version
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Binary checklist. Each item must be verifiable without human judgment.
+        Use the AGENTS.md standards as your baseline.
+      placeholder: |
+        - [ ] File exists at the specified path
+        - [ ] Reading level is Flesch-Kincaid Grade ≤ 4.0 (verified by readability-check.yml)
+        - [ ] Page weight is under 500KB (per AGENTS.md WSG rule)
+        - [ ] All links resolve (verified by link-checker.yml)
+        - [ ] WCAG 2.2 AA passes (verified by accessibility-test.yml)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: agents-md-rule
+    attributes:
+      label: Relevant AGENTS.md Rule
+      description: Which governance rule from AGENTS.md does this task implement?
+      options:
+        - "Section 2A — Web Sustainability (500KB limit)"
+        - "Section 2B — Accessibility (WCAG 2.2 AA)"
+        - "Section 2B — Easy Read Protocol"
+        - "Section 2B — Digital-to-Physical (print CSS)"
+        - "Section 2C — Plain Language (Grade 6)"
+        - "Section 3A — Link-Rot & Archive Guard"
+        - "Section 3B — Emergency Mode Linter"
+        - "Section 4 — Disability-Specific Alignment"
+        - "Multiple rules (specify in constraints)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: |
+        Specific AGENTS.md rules that apply. Copy the exact rule text if helpful.
+        Include reading level targets, page weight limits, or WCAG success criteria.
+      placeholder: |
+        - Reading level: Flesch-Kincaid Grade ≤ 4.0 (Easy Read target, stricter than Grade 6 standard)
+        - Sentences: 8–12 words maximum
+        - One idea per line
+        - No jargon without inline plain-language explanation
+        - System fonts only (no web fonts)
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: How to Verify
+      description: |
+        Which automated workflow validates this? Run it locally with `act` or reference the CI check.
+      placeholder: |
+        1. Run `readability-check.yml` — should show Grade ≤ 4.0 for the new file
+        2. Run `accessibility-test.yml` — should pass WCAG 2.2 AA
+        3. Run `link-checker.yml` — all links should resolve
+
+  - type: checkboxes
+    id: agent-ready
+    attributes:
+      label: Agent-Ready Checklist
+      description: Confirm this issue meets the agent task requirements before submitting.
+      options:
+        - label: The goal is clear in one sentence
+          required: true
+        - label: Exact file paths are specified
+          required: true
+        - label: All acceptance criteria are binary (pass/fail)
+          required: true
+        - label: There is an automated way to verify the result
+          required: true

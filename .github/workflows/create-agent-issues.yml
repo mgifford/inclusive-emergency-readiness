@@ -1,0 +1,134 @@
+name: Create Agent Improvement Issues
+
+# Purpose: Create 3 structured GitHub Issues for ways this project can benefit
+# from GitHub Copilot Coding Agent techniques described at:
+# https://accessibility.github.com/documentation/guide/getting-started-with-agents/
+#
+# Run this workflow ONCE via the Actions tab (workflow_dispatch).
+# It will skip issues whose titles already exist to avoid duplicates.
+# Issue body content is read from .github/proposed-issues/*.md
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "create" to confirm issue creation'
+        required: true
+        default: ''
+
+jobs:
+  create-issues:
+    name: Create Agent Improvement Issues
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm == 'create'
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create the three agent improvement issues
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Helper: strip YAML frontmatter (--- ... ---) from markdown
+            function stripFrontmatter(content) {
+              if (content.startsWith('---')) {
+                const end = content.indexOf('---', 3);
+                if (end !== -1) {
+                  return content.slice(end + 3).trimStart();
+                }
+              }
+              return content;
+            }
+
+            // Helper: parse title from frontmatter
+            function parseTitle(content) {
+              const match = content.match(/^---[\s\S]*?title:\s*"([^"]+)"[\s\S]*?---/);
+              return match ? match[1] : null;
+            }
+
+            // Helper: parse labels from frontmatter
+            function parseLabels(content) {
+              const match = content.match(/^---[\s\S]*?labels:\s*\[([^\]]+)\][\s\S]*?---/);
+              if (!match) return [];
+              return match[1].split(',').map(l => l.trim().replace(/['"]/g, ''));
+            }
+
+            // Check for existing open issues (to avoid duplicates)
+            const { data: existingIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existingTitles = existingIssues.map(i => i.title);
+
+            const issueFiles = [
+              '.github/proposed-issues/01-easy-read-agent-generation.md',
+              '.github/proposed-issues/02-agent-task-label-and-templates.md',
+              '.github/proposed-issues/03-readability-agent-autofix-loop.md'
+            ];
+
+            let created = 0;
+            let skipped = 0;
+
+            for (const filePath of issueFiles) {
+              const raw = fs.readFileSync(filePath, 'utf8');
+              const title = parseTitle(raw);
+              const labels = parseLabels(raw);
+              const body = stripFrontmatter(raw);
+
+              if (!title) {
+                console.log(`Skipping ${filePath}: could not parse title`);
+                skipped++;
+                continue;
+              }
+
+              // Emoji prefixes used in the actual issue title
+              const emojiMap = {
+                '01-easy-read': '🤖 ' + title,
+                '02-agent-task': '🏷️ ' + title,
+                '03-readability': '🔤 ' + title
+              };
+              const key = Object.keys(emojiMap).find(k => filePath.includes(k));
+              const fullTitle = key ? emojiMap[key] : title;
+
+              if (existingTitles.some(t => t === fullTitle || t === title)) {
+                console.log(`Skipping (already exists): ${title}`);
+                skipped++;
+                continue;
+              }
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: fullTitle,
+                body: body,
+                labels: labels.filter(l => l.length > 0)
+              });
+
+              console.log(`Created: ${fullTitle}`);
+              created++;
+            }
+
+            core.summary.addHeading('Agent Improvement Issues', 2);
+            core.summary.addRaw(`Created: ${created} | Skipped (already exist): ${skipped}`);
+            core.summary.addSeparator();
+            core.summary.addRaw('Issues are based on techniques from: https://accessibility.github.com/documentation/guide/getting-started-with-agents/');
+            await core.summary.write();
+
+      - name: Summary
+        run: |
+          echo "## Agent Improvement Issues" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Three issues proposed based on GitHub accessibility agent techniques:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "1. Easy Read companion page generation via Copilot Coding Agent" >> $GITHUB_STEP_SUMMARY
+          echo "2. agent-task label + issue templates for agent-ready work" >> $GITHUB_STEP_SUMMARY
+          echo "3. Readability auto-fix loop connecting linter output to agent fixes" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Based on: https://accessibility.github.com/documentation/guide/getting-started-with-agents/" >> $GITHUB_STEP_SUMMARY
