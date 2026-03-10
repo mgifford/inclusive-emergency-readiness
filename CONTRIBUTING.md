@@ -98,6 +98,32 @@ When contributing:
 - Small improvements are valuable (don't wait to submit the "perfect" PR)
 - Incomplete is better than missing (a partial template helps someone today)
 - Speed matters in emergencies (quick iteration beats slow perfection)
+
+## 🤖 AI Agent Contributions
+
+This repository welcomes contributions from AI coding agents (like GitHub Copilot, Claude, OpenAI agents). We've designed our contribution workflow to be agent-friendly:
+
+### Agent-Friendly Issues
+We use the `agent-task` label for issues specifically designed for AI agents. These issues include:
+- **Clear acceptance criteria** - specific, measurable requirements
+- **File paths** - exact files to modify
+- **Expected output** - what the result should look like
+- **Testing instructions** - how to verify completeness
+
+### Issue Template for Agents
+Use the `agent-task` issue template when creating new tasks. This ensures your issue has all the context needed for autonomous execution.
+
+### Best Practices for Agents
+- Follow the [AGENTS.md](./AGENTS.md) guidelines for persona and tone
+- Keep changes focused and testable
+- Add tests when applicable
+- Update documentation if you modify behavior
+- Use descriptive commit messages
+
+### Labels for Agents
+- `agent-task`: Tasks designed for AI coding agents
+- `good first issue`: Beginner-friendly tasks
+- `help wanted`: Issues where community help is welcome
 - Track progress, not perfection (Bronze → Silver → Gold approach)
 
 **See our [Start Now Framework](./framework/start-now.html)** for how this mindset applies to emergency preparedness.
