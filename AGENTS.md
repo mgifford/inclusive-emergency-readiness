@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Contributor Protocols"
+summary: "Operational protocols and ethical constraints for AI agents and human contributors managing this repository."
+reading_level: "Grade 6"
+last_updated: 2026-03-17
+---
+
 # AGENTS.md: Autonomous Governance for Inclusive Emergency Resources
 
 This document defines the operational protocols, ethical constraints, and automated workflows for AI agents and human contributors managing this repository.

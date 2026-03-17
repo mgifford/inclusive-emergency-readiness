@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Content Design Guide"
+summary: "How content design principles are applied to this project. Use when writing, reviewing, or improving any page."
+reading_level: "Grade 6"
+last_updated: 2026-03-17
+---
+
 # Content Design Guide
 
 > **Summary:** This guide explains how content design principles are applied to this project. Use it when writing, reviewing, or improving any page in this repository.
