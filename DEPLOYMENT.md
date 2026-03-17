@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Deployment Guide"
+summary: "How to deploy and maintain this Jekyll-based emergency communication resource on GitHub Pages."
+reading_level: "Grade 6"
+last_updated: 2026-03-17
+---
+
 # Deployment Guide
 
 ## Resilience Comms: The Inclusive Emergency Blueprint

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Crisis Mode"
+summary: "Ultra-low-bandwidth support built into the main site. Pages load on 2G, satellite, and congested networks."
+reading_level: "Grade 6"
+last_updated: 2026-03-17
+---
+
 # Crisis Mode Documentation
 
 ## Overview

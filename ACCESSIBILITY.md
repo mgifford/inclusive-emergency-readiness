@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Accessibility Statement"
+summary: "This project meets WCAG 2.2 Level AA. All emergency guides use plain language and work offline. Report any accessibility barrier and we respond within 24 hours."
+reading_level: "Grade 6"
+last_updated: 2026-03-17
+---
+
 # Accessibility Statement
 
 > **Summary:** This project meets WCAG 2.2 Level AA. All emergency guides use plain language and work offline. If you find an accessibility barrier, [open an issue](https://github.com/mgifford/inclusive-emergency-readiness/issues) with the label `accessibility-barrier`. We respond within 24 hours.

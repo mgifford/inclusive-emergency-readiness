@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Sustainability & Resilience"
+summary: "How we keep the site fast, lightweight, and resilient for emergency use, following W3C Web Sustainability Guidelines (WSG) 1.0."
+reading_level: "Grade 6"
+last_updated: 2026-03-17
+---
+
 # Sustainability & Resilience Statement (SUSTAINABILITY.md)
 
 ## Our Philosophy: Digital Resilience
