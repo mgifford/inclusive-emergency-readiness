@@ -88,6 +88,32 @@ This repository uses **GitHub Actions** to maintain the "Golden Record":
 
 ---
 
+## 🤖 AI Disclosure
+
+Transparency about AI use is important to this project. This section records how AI tools have been used.
+
+> This disclosure is a living record. See [AGENTS.md](./AGENTS.md) for the policy requiring all contributors to keep it up to date.
+
+### AI Used to Build This Project
+
+| Tool | Provider | How It Was Used |
+| :--- | :--- | :--- |
+| **GitHub Copilot** | Microsoft / OpenAI | Used throughout development to draft and refine Markdown content, write Jekyll templates, generate CSS, create GitHub Actions workflows, and review pull requests via Copilot coding agents. |
+
+### AI Used at Runtime
+
+**None.** This is a static website. No AI model runs on the server or is invoked when a user loads a page.
+
+### Browser-Based AI
+
+**Not enabled.** No browser-based AI features (e.g., client-side LLM inference, AI chatbots, or AI-powered widgets) are embedded in or loaded by this site.
+
+### Using AI to Improve This Content
+
+Community members are encouraged to use AI tools (ChatGPT, Claude, Gemini, etc.) with the prompts in the **[LLM Prompts guide](./framework/llm-prompts.html)** to draft or improve content. Any significant AI-assisted contribution should be disclosed in a pull request and, if it represents a major use of a new tool, added to the table above.
+
+---
+
 ## 🤝 How to Contribute
 
 **We need your help to make this guide comprehensive, accurate, and trustworthy.**
