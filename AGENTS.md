@@ -89,6 +89,18 @@ When reviewing contributions or generating content:
 * **Document sources:** Link to evidence and real-world implementations
 * **Welcome feedback:** Encourage contributors to share what works (or doesn't) in their context
 
+---
+
+## 8. AI Disclosure Requirement
+
+Transparency about AI use is a core value of this project. Every AI agent or human contributor using AI tools must:
+
+* **Disclose AI use in README.md:** After completing a significant contribution, update the `## 🤖 AI Disclosure` section in `README.md` to record which LLM or AI tool was used, what it was used for, and any known limitations.
+* **Be specific:** Name the exact tool (e.g., GitHub Copilot, Claude, ChatGPT). Do not use vague terms like "an AI tool".
+* **Separate concerns:** Distinguish between (a) AI used to *build* the project, (b) AI used *at runtime* by the application, and (c) browser-based AI enabled for users.
+* **Do not over-disclose:** Only list tools that were actually used. Do not include tools you know were not used.
+* **Update on every significant AI-assisted change:** The disclosure is a living record. Each agent or contributor is responsible for keeping it current.
+
 ***
 
 **"The most accessible information is the information that actually reaches the user when everything else fails."**
