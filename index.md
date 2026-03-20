@@ -84,6 +84,7 @@ Use this table to find the right guide for your situation.
 | **Reach older adults** | [Seniors and Identity: Functional-Needs Language]({{ '/framework/seniors-identity.html' | relative_url }}) | 1 hour |
 | **Build a multi-channel strategy** | [Multi-Platform Outreach: Zello, Signal, WhatsApp]({{ '/framework/multi-platform-outreach.html' | relative_url }}) | 2 hours |
 | **Handle intersecting disabilities** | [Multiple and Cascading Disabilities]({{ '/framework/multiple-disabilities.html' | relative_url }}) | 1 hour |
+| **Design for people under stress** | [Designing for Stress and Emergency]({{ '/framework/stress-emergency-design.html' | relative_url }}) | 1 hour |
 
 
 ---
