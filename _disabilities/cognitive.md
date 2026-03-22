@@ -468,6 +468,10 @@ Use this checklist for every emergency message:
 - UK Government Easy Read guidance
 - Australia's Easy Read Standard
 
+### Stress and Emergency Design
+- [Smashing Magazine: Designing for Stress and Emergency](https://www.smashingmagazine.com/2025/11/designing-for-stress-emergency/){:target="_blank" rel="noopener noreferrer"} — how the stress response affects all users, not just those with disabilities
+- [Designing for Stress and Emergency (Framework)]({{ '/framework/stress-emergency-design.html' | relative_url }}) — our applied guide with checklists and templates
+
 ### Testing
 Test your content with:
 - People with thinking and memory needs

@@ -103,6 +103,25 @@ People with intellectual disabilities need this format during disasters.
 
 **Why it matters:** It shows the "human-to-human" bridge when digital tools fail.
 
+### Smashing Magazine: Designing for Stress and Emergency
+
+**Link:** [Designing for Stress and Emergency](https://www.smashingmagazine.com/2025/11/designing-for-stress-emergency/){:target="_blank" rel="noopener noreferrer"}
+
+**Useful For:** Understanding how the human stress response changes interface use — and what designers must do differently.
+
+**Who it's for:** UX designers, web developers, communications teams, and emergency managers.
+
+**Why it matters:** Stress creates temporary cognitive and physical impairments in everyone. This article shows how tunnel vision, reduced working memory, decision paralysis, and fine motor difficulty all affect how people interact with emergency information. Designing for stressed users is designing for accessibility.
+
+**Key ideas from the article:**
+- Leads with the most important action first — people under stress cannot scan
+- One primary call to action per screen reduces decision paralysis
+- Large tap targets compensate for trembling or clumsy hands
+- Familiar UI patterns reduce the learning effort that stress makes impossible
+- Grade 6 plain language is the minimum — stressed readers comprehend at lower levels
+
+**See also:** [Designing for Stress and Emergency]({{ '/framework/stress-emergency-design.html' | relative_url }}) — our framework page applying these principles with checklists and templates.
+
 ---
 
 ## 3. Translation Layer: Standards to Practice
