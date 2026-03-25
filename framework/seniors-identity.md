@@ -9,6 +9,8 @@ last_updated: 2026-03-02
 
 # Seniors & Identity: Age-Friendly Emergency Readiness
 
+📖 **Easy Read version available:** [Seniors & Identity — Easy Read]({{ '/framework/seniors-identity-easy-read.html' | relative_url }}) — Simple words. Short sentences.
+
 ## Why This Matters
 
 Many older adults need extra help in emergencies.
