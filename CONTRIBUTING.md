@@ -99,32 +99,52 @@ When contributing:
 - Incomplete is better than missing (a partial template helps someone today)
 - Speed matters in emergencies (quick iteration beats slow perfection)
 
-## 🤖 AI Agent Contributions
+## 🤖 Working with the Copilot Coding Agent
 
-This repository welcomes contributions from AI coding agents (like GitHub Copilot, Claude, OpenAI agents). We've designed our contribution workflow to be agent-friendly:
+This repository is designed to work with the [GitHub Copilot Coding Agent](https://accessibility.github.com/documentation/guide/getting-started-with-agents/). The agent can handle repeatable, well-scoped tasks — readability fixes, link rot repairs, Easy Read drafts, alt text generation — freeing human contributors for work requiring lived experience and community judgment.
 
-### Agent-Friendly Issues
-We use the `agent-task` label for issues specifically designed for AI agents. These issues include:
-- **Clear acceptance criteria** - specific, measurable requirements
-- **File paths** - exact files to modify
-- **Expected output** - what the result should look like
-- **Testing instructions** - how to verify completeness
+> The [agents guide](https://accessibility.github.com/documentation/guide/getting-started-with-agents/) emphasizes: **the quality of the issue determines the quality of agent output.**
 
-### Issue Template for Agents
-Use the `agent-task` issue template when creating new tasks. This ensures your issue has all the context needed for autonomous execution.
+### Finding Agent-Ready Issues
 
-### Best Practices for Agents
-- Follow the [AGENTS.md](./AGENTS.md) guidelines for persona and tone
-- Keep changes focused and testable
-- Add tests when applicable
-- Update documentation if you modify behavior
-- Use descriptive commit messages
+Filter issues by the `agent-task` label to see tasks that are ready for the Copilot Coding Agent. These issues have:
+- **One clear goal** — a single sentence describing what should be different
+- **Exact file paths** — every file to create or edit is listed
+- **Binary acceptance criteria** — each item is verifiable without human judgment
+- **An automated verification step** — a CI workflow or command to confirm the result
 
-### Labels for Agents
-- `agent-task`: Tasks designed for AI coding agents
-- `good first issue`: Beginner-friendly tasks
+### Writing an Issue the Agent Can Tackle
+
+Use the **Agent Task** issue template when creating new issues for the agent. The template enforces all required fields. Key principles:
+
+1. **One goal per issue.** Keep scope narrow enough to complete in one PR.
+2. **Name exact files.** Vague paths like "update the docs" are not actionable.
+3. **Binary criteria only.** "Looks good" is not a criterion. "File exists at `path/to/file.md`" is.
+4. **Reference the relevant [AGENTS.md](./AGENTS.md) rule** (reading level, page weight, WCAG requirement).
+5. **Name the CI check** that validates the result (e.g., `readability-check.yml`).
+
+### Reviewing Agent-Generated PRs
+
+When a PR is opened by the Copilot Coding Agent:
+
+- **Check the acceptance criteria** in the linked issue — each item should be verifiable
+- **Run CI workflows** — the agent cannot verify results that require a live browser or assistive technology
+- **Review for lived-experience gaps** — the agent cannot validate whether guidance is realistic in an actual emergency
+- **Check the AI Disclosure** — per [AGENTS.md Section 8](./AGENTS.md), every agent-assisted contribution must update the `## 🤖 AI Disclosure` section in `README.md`
+- **Suggest next steps** rather than blocking on perfection — incremental improvement is the project philosophy
+
+### Assigning an Issue to the Copilot Coding Agent
+
+1. Open any issue labeled `agent-task`
+2. Click **Assignees** → search for **Copilot**
+3. Select **Copilot** — GitHub will create a new branch and open a draft PR automatically
+
+For more detail, see the [Getting Started with Agents guide](https://accessibility.github.com/documentation/guide/getting-started-with-agents/).
+
+### Labels for Agent Work
+- `agent-task`: Issues structured for the Copilot Coding Agent
+- `good first issue`: Beginner-friendly tasks (human or agent)
 - `help wanted`: Issues where community help is welcome
-- Track progress, not perfection (Bronze → Silver → Gold approach)
 
 **See our [Start Now Framework](./framework/start-now.html)** for how this mindset applies to emergency preparedness.
 
