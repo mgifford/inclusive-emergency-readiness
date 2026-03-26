@@ -10,6 +10,8 @@ permalink: /crisis.html
 <p>This is the ultra-low-bandwidth version. Works on 2G, satellite, and congested networks.</p>
 </div>
 
+📖 **Easy Read version available:** [Crisis Guide — Easy Read]({{ '/crisis-easy-read.html' | relative_url }}) — Simple words. Short sentences.
+
 ## What This Is
 
 Emergency readiness guide for government teams, emergency managers, and first responders.

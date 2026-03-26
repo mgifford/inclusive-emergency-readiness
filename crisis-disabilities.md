@@ -9,6 +9,8 @@ permalink: /crisis-disabilities.html
 
 Critical requirements for inclusive emergency communication.
 
+📖 **Easy Read version available:** [Disability Considerations — Easy Read]({{ '/crisis-disabilities-easy-read.html' | relative_url }}) — Simple words. Short sentences.
+
 ---
 
 ## Vision Disabilities

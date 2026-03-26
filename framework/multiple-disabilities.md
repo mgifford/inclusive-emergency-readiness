@@ -9,6 +9,8 @@ last_updated: 2026-03-02
 
 # Multiple & Cascading Disabilities: Compounded Barriers in Crisis
 
+📖 **Easy Read version available:** [Multiple Disabilities — Easy Read]({{ '/framework/multiple-disabilities-easy-read.html' | relative_url }}) — Simple words. Short sentences.
+
 ## Why This Matters
 
 Most emergency plans are built for one disability at a time.
